@@ -13,6 +13,7 @@ import TopVendorsOne from "../components/TopVendorsOne";
 import BestSellsOne from "../components/BestSellsOne";
 import DeliveryOne from "../components/DeliveryOne";
 import OrganicOne from "../components/OrganicOne";
+import ShortProductOne from "../components/ShortProductOne";
 const HomePageOne = () => {
 
   return (
@@ -60,6 +61,9 @@ const HomePageOne = () => {
 
       {/* OrganicOne */}
       <OrganicOne />
+
+      {/* ShortProductOne */}
+      <ShortProductOne />
 
 
     </>
