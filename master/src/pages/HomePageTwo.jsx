@@ -4,6 +4,7 @@ import HeaderTwo from "../components/HeaderTwo";
 import BannerTwo from "../components/BannerTwo";
 import PromotionalTwo from "../components/PromotionalTwo";
 import DealsOne from "../components/DealsOne";
+import TopSellingOne from "../components/TopSellingOne";
 
 const HomePageTwo = () => {
 
@@ -25,6 +26,9 @@ const HomePageTwo = () => {
 
       {/* DealsOne */}
       <DealsOne />
+
+      {/* TopSellingOne */}
+      <TopSellingOne />
 
 
     </>
