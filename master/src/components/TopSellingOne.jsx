@@ -7,7 +7,7 @@ const TopSellingOne = () => {
         return (
             <button
                 type="button" onClick={onClick}
-                className={` ${className} slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1`}
+                className={` ${className} slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1`}
             >
                 <i className="ph ph-caret-right" />
             </button>
@@ -21,7 +21,7 @@ const TopSellingOne = () => {
             <button
                 type="button"
                 onClick={onClick}
-                className={`${className} slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1`}
+                className={`${className} slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1`}
             >
                 <i className="ph ph-caret-left" />
             </button>

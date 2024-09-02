@@ -198,6 +198,82 @@
     }
 }
 
+.featured-products {
+    .mr-point {
+        margin-right: 124px;
+    }
+
+    .featured-product-slider {
+        .slick-arrow.slick-prev {
+            position: absolute;
+            top: -45px;
+            right: 60px;
+            left: auto;
+        }
+
+        .slick-arrow.slick-next {
+            position: absolute;
+            top: -45px;
+            right: 0px;
+            left: auto;
+        }
+    }
+}
+
+.vendor-card {
+    .slick-arrow .ph {
+        color: #fff;
+    }
+}
+
+.recommended {
+    .mr-point {
+        margin-right: 124px;
+    }
+
+    .recommended-slider {
+        .slick-arrow.slick-prev {
+            position: absolute;
+            top: -45px;
+            right: 60px;
+            left: auto;
+        }
+
+        .slick-arrow.slick-next {
+            position: absolute;
+            top: -45px;
+            right: 0px;
+            left: auto;
+        }
+    }
+
+
+}
+
+.top-brand {
+    .mr-point {
+        margin-right: 124px;
+    }
+
+    .top-brand__slider {
+        .slick-arrow.slick-prev {
+            position: absolute;
+            top: -45px;
+            right: 60px;
+            left: auto;
+        }
+
+        .slick-arrow.slick-next {
+            position: absolute;
+            top: -45px;
+            right: 0px;
+            left: auto;
+        }
+    }
+
+
+}
+
 .banner-item-two__slider {
     .slick-dots {
         display: flex !important;

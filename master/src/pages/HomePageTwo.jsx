@@ -7,6 +7,18 @@ import DealsOne from "../components/DealsOne";
 import TopSellingOne from "../components/TopSellingOne";
 import TrendingOne from "../components/TrendingOne";
 import DiscountOne from "../components/DiscountOne";
+import FeaturedOne from "../components/FeaturedOne";
+import BigDealOne from "../components/BigDealOne";
+import TopSellingTwo from "../components/TopSellingTwo";
+import PopularProductsOne from "../components/PopularProductsOne";
+import TopVendorsTwo from "../components/TopVendorsTwo";
+import DaySaleOne from "../components/DaySaleOne";
+import RecentlyViewedOne from "../components/RecentlyViewedOne";
+import BrandTwo from "../components/BrandTwo";
+import ShippingTwo from "../components/ShippingTwo";
+import NewsletterTwo from "../components/NewsletterTwo";
+import FooterTwo from "../components/FooterTwo";
+import BottomFooter from "../components/BottomFooter";
 
 const HomePageTwo = () => {
 
@@ -37,6 +49,42 @@ const HomePageTwo = () => {
 
       {/* DiscountOne */}
       <DiscountOne />
+
+      {/* FeaturedOne */}
+      <FeaturedOne />
+
+      {/* BigDealOne */}
+      <BigDealOne />
+
+      {/* TopSellingTwo */}
+      <TopSellingTwo />
+
+      {/* PopularProductsOne */}
+      <PopularProductsOne />
+
+      {/* TopVendorsTwo */}
+      <TopVendorsTwo />
+
+      {/* DaySaleOne */}
+      <DaySaleOne />
+
+      {/* RecentlyViewedOne */}
+      <RecentlyViewedOne />
+
+      {/* BrandTwo */}
+      <BrandTwo />
+
+      {/* ShippingTwo */}
+      <ShippingTwo />
+
+      {/* NewsletterTwo */}
+      <NewsletterTwo />
+
+      {/* FooterTwo */}
+      <FooterTwo />
+
+      {/* BottomFooter */}
+      <BottomFooter />
 
 
     </>
