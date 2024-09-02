@@ -10,6 +10,9 @@ import OfferOne from "../components/OfferOne";
 import RecommendedOne from "../components/RecommendedOne";
 import HotDealsOne from "../components/HotDealsOne";
 import TopVendorsOne from "../components/TopVendorsOne";
+import BestSellsOne from "../components/BestSellsOne";
+import DeliveryOne from "../components/DeliveryOne";
+import OrganicOne from "../components/OrganicOne";
 const HomePageOne = () => {
 
   return (
@@ -49,6 +52,14 @@ const HomePageOne = () => {
       {/* TopVendorsOne */}
       <TopVendorsOne />
 
+      {/* BestSellsOne */}
+      <BestSellsOne />
+
+      {/* DeliveryOne */}
+      <DeliveryOne />
+
+      {/* OrganicOne */}
+      <OrganicOne />
 
 
     </>
