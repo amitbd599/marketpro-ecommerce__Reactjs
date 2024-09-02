@@ -3,6 +3,7 @@ import RouteScrollToTop from "./helper/RouteScrollToTop";
 import ScrollToTop from "react-scroll-to-top";
 import HomePageOne from "./pages/HomePageOne";
 import PhosphorIconInit from "./helper/PhosphorIconInit";
+import HomePageTwo from "./pages/HomePageTwo";
 
 
 
@@ -14,6 +15,7 @@ function App() {
       <ScrollToTop smooth color="#299E60" />
       <Routes>
         <Route exact path="/" element={<HomePageOne />} />
+        <Route exact path="/index-two" element={<HomePageTwo />} />
 
 
       </Routes>

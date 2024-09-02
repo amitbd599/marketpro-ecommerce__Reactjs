@@ -153,3 +153,19 @@
         }
     }
 }
+
+.banner-item-two__slider {
+    .slick-dots {
+        display: flex !important;
+        gap: 4px;
+
+        li {
+            margin: 0;
+        }
+
+        .slick-active {
+            width: auto;
+        }
+    }
+
+}

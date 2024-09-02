@@ -3,10 +3,7 @@ import $ from 'jquery';
 
 const HeaderOne = () => {
     useEffect(() => {
-        // Initialize Select2
         $('.js-example-basic-single').select2();
-
-        // Clean up
         return () => {
             $('.js-example-basic-single').select2('destroy');
         };
