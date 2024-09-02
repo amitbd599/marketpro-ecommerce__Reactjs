@@ -1,6 +1,46 @@
 import React from 'react'
-
+import Slider from "react-slick";
 const BannerOne = () => {
+
+    function SampleNextArrow(props) {
+        const { className, onClick } = props;
+        return (
+            <button
+                type="button" onClick={onClick}
+                className={` ${className} slick-next slick-arrow flex-center rounded-circle bg-white text-xl hover-bg-main-600 hover-text-white transition-1`}
+            >
+                <i className="ph ph-caret-right" />
+            </button>
+        );
+    }
+    function SamplePrevArrow(props) {
+        const { className, onClick } = props;
+
+        return (
+
+            <button
+                type="button"
+                onClick={onClick}
+                className={`${className} slick-prev slick-arrow flex-center rounded-circle bg-white text-xl hover-bg-main-600 hover-text-white transition-1`}
+            >
+                <i className="ph ph-caret-left" />
+            </button>
+        );
+    }
+    const settings = {
+        dots: false,
+        arrows: true,
+        infinite: true,
+
+        speed: 1000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
+
+
+    };
     return (
         <div className="banner">
             <div className="container container-lg">
@@ -14,69 +54,59 @@ const BannerOne = () => {
                         </span>
                     </a>
                     <img
-                        src="assets/images/bg/banner-bg.png"
+                        src="/assets/images/bg/banner-bg.png"
                         alt=""
                         className="banner-img position-absolute inset-block-start-0 inset-inline-start-0 w-100 h-100 z-n1 object-fit-cover rounded-24"
                     />
                     <div className="flex-align">
-                        <button
-                            type="button"
-                            id="banner-prev"
-                            className="slick-prev slick-arrow flex-center rounded-circle bg-white text-xl hover-bg-main-600 hover-text-white transition-1"
-                        >
-                            <i className="ph ph-caret-left" />
-                        </button>
-                        <button
-                            type="button"
-                            id="banner-next"
-                            className="slick-next slick-arrow flex-center rounded-circle bg-white text-xl hover-bg-main-600 hover-text-white transition-1"
-                        >
-                            <i className="ph ph-caret-right" />
-                        </button>
+
+
                     </div>
                     <div className="banner-slider">
-                        <div className="banner-slider__item">
-                            <div className="banner-slider__inner flex-between position-relative">
-                                <div className="banner-item__content">
-                                    <h1 className="banner-item__title bounce">
-                                        Daily Grocery Order and Get Express Delivery
-                                    </h1>
-                                    <a
-                                        href="shop.html"
-                                        className="btn btn-main d-inline-flex align-items-center rounded-pill gap-8"
-                                    >
-                                        Explore Shop{" "}
-                                        <span className="icon text-xl d-flex">
-                                            <i className="ph ph-shopping-cart-simple" />{" "}
-                                        </span>
-                                    </a>
-                                </div>
-                                <div className="banner-item__thumb">
-                                    <img src="assets/images/thumbs/banner-img1.png" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="banner-slider__item">
-                            <div className="banner-slider__inner flex-between position-relative">
-                                <div className="banner-item__content">
-                                    <h1 className="banner-item__title">
-                                        Daily Grocery Order and Get Express Delivery
-                                    </h1>
-                                    <a
-                                        href="shop.html"
-                                        className="btn btn-main d-inline-flex align-items-center rounded-pill gap-8"
-                                    >
-                                        Explore Shop{" "}
-                                        <span className="icon text-xl d-flex">
-                                            <i className="ph ph-shopping-cart-simple" />{" "}
-                                        </span>
-                                    </a>
-                                </div>
-                                <div className="banner-item__thumb">
-                                    <img src="assets/images/thumbs/banner-img3.png" alt="" />
+                        <Slider {...settings}>
+                            <div className="banner-slider__item">
+                                <div className="banner-slider__inner flex-between position-relative">
+                                    <div className="banner-item__content">
+                                        <h1 className="banner-item__title bounce">
+                                            Daily Grocery Order and Get Express Delivery
+                                        </h1>
+                                        <a
+                                            href="shop.html"
+                                            className="btn btn-main d-inline-flex align-items-center rounded-pill gap-8"
+                                        >
+                                            Explore Shop{" "}
+                                            <span className="icon text-xl d-flex">
+                                                <i className="ph ph-shopping-cart-simple" />{" "}
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div className="banner-item__thumb">
+                                        <img src="assets/images/thumbs/banner-img1.png" alt="" />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            <div className="banner-slider__item">
+                                <div className="banner-slider__inner flex-between position-relative">
+                                    <div className="banner-item__content">
+                                        <h1 className="banner-item__title">
+                                            Daily Grocery Order and Get Express Delivery
+                                        </h1>
+                                        <a
+                                            href="shop.html"
+                                            className="btn btn-main d-inline-flex align-items-center rounded-pill gap-8"
+                                        >
+                                            Explore Shop{" "}
+                                            <span className="icon text-xl d-flex">
+                                                <i className="ph ph-shopping-cart-simple" />{" "}
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div className="banner-item__thumb">
+                                        <img src="assets/images/thumbs/banner-img3.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </Slider>
                     </div>
                 </div>
             </div>

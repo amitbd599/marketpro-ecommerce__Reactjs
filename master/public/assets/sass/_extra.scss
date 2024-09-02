@@ -1,0 +1,38 @@
+.slick-arrow::before {
+    display: none;
+
+}
+
+.slick-arrow {
+    .ph {
+        color: #333;
+    }
+
+    &:hover {
+        .ph {
+            color: #fff;
+        }
+    }
+}
+
+.flash-sales {
+    .mr-point {
+        margin-right: 124px;
+    }
+
+    .flash-sales__slider {
+        .slick-arrow.slick-prev {
+            position: absolute;
+            top: -60px;
+            right: 60px;
+            left: auto;
+        }
+
+        .slick-arrow.slick-next {
+            position: absolute;
+            top: -60px;
+            right: 0px;
+            left: auto;
+        }
+    }
+}
