@@ -17,6 +17,7 @@ import ShortProductOne from "../components/ShortProductOne";
 import BrandOne from "../components/BrandOne";
 import NewArrivalOne from "../components/NewArrivalOne";
 import ShippingOne from "../components/ShippingOne";
+import NewsletterOne from "../components/NewsletterOne";
 const HomePageOne = () => {
 
   return (
@@ -76,6 +77,9 @@ const HomePageOne = () => {
 
       {/* ShippingOne */}
       <ShippingOne />
+
+      {/* NewsletterOne */}
+      <NewsletterOne />
 
 
     </>
