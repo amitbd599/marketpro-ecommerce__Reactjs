@@ -6,6 +6,7 @@ import PromotionalTwo from "../components/PromotionalTwo";
 import DealsOne from "../components/DealsOne";
 import TopSellingOne from "../components/TopSellingOne";
 import TrendingOne from "../components/TrendingOne";
+import DiscountOne from "../components/DiscountOne";
 
 const HomePageTwo = () => {
 
@@ -33,6 +34,9 @@ const HomePageTwo = () => {
 
       {/* TrendingOne */}
       <TrendingOne />
+
+      {/* DiscountOne */}
+      <DiscountOne />
 
 
     </>
