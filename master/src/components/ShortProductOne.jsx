@@ -3,7 +3,6 @@ import Slider from 'react-slick';
 
 const ShortProductOne = () => {
 
-    // Featured Products
     function SampleNextArrow(props) {
         const { className, onClick } = props;
         return (
