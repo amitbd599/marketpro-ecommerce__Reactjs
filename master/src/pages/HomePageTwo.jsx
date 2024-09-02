@@ -5,6 +5,7 @@ import BannerTwo from "../components/BannerTwo";
 import PromotionalTwo from "../components/PromotionalTwo";
 import DealsOne from "../components/DealsOne";
 import TopSellingOne from "../components/TopSellingOne";
+import TrendingOne from "../components/TrendingOne";
 
 const HomePageTwo = () => {
 
@@ -29,6 +30,9 @@ const HomePageTwo = () => {
 
       {/* TopSellingOne */}
       <TopSellingOne />
+
+      {/* TrendingOne */}
+      <TrendingOne />
 
 
     </>
