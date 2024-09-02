@@ -154,6 +154,28 @@
     }
 }
 
+.deals-weeek {
+    .mr-point {
+        margin-right: 124px;
+    }
+
+    .deals-week-slider {
+        .slick-arrow.slick-prev {
+            position: absolute;
+            top: -300px;
+            right: 60px;
+            left: auto;
+        }
+
+        .slick-arrow.slick-next {
+            position: absolute;
+            top: -300px;
+            right: 0px;
+            left: auto;
+        }
+    }
+}
+
 .banner-item-two__slider {
     .slick-dots {
         display: flex !important;
