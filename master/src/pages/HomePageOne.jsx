@@ -18,6 +18,8 @@ import BrandOne from "../components/BrandOne";
 import NewArrivalOne from "../components/NewArrivalOne";
 import ShippingOne from "../components/ShippingOne";
 import NewsletterOne from "../components/NewsletterOne";
+import FooterOne from "../components/FooterOne";
+import BottomFooter from "../components/BottomFooter";
 const HomePageOne = () => {
 
   return (
@@ -80,6 +82,12 @@ const HomePageOne = () => {
 
       {/* NewsletterOne */}
       <NewsletterOne />
+
+      {/* FooterOne */}
+      <FooterOne />
+
+      {/* BottomFooter */}
+      <BottomFooter />
 
 
     </>

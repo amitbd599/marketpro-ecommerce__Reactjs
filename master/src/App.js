@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <RouteScrollToTop />
       <PhosphorIconInit />
-      <ScrollToTop smooth color="#A847F0" />
+      <ScrollToTop smooth color="#299E60" />
       <Routes>
         <Route exact path="/" element={<HomePageOne />} />
 
