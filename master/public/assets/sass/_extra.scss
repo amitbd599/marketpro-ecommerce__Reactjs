@@ -326,3 +326,23 @@
         }
     }
 }
+
+.product-details__thumb-slider {
+    padding: clamp(3rem, -2.173rem + 10.777vw, 7.25rem);
+    min-width: 400px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-details__images-slider .thum {
+    width: 60px;
+    object-fit: contain;
+}
