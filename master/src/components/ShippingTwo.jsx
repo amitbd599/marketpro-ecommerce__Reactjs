@@ -1,6 +1,7 @@
 import React from 'react'
 
 const ShippingTwo = () => {
+
     return (
         <section className="shipping mb-80" id="shipping">
             <div className="container container-lg">

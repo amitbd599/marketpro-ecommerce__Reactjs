@@ -19,12 +19,16 @@ import ShippingTwo from "../components/ShippingTwo";
 import NewsletterTwo from "../components/NewsletterTwo";
 import FooterTwo from "../components/FooterTwo";
 import BottomFooter from "../components/BottomFooter";
+import ColorInit from "../layout/ColorInit";
 
 const HomePageTwo = () => {
+
 
   return (
 
     <>
+      {/* ColorInit */}
+      <ColorInit />
 
       {/* Preloader */}
       <Preloader />

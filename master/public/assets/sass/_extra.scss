@@ -289,3 +289,40 @@
     }
 
 }
+
+
+.horizontal-slider {
+
+    .example-track.example-track-0,
+    .example-track.example-track-2 {
+        height: 8px;
+        border-radius: 5px;
+        background: #CCCCCC;
+    }
+
+    .example-track.example-track-1 {
+        height: 8px;
+        border-radius: 5px;
+        z-index: 9;
+
+        background-color: var(--main-600) !important;
+    }
+
+    .example-thumb {
+        left: 76.7775px;
+        top: 12px;
+        background-color: var(--main-600) !important;
+        border-radius: 5px;
+        width: 40px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        cursor: pointer;
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+}
