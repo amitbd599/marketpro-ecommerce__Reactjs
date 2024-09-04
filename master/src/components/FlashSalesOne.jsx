@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 
 const FlashSalesOne = () => {
@@ -78,12 +79,12 @@ const FlashSalesOne = () => {
                     <div className="flex-between flex-wrap gap-8">
                         <h5 className="mb-0">Flash Sales Today</h5>
                         <div className="flex-align gap-16 mr-point">
-                            <a
-                                href="shop.html"
+                            <Link
+                                to="/shop"
                                 className="text-sm fw-medium text-gray-700 hover-text-main-600 hover-text-decoration-underline"
                             >
                                 View All Deals
-                            </a>
+                            </Link>
 
                         </div>
                     </div>
@@ -122,15 +123,15 @@ const FlashSalesOne = () => {
                                             </li>
                                         </ul>
                                     </div>
-                                    <a
-                                        href="shop.html"
+                                    <Link
+                                        to="/shop"
                                         className="btn btn-main d-inline-flex align-items-center rounded-pill gap-8 mt-24"
                                     >
                                         Shop Now
                                         <span className="icon text-xl d-flex">
                                             <i className="ph ph-arrow-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -166,15 +167,15 @@ const FlashSalesOne = () => {
                                             </li>
                                         </ul>
                                     </div>
-                                    <a
-                                        href="shop.html"
+                                    <Link
+                                        to="/shop"
                                         className="btn btn-main d-inline-flex align-items-center rounded-pill gap-8 mt-24"
                                     >
                                         Shop Now
                                         <span className="icon text-xl d-flex">
                                             <i className="ph ph-arrow-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -210,15 +211,15 @@ const FlashSalesOne = () => {
                                             </li>
                                         </ul>
                                     </div>
-                                    <a
-                                        href="shop.html"
+                                    <Link
+                                        to="/shop"
                                         className="btn btn-main d-inline-flex align-items-center rounded-pill gap-8 mt-24"
                                     >
                                         Shop Now
                                         <span className="icon text-xl d-flex">
                                             <i className="ph ph-arrow-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

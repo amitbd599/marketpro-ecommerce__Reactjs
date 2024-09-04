@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Account = () => {
     return (
@@ -67,12 +68,12 @@ const Account = () => {
                                     </div>
                                 </div>
                                 <div className="mt-48">
-                                    <a
-                                        href="#"
+                                    <Link
+                                        to="#"
                                         className="text-danger-600 text-sm fw-semibold hover-text-decoration-underline"
                                     >
                                         Forgot your password?
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -137,10 +138,10 @@ const Account = () => {
                                         Your personal data will be used to process your order, support
                                         your experience throughout this website, and for other purposes
                                         described in our
-                                        <a href="#" className="text-main-600 text-decoration-underline">
+                                        <Link to="#" className="text-main-600 text-decoration-underline">
                                             {" "}
                                             privacy policy
-                                        </a>
+                                        </Link>
                                         .
                                     </p>
                                 </div>

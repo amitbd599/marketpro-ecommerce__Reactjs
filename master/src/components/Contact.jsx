@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
     return (
@@ -108,23 +109,23 @@ const Contact = () => {
                                 <span className="w-40 h-40 flex-center rounded-circle border border-gray-100 text-main-two-600 text-2xl flex-shrink-0">
                                     <i className="ph-fill ph-phone-call" />
                                 </span>
-                                <a
-                                    href="tel:+00123456789"
+                                <Link
+                                    to="/tel:+00123456789"
                                     className="text-md text-gray-900 hover-text-main-600"
                                 >
                                     +00 123 456 789
-                                </a>
+                                </Link>
                             </div>
                             <div className="flex-align gap-16 mb-16">
                                 <span className="w-40 h-40 flex-center rounded-circle border border-gray-100 text-main-two-600 text-2xl flex-shrink-0">
                                     <i className="ph-fill ph-envelope" />
                                 </span>
-                                <a
-                                    href="mailto:support24@marketpro.com"
+                                <Link
+                                    to="/mailto:support24@marketpro.com"
                                     className="text-md text-gray-900 hover-text-main-600"
                                 >
                                     support24@marketpro.com
-                                </a>
+                                </Link>
                             </div>
                             <div className="flex-align gap-16 mb-0">
                                 <span className="w-40 h-40 flex-center rounded-circle border border-gray-100 text-main-two-600 text-2xl flex-shrink-0">
@@ -136,24 +137,24 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className="mt-24 flex-align flex-wrap gap-16">
-                            <a
-                                href="#"
+                            <Link
+                                to="#"
                                 className="bg-neutral-600 hover-bg-main-600 rounded-8 p-10 px-16 flex-between flex-wrap gap-8 flex-grow-1"
                             >
                                 <span className="text-white fw-medium">Get Support On Call</span>
                                 <span className="w-36 h-36 bg-main-600 rounded-8 flex-center text-xl text-white">
                                     <i className="ph ph-headset" />
                                 </span>
-                            </a>
-                            <a
-                                href="#"
+                            </Link>
+                            <Link
+                                to="#"
                                 className="bg-neutral-600 hover-bg-main-600 rounded-8 p-10 px-16 flex-between flex-wrap gap-8 flex-grow-1"
                             >
                                 <span className="text-white fw-medium">Get Direction</span>
                                 <span className="w-36 h-36 bg-main-600 rounded-8 flex-center text-xl text-white">
                                     <i className="ph ph-map-pin" />
                                 </span>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

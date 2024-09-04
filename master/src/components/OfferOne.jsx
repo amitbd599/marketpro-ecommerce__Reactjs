@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const OfferOne = () => {
     return (
@@ -24,8 +25,8 @@ const OfferOne = () => {
                                     <span className="text-sm text-white">Delivery by 6:15am</span>
                                     <span className="text-sm text-main-two-600">expired Aug 5</span>
                                 </div>
-                                <a
-                                    href="shop.html"
+                                <Link
+                                    to="/shop"
                                     className="mt-16 btn bg-white hover-text-white hover-bg-main-800 text-heading fw-medium d-inline-flex align-items-center rounded-pill gap-8"
                                     tabIndex={0}
                                 >
@@ -33,7 +34,7 @@ const OfferOne = () => {
                                     <span className="icon text-xl d-flex">
                                         <i className="ph ph-arrow-right" />
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -56,8 +57,8 @@ const OfferOne = () => {
                                     <span className="text-sm text-white">Delivery by 6:15am</span>
                                     <span className="text-sm text-main-two-600">expired Aug 5</span>
                                 </div>
-                                <a
-                                    href="shop.html"
+                                <Link
+                                    to="/shop"
                                     className="mt-16 btn bg-white hover-text-white hover-bg-main-800 text-heading fw-medium d-inline-flex align-items-center rounded-pill gap-8"
                                     tabIndex={0}
                                 >
@@ -65,7 +66,7 @@ const OfferOne = () => {
                                     <span className="icon text-xl d-flex">
                                         <i className="ph ph-arrow-right" />
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

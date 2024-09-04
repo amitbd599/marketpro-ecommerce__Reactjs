@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const DiscountOne = () => {
     return (
@@ -20,13 +21,13 @@ const DiscountOne = () => {
                                     <h6 className="mb-20">
                                         57" Odyssey Neo G9 Dual 4K UHD Quantum Mini-LED
                                     </h6>
-                                    <a
-                                        href="shop.html"
+                                    <Link
+                                        to="/shop"
                                         className="btn btn-outline-black rounded-pill gap-8"
                                         tabIndex={0}
                                     >
                                         Shop Now
-                                    </a>
+                                    </Link>
                                 </div>
                                 <img
                                     src="assets/images/thumbs/discount-img1.png"
@@ -51,13 +52,13 @@ const DiscountOne = () => {
                                     <h6 className="mb-20">
                                         57" Odyssey Neo G9 Dual 4K UHD Quantum Mini-LED
                                     </h6>
-                                    <a
-                                        href="shop.html"
+                                    <Link
+                                        to="/shop"
                                         className="btn btn-outline-black rounded-pill gap-8"
                                         tabIndex={0}
                                     >
                                         Shop Now
-                                    </a>
+                                    </Link>
                                 </div>
                                 <img
                                     src="assets/images/thumbs/discount-img2.png"

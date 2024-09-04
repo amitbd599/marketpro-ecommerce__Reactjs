@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 const BannerOne = () => {
 
@@ -70,15 +71,15 @@ const BannerOne = () => {
                                         <h1 className="banner-item__title bounce">
                                             Daily Grocery Order and Get Express Delivery
                                         </h1>
-                                        <a
-                                            href="shop.html"
+                                        <Link
+                                            to="/shop"
                                             className="btn btn-main d-inline-flex align-items-center rounded-pill gap-8"
                                         >
                                             Explore Shop{" "}
                                             <span className="icon text-xl d-flex">
                                                 <i className="ph ph-shopping-cart-simple" />{" "}
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="banner-item__thumb">
                                         <img src="assets/images/thumbs/banner-img1.png" alt="" />
@@ -91,15 +92,15 @@ const BannerOne = () => {
                                         <h1 className="banner-item__title">
                                             Daily Grocery Order and Get Express Delivery
                                         </h1>
-                                        <a
-                                            href="shop.html"
+                                        <Link
+                                            to="/shop"
                                             className="btn btn-main d-inline-flex align-items-center rounded-pill gap-8"
                                         >
                                             Explore Shop{" "}
                                             <span className="icon text-xl d-flex">
                                                 <i className="ph ph-shopping-cart-simple" />{" "}
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="banner-item__thumb">
                                         <img src="assets/images/thumbs/banner-img3.png" alt="" />

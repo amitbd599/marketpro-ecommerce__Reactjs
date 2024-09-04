@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const PromotionalOne = () => {
     return (
@@ -16,15 +17,15 @@ const PromotionalOne = () => {
                                 <h6 className="promotional-banner-item__title text-32">
                                     Everyday Fresh Meat
                                 </h6>
-                                <a
-                                    href="shop.html"
+                                <Link
+                                    to="/shop"
                                     className="btn btn-main d-inline-flex align-items-center rounded-pill gap-8 mt-24"
                                 >
                                     Shop Now
                                     <span className="icon text-xl d-flex">
                                         <i className="ph ph-arrow-right" />
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -39,15 +40,15 @@ const PromotionalOne = () => {
                                 <h6 className="promotional-banner-item__title text-32">
                                     Daily Fresh Vegetables
                                 </h6>
-                                <a
-                                    href="shop.html"
+                                <Link
+                                    to="/shop"
                                     className="btn btn-main d-inline-flex align-items-center rounded-pill gap-8 mt-24"
                                 >
                                     Shop Now
                                     <span className="icon text-xl d-flex">
                                         <i className="ph ph-arrow-right" />
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -62,15 +63,15 @@ const PromotionalOne = () => {
                                 <h6 className="promotional-banner-item__title text-32">
                                     Everyday Fresh Milk
                                 </h6>
-                                <a
-                                    href="shop.html"
+                                <Link
+                                    to="/shop"
                                     className="btn btn-main d-inline-flex align-items-center rounded-pill gap-8 mt-24"
                                 >
                                     Shop Now
                                     <span className="icon text-xl d-flex">
                                         <i className="ph ph-arrow-right" />
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -85,15 +86,15 @@ const PromotionalOne = () => {
                                 <h6 className="promotional-banner-item__title text-32">
                                     Everyday Fresh Fruits
                                 </h6>
-                                <a
-                                    href="shop.html"
+                                <Link
+                                    to="/shop"
                                     className="btn btn-main d-inline-flex align-items-center rounded-pill gap-8 mt-24"
                                 >
                                     Shop Now
                                     <span className="icon text-xl d-flex">
                                         <i className="ph ph-arrow-right" />
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

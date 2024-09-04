@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const DaySaleOne = () => {
     return (
@@ -19,13 +20,13 @@ const DaySaleOne = () => {
                         <h6 className="text-white fw-medium mb-0">
                             COMPUTER &amp; MOBILE ACCESSORIES
                         </h6>
-                        <a
-                            href="shop.html"
+                        <Link
+                            to="/shop"
                             className="btn btn-outline-white flex-align d-inline-flex rounded-pill gap-8 mt-28"
                             tabIndex={0}
                         >
                             Shop Now <i className="ph ph-plus text-xl d-flex" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="d-md-block d-none pe-xxl-5 pe-md-4">
                         <img src="assets/images/thumbs/day-sale-img2.png" alt="" />

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 
 const BannerTwo = () => {
@@ -27,271 +28,271 @@ const BannerTwo = () => {
                                 <i className="ph ph-x" />{" "}
                             </button>
                             <div className="logo px-16 d-lg-none d-block">
-                                <a href="index.html" className="link">
+                                <Link to="/" className="link">
                                     <img src="assets/images/logo/logo.png" alt="Logo" />
-                                </a>
+                                </Link>
                             </div>
                             <ul className="responsive-dropdown__list scroll-sm p-0 py-8 overflow-y-auto">
                                 <li className="has-submenus-submenu">
-                                    <a
-                                        href="javascript:void(0)"
+                                    <Link
+                                        to="#"
                                         className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                     >
                                         <span>Cell Phone</span>
                                         <span className="icon text-md d-flex ms-auto">
                                             <i className="ph ph-caret-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                     <div className="submenus-submenu py-16">
                                         <h6 className="text-lg px-16 submenus-submenu__title">
                                             Cell Phone
                                         </h6>
                                         <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                             <li>
-                                                <a href="shop.html">Samsung</a>
+                                                <Link to="/shop">Samsung</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Iphone</a>
+                                                <Link to="/shop">Iphone</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Vivo</a>
+                                                <Link to="/shop">Vivo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Oppo</a>
+                                                <Link to="/shop">Oppo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Itel</a>
+                                                <Link to="/shop">Itel</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Realme</a>
+                                                <Link to="/shop">Realme</Link>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li className="has-submenus-submenu">
-                                    <a
-                                        href="javascript:void(0)"
+                                    <Link
+                                        to="#"
                                         className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                     >
                                         <span>Wear</span>
                                         <span className="icon text-md d-flex ms-auto">
                                             <i className="ph ph-caret-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                     <div className="submenus-submenu py-16">
                                         <h6 className="text-lg px-16 submenus-submenu__title">Wear</h6>
                                         <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                             <li>
-                                                <a href="shop.html">Samsung</a>
+                                                <Link to="/shop">Samsung</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Iphone</a>
+                                                <Link to="/shop">Iphone</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Vivo</a>
+                                                <Link to="/shop">Vivo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Oppo</a>
+                                                <Link to="/shop">Oppo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Itel</a>
+                                                <Link to="/shop">Itel</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Realme</a>
+                                                <Link to="/shop">Realme</Link>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li className="has-submenus-submenu">
-                                    <a
-                                        href="javascript:void(0)"
+                                    <Link
+                                        to="#"
                                         className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                     >
                                         <span>Computer</span>
                                         <span className="icon text-md d-flex ms-auto">
                                             <i className="ph ph-caret-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                     <div className="submenus-submenu py-16">
                                         <h6 className="text-lg px-16 submenus-submenu__title">
                                             Computer
                                         </h6>
                                         <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                             <li>
-                                                <a href="shop.html">Samsung</a>
+                                                <Link to="/shop">Samsung</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Iphone</a>
+                                                <Link to="/shop">Iphone</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Vivo</a>
+                                                <Link to="/shop">Vivo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Oppo</a>
+                                                <Link to="/shop">Oppo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Itel</a>
+                                                <Link to="/shop">Itel</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Realme</a>
+                                                <Link to="/shop">Realme</Link>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li className="has-submenus-submenu">
-                                    <a
-                                        href="javascript:void(0)"
+                                    <Link
+                                        to="#"
                                         className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                     >
                                         <span>Headphone</span>
                                         <span className="icon text-md d-flex ms-auto">
                                             <i className="ph ph-caret-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                     <div className="submenus-submenu py-16">
                                         <h6 className="text-lg px-16 submenus-submenu__title">
                                             Headphone
                                         </h6>
                                         <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                             <li>
-                                                <a href="shop.html">Samsung</a>
+                                                <Link to="/shop">Samsung</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Iphone</a>
+                                                <Link to="/shop">Iphone</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Vivo</a>
+                                                <Link to="/shop">Vivo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Oppo</a>
+                                                <Link to="/shop">Oppo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Itel</a>
+                                                <Link to="/shop">Itel</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Realme</a>
+                                                <Link to="/shop">Realme</Link>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li className="has-submenus-submenu">
-                                    <a
-                                        href="javascript:void(0)"
+                                    <Link
+                                        to="#"
                                         className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                     >
                                         <span>Smart Screen</span>
                                         <span className="icon text-md d-flex ms-auto">
                                             <i className="ph ph-caret-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                     <div className="submenus-submenu py-16">
                                         <h6 className="text-lg px-16 submenus-submenu__title">
                                             Smart Screen
                                         </h6>
                                         <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                             <li>
-                                                <a href="shop.html">Samsung</a>
+                                                <Link to="/shop">Samsung</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Iphone</a>
+                                                <Link to="/shop">Iphone</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Vivo</a>
+                                                <Link to="/shop">Vivo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Oppo</a>
+                                                <Link to="/shop">Oppo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Itel</a>
+                                                <Link to="/shop">Itel</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Realme</a>
+                                                <Link to="/shop">Realme</Link>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li className="has-submenus-submenu">
-                                    <a
-                                        href="javascript:void(0)"
+                                    <Link
+                                        to="#"
                                         className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                     >
                                         <span>Smart Home</span>
                                         <span className="icon text-md d-flex ms-auto">
                                             <i className="ph ph-caret-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                     <div className="submenus-submenu py-16">
                                         <h6 className="text-lg px-16 submenus-submenu__title">
                                             Smart Home
                                         </h6>
                                         <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                             <li>
-                                                <a href="shop.html">Samsung</a>
+                                                <Link to="/shop">Samsung</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Iphone</a>
+                                                <Link to="/shop">Iphone</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Vivo</a>
+                                                <Link to="/shop">Vivo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Oppo</a>
+                                                <Link to="/shop">Oppo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Itel</a>
+                                                <Link to="/shop">Itel</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Realme</a>
+                                                <Link to="/shop">Realme</Link>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li className="has-submenus-submenu">
-                                    <a
-                                        href="javascript:void(0)"
+                                    <Link
+                                        to="#"
                                         className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                     >
                                         <span>Digital Accessories</span>
                                         <span className="icon text-md d-flex ms-auto">
                                             <i className="ph ph-caret-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                     <div className="submenus-submenu py-16">
                                         <h6 className="text-lg px-16 submenus-submenu__title">
                                             Digital Accessories
                                         </h6>
                                         <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                             <li>
-                                                <a href="shop.html">Samsung</a>
+                                                <Link to="/shop">Samsung</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Iphone</a>
+                                                <Link to="/shop">Iphone</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Vivo</a>
+                                                <Link to="/shop">Vivo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Oppo</a>
+                                                <Link to="/shop">Oppo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Itel</a>
+                                                <Link to="/shop">Itel</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Realme</a>
+                                                <Link to="/shop">Realme</Link>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li className="has-submenus-submenu">
-                                    <a
-                                        href="javascript:void(0)"
+                                    <Link
+                                        to="#"
                                         className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                     >
                                         <span> Value Added Services</span>
                                         <span className="icon text-md d-flex ms-auto">
                                             <i className="ph ph-caret-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                     <div className="submenus-submenu py-16">
                                         <h6 className="text-lg px-16 submenus-submenu__title">
                                             {" "}
@@ -299,236 +300,236 @@ const BannerTwo = () => {
                                         </h6>
                                         <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                             <li>
-                                                <a href="shop.html">Samsung</a>
+                                                <Link to="/shop">Samsung</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Iphone</a>
+                                                <Link to="/shop">Iphone</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Vivo</a>
+                                                <Link to="/shop">Vivo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Oppo</a>
+                                                <Link to="/shop">Oppo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Itel</a>
+                                                <Link to="/shop">Itel</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Realme</a>
+                                                <Link to="/shop">Realme</Link>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li className="has-submenus-submenu">
-                                    <a
-                                        href="javascript:void(0)"
+                                    <Link
+                                        to="#"
                                         className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                     >
                                         <span>Car Products</span>
                                         <span className="icon text-md d-flex ms-auto">
                                             <i className="ph ph-caret-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                     <div className="submenus-submenu py-16">
                                         <h6 className="text-lg px-16 submenus-submenu__title">
                                             Car Products
                                         </h6>
                                         <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                             <li>
-                                                <a href="shop.html">Samsung</a>
+                                                <Link to="/shop">Samsung</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Iphone</a>
+                                                <Link to="/shop">Iphone</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Vivo</a>
+                                                <Link to="/shop">Vivo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Oppo</a>
+                                                <Link to="/shop">Oppo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Itel</a>
+                                                <Link to="/shop">Itel</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Realme</a>
+                                                <Link to="/shop">Realme</Link>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li className="has-submenus-submenu">
-                                    <a
-                                        href="javascript:void(0)"
+                                    <Link
+                                        to="#"
                                         className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                     >
                                         <span>Ecological Products</span>
                                         <span className="icon text-md d-flex ms-auto">
                                             <i className="ph ph-caret-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                     <div className="submenus-submenu py-16">
                                         <h6 className="text-lg px-16 submenus-submenu__title">
                                             Ecological Products
                                         </h6>
                                         <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                             <li>
-                                                <a href="shop.html">Samsung</a>
+                                                <Link to="/shop">Samsung</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Iphone</a>
+                                                <Link to="/shop">Iphone</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Vivo</a>
+                                                <Link to="/shop">Vivo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Oppo</a>
+                                                <Link to="/shop">Oppo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Itel</a>
+                                                <Link to="/shop">Itel</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Realme</a>
+                                                <Link to="/shop">Realme</Link>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li className="has-submenus-submenu">
-                                    <a
-                                        href="javascript:void(0)"
+                                    <Link
+                                        to="#"
                                         className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                     >
                                         <span>Flat</span>
                                         <span className="icon text-md d-flex ms-auto">
                                             <i className="ph ph-caret-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                     <div className="submenus-submenu py-16">
                                         <h6 className="text-lg px-16 submenus-submenu__title">Flat</h6>
                                         <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                             <li>
-                                                <a href="shop.html">Samsung</a>
+                                                <Link to="/shop">Samsung</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Iphone</a>
+                                                <Link to="/shop">Iphone</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Vivo</a>
+                                                <Link to="/shop">Vivo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Oppo</a>
+                                                <Link to="/shop">Oppo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Itel</a>
+                                                <Link to="/shop">Itel</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Realme</a>
+                                                <Link to="/shop">Realme</Link>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li className="has-submenus-submenu">
-                                    <a
-                                        href="javascript:void(0)"
+                                    <Link
+                                        to="#"
                                         className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                     >
                                         <span>Commercial Terminal</span>
                                         <span className="icon text-md d-flex ms-auto">
                                             <i className="ph ph-caret-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                     <div className="submenus-submenu py-16">
                                         <h6 className="text-lg px-16 submenus-submenu__title">
                                             Commercial Terminal
                                         </h6>
                                         <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                             <li>
-                                                <a href="shop.html">Samsung</a>
+                                                <Link to="/shop">Samsung</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Iphone</a>
+                                                <Link to="/shop">Iphone</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Vivo</a>
+                                                <Link to="/shop">Vivo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Oppo</a>
+                                                <Link to="/shop">Oppo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Itel</a>
+                                                <Link to="/shop">Itel</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Realme</a>
+                                                <Link to="/shop">Realme</Link>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li className="has-submenus-submenu">
-                                    <a
-                                        href="javascript:void(0)"
+                                    <Link
+                                        to="#"
                                         className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                     >
                                         <span>Headphone</span>
                                         <span className="icon text-md d-flex ms-auto">
                                             <i className="ph ph-caret-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                     <div className="submenus-submenu py-16">
                                         <h6 className="text-lg px-16 submenus-submenu__title">
                                             Headphone
                                         </h6>
                                         <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                             <li>
-                                                <a href="shop.html">Samsung</a>
+                                                <Link to="/shop">Samsung</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Iphone</a>
+                                                <Link to="/shop">Iphone</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Vivo</a>
+                                                <Link to="/shop">Vivo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Oppo</a>
+                                                <Link to="/shop">Oppo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Itel</a>
+                                                <Link to="/shop">Itel</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Realme</a>
+                                                <Link to="/shop">Realme</Link>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li className="has-submenus-submenu">
-                                    <a
-                                        href="javascript:void(0)"
+                                    <Link
+                                        to="#"
                                         className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                     >
                                         <span>Smart Screen</span>
                                         <span className="icon text-md d-flex ms-auto">
                                             <i className="ph ph-caret-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                     <div className="submenus-submenu py-16">
                                         <h6 className="text-lg px-16 submenus-submenu__title">
                                             Smart Screen
                                         </h6>
                                         <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                             <li>
-                                                <a href="shop.html">Samsung</a>
+                                                <Link to="/shop">Samsung</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Iphone</a>
+                                                <Link to="/shop">Iphone</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Vivo</a>
+                                                <Link to="/shop">Vivo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Oppo</a>
+                                                <Link to="/shop">Oppo</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Itel</a>
+                                                <Link to="/shop">Itel</Link>
                                             </li>
                                             <li>
-                                                <a href="shop.html">Realme</a>
+                                                <Link to="/shop">Realme</Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -550,15 +551,15 @@ const BannerTwo = () => {
                                         <h2 className="banner-item-two__title bounce text-white">
                                             Get The Sound You Love For Less
                                         </h2>
-                                        <a
-                                            href="shop.html"
+                                        <Link
+                                            to="/shop"
                                             className="btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-48"
                                         >
                                             Shop Now
                                             <span className="icon text-xl d-flex">
                                                 <i className="ph ph-shopping-cart-simple" />
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="banner-item-two__thumb position-absolute bottom-0">
                                         <img src="assets/images/thumbs/banner-two-img.png" alt="" />
@@ -570,15 +571,15 @@ const BannerTwo = () => {
                                         <h2 className="banner-item-two__title bounce text-white">
                                             Get The Sound You Love For Less
                                         </h2>
-                                        <a
-                                            href="shop.html"
+                                        <Link
+                                            to="/shop"
                                             className="btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-48"
                                         >
                                             Shop Now
                                             <span className="icon text-xl d-flex">
                                                 <i className="ph ph-shopping-cart-simple" />
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="banner-item-two__thumb position-absolute bottom-0">
                                         <img src="assets/images/thumbs/banner-two-img2.png" alt="" />

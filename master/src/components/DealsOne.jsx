@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 
 const DealsOne = () => {
@@ -79,12 +80,12 @@ const DealsOne = () => {
                         <div className="flex-between flex-wrap gap-8">
                             <h5 className="mb-0">Deal of The Week</h5>
                             <div className="flex-align mr-point gap-16">
-                                <a
-                                    href="shop.html"
+                                <Link
+                                    to="/shop"
                                     className="text-sm fw-medium text-gray-700 hover-text-main-600 hover-text-decoration-underline"
                                 >
                                     View All Deals
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -130,8 +131,8 @@ const DealsOne = () => {
                         <Slider {...settings}>
                             <div>
                                 <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                    <a
-                                        href="product-details-two.html"
+                                    <Link
+                                        to="/product-details-two"
                                         className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                     >
                                         <span className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">
@@ -142,7 +143,7 @@ const DealsOne = () => {
                                             alt=""
                                             className="w-auto max-w-unset"
                                         />
-                                    </a>
+                                    </Link>
                                     <div className="product-card__content mt-16">
                                         <div className="flex-align gap-6">
                                             <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -152,13 +153,13 @@ const DealsOne = () => {
                                             <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
                                         <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                            <a
-                                                href="product-details-two.html"
+                                            <Link
+                                                to="/product-details-two"
                                                 className="link text-line-2"
                                                 tabIndex={0}
                                             >
                                                 Taylor Farms Broccoli Florets Vegetables
-                                            </a>
+                                            </Link>
                                         </h6>
                                         <div className="flex-align gap-4">
                                             <span className="text-tertiary-600 text-md d-flex">
@@ -194,20 +195,20 @@ const DealsOne = () => {
                                                 $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                             </span>
                                         </div>
-                                        <a
-                                            href="cart.html"
+                                        <Link
+                                            to="/cart"
                                             className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                             tabIndex={0}
                                         >
                                             Add To Cart <i className="ph ph-shopping-cart" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
                             <div>
                                 <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                    <a
-                                        href="product-details-two.html"
+                                    <Link
+                                        to="/product-details-two"
                                         className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                     >
                                         <span className="product-card__badge bg-danger-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">
@@ -218,7 +219,7 @@ const DealsOne = () => {
                                             alt=""
                                             className="w-auto max-w-unset"
                                         />
-                                    </a>
+                                    </Link>
                                     <div className="product-card__content mt-16">
                                         <div className="flex-align gap-6">
                                             <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -228,13 +229,13 @@ const DealsOne = () => {
                                             <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
                                         <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                            <a
-                                                href="product-details-two.html"
+                                            <Link
+                                                to="/product-details-two"
                                                 className="link text-line-2"
                                                 tabIndex={0}
                                             >
                                                 Taylor Farms Broccoli Florets Vegetables
-                                            </a>
+                                            </Link>
                                         </h6>
                                         <div className="flex-align gap-4">
                                             <span className="text-tertiary-600 text-md d-flex">
@@ -270,20 +271,20 @@ const DealsOne = () => {
                                                 $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                             </span>
                                         </div>
-                                        <a
-                                            href="cart.html"
+                                        <Link
+                                            to="/cart"
                                             className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                             tabIndex={0}
                                         >
                                             Add To Cart <i className="ph ph-shopping-cart" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
                             <div>
                                 <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                    <a
-                                        href="product-details-two.html"
+                                    <Link
+                                        to="/product-details-two"
                                         className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                     >
                                         <span className="product-card__badge bg-warning-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">
@@ -294,7 +295,7 @@ const DealsOne = () => {
                                             alt=""
                                             className="w-auto max-w-unset"
                                         />
-                                    </a>
+                                    </Link>
                                     <div className="product-card__content mt-16">
                                         <div className="flex-align gap-6">
                                             <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -304,13 +305,13 @@ const DealsOne = () => {
                                             <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
                                         <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                            <a
-                                                href="product-details-two.html"
+                                            <Link
+                                                to="/product-details-two"
                                                 className="link text-line-2"
                                                 tabIndex={0}
                                             >
                                                 Taylor Farms Broccoli Florets Vegetables
-                                            </a>
+                                            </Link>
                                         </h6>
                                         <div className="flex-align gap-4">
                                             <span className="text-tertiary-600 text-md d-flex">
@@ -346,20 +347,20 @@ const DealsOne = () => {
                                                 $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                             </span>
                                         </div>
-                                        <a
-                                            href="cart.html"
+                                        <Link
+                                            to="/cart"
                                             className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                             tabIndex={0}
                                         >
                                             Add To Cart <i className="ph ph-shopping-cart" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
                             <div>
                                 <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                    <a
-                                        href="product-details-two.html"
+                                    <Link
+                                        to="/product-details-two"
                                         className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                     >
                                         <span className="product-card__badge bg-tertiary-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">
@@ -370,7 +371,7 @@ const DealsOne = () => {
                                             alt=""
                                             className="w-auto max-w-unset"
                                         />
-                                    </a>
+                                    </Link>
                                     <div className="product-card__content mt-16">
                                         <div className="flex-align gap-6">
                                             <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -380,13 +381,13 @@ const DealsOne = () => {
                                             <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
                                         <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                            <a
-                                                href="product-details-two.html"
+                                            <Link
+                                                to="/product-details-two"
                                                 className="link text-line-2"
                                                 tabIndex={0}
                                             >
                                                 Taylor Farms Broccoli Florets Vegetables
-                                            </a>
+                                            </Link>
                                         </h6>
                                         <div className="flex-align gap-4">
                                             <span className="text-tertiary-600 text-md d-flex">
@@ -422,20 +423,20 @@ const DealsOne = () => {
                                                 $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                             </span>
                                         </div>
-                                        <a
-                                            href="cart.html"
+                                        <Link
+                                            to="/cart"
                                             className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                             tabIndex={0}
                                         >
                                             Add To Cart <i className="ph ph-shopping-cart" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
                             <div>
                                 <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                    <a
-                                        href="product-details-two.html"
+                                    <Link
+                                        to="/product-details-two"
                                         className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                     >
                                         <span className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">
@@ -446,7 +447,7 @@ const DealsOne = () => {
                                             alt=""
                                             className="w-auto max-w-unset"
                                         />
-                                    </a>
+                                    </Link>
                                     <div className="product-card__content mt-16">
                                         <div className="flex-align gap-6">
                                             <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -456,13 +457,13 @@ const DealsOne = () => {
                                             <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
                                         <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                            <a
-                                                href="product-details-two.html"
+                                            <Link
+                                                to="/product-details-two"
                                                 className="link text-line-2"
                                                 tabIndex={0}
                                             >
                                                 Taylor Farms Broccoli Florets Vegetables
-                                            </a>
+                                            </Link>
                                         </h6>
                                         <div className="flex-align gap-4">
                                             <span className="text-tertiary-600 text-md d-flex">
@@ -498,20 +499,20 @@ const DealsOne = () => {
                                                 $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                             </span>
                                         </div>
-                                        <a
-                                            href="cart.html"
+                                        <Link
+                                            to="/cart"
                                             className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                             tabIndex={0}
                                         >
                                             Add To Cart <i className="ph ph-shopping-cart" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
                             <div>
                                 <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                    <a
-                                        href="product-details-two.html"
+                                    <Link
+                                        to="/product-details-two"
                                         className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                     >
                                         <span className="product-card__badge bg-tertiary-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">
@@ -522,7 +523,7 @@ const DealsOne = () => {
                                             alt=""
                                             className="w-auto max-w-unset"
                                         />
-                                    </a>
+                                    </Link>
                                     <div className="product-card__content mt-16">
                                         <div className="flex-align gap-6">
                                             <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -532,13 +533,13 @@ const DealsOne = () => {
                                             <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
                                         <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                            <a
-                                                href="product-details-two.html"
+                                            <Link
+                                                to="/product-details-two"
                                                 className="link text-line-2"
                                                 tabIndex={0}
                                             >
                                                 Taylor Farms Broccoli Florets Vegetables
-                                            </a>
+                                            </Link>
                                         </h6>
                                         <div className="flex-align gap-4">
                                             <span className="text-tertiary-600 text-md d-flex">
@@ -574,20 +575,20 @@ const DealsOne = () => {
                                                 $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                             </span>
                                         </div>
-                                        <a
-                                            href="cart.html"
+                                        <Link
+                                            to="/cart"
                                             className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                             tabIndex={0}
                                         >
                                             Add To Cart <i className="ph ph-shopping-cart" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
                             <div>
                                 <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                    <a
-                                        href="product-details-two.html"
+                                    <Link
+                                        to="/product-details-two"
                                         className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                     >
                                         <span className="product-card__badge bg-warning-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">
@@ -598,7 +599,7 @@ const DealsOne = () => {
                                             alt=""
                                             className="w-auto max-w-unset"
                                         />
-                                    </a>
+                                    </Link>
                                     <div className="product-card__content mt-16">
                                         <div className="flex-align gap-6">
                                             <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -608,13 +609,13 @@ const DealsOne = () => {
                                             <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
                                         <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                            <a
-                                                href="product-details-two.html"
+                                            <Link
+                                                to="/product-details-two"
                                                 className="link text-line-2"
                                                 tabIndex={0}
                                             >
                                                 Taylor Farms Broccoli Florets Vegetables
-                                            </a>
+                                            </Link>
                                         </h6>
                                         <div className="flex-align gap-4">
                                             <span className="text-tertiary-600 text-md d-flex">
@@ -650,13 +651,13 @@ const DealsOne = () => {
                                                 $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                             </span>
                                         </div>
-                                        <a
-                                            href="cart.html"
+                                        <Link
+                                            to="/cart"
                                             className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                             tabIndex={0}
                                         >
                                             Add To Cart <i className="ph ph-shopping-cart" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

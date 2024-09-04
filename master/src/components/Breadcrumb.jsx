@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Breadcrumb = ({ title }) => {
     return (
@@ -8,13 +9,13 @@ const Breadcrumb = ({ title }) => {
                     <h6 className="mb-0">{title}</h6>
                     <ul className="flex-align gap-8 flex-wrap">
                         <li className="text-sm">
-                            <a
-                                href="index.html"
+                            <Link
+                                to="/"
                                 className="text-gray-900 flex-align gap-8 hover-text-main-600"
                             >
                                 <i className="ph ph-house" />
                                 Home
-                            </a>
+                            </Link>
                         </li>
                         <li className="flex-align">
                             <i className="ph ph-caret-right" />

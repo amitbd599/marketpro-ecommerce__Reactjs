@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 
 const ProductDetailsTwo = () => {
@@ -141,27 +142,27 @@ const ProductDetailsTwo = () => {
                                         </div>
                                     </div>
                                     <div className="my-32 flex-align flex-wrap gap-12">
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to="#"
                                             className="px-12 py-8 text-sm rounded-8 flex-align gap-8 text-gray-900 border border-gray-200 hover-border-main-600 hover-text-main-600"
                                         >
                                             Monthyly EMI USD 15.00
                                             <i className="ph ph-caret-right" />
-                                        </a>
-                                        <a
-                                            href="#"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="px-12 py-8 text-sm rounded-8 flex-align gap-8 text-gray-900 border border-gray-200 hover-border-main-600 hover-text-main-600"
                                         >
                                             Shipping Charge
                                             <i className="ph ph-caret-right" />
-                                        </a>
-                                        <a
-                                            href="#"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="px-12 py-8 text-sm rounded-8 flex-align gap-8 text-gray-900 border border-gray-200 hover-border-main-600 hover-text-main-600"
                                         >
                                             Security &amp; Privacy
                                             <i className="ph ph-caret-right" />
-                                        </a>
+                                        </Link>
                                     </div>
                                     <span className="mt-32 pt-32 text-gray-700 border-top border-gray-100 d-block" />
                                     <div className="mt-32">
@@ -201,36 +202,36 @@ const ProductDetailsTwo = () => {
                                                     <span className="fw-medium">with offer</span>
                                                 </span>
                                                 <div className="flex-align gap-8 flex-wrap">
-                                                    <a
-                                                        href="#"
+                                                    <Link
+                                                        to="#"
                                                         className="px-12 py-8 text-sm rounded-8 text-gray-900 border border-gray-200 hover-border-main-600 hover-text-main-600"
                                                     >
                                                         with offer{" "}
-                                                    </a>
-                                                    <a
-                                                        href="#"
+                                                    </Link>
+                                                    <Link
+                                                        to="#"
                                                         className="px-12 py-8 text-sm rounded-8 text-gray-900 border border-gray-200 hover-border-main-600 hover-text-main-600"
                                                     >
                                                         12th Gen Laptop
-                                                    </a>
-                                                    <a
-                                                        href="#"
+                                                    </Link>
+                                                    <Link
+                                                        to="#"
                                                         className="px-12 py-8 text-sm rounded-8 text-gray-900 border border-gray-200 hover-border-main-600 hover-text-main-600"
                                                     >
                                                         without offer
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <span className="mt-32 pt-32 text-gray-700 border-top border-gray-100 d-block" />
-                                    <a
-                                        href="https://www.whatsapp.com"
+                                    <Link
+                                        to="/https://www.whatsapp.com"
                                         className="btn btn-black flex-center gap-8 rounded-8 py-16"
                                     >
                                         <i className="ph ph-whatsapp-logo text-lg" />
                                         Request More Information
-                                    </a>
+                                    </Link>
                                     <div className="mt-32">
                                         <span className="fw-medium text-gray-900">
                                             100% Guarantee Safe Checkout
@@ -309,19 +310,19 @@ const ProductDetailsTwo = () => {
                                     <h6 className="text-lg mb-0">From $10.00</h6>
                                 </div>
                             </div>
-                            <a
-                                href="#"
+                            <Link
+                                to="#"
                                 className="btn btn-main flex-center gap-8 rounded-8 py-16 fw-normal mt-48"
                             >
                                 <i className="ph ph-shopping-cart-simple text-lg" />
                                 Add To Cart
-                            </a>
-                            <a
-                                href="#"
+                            </Link>
+                            <Link
+                                to="#"
                                 className="btn btn-outline-main rounded-8 py-16 fw-normal mt-16 w-100"
                             >
                                 Buy Now
-                            </a>
+                            </Link>
                             <div className="mt-32">
                                 <div className="px-16 py-8 bg-main-50 rounded-8 flex-between gap-24 mb-14">
                                     <span className="w-32 h-32 bg-white text-main-600 rounded-circle flex-center text-xl flex-shrink-0">
@@ -343,9 +344,9 @@ const ProductDetailsTwo = () => {
                             </div>
                             <div className="mt-32">
                                 <div className="px-32 py-16 rounded-8 border border-gray-100 flex-between gap-8">
-                                    <a href="#" className="d-flex text-main-600 text-28">
+                                    <Link to="#" className="d-flex text-main-600 text-28">
                                         <i className="ph-fill ph-chats-teardrop" />
-                                    </a>
+                                    </Link>
                                     <span className="h-26 border border-gray-100" />
                                     <div className="dropdown on-hover-item">
                                         <button className="d-flex text-main-600 text-28" type="button">
@@ -354,36 +355,36 @@ const ProductDetailsTwo = () => {
                                         <div className="on-hover-dropdown common-dropdown border-0 inset-inline-start-auto inset-inline-end-0">
                                             <ul className="flex-align gap-16">
                                                 <li>
-                                                    <a
-                                                        href="https://www.facebook.com"
+                                                    <Link
+                                                        to="/https://www.facebook.com"
                                                         className="w-44 h-44 flex-center bg-main-100 text-main-600 text-xl rounded-circle hover-bg-main-600 hover-text-white"
                                                     >
                                                         <i className="ph-fill ph-facebook-logo" />
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        href="https://www.twitter.com"
+                                                    <Link
+                                                        to="/https://www.twitter.com"
                                                         className="w-44 h-44 flex-center bg-main-100 text-main-600 text-xl rounded-circle hover-bg-main-600 hover-text-white"
                                                     >
                                                         <i className="ph-fill ph-twitter-logo" />
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        href="https://www.linkedin.com"
+                                                    <Link
+                                                        to="/https://www.linkedin.com"
                                                         className="w-44 h-44 flex-center bg-main-100 text-main-600 text-xl rounded-circle hover-bg-main-600 hover-text-white"
                                                     >
                                                         <i className="ph-fill ph-instagram-logo" />
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a
-                                                        href="https://www.pinterest.com"
+                                                    <Link
+                                                        to="/https://www.pinterest.com"
                                                         className="w-44 h-44 flex-center bg-main-100 text-main-600 text-xl rounded-circle hover-bg-main-600 hover-text-white"
                                                     >
                                                         <i className="ph-fill ph-linkedin-logo" />
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -430,13 +431,13 @@ const ProductDetailsTwo = () => {
                                     </button>
                                 </li>
                             </ul>
-                            <a
-                                href="#"
+                            <Link
+                                to="#"
                                 className="btn bg-color-one rounded-16 flex-align gap-8 text-main-600 hover-bg-main-600 hover-text-white"
                             >
                                 <img src="assets/images/icon/satisfaction-icon.png" alt="" />
                                 100% Satisfaction Guaranteed
-                            </a>
+                            </Link>
                         </div>
                         <div className="product-dContent__box">
                             <div className="tab-content" id="pills-tabContent">
@@ -700,13 +701,13 @@ const ProductDetailsTwo = () => {
                                                             <i className="ph-bold ph-thumbs-up" />
                                                             Like
                                                         </button>
-                                                        <a
-                                                            href="#comment-form"
+                                                        <Link
+                                                            to="#comment-form"
                                                             className="flex-align gap-12 text-gray-700 hover-text-main-600"
                                                         >
                                                             <i className="ph-bold ph-arrow-bend-up-left" />
                                                             Replay
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -753,13 +754,13 @@ const ProductDetailsTwo = () => {
                                                             <i className="ph-bold ph-thumbs-up" />
                                                             Like
                                                         </button>
-                                                        <a
-                                                            href="#comment-form"
+                                                        <Link
+                                                            to="#comment-form"
                                                             className="flex-align gap-12 text-gray-700 hover-text-main-600"
                                                         >
                                                             <i className="ph-bold ph-arrow-bend-up-left" />
                                                             Replay
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const CartSection = () => {
     return (
@@ -31,24 +32,24 @@ const CartSection = () => {
                                             </td>
                                             <td>
                                                 <div className="table-product d-flex align-items-center gap-24">
-                                                    <a
-                                                        href="product-details-two.html"
+                                                    <Link
+                                                        to="/product-details-two"
                                                         className="table-product__thumb border border-gray-100 rounded-8 flex-center "
                                                     >
                                                         <img
                                                             src="assets/images/thumbs/product-two-img1.png"
                                                             alt=""
                                                         />
-                                                    </a>
+                                                    </Link>
                                                     <div className="table-product__content text-start">
                                                         <h6 className="title text-lg fw-semibold mb-8">
-                                                            <a
-                                                                href="product-details.html"
+                                                            <Link
+                                                                to="/product-details"
                                                                 className="link text-line-2"
                                                                 tabIndex={0}
                                                             >
                                                                 Taylor Farms Broccoli Florets Vegetables
-                                                            </a>
+                                                            </Link>
                                                         </h6>
                                                         <div className="flex-align gap-16 mb-16">
                                                             <div className="flex-align gap-6">
@@ -67,18 +68,18 @@ const CartSection = () => {
                                                             </span>
                                                         </div>
                                                         <div className="flex-align gap-16">
-                                                            <a
-                                                                href="cart.html"
+                                                            <Link
+                                                                to="/cart"
                                                                 className="product-card__cart btn bg-gray-50 text-heading text-sm hover-bg-main-600 hover-text-white py-7 px-8 rounded-8 flex-center gap-8 fw-medium"
                                                             >
                                                                 Camera
-                                                            </a>
-                                                            <a
-                                                                href="cart.html"
+                                                            </Link>
+                                                            <Link
+                                                                to="/cart"
                                                                 className="product-card__cart btn bg-gray-50 text-heading text-sm hover-bg-main-600 hover-text-white py-7 px-8 rounded-8 flex-center gap-8 fw-medium"
                                                             >
                                                                 Videos
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -124,24 +125,24 @@ const CartSection = () => {
                                             </td>
                                             <td>
                                                 <div className="table-product d-flex align-items-center gap-24">
-                                                    <a
-                                                        href="product-details-two.html"
+                                                    <Link
+                                                        to="/product-details-two"
                                                         className="table-product__thumb border border-gray-100 rounded-8 flex-center "
                                                     >
                                                         <img
                                                             src="assets/images/thumbs/product-two-img2.png"
                                                             alt=""
                                                         />
-                                                    </a>
+                                                    </Link>
                                                     <div className="table-product__content text-start">
                                                         <h6 className="title text-lg fw-semibold mb-8">
-                                                            <a
-                                                                href="product-details.html"
+                                                            <Link
+                                                                to="/product-details"
                                                                 className="link text-line-2"
                                                                 tabIndex={0}
                                                             >
                                                                 Taylor Farms Broccoli Florets Vegetables
-                                                            </a>
+                                                            </Link>
                                                         </h6>
                                                         <div className="flex-align gap-16 mb-16">
                                                             <div className="flex-align gap-6">
@@ -160,18 +161,18 @@ const CartSection = () => {
                                                             </span>
                                                         </div>
                                                         <div className="flex-align gap-16">
-                                                            <a
-                                                                href="cart.html"
+                                                            <Link
+                                                                to="/cart"
                                                                 className="product-card__cart btn bg-gray-50 text-heading text-sm hover-bg-main-600 hover-text-white py-7 px-8 rounded-8 flex-center gap-8 fw-medium"
                                                             >
                                                                 Camera
-                                                            </a>
-                                                            <a
-                                                                href="cart.html"
+                                                            </Link>
+                                                            <Link
+                                                                to="/cart"
                                                                 className="product-card__cart btn bg-gray-50 text-heading text-sm hover-bg-main-600 hover-text-white py-7 px-8 rounded-8 flex-center gap-8 fw-medium"
                                                             >
                                                                 Videos
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -217,24 +218,24 @@ const CartSection = () => {
                                             </td>
                                             <td>
                                                 <div className="table-product d-flex align-items-center gap-24">
-                                                    <a
-                                                        href="product-details-two.html"
+                                                    <Link
+                                                        to="/product-details-two"
                                                         className="table-product__thumb border border-gray-100 rounded-8 flex-center "
                                                     >
                                                         <img
                                                             src="assets/images/thumbs/product-two-img3.png"
                                                             alt=""
                                                         />
-                                                    </a>
+                                                    </Link>
                                                     <div className="table-product__content text-start">
                                                         <h6 className="title text-lg fw-semibold mb-8">
-                                                            <a
-                                                                href="product-details.html"
+                                                            <Link
+                                                                to="/product-details"
                                                                 className="link text-line-2"
                                                                 tabIndex={0}
                                                             >
                                                                 Taylor Farms Broccoli Florets Vegetables
-                                                            </a>
+                                                            </Link>
                                                         </h6>
                                                         <div className="flex-align gap-16 mb-16">
                                                             <div className="flex-align gap-6">
@@ -253,18 +254,18 @@ const CartSection = () => {
                                                             </span>
                                                         </div>
                                                         <div className="flex-align gap-16">
-                                                            <a
-                                                                href="cart.html"
+                                                            <Link
+                                                                to="/cart"
                                                                 className="product-card__cart btn bg-gray-50 text-heading text-sm hover-bg-main-600 hover-text-white py-7 px-8 rounded-8 flex-center gap-8 fw-medium"
                                                             >
                                                                 Camera
-                                                            </a>
-                                                            <a
-                                                                href="cart.html"
+                                                            </Link>
+                                                            <Link
+                                                                to="/cart"
                                                                 className="product-card__cart btn bg-gray-50 text-heading text-sm hover-bg-main-600 hover-text-white py-7 px-8 rounded-8 flex-center gap-8 fw-medium"
                                                             >
                                                                 Videos
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -310,24 +311,24 @@ const CartSection = () => {
                                             </td>
                                             <td>
                                                 <div className="table-product d-flex align-items-center gap-24">
-                                                    <a
-                                                        href="product-details-two.html"
+                                                    <Link
+                                                        to="/product-details-two"
                                                         className="table-product__thumb border border-gray-100 rounded-8 flex-center "
                                                     >
                                                         <img
                                                             src="assets/images/thumbs/product-two-img4.png"
                                                             alt=""
                                                         />
-                                                    </a>
+                                                    </Link>
                                                     <div className="table-product__content text-start">
                                                         <h6 className="title text-lg fw-semibold mb-8">
-                                                            <a
-                                                                href="product-details.html"
+                                                            <Link
+                                                                to="/product-details"
                                                                 className="link text-line-2"
                                                                 tabIndex={0}
                                                             >
                                                                 Taylor Farms Broccoli Florets Vegetables
-                                                            </a>
+                                                            </Link>
                                                         </h6>
                                                         <div className="flex-align gap-16 mb-16">
                                                             <div className="flex-align gap-6">
@@ -346,18 +347,18 @@ const CartSection = () => {
                                                             </span>
                                                         </div>
                                                         <div className="flex-align gap-16">
-                                                            <a
-                                                                href="cart.html"
+                                                            <Link
+                                                                to="/cart"
                                                                 className="product-card__cart btn bg-gray-50 text-heading text-sm hover-bg-main-600 hover-text-white py-7 px-8 rounded-8 flex-center gap-8 fw-medium"
                                                             >
                                                                 Camera
-                                                            </a>
-                                                            <a
-                                                                href="cart.html"
+                                                            </Link>
+                                                            <Link
+                                                                to="/cart"
                                                                 className="product-card__cart btn bg-gray-50 text-heading text-sm hover-bg-main-600 hover-text-white py-7 px-8 rounded-8 flex-center gap-8 fw-medium"
                                                             >
                                                                 Videos
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -444,12 +445,12 @@ const CartSection = () => {
                                     <span className="text-gray-900 text-xl fw-semibold">$250.00</span>
                                 </div>
                             </div>
-                            <a
-                                href="checkout.html"
+                            <Link
+                                to="/checkout"
                                 className="btn btn-main mt-40 py-18 w-100 rounded-8"
                             >
                                 Proceed to checkout
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 
 const FeatureOne = () => {
@@ -96,165 +97,165 @@ const FeatureOne = () => {
                         <Slider {...settings}>
                             <div className="feature-item text-center">
                                 <div className="feature-item__thumb rounded-circle">
-                                    <a href="shop.html" className="w-100 h-100 flex-center">
+                                    <Link to="/shop" className="w-100 h-100 flex-center">
                                         <img src="assets/images/thumbs/feature-img1.png" alt="" />
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="feature-item__content mt-16">
                                     <h6 className="text-lg mb-8">
-                                        <a href="shop.html" className="text-inherit">
+                                        <Link to="/shop" className="text-inherit">
                                             Vegetables
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <span className="text-sm text-gray-400">125+ Products</span>
                                 </div>
                             </div>
                             <div className="feature-item text-center">
                                 <div className="feature-item__thumb rounded-circle">
-                                    <a href="shop.html" className="w-100 h-100 flex-center">
+                                    <Link to="/shop" className="w-100 h-100 flex-center">
                                         <img src="assets/images/thumbs/feature-img2.png" alt="" />
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="feature-item__content mt-16">
                                     <h6 className="text-lg mb-8">
-                                        <a href="shop.html" className="text-inherit">
+                                        <Link to="/shop" className="text-inherit">
                                             Fish &amp; Meats
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <span className="text-sm text-gray-400">125+ Products</span>
                                 </div>
                             </div>
                             <div className="feature-item text-center">
                                 <div className="feature-item__thumb rounded-circle">
-                                    <a href="shop.html" className="w-100 h-100 flex-center">
+                                    <Link to="/shop" className="w-100 h-100 flex-center">
                                         <img src="assets/images/thumbs/feature-img3.png" alt="" />
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="feature-item__content mt-16">
                                     <h6 className="text-lg mb-8">
-                                        <a href="shop.html" className="text-inherit">
+                                        <Link to="/shop" className="text-inherit">
                                             Desserts
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <span className="text-sm text-gray-400">125+ Products</span>
                                 </div>
                             </div>
                             <div className="feature-item text-center">
                                 <div className="feature-item__thumb rounded-circle">
-                                    <a href="shop.html" className="w-100 h-100 flex-center">
+                                    <Link to="/shop" className="w-100 h-100 flex-center">
                                         <img src="assets/images/thumbs/feature-img4.png" alt="" />
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="feature-item__content mt-16">
                                     <h6 className="text-lg mb-8">
-                                        <a href="shop.html" className="text-inherit">
+                                        <Link to="/shop" className="text-inherit">
                                             Drinks &amp; Juice
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <span className="text-sm text-gray-400">125+ Products</span>
                                 </div>
                             </div>
                             <div className="feature-item text-center">
                                 <div className="feature-item__thumb rounded-circle">
-                                    <a href="shop.html" className="w-100 h-100 flex-center">
+                                    <Link to="/shop" className="w-100 h-100 flex-center">
                                         <img src="assets/images/thumbs/feature-img5.png" alt="" />
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="feature-item__content mt-16">
                                     <h6 className="text-lg mb-8">
-                                        <a href="shop.html" className="text-inherit">
+                                        <Link to="/shop" className="text-inherit">
                                             Animals Food
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <span className="text-sm text-gray-400">125+ Products</span>
                                 </div>
                             </div>
                             <div className="feature-item text-center">
                                 <div className="feature-item__thumb rounded-circle">
-                                    <a href="shop.html" className="w-100 h-100 flex-center">
+                                    <Link to="/shop" className="w-100 h-100 flex-center">
                                         <img src="assets/images/thumbs/feature-img6.png" alt="" />
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="feature-item__content mt-16">
                                     <h6 className="text-lg mb-8">
-                                        <a href="shop.html" className="text-inherit">
+                                        <Link to="/shop" className="text-inherit">
                                             Fresh Fruits
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <span className="text-sm text-gray-400">125+ Products</span>
                                 </div>
                             </div>
                             <div className="feature-item text-center">
                                 <div className="feature-item__thumb rounded-circle">
-                                    <a href="shop.html" className="w-100 h-100 flex-center">
+                                    <Link to="/shop" className="w-100 h-100 flex-center">
                                         <img src="assets/images/thumbs/feature-img7.png" alt="" />
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="feature-item__content mt-16">
                                     <h6 className="text-lg mb-8">
-                                        <a href="shop.html" className="text-inherit">
+                                        <Link to="/shop" className="text-inherit">
                                             Yummy Candy
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <span className="text-sm text-gray-400">125+ Products</span>
                                 </div>
                             </div>
                             <div className="feature-item text-center">
                                 <div className="feature-item__thumb rounded-circle">
-                                    <a href="shop.html" className="w-100 h-100 flex-center">
+                                    <Link to="/shop" className="w-100 h-100 flex-center">
                                         <img src="assets/images/thumbs/feature-img2.png" alt="" />
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="feature-item__content mt-16">
                                     <h6 className="text-lg mb-8">
-                                        <a href="shop.html" className="text-inherit">
+                                        <Link to="/shop" className="text-inherit">
                                             Fish &amp; Meats
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <span className="text-sm text-gray-400">125+ Products</span>
                                 </div>
                             </div>
                             <div className="feature-item text-center">
                                 <div className="feature-item__thumb rounded-circle">
-                                    <a href="shop.html" className="w-100 h-100 flex-center">
+                                    <Link to="/shop" className="w-100 h-100 flex-center">
                                         <img src="assets/images/thumbs/feature-img8.png" alt="" />
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="feature-item__content mt-16">
                                     <h6 className="text-lg mb-8">
-                                        <a href="shop.html" className="text-inherit">
+                                        <Link to="/shop" className="text-inherit">
                                             Dairy &amp; Eggs
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <span className="text-sm text-gray-400">125+ Products</span>
                                 </div>
                             </div>
                             <div className="feature-item text-center">
                                 <div className="feature-item__thumb rounded-circle">
-                                    <a href="shop.html" className="w-100 h-100 flex-center">
+                                    <Link to="/shop" className="w-100 h-100 flex-center">
                                         <img src="assets/images/thumbs/feature-img9.png" alt="" />
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="feature-item__content mt-16">
                                     <h6 className="text-lg mb-8">
-                                        <a href="shop.html" className="text-inherit">
+                                        <Link to="/shop" className="text-inherit">
                                             Snacks
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <span className="text-sm text-gray-400">125+ Products</span>
                                 </div>
                             </div>
                             <div className="feature-item text-center">
                                 <div className="feature-item__thumb rounded-circle">
-                                    <a href="shop.html" className="w-100 h-100 flex-center">
+                                    <Link to="/shop" className="w-100 h-100 flex-center">
                                         <img src="assets/images/thumbs/feature-img10.png" alt="" />
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="feature-item__content mt-16">
                                     <h6 className="text-lg mb-8">
-                                        <a href="shop.html" className="text-inherit">
+                                        <Link to="/shop" className="text-inherit">
                                             Frozen Foods
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <span className="text-sm text-gray-400">125+ Products</span>
                                 </div>

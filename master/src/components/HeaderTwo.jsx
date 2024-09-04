@@ -1,12 +1,18 @@
 import React, { useEffect } from 'react'
 import $ from 'jquery';
+import { Link } from 'react-router-dom';
 const HeaderTwo = () => {
     useEffect(() => {
-        $('.js-example-basic-single').select2();
+        const $selectElement = $('.js-example-basic-single');
+        $selectElement.select2();
+
         return () => {
-            $('.js-example-basic-single').select2('destroy');
+            if ($selectElement.data('select2')) {
+                $selectElement.select2('destroy');
+            }
         };
     }, []);
+
     return (
         <>
             {/* ==================== Search Box Start Here ==================== */}
@@ -41,68 +47,68 @@ const HeaderTwo = () => {
                     <i className="ph ph-x" />{" "}
                 </button>
                 <div className="mobile-menu__inner">
-                    <a href="index.html" className="mobile-menu__logo">
+                    <Link to="/" className="mobile-menu__logo">
                         <img src="assets/images/logo/logo.png" alt="Logo" />
-                    </a>
+                    </Link>
                     <div className="mobile-menu__menu">
                         {/* Nav Menu Start */}
                         <ul className="nav-menu flex-align nav-menu--mobile">
                             <li className="on-hover-item nav-menu__item has-submenu">
-                                <a href="javascript:void(0)" className="nav-menu__link">
+                                <Link to="#" className="nav-menu__link">
                                     Home
-                                </a>
+                                </Link>
                                 <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
                                     <li className="common-dropdown__item nav-submenu__item">
-                                        <a
-                                            href="index.html"
+                                        <Link
+                                            to="/"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                         >
                                             {" "}
                                             Home One
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="common-dropdown__item nav-submenu__item">
-                                        <a
-                                            href="index-two.html"
+                                        <Link
+                                            to="/index-two"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                         >
                                             {" "}
                                             Home Two
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li className="on-hover-item nav-menu__item has-submenu">
-                                <a href="javascript:void(0)" className="nav-menu__link">
+                                <Link to="#" className="nav-menu__link">
                                     Shop
-                                </a>
+                                </Link>
                                 <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
                                     <li className="common-dropdown__item nav-submenu__item">
-                                        <a
-                                            href="shop.html"
+                                        <Link
+                                            to="/shop"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                         >
                                             {" "}
                                             Shop
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="common-dropdown__item nav-submenu__item">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                         >
                                             {" "}
                                             Shop Details
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="common-dropdown__item nav-submenu__item">
-                                        <a
-                                            href="product-details-two.html"
+                                        <Link
+                                            to="/product-details-two"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                         >
                                             {" "}
                                             Shop Details Two
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
@@ -110,68 +116,68 @@ const HeaderTwo = () => {
                                 <span className="badge-notification bg-warning-600 text-white text-sm py-2 px-8 rounded-4">
                                     New
                                 </span>
-                                <a href="javascript:void(0)" className="nav-menu__link">
+                                <Link to="#" className="nav-menu__link">
                                     Pages
-                                </a>
+                                </Link>
                                 <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
                                     <li className="common-dropdown__item nav-submenu__item">
-                                        <a
-                                            href="cart.html"
+                                        <Link
+                                            to="/cart"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                         >
                                             {" "}
                                             Cart
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="common-dropdown__item nav-submenu__item">
-                                        <a
-                                            href="checkout.html"
+                                        <Link
+                                            to="/checkout"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                         >
                                             {" "}
                                             Checkout{" "}
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="common-dropdown__item nav-submenu__item">
-                                        <a
-                                            href="account.html"
+                                        <Link
+                                            to="/account"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                         >
                                             {" "}
                                             Account
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li className="on-hover-item nav-menu__item has-submenu">
-                                <a href="javascript:void(0)" className="nav-menu__link">
+                                <Link to="#" className="nav-menu__link">
                                     Blog
-                                </a>
+                                </Link>
                                 <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
                                     <li className="common-dropdown__item nav-submenu__item">
-                                        <a
-                                            href="blog.html"
+                                        <Link
+                                            to="/blog"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                         >
                                             {" "}
                                             Blog
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="common-dropdown__item nav-submenu__item">
-                                        <a
-                                            href="blog-details.html"
+                                        <Link
+                                            to="/blog-details"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                         >
                                             {" "}
                                             Blog Details
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li className="nav-menu__item">
-                                <a href="contact.html" className="nav-menu__link">
+                                <Link to="/contact" className="nav-menu__link">
                                     Contact Us
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                         {/* Nav Menu End */}
@@ -185,9 +191,9 @@ const HeaderTwo = () => {
                     <nav className="header-inner flex-between">
                         {/* Logo Start */}
                         <div className="logo">
-                            <a href="index.html" className="link">
+                            <Link to="/" className="link">
                                 <img src="assets/images/logo/logo-two.png" alt="Logo" />
-                            </a>
+                            </Link>
                         </div>
                         {/* Logo End  */}
                         {/* form Category Start */}
@@ -196,16 +202,16 @@ const HeaderTwo = () => {
                                 {/* Dropdown Select Start */}
                                 <ul className="header-top__right style-two flex-align flex-wrap">
                                     <li className="on-hover-item border-right-item border-right-item-sm-space has-submenu arrow-white">
-                                        <a
-                                            href="javascript:void(0)"
+                                        <Link
+                                            to="#"
                                             className="selected-text text-heading text-sm py-8"
                                         >
                                             Eng
-                                        </a>
+                                        </Link>
                                         <ul className="selectable-text-list on-hover-dropdown common-dropdown common-dropdown--sm max-h-200 scroll-sm px-0 py-8">
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -214,11 +220,11 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     English
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -227,11 +233,11 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     Japan
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -240,11 +246,11 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     French
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -253,11 +259,11 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     Germany
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -266,11 +272,11 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     Bangladesh
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -279,21 +285,21 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     South Korea
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </li>
                                     <li className="on-hover-item border-right-item border-right-item-sm-space has-submenu arrow-white">
-                                        <a
-                                            href="javascript:void(0)"
+                                        <Link
+                                            to="#"
                                             className="selected-text text-heading text-sm py-8"
                                         >
                                             USD
-                                        </a>
+                                        </Link>
                                         <ul className="selectable-text-list on-hover-dropdown common-dropdown common-dropdown--sm max-h-200 scroll-sm px-0 py-8">
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -302,11 +308,11 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     USD
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -315,11 +321,11 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     Yen
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -328,11 +334,11 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     Franc
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -341,11 +347,11 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     EURO
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -354,11 +360,11 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     BDT
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -367,7 +373,7 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     WON
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </li>
@@ -425,8 +431,8 @@ const HeaderTwo = () => {
                                         <i className="ph ph-magnifying-glass" />
                                     </span>
                                 </button>
-                                <a
-                                    href="account.html"
+                                <Link
+                                    to="/account"
                                     className="flex-align flex-column gap-8 item-hover-two"
                                 >
                                     <span className="text-2xl text-white d-flex position-relative item-hover__text">
@@ -435,9 +441,9 @@ const HeaderTwo = () => {
                                     <span className="text-md text-white item-hover__text d-none d-lg-flex">
                                         Profile
                                     </span>
-                                </a>
-                                <a
-                                    href="cart.html"
+                                </Link>
+                                <Link
+                                    to="/cart"
                                     className="flex-align flex-column gap-8 item-hover-two"
                                 >
                                     <span className="text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text">
@@ -449,9 +455,9 @@ const HeaderTwo = () => {
                                     <span className="text-md text-white item-hover__text d-none d-lg-flex">
                                         Wishlist
                                     </span>
-                                </a>
-                                <a
-                                    href="cart.html"
+                                </Link>
+                                <Link
+                                    to="/cart"
                                     className="flex-align flex-column gap-8 item-hover-two"
                                 >
                                     <span className="text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text">
@@ -463,9 +469,9 @@ const HeaderTwo = () => {
                                     <span className="text-md text-white item-hover__text d-none d-lg-flex">
                                         Compare
                                     </span>
-                                </a>
-                                <a
-                                    href="cart.html"
+                                </Link>
+                                <Link
+                                    to="/cart"
                                     className="flex-align flex-column gap-8 item-hover-two"
                                 >
                                     <span className="text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text">
@@ -477,7 +483,7 @@ const HeaderTwo = () => {
                                     <span className="text-md text-white item-hover__text d-none d-lg-flex">
                                         Cart
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         {/* Header Middle Right End  */}
@@ -512,273 +518,273 @@ const HeaderTwo = () => {
                                         <i className="ph ph-x" />{" "}
                                     </button>
                                     <div className="logo px-16 d-lg-none d-block">
-                                        <a href="index.html" className="link">
+                                        <Link to="/" className="link">
                                             <img src="assets/images/logo/logo.png" alt="Logo" />
-                                        </a>
+                                        </Link>
                                     </div>
                                     <ul className="scroll-sm p-0 py-8 overflow-y-auto">
                                         <li className="has-submenus-submenu">
-                                            <a
-                                                href="javascript:void(0)"
+                                            <Link
+                                                to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                             >
                                                 <span>Cell Phone</span>
                                                 <span className="icon text-md d-flex ms-auto">
                                                     <i className="ph ph-caret-right" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                             <div className="submenus-submenu py-16">
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Cell Phone
                                                 </h6>
                                                 <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                                     <li>
-                                                        <a href="shop.html">Samsung</a>
+                                                        <Link to="/shop">Samsung</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Iphone</a>
+                                                        <Link to="/shop">Iphone</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Vivo</a>
+                                                        <Link to="/shop">Vivo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Oppo</a>
+                                                        <Link to="/shop">Oppo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Itel</a>
+                                                        <Link to="/shop">Itel</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Realme</a>
+                                                        <Link to="/shop">Realme</Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li className="has-submenus-submenu">
-                                            <a
-                                                href="javascript:void(0)"
+                                            <Link
+                                                to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                             >
                                                 <span>Wear</span>
                                                 <span className="icon text-md d-flex ms-auto">
                                                     <i className="ph ph-caret-right" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                             <div className="submenus-submenu py-16">
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Wear
                                                 </h6>
                                                 <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                                     <li>
-                                                        <a href="shop.html">Samsung</a>
+                                                        <Link to="/shop">Samsung</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Iphone</a>
+                                                        <Link to="/shop">Iphone</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Vivo</a>
+                                                        <Link to="/shop">Vivo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Oppo</a>
+                                                        <Link to="/shop">Oppo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Itel</a>
+                                                        <Link to="/shop">Itel</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Realme</a>
+                                                        <Link to="/shop">Realme</Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li className="has-submenus-submenu">
-                                            <a
-                                                href="javascript:void(0)"
+                                            <Link
+                                                to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                             >
                                                 <span>Computer</span>
                                                 <span className="icon text-md d-flex ms-auto">
                                                     <i className="ph ph-caret-right" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                             <div className="submenus-submenu py-16">
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Computer
                                                 </h6>
                                                 <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                                     <li>
-                                                        <a href="shop.html">Samsung</a>
+                                                        <Link to="/shop">Samsung</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Iphone</a>
+                                                        <Link to="/shop">Iphone</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Vivo</a>
+                                                        <Link to="/shop">Vivo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Oppo</a>
+                                                        <Link to="/shop">Oppo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Itel</a>
+                                                        <Link to="/shop">Itel</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Realme</a>
+                                                        <Link to="/shop">Realme</Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li className="has-submenus-submenu">
-                                            <a
-                                                href="javascript:void(0)"
+                                            <Link
+                                                to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                             >
                                                 <span>Headphone</span>
                                                 <span className="icon text-md d-flex ms-auto">
                                                     <i className="ph ph-caret-right" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                             <div className="submenus-submenu py-16">
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Headphone
                                                 </h6>
                                                 <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                                     <li>
-                                                        <a href="shop.html">Samsung</a>
+                                                        <Link to="/shop">Samsung</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Iphone</a>
+                                                        <Link to="/shop">Iphone</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Vivo</a>
+                                                        <Link to="/shop">Vivo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Oppo</a>
+                                                        <Link to="/shop">Oppo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Itel</a>
+                                                        <Link to="/shop">Itel</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Realme</a>
+                                                        <Link to="/shop">Realme</Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li className="has-submenus-submenu">
-                                            <a
-                                                href="javascript:void(0)"
+                                            <Link
+                                                to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                             >
                                                 <span>Smart Screen</span>
                                                 <span className="icon text-md d-flex ms-auto">
                                                     <i className="ph ph-caret-right" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                             <div className="submenus-submenu py-16">
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Smart Screen
                                                 </h6>
                                                 <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                                     <li>
-                                                        <a href="shop.html">Samsung</a>
+                                                        <Link to="/shop">Samsung</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Iphone</a>
+                                                        <Link to="/shop">Iphone</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Vivo</a>
+                                                        <Link to="/shop">Vivo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Oppo</a>
+                                                        <Link to="/shop">Oppo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Itel</a>
+                                                        <Link to="/shop">Itel</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Realme</a>
+                                                        <Link to="/shop">Realme</Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li className="has-submenus-submenu">
-                                            <a
-                                                href="javascript:void(0)"
+                                            <Link
+                                                to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                             >
                                                 <span>Smart Home</span>
                                                 <span className="icon text-md d-flex ms-auto">
                                                     <i className="ph ph-caret-right" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                             <div className="submenus-submenu py-16">
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Smart Home
                                                 </h6>
                                                 <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                                     <li>
-                                                        <a href="shop.html">Samsung</a>
+                                                        <Link to="/shop">Samsung</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Iphone</a>
+                                                        <Link to="/shop">Iphone</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Vivo</a>
+                                                        <Link to="/shop">Vivo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Oppo</a>
+                                                        <Link to="/shop">Oppo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Itel</a>
+                                                        <Link to="/shop">Itel</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Realme</a>
+                                                        <Link to="/shop">Realme</Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li className="has-submenus-submenu">
-                                            <a
-                                                href="javascript:void(0)"
+                                            <Link
+                                                to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                             >
                                                 <span>Digital Accessories</span>
                                                 <span className="icon text-md d-flex ms-auto">
                                                     <i className="ph ph-caret-right" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                             <div className="submenus-submenu py-16">
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Digital Accessories
                                                 </h6>
                                                 <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                                     <li>
-                                                        <a href="shop.html">Samsung</a>
+                                                        <Link to="/shop">Samsung</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Iphone</a>
+                                                        <Link to="/shop">Iphone</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Vivo</a>
+                                                        <Link to="/shop">Vivo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Oppo</a>
+                                                        <Link to="/shop">Oppo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Itel</a>
+                                                        <Link to="/shop">Itel</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Realme</a>
+                                                        <Link to="/shop">Realme</Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li className="has-submenus-submenu">
-                                            <a
-                                                href="javascript:void(0)"
+                                            <Link
+                                                to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                             >
                                                 <span> Value Added Services</span>
                                                 <span className="icon text-md d-flex ms-auto">
                                                     <i className="ph ph-caret-right" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                             <div className="submenus-submenu py-16">
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     {" "}
@@ -786,238 +792,238 @@ const HeaderTwo = () => {
                                                 </h6>
                                                 <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                                     <li>
-                                                        <a href="shop.html">Samsung</a>
+                                                        <Link to="/shop">Samsung</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Iphone</a>
+                                                        <Link to="/shop">Iphone</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Vivo</a>
+                                                        <Link to="/shop">Vivo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Oppo</a>
+                                                        <Link to="/shop">Oppo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Itel</a>
+                                                        <Link to="/shop">Itel</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Realme</a>
+                                                        <Link to="/shop">Realme</Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li className="has-submenus-submenu">
-                                            <a
-                                                href="javascript:void(0)"
+                                            <Link
+                                                to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                             >
                                                 <span>Car Products</span>
                                                 <span className="icon text-md d-flex ms-auto">
                                                     <i className="ph ph-caret-right" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                             <div className="submenus-submenu py-16">
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Car Products
                                                 </h6>
                                                 <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                                     <li>
-                                                        <a href="shop.html">Samsung</a>
+                                                        <Link to="/shop">Samsung</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Iphone</a>
+                                                        <Link to="/shop">Iphone</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Vivo</a>
+                                                        <Link to="/shop">Vivo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Oppo</a>
+                                                        <Link to="/shop">Oppo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Itel</a>
+                                                        <Link to="/shop">Itel</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Realme</a>
+                                                        <Link to="/shop">Realme</Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li className="has-submenus-submenu">
-                                            <a
-                                                href="javascript:void(0)"
+                                            <Link
+                                                to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                             >
                                                 <span>Ecological Products</span>
                                                 <span className="icon text-md d-flex ms-auto">
                                                     <i className="ph ph-caret-right" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                             <div className="submenus-submenu py-16">
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Ecological Products
                                                 </h6>
                                                 <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                                     <li>
-                                                        <a href="shop.html">Samsung</a>
+                                                        <Link to="/shop">Samsung</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Iphone</a>
+                                                        <Link to="/shop">Iphone</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Vivo</a>
+                                                        <Link to="/shop">Vivo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Oppo</a>
+                                                        <Link to="/shop">Oppo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Itel</a>
+                                                        <Link to="/shop">Itel</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Realme</a>
+                                                        <Link to="/shop">Realme</Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li className="has-submenus-submenu">
-                                            <a
-                                                href="javascript:void(0)"
+                                            <Link
+                                                to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                             >
                                                 <span>Flat</span>
                                                 <span className="icon text-md d-flex ms-auto">
                                                     <i className="ph ph-caret-right" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                             <div className="submenus-submenu py-16">
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Flat
                                                 </h6>
                                                 <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                                     <li>
-                                                        <a href="shop.html">Samsung</a>
+                                                        <Link to="/shop">Samsung</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Iphone</a>
+                                                        <Link to="/shop">Iphone</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Vivo</a>
+                                                        <Link to="/shop">Vivo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Oppo</a>
+                                                        <Link to="/shop">Oppo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Itel</a>
+                                                        <Link to="/shop">Itel</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Realme</a>
+                                                        <Link to="/shop">Realme</Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li className="has-submenus-submenu">
-                                            <a
-                                                href="javascript:void(0)"
+                                            <Link
+                                                to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                             >
                                                 <span>Commercial Terminal</span>
                                                 <span className="icon text-md d-flex ms-auto">
                                                     <i className="ph ph-caret-right" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                             <div className="submenus-submenu py-16">
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Commercial Terminal
                                                 </h6>
                                                 <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                                     <li>
-                                                        <a href="shop.html">Samsung</a>
+                                                        <Link to="/shop">Samsung</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Iphone</a>
+                                                        <Link to="/shop">Iphone</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Vivo</a>
+                                                        <Link to="/shop">Vivo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Oppo</a>
+                                                        <Link to="/shop">Oppo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Itel</a>
+                                                        <Link to="/shop">Itel</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Realme</a>
+                                                        <Link to="/shop">Realme</Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li className="has-submenus-submenu">
-                                            <a
-                                                href="javascript:void(0)"
+                                            <Link
+                                                to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                             >
                                                 <span>Headphone</span>
                                                 <span className="icon text-md d-flex ms-auto">
                                                     <i className="ph ph-caret-right" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                             <div className="submenus-submenu py-16">
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Headphone
                                                 </h6>
                                                 <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                                     <li>
-                                                        <a href="shop.html">Samsung</a>
+                                                        <Link to="/shop">Samsung</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Iphone</a>
+                                                        <Link to="/shop">Iphone</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Vivo</a>
+                                                        <Link to="/shop">Vivo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Oppo</a>
+                                                        <Link to="/shop">Oppo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Itel</a>
+                                                        <Link to="/shop">Itel</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Realme</a>
+                                                        <Link to="/shop">Realme</Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li className="has-submenus-submenu">
-                                            <a
-                                                href="javascript:void(0)"
+                                            <Link
+                                                to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                             >
                                                 <span>Smart Screen</span>
                                                 <span className="icon text-md d-flex ms-auto">
                                                     <i className="ph ph-caret-right" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                             <div className="submenus-submenu py-16">
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Smart Screen
                                                 </h6>
                                                 <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                                     <li>
-                                                        <a href="shop.html">Samsung</a>
+                                                        <Link to="/shop">Samsung</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Iphone</a>
+                                                        <Link to="/shop">Iphone</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Vivo</a>
+                                                        <Link to="/shop">Vivo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Oppo</a>
+                                                        <Link to="/shop">Oppo</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Itel</a>
+                                                        <Link to="/shop">Itel</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Realme</a>
+                                                        <Link to="/shop">Realme</Link>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1046,14 +1052,14 @@ const HeaderTwo = () => {
                                         <i className="ph ph-x" />{" "}
                                     </button>
                                     <div className="logo px-16 d-lg-none d-block">
-                                        <a href="index.html" className="link">
+                                        <Link to="/" className="link">
                                             <img src="assets/images/logo/logo.png" alt="Logo" />
-                                        </a>
+                                        </Link>
                                     </div>
                                     <ul className="scroll-sm p-0 py-8 w-300 max-h-400 overflow-y-auto">
                                         <li className="has-submenus-submenu">
-                                            <a
-                                                href="javascript:void(0)"
+                                            <Link
+                                                to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                             >
                                                 <span className="text-xl d-flex">
@@ -1063,42 +1069,42 @@ const HeaderTwo = () => {
                                                 <span className="icon text-md d-flex ms-auto">
                                                     <i className="ph ph-caret-right" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                             <div className="submenus-submenu py-16">
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Vegetables &amp; Fruit
                                                 </h6>
                                                 <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                                     <li>
-                                                        <a href="shop.html">Potato &amp; Tomato</a>
+                                                        <Link to="/shop">Potato &amp; Tomato</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Cucumber &amp; Capsicum</a>
+                                                        <Link to="/shop">Cucumber &amp; Capsicum</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Leafy Vegetables</a>
+                                                        <Link to="/shop">Leafy Vegetables</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Root Vegetables</a>
+                                                        <Link to="/shop">Root Vegetables</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Beans &amp; Okra</a>
+                                                        <Link to="/shop">Beans &amp; Okra</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Cabbage &amp; Cauliflower</a>
+                                                        <Link to="/shop">Cabbage &amp; Cauliflower</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Gourd &amp; Drumstick</a>
+                                                        <Link to="/shop">Gourd &amp; Drumstick</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Specialty</a>
+                                                        <Link to="/shop">Specialty</Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li className="has-submenus-submenu">
-                                            <a
-                                                href="javascript:void(0)"
+                                            <Link
+                                                to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                             >
                                                 <span className="text-xl d-flex">
@@ -1108,36 +1114,36 @@ const HeaderTwo = () => {
                                                 <span className="icon text-md d-flex ms-auto">
                                                     <i className="ph ph-caret-right" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                             <div className="submenus-submenu py-16">
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Beverages
                                                 </h6>
                                                 <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                                     <li>
-                                                        <a href="shop.html">Soda &amp; Cocktail Mix </a>
+                                                        <Link to="/shop">Soda &amp; Cocktail Mix </Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Sports &amp; Energy Drinks</a>
+                                                        <Link to="/shop"> Sports &amp; Energy Drinks</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Non Alcoholic Drinks</a>
+                                                        <Link to="/shop"> Non Alcoholic Drinks</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Packaged Water </a>
+                                                        <Link to="/shop"> Packaged Water </Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Spring Water</a>
+                                                        <Link to="/shop"> Spring Water</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Flavoured Water </a>
+                                                        <Link to="/shop"> Flavoured Water </Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li className="has-submenus-submenu">
-                                            <a
-                                                href="javascript:void(0)"
+                                            <Link
+                                                to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                             >
                                                 <span className="text-xl d-flex">
@@ -1147,30 +1153,30 @@ const HeaderTwo = () => {
                                                 <span className="icon text-md d-flex ms-auto">
                                                     <i className="ph ph-caret-right" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                             <div className="submenus-submenu py-16">
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Meats &amp; Seafood
                                                 </h6>
                                                 <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                                     <li>
-                                                        <a href="shop.html"> Fresh Meat </a>
+                                                        <Link to="/shop"> Fresh Meat </Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Frozen Meat</a>
+                                                        <Link to="/shop"> Frozen Meat</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Marinated Meat</a>
+                                                        <Link to="/shop"> Marinated Meat</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Fresh &amp; Frozen Meat</a>
+                                                        <Link to="/shop"> Fresh &amp; Frozen Meat</Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li className="has-submenus-submenu">
-                                            <a
-                                                href="javascript:void(0)"
+                                            <Link
+                                                to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                             >
                                                 <span className="text-xl d-flex">
@@ -1180,36 +1186,36 @@ const HeaderTwo = () => {
                                                 <span className="icon text-md d-flex ms-auto">
                                                     <i className="ph ph-caret-right" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                             <div className="submenus-submenu py-16">
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Breakfast &amp; Dairy
                                                 </h6>
                                                 <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                                     <li>
-                                                        <a href="shop.html"> Oats &amp; Porridge</a>
+                                                        <Link to="/shop"> Oats &amp; Porridge</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Kids Cereal</a>
+                                                        <Link to="/shop"> Kids Cereal</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Muesli</a>
+                                                        <Link to="/shop"> Muesli</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Flakes</a>
+                                                        <Link to="/shop"> Flakes</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Granola &amp; Cereal Bars</a>
+                                                        <Link to="/shop"> Granola &amp; Cereal Bars</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Instant Noodles</a>
+                                                        <Link to="/shop"> Instant Noodles</Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li className="has-submenus-submenu">
-                                            <a
-                                                href="javascript:void(0)"
+                                            <Link
+                                                to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                             >
                                                 <span className="text-xl d-flex">
@@ -1219,33 +1225,33 @@ const HeaderTwo = () => {
                                                 <span className="icon text-md d-flex ms-auto">
                                                     <i className="ph ph-caret-right" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                             <div className="submenus-submenu py-16">
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Frozen Foods
                                                 </h6>
                                                 <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                                     <li>
-                                                        <a href="shop.html"> Instant Noodles </a>
+                                                        <Link to="/shop"> Instant Noodles </Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Hakka Noodles</a>
+                                                        <Link to="/shop"> Hakka Noodles</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Cup Noodles</a>
+                                                        <Link to="/shop"> Cup Noodles</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Vermicelli</a>
+                                                        <Link to="/shop"> Vermicelli</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Instant Pasta</a>
+                                                        <Link to="/shop"> Instant Pasta</Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li className="has-submenus-submenu">
-                                            <a
-                                                href="javascript:void(0)"
+                                            <Link
+                                                to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                             >
                                                 <span className="text-xl d-flex">
@@ -1255,33 +1261,33 @@ const HeaderTwo = () => {
                                                 <span className="icon text-md d-flex ms-auto">
                                                     <i className="ph ph-caret-right" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                             <div className="submenus-submenu py-16">
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Biscuits &amp; Snacks
                                                 </h6>
                                                 <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                                     <li>
-                                                        <a href="shop.html"> Salted Biscuits </a>
+                                                        <Link to="/shop"> Salted Biscuits </Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Marie, Health, Digestive</a>
+                                                        <Link to="/shop"> Marie, Health, Digestive</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Cream Biscuits &amp; Wafers </a>
+                                                        <Link to="/shop"> Cream Biscuits &amp; Wafers </Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Glucose &amp; Milk biscuits</a>
+                                                        <Link to="/shop"> Glucose &amp; Milk biscuits</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Cookies</a>
+                                                        <Link to="/shop"> Cookies</Link>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li className="has-submenus-submenu">
-                                            <a
-                                                href="javascript:void(0)"
+                                            <Link
+                                                to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                             >
                                                 <span className="text-xl d-flex">
@@ -1291,32 +1297,32 @@ const HeaderTwo = () => {
                                                 <span className="icon text-md d-flex ms-auto">
                                                     <i className="ph ph-caret-right" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                             <div className="submenus-submenu py-16">
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Grocery &amp; Staples
                                                 </h6>
                                                 <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                                     <li>
-                                                        <a href="shop.html"> Lemon, Ginger &amp; Garlic </a>
+                                                        <Link to="/shop"> Lemon, Ginger &amp; Garlic </Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Indian &amp; Exotic Herbs</a>
+                                                        <Link to="/shop"> Indian &amp; Exotic Herbs</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Orangic Vegetables</a>
+                                                        <Link to="/shop"> Orangic Vegetables</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html">Orangic Fruits </a>
+                                                        <Link to="/shop">Orangic Fruits </Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Orangic Dry Fruits</a>
+                                                        <Link to="/shop"> Orangic Dry Fruits</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Orangic Dals &amp; pulses</a>
+                                                        <Link to="/shop"> Orangic Dals &amp; pulses</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="shop.html"> Orangic Millet &amp; Flours</a>
+                                                        <Link to="/shop"> Orangic Millet &amp; Flours</Link>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1330,60 +1336,60 @@ const HeaderTwo = () => {
                                 {/* Nav Menu Start */}
                                 <ul className="nav-menu flex-align ">
                                     <li className="on-hover-item nav-menu__item has-submenu">
-                                        <a href="javascript:void(0)" className="nav-menu__link">
+                                        <Link to="#" className="nav-menu__link">
                                             Home
-                                        </a>
+                                        </Link>
                                         <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
                                             <li className="common-dropdown__item nav-submenu__item">
-                                                <a
-                                                    href="index.html"
+                                                <Link
+                                                    to="/"
                                                     className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                                 >
                                                     {" "}
                                                     Home One
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li className="common-dropdown__item nav-submenu__item">
-                                                <a
-                                                    href="index-two.html"
+                                                <Link
+                                                    to="/index-two"
                                                     className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                                 >
                                                     {" "}
                                                     Home Two
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </li>
                                     <li className="on-hover-item nav-menu__item has-submenu">
-                                        <a href="javascript:void(0)" className="nav-menu__link">
+                                        <Link to="#" className="nav-menu__link">
                                             Shop
-                                        </a>
+                                        </Link>
                                         <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
                                             <li className="common-dropdown__item nav-submenu__item">
-                                                <a
-                                                    href="shop.html"
+                                                <Link
+                                                    to="/shop"
                                                     className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                                 >
                                                     Shop
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li className="common-dropdown__item nav-submenu__item">
-                                                <a
-                                                    href="product-details.html"
+                                                <Link
+                                                    to="/product-details"
                                                     className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                                 >
                                                     {" "}
                                                     Shop Details
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li className="common-dropdown__item nav-submenu__item">
-                                                <a
-                                                    href="product-details-two.html"
+                                                <Link
+                                                    to="/product-details-two"
                                                     className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                                 >
                                                     {" "}
                                                     Shop Details Two
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </li>
@@ -1391,64 +1397,64 @@ const HeaderTwo = () => {
                                         <span className="badge-notification bg-warning-600 text-white text-sm py-2 px-8 rounded-4">
                                             New
                                         </span>
-                                        <a href="javascript:void(0)" className="nav-menu__link">
+                                        <Link to="#" className="nav-menu__link">
                                             Pages
-                                        </a>
+                                        </Link>
                                         <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
                                             <li className="common-dropdown__item nav-submenu__item">
-                                                <a
-                                                    href="cart.html"
+                                                <Link
+                                                    to="/cart"
                                                     className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                                 >
                                                     Cart
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li className="common-dropdown__item nav-submenu__item">
-                                                <a
-                                                    href="checkout.html"
+                                                <Link
+                                                    to="/checkout"
                                                     className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                                 >
                                                     Checkout{" "}
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li className="common-dropdown__item nav-submenu__item">
-                                                <a
-                                                    href="account.html"
+                                                <Link
+                                                    to="/account"
                                                     className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                                 >
                                                     Account
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </li>
                                     <li className="on-hover-item nav-menu__item has-submenu">
-                                        <a href="javascript:void(0)" className="nav-menu__link">
+                                        <Link to="#" className="nav-menu__link">
                                             Blog
-                                        </a>
+                                        </Link>
                                         <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
                                             <li className="common-dropdown__item nav-submenu__item">
-                                                <a
-                                                    href="blog.html"
+                                                <Link
+                                                    to="/blog"
                                                     className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                                 >
                                                     Blog
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li className="common-dropdown__item nav-submenu__item">
-                                                <a
-                                                    href="blog-details.html"
+                                                <Link
+                                                    to="/blog-details"
                                                     className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                                 >
                                                     {" "}
                                                     Blog Details
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </li>
                                     <li className="nav-menu__item">
-                                        <a href="contact.html" className="nav-menu__link">
+                                        <Link to="/contact" className="nav-menu__link">
                                             Contact Us
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                                 {/* Nav Menu End */}
@@ -1461,16 +1467,16 @@ const HeaderTwo = () => {
                                 {/* Dropdown Select Start */}
                                 <ul className="header-top__right style-two flex-align flex-wrap">
                                     <li className="on-hover-item border-right-item border-right-item-sm-space has-submenu arrow-white">
-                                        <a
-                                            href="javascript:void(0)"
+                                        <Link
+                                            to="#"
                                             className="selected-text text-heading text-sm py-8"
                                         >
                                             Eng
-                                        </a>
+                                        </Link>
                                         <ul className="selectable-text-list on-hover-dropdown common-dropdown common-dropdown--sm max-h-200 scroll-sm px-0 py-8">
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -1479,11 +1485,11 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     English
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -1492,11 +1498,11 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     Japan
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -1505,11 +1511,11 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     French
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -1518,11 +1524,11 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     Germany
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -1531,11 +1537,11 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     Bangladesh
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -1544,21 +1550,21 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     South Korea
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </li>
                                     <li className="on-hover-item border-right-item border-right-item-sm-space has-submenu arrow-white">
-                                        <a
-                                            href="javascript:void(0)"
+                                        <Link
+                                            to="#"
                                             className="selected-text text-heading text-sm py-8"
                                         >
                                             USD
-                                        </a>
+                                        </Link>
                                         <ul className="selectable-text-list on-hover-dropdown common-dropdown common-dropdown--sm max-h-200 scroll-sm px-0 py-8">
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -1567,11 +1573,11 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     USD
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -1580,11 +1586,11 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     Yen
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -1593,11 +1599,11 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     Franc
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -1606,11 +1612,11 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     EURO
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -1619,11 +1625,11 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     BDT
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
                                                 >
                                                     <img
@@ -1632,7 +1638,7 @@ const HeaderTwo = () => {
                                                         className="w-16 h-12 rounded-4 border border-gray-100"
                                                     />
                                                     WON
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </li>
@@ -1649,8 +1655,8 @@ const HeaderTwo = () => {
                                             <i className="ph ph-magnifying-glass" />
                                         </span>
                                     </button>
-                                    <a
-                                        href="account.html"
+                                    <Link
+                                        to="/account"
                                         className="flex-align flex-column gap-8 item-hover-two"
                                     >
                                         <span className="text-2xl text-white d-flex position-relative item-hover__text">
@@ -1659,9 +1665,9 @@ const HeaderTwo = () => {
                                         <span className="text-md text-white item-hover__text d-none d-lg-flex">
                                             Profile
                                         </span>
-                                    </a>
-                                    <a
-                                        href="cart.html"
+                                    </Link>
+                                    <Link
+                                        to="/cart"
                                         className="flex-align flex-column gap-8 item-hover-two"
                                     >
                                         <span className="text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text">
@@ -1673,9 +1679,9 @@ const HeaderTwo = () => {
                                         <span className="text-md text-white item-hover__text d-none d-lg-flex">
                                             Wishlist
                                         </span>
-                                    </a>
-                                    <a
-                                        href="cart.html"
+                                    </Link>
+                                    <Link
+                                        to="/cart"
                                         className="flex-align flex-column gap-8 item-hover-two"
                                     >
                                         <span className="text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text">
@@ -1687,9 +1693,9 @@ const HeaderTwo = () => {
                                         <span className="text-md text-white item-hover__text d-none d-lg-flex">
                                             Compare
                                         </span>
-                                    </a>
-                                    <a
-                                        href="cart.html"
+                                    </Link>
+                                    <Link
+                                        to="/cart"
                                         className="flex-align flex-column gap-8 item-hover-two"
                                     >
                                         <span className="text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text">
@@ -1701,7 +1707,7 @@ const HeaderTwo = () => {
                                         <span className="text-md text-white item-hover__text d-none d-lg-flex">
                                             Cart
                                         </span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <button

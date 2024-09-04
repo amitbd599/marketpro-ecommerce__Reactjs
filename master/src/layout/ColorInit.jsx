@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 
-const ColorInit = () => {
-    let color = true;
-
+const ColorInit = ({ color }) => {
     useEffect(() => {
         if (color === true) {
             // localStorage.setItem('theme', 'color-two');
             document.documentElement.classList.add('color-two');
+        } else {
+            document.documentElement.classList.remove('color-two');
         }
     }, [color]);
     return (

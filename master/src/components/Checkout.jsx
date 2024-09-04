@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const Checkout = () => {
     const [selectedPayment, setSelectedPayment] = useState(null);
@@ -12,12 +13,12 @@ const Checkout = () => {
                 <div className="border border-gray-100 rounded-8 px-30 py-20 mb-40">
                     <span className="">
                         Have a coupon?{" "}
-                        <a
-                            href="cart.html"
+                        <Link
+                            to="/cart"
                             className="fw-semibold text-gray-900 hover-text-decoration-underline hover-text-main-600"
                         >
                             Click here to enter your code
-                        </a>{" "}
+                        </Link>{" "}
                     </span>
                 </div>
                 <div className="row">
@@ -295,19 +296,19 @@ const Checkout = () => {
                                     Your personal data will be used to process your order, support
                                     your experience throughout this website, and for other purposes
                                     described in our{" "}
-                                    <a href="#" className="text-main-600 text-decoration-underline">
+                                    <Link to="#" className="text-main-600 text-decoration-underline">
                                         {" "}
                                         privacy policy
-                                    </a>{" "}
+                                    </Link>{" "}
                                     .
                                 </p>
                             </div>
-                            <a
-                                href="checkout.html"
+                            <Link
+                                to="/checkout"
                                 className="btn btn-main mt-40 py-18 w-100 rounded-8 mt-56"
                             >
                                 Place Order
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

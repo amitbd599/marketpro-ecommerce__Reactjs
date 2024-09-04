@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ProductListOne = () => {
     return (
@@ -7,18 +8,18 @@ const ProductListOne = () => {
                 <div className="row gy-4 g-12">
                     <div className="col-xxl-2 col-lg-3 col-sm-4 col-6">
                         <div className="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                            <a
-                                href="cart.html"
+                            <Link
+                                to="/cart"
                                 className="product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 position-absolute inset-block-start-0 inset-inline-end-0 me-16 mt-16"
                             >
                                 Add <i className="ph ph-shopping-cart" />
-                            </a>
-                            <a
-                                href="product-details.html"
+                            </Link>
+                            <Link
+                                to="/product-details"
                                 className="product-card__thumb flex-center"
                             >
                                 <img src="assets/images/thumbs/product-img1.png" alt="" />
-                            </a>
+                            </Link>
                             <div className="product-card__content mt-12">
                                 <div className="product-card__price mb-16">
                                     <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
@@ -36,9 +37,9 @@ const ProductListOne = () => {
                                     <span className="text-xs fw-bold text-gray-600">(17k)</span>
                                 </div>
                                 <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                    <a href="product-details.html" className="link text-line-2">
+                                    <Link to="/product-details" className="link text-line-2">
                                         Taylor Farms Broccoli Florets Vegetables
-                                    </a>
+                                    </Link>
                                 </h6>
                                 <div className="flex-align gap-4">
                                     <span className="text-main-600 text-md d-flex">
@@ -71,18 +72,18 @@ const ProductListOne = () => {
                     </div>
                     <div className="col-xxl-2 col-lg-3 col-sm-4 col-6">
                         <div className="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                            <a
-                                href="cart.html"
+                            <Link
+                                to="/cart"
                                 className="product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 position-absolute inset-block-start-0 inset-inline-end-0 me-16 mt-16"
                             >
                                 Add <i className="ph ph-shopping-cart" />
-                            </a>
-                            <a
-                                href="product-details.html"
+                            </Link>
+                            <Link
+                                to="/product-details"
                                 className="product-card__thumb flex-center"
                             >
                                 <img src="assets/images/thumbs/product-img2.png" alt="" />
-                            </a>
+                            </Link>
                             <div className="product-card__content mt-12">
                                 <div className="product-card__price mb-16">
                                     <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
@@ -100,9 +101,9 @@ const ProductListOne = () => {
                                     <span className="text-xs fw-bold text-gray-600">(17k)</span>
                                 </div>
                                 <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                    <a href="product-details.html" className="link text-line-2">
+                                    <Link to="/product-details" className="link text-line-2">
                                         Taylor Farms Broccoli Florets Vegetables
-                                    </a>
+                                    </Link>
                                 </h6>
                                 <div className="flex-align gap-4">
                                     <span className="text-main-600 text-md d-flex">
@@ -135,18 +136,18 @@ const ProductListOne = () => {
                     </div>
                     <div className="col-xxl-2 col-lg-3 col-sm-4 col-6">
                         <div className="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                            <a
-                                href="cart.html"
+                            <Link
+                                to="/cart"
                                 className="product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 position-absolute inset-block-start-0 inset-inline-end-0 me-16 mt-16"
                             >
                                 Add <i className="ph ph-shopping-cart" />
-                            </a>
-                            <a
-                                href="product-details.html"
+                            </Link>
+                            <Link
+                                to="/product-details"
                                 className="product-card__thumb flex-center"
                             >
                                 <img src="assets/images/thumbs/product-img3.png" alt="" />
-                            </a>
+                            </Link>
                             <div className="product-card__content mt-12">
                                 <div className="product-card__price mb-16">
                                     <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
@@ -164,9 +165,9 @@ const ProductListOne = () => {
                                     <span className="text-xs fw-bold text-gray-600">(17k)</span>
                                 </div>
                                 <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                    <a href="product-details.html" className="link text-line-2">
+                                    <Link to="/product-details" className="link text-line-2">
                                         Taylor Farms Broccoli Florets Vegetables
-                                    </a>
+                                    </Link>
                                 </h6>
                                 <div className="flex-align gap-4">
                                     <span className="text-main-600 text-md d-flex">
@@ -199,18 +200,18 @@ const ProductListOne = () => {
                     </div>
                     <div className="col-xxl-2 col-lg-3 col-sm-4 col-6">
                         <div className="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                            <a
-                                href="cart.html"
+                            <Link
+                                to="/cart"
                                 className="product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 position-absolute inset-block-start-0 inset-inline-end-0 me-16 mt-16"
                             >
                                 Add <i className="ph ph-shopping-cart" />
-                            </a>
-                            <a
-                                href="product-details.html"
+                            </Link>
+                            <Link
+                                to="/product-details"
                                 className="product-card__thumb flex-center"
                             >
                                 <img src="assets/images/thumbs/product-img1.png" alt="" />
-                            </a>
+                            </Link>
                             <div className="product-card__content mt-12">
                                 <div className="product-card__price mb-16">
                                     <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
@@ -228,9 +229,9 @@ const ProductListOne = () => {
                                     <span className="text-xs fw-bold text-gray-600">(17k)</span>
                                 </div>
                                 <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                    <a href="product-details.html" className="link text-line-2">
+                                    <Link to="/product-details" className="link text-line-2">
                                         Taylor Farms Broccoli Florets Vegetables
-                                    </a>
+                                    </Link>
                                 </h6>
                                 <div className="flex-align gap-4">
                                     <span className="text-main-600 text-md d-flex">
@@ -263,18 +264,18 @@ const ProductListOne = () => {
                     </div>
                     <div className="col-xxl-2 col-lg-3 col-sm-4 col-6">
                         <div className="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                            <a
-                                href="cart.html"
+                            <Link
+                                to="/cart"
                                 className="product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 position-absolute inset-block-start-0 inset-inline-end-0 me-16 mt-16"
                             >
                                 Add <i className="ph ph-shopping-cart" />
-                            </a>
-                            <a
-                                href="product-details.html"
+                            </Link>
+                            <Link
+                                to="/product-details"
                                 className="product-card__thumb flex-center"
                             >
                                 <img src="assets/images/thumbs/product-img5.png" alt="" />
-                            </a>
+                            </Link>
                             <div className="product-card__content mt-12">
                                 <div className="product-card__price mb-16">
                                     <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
@@ -292,9 +293,9 @@ const ProductListOne = () => {
                                     <span className="text-xs fw-bold text-gray-600">(17k)</span>
                                 </div>
                                 <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                    <a href="product-details.html" className="link text-line-2">
+                                    <Link to="/product-details" className="link text-line-2">
                                         Taylor Farms Broccoli Florets Vegetables
-                                    </a>
+                                    </Link>
                                 </h6>
                                 <div className="flex-align gap-4">
                                     <span className="text-main-600 text-md d-flex">
@@ -327,18 +328,18 @@ const ProductListOne = () => {
                     </div>
                     <div className="col-xxl-2 col-lg-3 col-sm-4 col-6">
                         <div className="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                            <a
-                                href="cart.html"
+                            <Link
+                                to="/cart"
                                 className="product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 position-absolute inset-block-start-0 inset-inline-end-0 me-16 mt-16"
                             >
                                 Add <i className="ph ph-shopping-cart" />
-                            </a>
-                            <a
-                                href="product-details.html"
+                            </Link>
+                            <Link
+                                to="/product-details"
                                 className="product-card__thumb flex-center"
                             >
                                 <img src="assets/images/thumbs/product-img6.png" alt="" />
-                            </a>
+                            </Link>
                             <div className="product-card__content mt-12">
                                 <div className="product-card__price mb-16">
                                     <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
@@ -356,9 +357,9 @@ const ProductListOne = () => {
                                     <span className="text-xs fw-bold text-gray-600">(17k)</span>
                                 </div>
                                 <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                    <a href="product-details.html" className="link text-line-2">
+                                    <Link to="/product-details" className="link text-line-2">
                                         Taylor Farms Broccoli Florets Vegetables
-                                    </a>
+                                    </Link>
                                 </h6>
                                 <div className="flex-align gap-4">
                                     <span className="text-main-600 text-md d-flex">

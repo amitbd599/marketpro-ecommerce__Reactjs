@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 
 const NewArrivalOne = () => {
@@ -78,12 +79,12 @@ const NewArrivalOne = () => {
                     <div className="flex-between flex-wrap gap-8">
                         <h5 className="mb-0">New Arrivals</h5>
                         <div className="flex-align mr-point gap-16">
-                            <a
-                                href="shop.html"
+                            <Link
+                                to="/shop"
                                 className="text-sm fw-medium text-gray-700 hover-text-main-600 hover-text-decoration-underline"
                             >
                                 View All Deals
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -91,12 +92,12 @@ const NewArrivalOne = () => {
                     <Slider {...settings}>
                         <div>
                             <div className="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center"
                                 >
                                     <img src="assets/images/thumbs/product-img20.png" alt="" />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-12">
                                     <div className="flex-align gap-6">
                                         <span className="text-xs fw-bold text-gray-500">4.8</span>
@@ -106,9 +107,9 @@ const NewArrivalOne = () => {
                                         <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                     </div>
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a href="product-details.html" className="link text-line-2">
+                                        <Link to="/product-details" className="link text-line-2">
                                             C-500 Antioxidant Protect Dietary Supplement
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align gap-4">
                                         <span className="text-main-600 text-md d-flex">
@@ -127,24 +128,24 @@ const NewArrivalOne = () => {
                                                 $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                             </span>
                                         </div>
-                                        <a
-                                            href="cart.html"
+                                        <Link
+                                            to="/cart"
                                             className="product-card__cart btn btn-main py-11 px-24 rounded-pill flex-align gap-8"
                                         >
                                             Add <i className="ph ph-shopping-cart" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div>
                             <div className="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center"
                                 >
                                     <img src="assets/images/thumbs/product-img21.png" alt="" />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-12">
                                     <div className="flex-align gap-6">
                                         <span className="text-xs fw-bold text-gray-500">4.8</span>
@@ -154,9 +155,9 @@ const NewArrivalOne = () => {
                                         <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                     </div>
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a href="product-details.html" className="link text-line-2">
+                                        <Link to="/product-details" className="link text-line-2">
                                             C-500 Antioxidant Protect Dietary Supplement
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align gap-4">
                                         <span className="text-main-600 text-md d-flex">
@@ -175,24 +176,24 @@ const NewArrivalOne = () => {
                                                 $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                             </span>
                                         </div>
-                                        <a
-                                            href="cart.html"
+                                        <Link
+                                            to="/cart"
                                             className="product-card__cart btn btn-main py-11 px-24 rounded-pill flex-align gap-8"
                                         >
                                             Add <i className="ph ph-shopping-cart" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div>
                             <div className="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center"
                                 >
                                     <img src="assets/images/thumbs/product-img22.png" alt="" />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-12">
                                     <div className="flex-align gap-6">
                                         <span className="text-xs fw-bold text-gray-500">4.8</span>
@@ -202,9 +203,9 @@ const NewArrivalOne = () => {
                                         <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                     </div>
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a href="product-details.html" className="link text-line-2">
+                                        <Link to="/product-details" className="link text-line-2">
                                             C-500 Antioxidant Protect Dietary Supplement
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align gap-4">
                                         <span className="text-main-600 text-md d-flex">
@@ -223,24 +224,24 @@ const NewArrivalOne = () => {
                                                 $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                             </span>
                                         </div>
-                                        <a
-                                            href="cart.html"
+                                        <Link
+                                            to="/cart"
                                             className="product-card__cart btn btn-main py-11 px-24 rounded-pill flex-align gap-8"
                                         >
                                             Add <i className="ph ph-shopping-cart" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div>
                             <div className="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center"
                                 >
                                     <img src="assets/images/thumbs/product-img23.png" alt="" />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-12">
                                     <div className="flex-align gap-6">
                                         <span className="text-xs fw-bold text-gray-500">4.8</span>
@@ -250,9 +251,9 @@ const NewArrivalOne = () => {
                                         <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                     </div>
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a href="product-details.html" className="link text-line-2">
+                                        <Link to="/product-details" className="link text-line-2">
                                             C-500 Antioxidant Protect Dietary Supplement
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align gap-4">
                                         <span className="text-main-600 text-md d-flex">
@@ -271,24 +272,24 @@ const NewArrivalOne = () => {
                                                 $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                             </span>
                                         </div>
-                                        <a
-                                            href="cart.html"
+                                        <Link
+                                            to="/cart"
                                             className="product-card__cart btn btn-main py-11 px-24 rounded-pill flex-align gap-8"
                                         >
                                             Add <i className="ph ph-shopping-cart" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div>
                             <div className="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center"
                                 >
                                     <img src="assets/images/thumbs/product-img24.png" alt="" />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-12">
                                     <div className="flex-align gap-6">
                                         <span className="text-xs fw-bold text-gray-500">4.8</span>
@@ -298,9 +299,9 @@ const NewArrivalOne = () => {
                                         <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                     </div>
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a href="product-details.html" className="link text-line-2">
+                                        <Link to="/product-details" className="link text-line-2">
                                             C-500 Antioxidant Protect Dietary Supplement
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align gap-4">
                                         <span className="text-main-600 text-md d-flex">
@@ -319,24 +320,24 @@ const NewArrivalOne = () => {
                                                 $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                             </span>
                                         </div>
-                                        <a
-                                            href="cart.html"
+                                        <Link
+                                            to="/cart"
                                             className="product-card__cart btn btn-main py-11 px-24 rounded-pill flex-align gap-8"
                                         >
                                             Add <i className="ph ph-shopping-cart" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div>
                             <div className="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center"
                                 >
                                     <img src="assets/images/thumbs/product-img25.png" alt="" />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-12">
                                     <div className="flex-align gap-6">
                                         <span className="text-xs fw-bold text-gray-500">4.8</span>
@@ -346,9 +347,9 @@ const NewArrivalOne = () => {
                                         <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                     </div>
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a href="product-details.html" className="link text-line-2">
+                                        <Link to="/product-details" className="link text-line-2">
                                             C-500 Antioxidant Protect Dietary Supplement
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align gap-4">
                                         <span className="text-main-600 text-md d-flex">
@@ -367,24 +368,24 @@ const NewArrivalOne = () => {
                                                 $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                             </span>
                                         </div>
-                                        <a
-                                            href="cart.html"
+                                        <Link
+                                            to="/cart"
                                             className="product-card__cart btn btn-main py-11 px-24 rounded-pill flex-align gap-8"
                                         >
                                             Add <i className="ph ph-shopping-cart" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div>
                             <div className="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center"
                                 >
                                     <img src="assets/images/thumbs/product-img21.png" alt="" />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-12">
                                     <div className="flex-align gap-6">
                                         <span className="text-xs fw-bold text-gray-500">4.8</span>
@@ -394,9 +395,9 @@ const NewArrivalOne = () => {
                                         <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                     </div>
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a href="product-details.html" className="link text-line-2">
+                                        <Link to="/product-details" className="link text-line-2">
                                             C-500 Antioxidant Protect Dietary Supplement
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align gap-4">
                                         <span className="text-main-600 text-md d-flex">
@@ -415,12 +416,12 @@ const NewArrivalOne = () => {
                                                 $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                             </span>
                                         </div>
-                                        <a
-                                            href="cart.html"
+                                        <Link
+                                            to="/cart"
                                             className="product-card__cart btn btn-main py-11 px-24 rounded-pill flex-align gap-8"
                                         >
                                             Add <i className="ph ph-shopping-cart" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

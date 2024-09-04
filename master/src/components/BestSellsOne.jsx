@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const BestSellsOne = () => {
     return (
@@ -18,12 +19,12 @@ const BestSellsOne = () => {
                                         <span className="product-card__badge bg-danger-600 px-8 py-4 text-sm text-white">
                                             Sale 50%{" "}
                                         </span>
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="product-card__thumb flex-center"
                                         >
                                             <img src="assets/images/thumbs/best-sell1.png" alt="" />
-                                        </a>
+                                        </Link>
                                         <div className="countdown" id="countdown6">
                                             <ul className="countdown-list style-three flex-align flex-wrap">
                                                 <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
@@ -62,9 +63,9 @@ const BestSellsOne = () => {
                                             <span className="text-xs fw-bold text-gray-600">(17k)</span>
                                         </div>
                                         <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                            <a href="product-details.html" className="link text-line-2">
+                                            <Link to="/product-details" className="link text-line-2">
                                                 Taylor Farms Broccoli Florets Vegetables
-                                            </a>
+                                            </Link>
                                         </h6>
                                         <div className="flex-align gap-4">
                                             <span className="text-main-600 text-md d-flex">
@@ -92,12 +93,12 @@ const BestSellsOne = () => {
                                                 Sold: 18/35
                                             </span>
                                         </div>
-                                        <a
-                                            href="cart.html"
+                                        <Link
+                                            to="/cart"
                                             className="product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center"
                                         >
                                             Add To Cart <i className="ph ph-shopping-cart" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -107,12 +108,12 @@ const BestSellsOne = () => {
                                         <span className="product-card__badge bg-danger-600 px-8 py-4 text-sm text-white">
                                             Sale 50%{" "}
                                         </span>
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="product-card__thumb flex-center"
                                         >
                                             <img src="assets/images/thumbs/best-sell2.png" alt="" />
-                                        </a>
+                                        </Link>
                                         <div className="countdown" id="countdown7">
                                             <ul className="countdown-list style-three flex-align flex-wrap">
                                                 <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
@@ -151,9 +152,9 @@ const BestSellsOne = () => {
                                             <span className="text-xs fw-bold text-gray-600">(17k)</span>
                                         </div>
                                         <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                            <a href="product-details.html" className="link text-line-2">
+                                            <Link to="/product-details" className="link text-line-2">
                                                 Taylor Farms Broccoli Florets Vegetables
-                                            </a>
+                                            </Link>
                                         </h6>
                                         <div className="flex-align gap-4">
                                             <span className="text-main-600 text-md d-flex">
@@ -181,12 +182,12 @@ const BestSellsOne = () => {
                                                 Sold: 18/35
                                             </span>
                                         </div>
-                                        <a
-                                            href="cart.html"
+                                        <Link
+                                            to="/cart"
                                             className="product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center"
                                         >
                                             Add To Cart <i className="ph ph-shopping-cart" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -196,12 +197,12 @@ const BestSellsOne = () => {
                                         <span className="product-card__badge bg-danger-600 px-8 py-4 text-sm text-white">
                                             Sale 50%{" "}
                                         </span>
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="product-card__thumb flex-center"
                                         >
                                             <img src="assets/images/thumbs/best-sell3.png" alt="" />
-                                        </a>
+                                        </Link>
                                         <div className="countdown" id="countdown8">
                                             <ul className="countdown-list style-three flex-align flex-wrap">
                                                 <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
@@ -240,9 +241,9 @@ const BestSellsOne = () => {
                                             <span className="text-xs fw-bold text-gray-600">(17k)</span>
                                         </div>
                                         <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                            <a href="product-details.html" className="link text-line-2">
+                                            <Link to="/product-details" className="link text-line-2">
                                                 Taylor Farms Broccoli Florets Vegetables
-                                            </a>
+                                            </Link>
                                         </h6>
                                         <div className="flex-align gap-4">
                                             <span className="text-main-600 text-md d-flex">
@@ -270,12 +271,12 @@ const BestSellsOne = () => {
                                                 Sold: 18/35
                                             </span>
                                         </div>
-                                        <a
-                                            href="cart.html"
+                                        <Link
+                                            to="/cart"
                                             className="product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center"
                                         >
                                             Add To Cart <i className="ph ph-shopping-cart" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -285,12 +286,12 @@ const BestSellsOne = () => {
                                         <span className="product-card__badge bg-danger-600 px-8 py-4 text-sm text-white">
                                             Sale 50%{" "}
                                         </span>
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="product-card__thumb flex-center"
                                         >
                                             <img src="assets/images/thumbs/best-sell4.png" alt="" />
-                                        </a>
+                                        </Link>
                                         <div className="countdown" id="countdown9">
                                             <ul className="countdown-list style-three flex-align flex-wrap">
                                                 <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
@@ -329,9 +330,9 @@ const BestSellsOne = () => {
                                             <span className="text-xs fw-bold text-gray-600">(17k)</span>
                                         </div>
                                         <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                            <a href="product-details.html" className="link text-line-2">
+                                            <Link to="/product-details" className="link text-line-2">
                                                 Taylor Farms Broccoli Florets Vegetables
-                                            </a>
+                                            </Link>
                                         </h6>
                                         <div className="flex-align gap-4">
                                             <span className="text-main-600 text-md d-flex">
@@ -359,12 +360,12 @@ const BestSellsOne = () => {
                                                 Sold: 18/35
                                             </span>
                                         </div>
-                                        <a
-                                            href="cart.html"
+                                        <Link
+                                            to="/cart"
                                             className="product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center"
                                         >
                                             Add To Cart <i className="ph ph-shopping-cart" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -404,8 +405,8 @@ const BestSellsOne = () => {
                                         </li>
                                     </ul>
                                 </div>
-                                <a
-                                    href="shop.html"
+                                <Link
+                                    to="/shop"
                                     className="mt-16 btn btn-main-two fw-medium d-inline-flex align-items-center rounded-pill gap-8"
                                     tabIndex={0}
                                 >
@@ -413,7 +414,7 @@ const BestSellsOne = () => {
                                     <span className="icon text-xl d-flex">
                                         <i className="ph ph-arrow-right" />
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

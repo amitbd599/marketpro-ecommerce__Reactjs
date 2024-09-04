@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import ReactSlider from 'react-slider'
 
 const ShopSection = () => {
@@ -23,108 +24,108 @@ const ShopSection = () => {
                                 </h6>
                                 <ul className="max-h-540 overflow-y-auto scroll-sm">
                                     <li className="mb-24">
-                                        <a
-                                            href="product-details-two.html"
+                                        <Link
+                                            to="/product-details-two"
                                             className="text-gray-900 hover-text-main-600"
                                         >
                                             Mobile &amp; Accessories (12)
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-24">
-                                        <a
-                                            href="product-details-two.html"
+                                        <Link
+                                            to="/product-details-two"
                                             className="text-gray-900 hover-text-main-600"
                                         >
                                             Laptop (12)
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-24">
-                                        <a
-                                            href="product-details-two.html"
+                                        <Link
+                                            to="/product-details-two"
                                             className="text-gray-900 hover-text-main-600"
                                         >
                                             Electronics (12)
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-24">
-                                        <a
-                                            href="product-details-two.html"
+                                        <Link
+                                            to="/product-details-two"
                                             className="text-gray-900 hover-text-main-600"
                                         >
                                             Smart Watch (12)
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-24">
-                                        <a
-                                            href="product-details-two.html"
+                                        <Link
+                                            to="/product-details-two"
                                             className="text-gray-900 hover-text-main-600"
                                         >
                                             Storage (12)
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-24">
-                                        <a
-                                            href="product-details-two.html"
+                                        <Link
+                                            to="/product-details-two"
                                             className="text-gray-900 hover-text-main-600"
                                         >
                                             Portable Devices (12)
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-24">
-                                        <a
-                                            href="product-details-two.html"
+                                        <Link
+                                            to="/product-details-two"
                                             className="text-gray-900 hover-text-main-600"
                                         >
                                             Action Camera (12)
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-24">
-                                        <a
-                                            href="product-details-two.html"
+                                        <Link
+                                            to="/product-details-two"
                                             className="text-gray-900 hover-text-main-600"
                                         >
                                             Smart Gadget (12)
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-24">
-                                        <a
-                                            href="product-details-two.html"
+                                        <Link
+                                            to="/product-details-two"
                                             className="text-gray-900 hover-text-main-600"
                                         >
                                             Monitor (12)
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-24">
-                                        <a
-                                            href="product-details-two.html"
+                                        <Link
+                                            to="/product-details-two"
                                             className="text-gray-900 hover-text-main-600"
                                         >
                                             Smart TV (12)
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-24">
-                                        <a
-                                            href="product-details-two.html"
+                                        <Link
+                                            to="/product-details-two"
                                             className="text-gray-900 hover-text-main-600"
                                         >
                                             Camera (12)
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-24">
-                                        <a
-                                            href="product-details-two.html"
+                                        <Link
+                                            to="/product-details-two"
                                             className="text-gray-900 hover-text-main-600"
                                         >
                                             Monitor Stand (12)
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="mb-0">
-                                        <a
-                                            href="product-details-two.html"
+                                        <Link
+                                            to="/product-details-two"
                                             className="text-gray-900 hover-text-main-600"
                                         >
                                             Headphone (12)
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -644,8 +645,8 @@ const ShopSection = () => {
                         {/* Top End */}
                         <div className="list-grid-wrapper">
                             <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                 >
                                     <img
@@ -656,16 +657,16 @@ const ShopSection = () => {
                                     <span className="product-card__badge bg-primary-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">
                                         Best Sale{" "}
                                     </span>
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-16">
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Taylor Farms Broccoli Florets Vegetables
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align mb-20 mt-16 gap-6">
                                         <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -700,18 +701,18 @@ const ShopSection = () => {
                                             $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                         </span>
                                     </div>
-                                    <a
-                                        href="cart.html"
+                                    <Link
+                                        to="/cart"
                                         className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                         tabIndex={0}
                                     >
                                         Add To Cart <i className="ph ph-shopping-cart" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                 >
                                     <img
@@ -719,16 +720,16 @@ const ShopSection = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-16">
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Taylor Farms Broccoli Florets Vegetables
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align mb-20 mt-16 gap-6">
                                         <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -763,18 +764,18 @@ const ShopSection = () => {
                                             $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                         </span>
                                     </div>
-                                    <a
-                                        href="cart.html"
+                                    <Link
+                                        to="/cart"
                                         className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                         tabIndex={0}
                                     >
                                         Add To Cart <i className="ph ph-shopping-cart" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                 >
                                     <img
@@ -782,16 +783,16 @@ const ShopSection = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-16">
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Taylor Farms Broccoli Florets Vegetables
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align mb-20 mt-16 gap-6">
                                         <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -826,18 +827,18 @@ const ShopSection = () => {
                                             $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                         </span>
                                     </div>
-                                    <a
-                                        href="cart.html"
+                                    <Link
+                                        to="/cart"
                                         className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                         tabIndex={0}
                                     >
                                         Add To Cart <i className="ph ph-shopping-cart" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                 >
                                     <span className="product-card__badge bg-danger-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">
@@ -848,16 +849,16 @@ const ShopSection = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-16">
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Taylor Farms Broccoli Florets Vegetables
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align mb-20 mt-16 gap-6">
                                         <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -892,18 +893,18 @@ const ShopSection = () => {
                                             $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                         </span>
                                     </div>
-                                    <a
-                                        href="cart.html"
+                                    <Link
+                                        to="/cart"
                                         className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                         tabIndex={0}
                                     >
                                         Add To Cart <i className="ph ph-shopping-cart" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                 >
                                     <img
@@ -911,16 +912,16 @@ const ShopSection = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-16">
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Taylor Farms Broccoli Florets Vegetables
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align mb-20 mt-16 gap-6">
                                         <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -955,18 +956,18 @@ const ShopSection = () => {
                                             $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                         </span>
                                     </div>
-                                    <a
-                                        href="cart.html"
+                                    <Link
+                                        to="/cart"
                                         className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                         tabIndex={0}
                                     >
                                         Add To Cart <i className="ph ph-shopping-cart" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                 >
                                     <img
@@ -974,16 +975,16 @@ const ShopSection = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-16">
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Taylor Farms Broccoli Florets Vegetables
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align mb-20 mt-16 gap-6">
                                         <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -1018,18 +1019,18 @@ const ShopSection = () => {
                                             $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                         </span>
                                     </div>
-                                    <a
-                                        href="cart.html"
+                                    <Link
+                                        to="/cart"
                                         className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                         tabIndex={0}
                                     >
                                         Add To Cart <i className="ph ph-shopping-cart" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                 >
                                     <img
@@ -1037,16 +1038,16 @@ const ShopSection = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-16">
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Taylor Farms Broccoli Florets Vegetables
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align mb-20 mt-16 gap-6">
                                         <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -1081,18 +1082,18 @@ const ShopSection = () => {
                                             $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                         </span>
                                     </div>
-                                    <a
-                                        href="cart.html"
+                                    <Link
+                                        to="/cart"
                                         className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                         tabIndex={0}
                                     >
                                         Add To Cart <i className="ph ph-shopping-cart" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                 >
                                     <img
@@ -1100,16 +1101,16 @@ const ShopSection = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-16">
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Taylor Farms Broccoli Florets Vegetables
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align mb-20 mt-16 gap-6">
                                         <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -1144,18 +1145,18 @@ const ShopSection = () => {
                                             $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                         </span>
                                     </div>
-                                    <a
-                                        href="cart.html"
+                                    <Link
+                                        to="/cart"
                                         className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                         tabIndex={0}
                                     >
                                         Add To Cart <i className="ph ph-shopping-cart" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                 >
                                     <span className="product-card__badge bg-danger-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">
@@ -1166,16 +1167,16 @@ const ShopSection = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-16">
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Taylor Farms Broccoli Florets Vegetables
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align mb-20 mt-16 gap-6">
                                         <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -1210,18 +1211,18 @@ const ShopSection = () => {
                                             $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                         </span>
                                     </div>
-                                    <a
-                                        href="cart.html"
+                                    <Link
+                                        to="/cart"
                                         className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                         tabIndex={0}
                                     >
                                         Add To Cart <i className="ph ph-shopping-cart" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                 >
                                     <img
@@ -1229,16 +1230,16 @@ const ShopSection = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-16">
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Taylor Farms Broccoli Florets Vegetables
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align mb-20 mt-16 gap-6">
                                         <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -1273,18 +1274,18 @@ const ShopSection = () => {
                                             $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                         </span>
                                     </div>
-                                    <a
-                                        href="cart.html"
+                                    <Link
+                                        to="/cart"
                                         className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                         tabIndex={0}
                                     >
                                         Add To Cart <i className="ph ph-shopping-cart" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                 >
                                     <img
@@ -1292,16 +1293,16 @@ const ShopSection = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-16">
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Taylor Farms Broccoli Florets Vegetables
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align mb-20 mt-16 gap-6">
                                         <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -1336,18 +1337,18 @@ const ShopSection = () => {
                                             $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                         </span>
                                     </div>
-                                    <a
-                                        href="cart.html"
+                                    <Link
+                                        to="/cart"
                                         className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                         tabIndex={0}
                                     >
                                         Add To Cart <i className="ph ph-shopping-cart" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                 >
                                     <span className="product-card__badge bg-warning-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">
@@ -1358,16 +1359,16 @@ const ShopSection = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-16">
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Taylor Farms Broccoli Florets Vegetables
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align mb-20 mt-16 gap-6">
                                         <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -1402,18 +1403,18 @@ const ShopSection = () => {
                                             $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                         </span>
                                     </div>
-                                    <a
-                                        href="cart.html"
+                                    <Link
+                                        to="/cart"
                                         className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                         tabIndex={0}
                                     >
                                         Add To Cart <i className="ph ph-shopping-cart" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                 >
                                     <img
@@ -1421,16 +1422,16 @@ const ShopSection = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-16">
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Taylor Farms Broccoli Florets Vegetables
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align mb-20 mt-16 gap-6">
                                         <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -1465,18 +1466,18 @@ const ShopSection = () => {
                                             $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                         </span>
                                     </div>
-                                    <a
-                                        href="cart.html"
+                                    <Link
+                                        to="/cart"
                                         className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                         tabIndex={0}
                                     >
                                         Add To Cart <i className="ph ph-shopping-cart" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                 >
                                     <img
@@ -1484,16 +1485,16 @@ const ShopSection = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-16">
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Taylor Farms Broccoli Florets Vegetables
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align mb-20 mt-16 gap-6">
                                         <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -1528,18 +1529,18 @@ const ShopSection = () => {
                                             $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                         </span>
                                     </div>
-                                    <a
-                                        href="cart.html"
+                                    <Link
+                                        to="/cart"
                                         className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                         tabIndex={0}
                                     >
                                         Add To Cart <i className="ph ph-shopping-cart" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                 >
                                     <span className="product-card__badge bg-primary-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">
@@ -1550,16 +1551,16 @@ const ShopSection = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-16">
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Taylor Farms Broccoli Florets Vegetables
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align mb-20 mt-16 gap-6">
                                         <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -1594,18 +1595,18 @@ const ShopSection = () => {
                                             $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                         </span>
                                     </div>
-                                    <a
-                                        href="cart.html"
+                                    <Link
+                                        to="/cart"
                                         className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                         tabIndex={0}
                                     >
                                         Add To Cart <i className="ph ph-shopping-cart" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                 >
                                     <span className="product-card__badge bg-warning-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">
@@ -1616,16 +1617,16 @@ const ShopSection = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-16">
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Taylor Farms Broccoli Florets Vegetables
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align mb-20 mt-16 gap-6">
                                         <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -1660,18 +1661,18 @@ const ShopSection = () => {
                                             $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                         </span>
                                     </div>
-                                    <a
-                                        href="cart.html"
+                                    <Link
+                                        to="/cart"
                                         className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                         tabIndex={0}
                                     >
                                         Add To Cart <i className="ph ph-shopping-cart" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                 >
                                     <img
@@ -1682,16 +1683,16 @@ const ShopSection = () => {
                                     <span className="product-card__badge bg-primary-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">
                                         Best Sale{" "}
                                     </span>
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-16">
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Taylor Farms Broccoli Florets Vegetables
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align mb-20 mt-16 gap-6">
                                         <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -1726,18 +1727,18 @@ const ShopSection = () => {
                                             $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                         </span>
                                     </div>
-                                    <a
-                                        href="cart.html"
+                                    <Link
+                                        to="/cart"
                                         className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                         tabIndex={0}
                                     >
                                         Add To Cart <i className="ph ph-shopping-cart" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                 >
                                     <img
@@ -1745,16 +1746,16 @@ const ShopSection = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-16">
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Taylor Farms Broccoli Florets Vegetables
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align mb-20 mt-16 gap-6">
                                         <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -1789,18 +1790,18 @@ const ShopSection = () => {
                                             $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                         </span>
                                     </div>
-                                    <a
-                                        href="cart.html"
+                                    <Link
+                                        to="/cart"
                                         className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                         tabIndex={0}
                                     >
                                         Add To Cart <i className="ph ph-shopping-cart" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                 >
                                     <img
@@ -1808,16 +1809,16 @@ const ShopSection = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-16">
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Taylor Farms Broccoli Florets Vegetables
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align mb-20 mt-16 gap-6">
                                         <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -1852,18 +1853,18 @@ const ShopSection = () => {
                                             $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                         </span>
                                     </div>
-                                    <a
-                                        href="cart.html"
+                                    <Link
+                                        to="/cart"
                                         className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                         tabIndex={0}
                                     >
                                         Add To Cart <i className="ph ph-shopping-cart" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center rounded-8 bg-gray-50 position-relative"
                                 >
                                     <span className="product-card__badge bg-danger-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">
@@ -1874,16 +1875,16 @@ const ShopSection = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content mt-16">
                                     <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Taylor Farms Broccoli Florets Vegetables
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align mb-20 mt-16 gap-6">
                                         <span className="text-xs fw-medium text-gray-500">4.8</span>
@@ -1918,89 +1919,89 @@ const ShopSection = () => {
                                             $14.99 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                         </span>
                                     </div>
-                                    <a
-                                        href="cart.html"
+                                    <Link
+                                        to="/cart"
                                         className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                         tabIndex={0}
                                     >
                                         Add To Cart <i className="ph ph-shopping-cart" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                         {/* Pagination Start */}
                         <ul className="pagination flex-center flex-wrap gap-16">
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link h-64 w-64 flex-center text-xxl rounded-8 fw-medium text-neutral-600 border border-gray-100"
-                                    href="#"
+                                    to="#"
                                 >
                                     <i className="ph-bold ph-arrow-left" />
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item active">
-                                <a
+                                <Link
                                     className="page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100"
-                                    href="#"
+                                    to="#"
                                 >
                                     01
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100"
-                                    href="#"
+                                    to="#"
                                 >
                                     02
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100"
-                                    href="#"
+                                    to="#"
                                 >
                                     03
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100"
-                                    href="#"
+                                    to="#"
                                 >
                                     04
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100"
-                                    href="#"
+                                    to="#"
                                 >
                                     05
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100"
-                                    href="#"
+                                    to="#"
                                 >
                                     06
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100"
-                                    href="#"
+                                    to="#"
                                 >
                                     07
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link h-64 w-64 flex-center text-xxl rounded-8 fw-medium text-neutral-600 border border-gray-100"
-                                    href="#"
+                                    to="#"
                                 >
                                     <i className="ph-bold ph-arrow-right" />
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                         {/* Pagination End */}

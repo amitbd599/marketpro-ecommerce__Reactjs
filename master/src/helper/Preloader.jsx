@@ -10,13 +10,11 @@ const Preloader = () => {
 
   return (
     <>
-      {active  ? (
-        <div className="loader-mask">
-          <div className="loader">
-            <div></div>
-            <div></div>
-          </div>
+      {active ? (
+        <div className="preloader">
+          <img src="assets/images/icon/preloader.gif" alt="" />
         </div>
+
       ) : (<div></div>)}
     </>
   );

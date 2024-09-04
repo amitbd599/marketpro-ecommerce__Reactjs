@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const BreadcrumbTwo = ({ title }) => {
     return (
@@ -8,26 +9,26 @@ const BreadcrumbTwo = ({ title }) => {
                     <h6 className="mb-0">Shop Details</h6>
                     <ul className="flex-align gap-8 flex-wrap">
                         <li className="text-sm">
-                            <a href="index.html" className="text-main-600 flex-align gap-8">
+                            <Link to="/" className="text-main-600 flex-align gap-8">
                                 <i className="ph ph-house" />
                                 Home
-                            </a>
+                            </Link>
                         </li>
                         <li className="flex-align text-gray-500">
                             <i className="ph ph-caret-right" />
                         </li>
                         <li className="text-sm">
-                            <a href="shop.html" className="text-main-600 flex-align gap-8">
+                            <Link to="/shop" className="text-main-600 flex-align gap-8">
                                 {title}
-                            </a>
+                            </Link>
                         </li>
                         <li className="flex-align text-gray-500">
                             <i className="ph ph-caret-right" />
                         </li>
                         <li className="text-sm">
-                            <a href="index.html" className="text-main-600 flex-align gap-8">
+                            <Link to="/" className="text-main-600 flex-align gap-8">
                                 Shop Grid
-                            </a>
+                            </Link>
                         </li>
                         <li className="flex-align text-gray-500">
                             <i className="ph ph-caret-right" />

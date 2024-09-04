@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const PopularProductsOne = () => {
     return (
@@ -9,12 +10,12 @@ const PopularProductsOne = () => {
                         <div className="flex-between flex-wrap gap-8">
                             <h5 className="mb-0">Popular Products</h5>
                             <div className="flex-align gap-16">
-                                <a
-                                    href="shop.html"
+                                <Link
+                                    to="/shop"
                                     className="text-sm fw-medium text-gray-700 hover-text-main-600 hover-text-decoration-underline"
                                 >
                                     View All Products
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -60,8 +61,8 @@ const PopularProductsOne = () => {
                     <div className="row gy-4">
                         <div className="col-xxl-3 col-xl-4 col-sm-6 col-xs-6">
                             <div className="product-card h-100 d-flex gap-16 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center h-unset rounded-8 bg-gray-50 position-relative w-unset flex-shrink-0 p-24"
                                     tabIndex={0}
                                 >
@@ -70,16 +71,16 @@ const PopularProductsOne = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content flex-grow-1">
                                     <h6 className="title text-lg fw-semibold mb-12">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Headphone &amp; Earphone
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <span className="text-gray-600 text-sm mb-4">
                                         Wired Headphones
@@ -93,20 +94,20 @@ const PopularProductsOne = () => {
                                     <span className="text-gray-600 text-sm mb-0">
                                         Earbud Headphone
                                     </span>
-                                    <a
-                                        href="shop.html"
+                                    <Link
+                                        to="/shop"
                                         className="text-tertiary-600 flex-align gap-8 mt-24"
                                     >
                                         All Categories
                                         <i className="ph ph-arrow-right d-flex" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-xxl-3 col-xl-4 col-sm-6 col-xs-6">
                             <div className="product-card h-100 d-flex gap-16 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center h-unset rounded-8 bg-gray-50 position-relative w-unset flex-shrink-0 p-24"
                                     tabIndex={0}
                                 >
@@ -115,16 +116,16 @@ const PopularProductsOne = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content flex-grow-1">
                                     <h6 className="title text-lg fw-semibold mb-12">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             TV &amp; Smart Home
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <span className="text-gray-600 text-sm mb-4">
                                         Wired Headphones
@@ -138,20 +139,20 @@ const PopularProductsOne = () => {
                                     <span className="text-gray-600 text-sm mb-0">
                                         Earbud Headphone
                                     </span>
-                                    <a
-                                        href="shop.html"
+                                    <Link
+                                        to="/shop"
                                         className="text-tertiary-600 flex-align gap-8 mt-24"
                                     >
                                         All Categories
                                         <i className="ph ph-arrow-right d-flex" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-xxl-3 col-xl-4 col-sm-6 col-xs-6">
                             <div className="product-card h-100 d-flex gap-16 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center h-unset rounded-8 bg-gray-50 position-relative w-unset flex-shrink-0 p-24"
                                     tabIndex={0}
                                 >
@@ -160,16 +161,16 @@ const PopularProductsOne = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content flex-grow-1">
                                     <h6 className="title text-lg fw-semibold mb-12">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Video Games
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <span className="text-gray-600 text-sm mb-4">
                                         Wired Headphones
@@ -183,20 +184,20 @@ const PopularProductsOne = () => {
                                     <span className="text-gray-600 text-sm mb-0">
                                         Earbud Headphone
                                     </span>
-                                    <a
-                                        href="shop.html"
+                                    <Link
+                                        to="/shop"
                                         className="text-tertiary-600 flex-align gap-8 mt-24"
                                     >
                                         All Categories
                                         <i className="ph ph-arrow-right d-flex" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-xxl-3 col-xl-4 col-sm-6 col-xs-6">
                             <div className="product-card h-100 d-flex gap-16 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center h-unset rounded-8 bg-gray-50 position-relative w-unset flex-shrink-0 p-24"
                                     tabIndex={0}
                                 >
@@ -205,16 +206,16 @@ const PopularProductsOne = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content flex-grow-1">
                                     <h6 className="title text-lg fw-semibold mb-12">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Computer &amp; Tablets
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <span className="text-gray-600 text-sm mb-4">
                                         Wired Headphones
@@ -228,20 +229,20 @@ const PopularProductsOne = () => {
                                     <span className="text-gray-600 text-sm mb-0">
                                         Earbud Headphone
                                     </span>
-                                    <a
-                                        href="shop.html"
+                                    <Link
+                                        to="/shop"
                                         className="text-tertiary-600 flex-align gap-8 mt-24"
                                     >
                                         All Categories
                                         <i className="ph ph-arrow-right d-flex" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-xxl-3 col-xl-4 col-sm-6 col-xs-6">
                             <div className="product-card h-100 d-flex gap-16 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center h-unset rounded-8 bg-gray-50 position-relative w-unset flex-shrink-0 p-24"
                                     tabIndex={0}
                                 >
@@ -250,16 +251,16 @@ const PopularProductsOne = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content flex-grow-1">
                                     <h6 className="title text-lg fw-semibold mb-12">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Car &amp; GPS
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <span className="text-gray-600 text-sm mb-4">
                                         Wired Headphones
@@ -273,20 +274,20 @@ const PopularProductsOne = () => {
                                     <span className="text-gray-600 text-sm mb-0">
                                         Earbud Headphone
                                     </span>
-                                    <a
-                                        href="shop.html"
+                                    <Link
+                                        to="/shop"
                                         className="text-tertiary-600 flex-align gap-8 mt-24"
                                     >
                                         All Categories
                                         <i className="ph ph-arrow-right d-flex" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-xxl-3 col-xl-4 col-sm-6 col-xs-6">
                             <div className="product-card h-100 d-flex gap-16 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center h-unset rounded-8 bg-gray-50 position-relative w-unset flex-shrink-0 p-24"
                                     tabIndex={0}
                                 >
@@ -295,16 +296,16 @@ const PopularProductsOne = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content flex-grow-1">
                                     <h6 className="title text-lg fw-semibold mb-12">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Camera &amp; Video
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <span className="text-gray-600 text-sm mb-4">
                                         Wired Headphones
@@ -318,20 +319,20 @@ const PopularProductsOne = () => {
                                     <span className="text-gray-600 text-sm mb-0">
                                         Earbud Headphone
                                     </span>
-                                    <a
-                                        href="shop.html"
+                                    <Link
+                                        to="/shop"
                                         className="text-tertiary-600 flex-align gap-8 mt-24"
                                     >
                                         All Categories
                                         <i className="ph ph-arrow-right d-flex" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-xxl-3 col-xl-4 col-sm-6 col-xs-6">
                             <div className="product-card h-100 d-flex gap-16 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center h-unset rounded-8 bg-gray-50 position-relative w-unset flex-shrink-0 p-24"
                                     tabIndex={0}
                                 >
@@ -340,16 +341,16 @@ const PopularProductsOne = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content flex-grow-1">
                                     <h6 className="title text-lg fw-semibold mb-12">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Kitchen Appliance
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <span className="text-gray-600 text-sm mb-4">
                                         Wired Headphones
@@ -363,20 +364,20 @@ const PopularProductsOne = () => {
                                     <span className="text-gray-600 text-sm mb-0">
                                         Earbud Headphone
                                     </span>
-                                    <a
-                                        href="shop.html"
+                                    <Link
+                                        to="/shop"
                                         className="text-tertiary-600 flex-align gap-8 mt-24"
                                     >
                                         All Categories
                                         <i className="ph ph-arrow-right d-flex" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-xxl-3 col-xl-4 col-sm-6 col-xs-6">
                             <div className="product-card h-100 d-flex gap-16 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                <a
-                                    href="product-details.html"
+                                <Link
+                                    to="/product-details"
                                     className="product-card__thumb flex-center h-unset rounded-8 bg-gray-50 position-relative w-unset flex-shrink-0 p-24"
                                     tabIndex={0}
                                 >
@@ -385,16 +386,16 @@ const PopularProductsOne = () => {
                                         alt=""
                                         className="w-auto max-w-unset"
                                     />
-                                </a>
+                                </Link>
                                 <div className="product-card__content flex-grow-1">
                                     <h6 className="title text-lg fw-semibold mb-12">
-                                        <a
-                                            href="product-details.html"
+                                        <Link
+                                            to="/product-details"
                                             className="link text-line-2"
                                             tabIndex={0}
                                         >
                                             Phone &amp; Accessories
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <span className="text-gray-600 text-sm mb-4">
                                         Wired Headphones
@@ -408,13 +409,13 @@ const PopularProductsOne = () => {
                                     <span className="text-gray-600 text-sm mb-0">
                                         Earbud Headphone
                                     </span>
-                                    <a
-                                        href="shop.html"
+                                    <Link
+                                        to="/shop"
                                         className="text-tertiary-600 flex-align gap-8 mt-24"
                                     >
                                         All Categories
                                         <i className="ph ph-arrow-right d-flex" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

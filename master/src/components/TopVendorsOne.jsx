@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const TopVendorsOne = () => {
     return (
@@ -7,12 +8,12 @@ const TopVendorsOne = () => {
                 <div className="section-heading">
                     <div className="flex-between flex-wrap gap-8">
                         <h5 className="mb-0">Weekly Top Vendors</h5>
-                        <a
-                            href="shop.html"
+                        <Link
+                            to="/shop"
                             className="text-sm fw-medium text-gray-700 hover-text-main-600 hover-text-decoration-underline"
                         >
                             All Vendors
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="row gy-4 vendor-card-wrapper">
@@ -28,12 +29,12 @@ const TopVendorsOne = () => {
                                 <span className="text-heading text-sm d-block">
                                     Delivery by 6:15am
                                 </span>
-                                <a
-                                    href="shop.html"
+                                <Link
+                                    to="/shop"
                                     className="btn btn-main-two rounded-pill py-6 px-16 text-12 mt-8"
                                 >
                                     $5 off Snack &amp; Candy
-                                </a>
+                                </Link>
                             </div>
                             <div className="vendor-card__list mt-22 flex-center flex-wrap gap-8">
                                 <div className="vendor-card__item bg-white rounded-circle flex-center">
@@ -66,12 +67,12 @@ const TopVendorsOne = () => {
                                 <span className="text-heading text-sm d-block">
                                     Delivery by 6:15am
                                 </span>
-                                <a
-                                    href="shop.html"
+                                <Link
+                                    to="/shop"
                                     className="btn btn-main-two rounded-pill py-6 px-16 text-12 mt-8"
                                 >
                                     $5 off Snack &amp; Candy
-                                </a>
+                                </Link>
                             </div>
                             <div className="vendor-card__list mt-22 flex-center flex-wrap gap-8">
                                 <div className="vendor-card__item bg-white rounded-circle flex-center">
@@ -104,12 +105,12 @@ const TopVendorsOne = () => {
                                 <span className="text-heading text-sm d-block">
                                     Delivery by 6:15am
                                 </span>
-                                <a
-                                    href="shop.html"
+                                <Link
+                                    to="/shop"
                                     className="btn btn-main-two rounded-pill py-6 px-16 text-12 mt-8"
                                 >
                                     $5 off Snack &amp; Candy
-                                </a>
+                                </Link>
                             </div>
                             <div className="vendor-card__list mt-22 flex-center flex-wrap gap-8">
                                 <div className="vendor-card__item bg-white rounded-circle flex-center">
@@ -142,12 +143,12 @@ const TopVendorsOne = () => {
                                 <span className="text-heading text-sm d-block">
                                     Delivery by 6:15am
                                 </span>
-                                <a
-                                    href="shop.html"
+                                <Link
+                                    to="/shop"
                                     className="btn btn-main-two rounded-pill py-6 px-16 text-12 mt-8"
                                 >
                                     $5 off Snack &amp; Candy
-                                </a>
+                                </Link>
                             </div>
                             <div className="vendor-card__list mt-22 flex-center flex-wrap gap-8">
                                 <div className="vendor-card__item bg-white rounded-circle flex-center">
@@ -180,12 +181,12 @@ const TopVendorsOne = () => {
                                 <span className="text-heading text-sm d-block">
                                     Delivery by 6:15am
                                 </span>
-                                <a
-                                    href="shop.html"
+                                <Link
+                                    to="/shop"
                                     className="btn btn-main-two rounded-pill py-6 px-16 text-12 mt-8"
                                 >
                                     $5 off Snack &amp; Candy
-                                </a>
+                                </Link>
                             </div>
                             <div className="vendor-card__list mt-22 flex-center flex-wrap gap-8">
                                 <div className="vendor-card__item bg-white rounded-circle flex-center">
@@ -218,12 +219,12 @@ const TopVendorsOne = () => {
                                 <span className="text-heading text-sm d-block">
                                     Delivery by 6:15am
                                 </span>
-                                <a
-                                    href="shop.html"
+                                <Link
+                                    to="/shop"
                                     className="btn btn-main-two rounded-pill py-6 px-16 text-12 mt-8"
                                 >
                                     $5 off Snack &amp; Candy
-                                </a>
+                                </Link>
                             </div>
                             <div className="vendor-card__list mt-22 flex-center flex-wrap gap-8">
                                 <div className="vendor-card__item bg-white rounded-circle flex-center">
@@ -256,12 +257,12 @@ const TopVendorsOne = () => {
                                 <span className="text-heading text-sm d-block">
                                     Delivery by 6:15am
                                 </span>
-                                <a
-                                    href="shop.html"
+                                <Link
+                                    to="/shop"
                                     className="btn btn-main-two rounded-pill py-6 px-16 text-12 mt-8"
                                 >
                                     $5 off Snack &amp; Candy
-                                </a>
+                                </Link>
                             </div>
                             <div className="vendor-card__list mt-22 flex-center flex-wrap gap-8">
                                 <div className="vendor-card__item bg-white rounded-circle flex-center">
@@ -294,12 +295,12 @@ const TopVendorsOne = () => {
                                 <span className="text-heading text-sm d-block">
                                     Delivery by 6:15am
                                 </span>
-                                <a
-                                    href="shop.html"
+                                <Link
+                                    to="/shop"
                                     className="btn btn-main-two rounded-pill py-6 px-16 text-12 mt-8"
                                 >
                                     $5 off Snack &amp; Candy
-                                </a>
+                                </Link>
                             </div>
                             <div className="vendor-card__list mt-22 flex-center flex-wrap gap-8">
                                 <div className="vendor-card__item bg-white rounded-circle flex-center">

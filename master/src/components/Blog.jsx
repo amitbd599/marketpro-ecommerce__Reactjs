@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Blog = () => {
     return (
@@ -8,8 +9,8 @@ const Blog = () => {
                     <div className="col-lg-8 pe-xl-4">
                         <div className="blog-item-wrapper">
                             <div className="blog-item">
-                                <a
-                                    href="blog-detials.html"
+                                <Link
+                                    to="/blog-details"
                                     className="w-100 h-100 rounded-16 overflow-hidden"
                                 >
                                     <img
@@ -17,15 +18,15 @@ const Blog = () => {
                                         alt=""
                                         className="cover-img"
                                     />
-                                </a>
+                                </Link>
                                 <div className="blog-item__content mt-24">
                                     <span className="bg-main-50 text-main-600 py-4 px-24 rounded-8 mb-16">
                                         Gadget
                                     </span>
                                     <h6 className="text-2xl mb-24">
-                                        <a href="blog-details.html" className="">
+                                        <Link to="/blog-details" className="">
                                             Legal structure, can make profit buisness
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <p className="text-gray-700 text-line-2">
                                         Re-engagement — objectives. As developers, we rightfully obsess
@@ -39,12 +40,12 @@ const Blog = () => {
                                                 <i className="ph ph-calendar-dots" />
                                             </span>
                                             <span className="text-sm text-gray-500">
-                                                <a
-                                                    href="blog-details.html"
+                                                <Link
+                                                    to="/blog-details"
                                                     className="text-gray-500 hover-text-main-600"
                                                 >
                                                     July 12, 2025
-                                                </a>
+                                                </Link>
                                             </span>
                                         </div>
                                         <div className="flex-align flex-wrap gap-8">
@@ -52,20 +53,20 @@ const Blog = () => {
                                                 <i className="ph ph-chats-circle" />
                                             </span>
                                             <span className="text-sm text-gray-500">
-                                                <a
-                                                    href="blog-details.html"
+                                                <Link
+                                                    to="/blog-details"
                                                     className="text-gray-500 hover-text-main-600"
                                                 >
                                                     0 Comments
-                                                </a>
+                                                </Link>
                                             </span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="blog-item">
-                                <a
-                                    href="blog-detials.html"
+                                <Link
+                                    to="/blog-details"
                                     className="w-100 h-100 rounded-16 overflow-hidden"
                                 >
                                     <img
@@ -73,15 +74,15 @@ const Blog = () => {
                                         alt=""
                                         className="cover-img"
                                     />
-                                </a>
+                                </Link>
                                 <div className="blog-item__content mt-24">
                                     <span className="bg-main-50 text-main-600 py-4 px-24 rounded-8 mb-16">
                                         Gadget
                                     </span>
                                     <h6 className="text-2xl mb-24">
-                                        <a href="blog-details.html" className="">
+                                        <Link to="/blog-details" className="">
                                             Legal structure, can make profit buisness
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <p className="text-gray-700 text-line-2">
                                         Re-engagement — objectives. As developers, we rightfully obsess
@@ -95,12 +96,12 @@ const Blog = () => {
                                                 <i className="ph ph-calendar-dots" />
                                             </span>
                                             <span className="text-sm text-gray-500">
-                                                <a
-                                                    href="blog-details.html"
+                                                <Link
+                                                    to="/blog-details"
                                                     className="text-gray-500 hover-text-main-600"
                                                 >
                                                     July 12, 2025
-                                                </a>
+                                                </Link>
                                             </span>
                                         </div>
                                         <div className="flex-align flex-wrap gap-8">
@@ -108,20 +109,20 @@ const Blog = () => {
                                                 <i className="ph ph-chats-circle" />
                                             </span>
                                             <span className="text-sm text-gray-500">
-                                                <a
-                                                    href="blog-details.html"
+                                                <Link
+                                                    to="/blog-details"
                                                     className="text-gray-500 hover-text-main-600"
                                                 >
                                                     0 Comments
-                                                </a>
+                                                </Link>
                                             </span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="blog-item">
-                                <a
-                                    href="blog-detials.html"
+                                <Link
+                                    to="/blog-details"
                                     className="w-100 h-100 rounded-16 overflow-hidden"
                                 >
                                     <img
@@ -129,15 +130,15 @@ const Blog = () => {
                                         alt=""
                                         className="cover-img"
                                     />
-                                </a>
+                                </Link>
                                 <div className="blog-item__content mt-24">
                                     <span className="bg-main-50 text-main-600 py-4 px-24 rounded-8 mb-16">
                                         Gadget
                                     </span>
                                     <h6 className="text-2xl mb-24">
-                                        <a href="blog-details.html" className="">
+                                        <Link to="/blog-details" className="">
                                             Legal structure, can make profit buisness
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <p className="text-gray-700 text-line-2">
                                         Re-engagement — objectives. As developers, we rightfully obsess
@@ -151,12 +152,12 @@ const Blog = () => {
                                                 <i className="ph ph-calendar-dots" />
                                             </span>
                                             <span className="text-sm text-gray-500">
-                                                <a
-                                                    href="blog-details.html"
+                                                <Link
+                                                    to="/blog-details"
                                                     className="text-gray-500 hover-text-main-600"
                                                 >
                                                     July 12, 2025
-                                                </a>
+                                                </Link>
                                             </span>
                                         </div>
                                         <div className="flex-align flex-wrap gap-8">
@@ -164,12 +165,12 @@ const Blog = () => {
                                                 <i className="ph ph-chats-circle" />
                                             </span>
                                             <span className="text-sm text-gray-500">
-                                                <a
-                                                    href="blog-details.html"
+                                                <Link
+                                                    to="/blog-details"
                                                     className="text-gray-500 hover-text-main-600"
                                                 >
                                                     0 Comments
-                                                </a>
+                                                </Link>
                                             </span>
                                         </div>
                                     </div>
@@ -179,76 +180,76 @@ const Blog = () => {
                         {/* Pagination Start */}
                         <ul className="pagination flex-align flex-wrap gap-16">
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link h-64 w-64 flex-center text-xxl rounded-8 fw-medium text-neutral-600 border border-gray-100"
-                                    href="#"
+                                    to="#"
                                 >
                                     <i className="ph-bold ph-arrow-left" />
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item active">
-                                <a
+                                <Link
                                     className="page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100"
-                                    href="#"
+                                    to="#"
                                 >
                                     01
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100"
-                                    href="#"
+                                    to="#"
                                 >
                                     02
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100"
-                                    href="#"
+                                    to="#"
                                 >
                                     03
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100"
-                                    href="#"
+                                    to="#"
                                 >
                                     04
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100"
-                                    href="#"
+                                    to="#"
                                 >
                                     05
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100"
-                                    href="#"
+                                    to="#"
                                 >
                                     06
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100"
-                                    href="#"
+                                    to="#"
                                 >
                                     07
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link h-64 w-64 flex-center text-xxl rounded-8 fw-medium text-neutral-600 border border-gray-100"
-                                    href="#"
+                                    to="#"
                                 >
                                     <i className="ph-bold ph-arrow-right" />
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                         {/* Pagination End */}
@@ -282,8 +283,8 @@ const Blog = () => {
                                 Recent Posts
                             </h6>
                             <div className="d-flex align-items-center flex-sm-nowrap flex-wrap gap-24 mb-16">
-                                <a
-                                    href="blog-details.html"
+                                <Link
+                                    to="/blog-details"
                                     className="w-100 h-100 rounded-4 overflow-hidden w-120 h-120 flex-shrink-0"
                                 >
                                     <img
@@ -291,31 +292,31 @@ const Blog = () => {
                                         alt=""
                                         className="cover-img"
                                     />
-                                </a>
+                                </Link>
                                 <div className="flex-grow-1">
                                     <h6 className="text-lg">
-                                        <a href="blog-details.html" className="text-line-3">
+                                        <Link to="/blog-details" className="text-line-3">
                                             Once determined you need to come up with a name
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align flex-wrap gap-8">
                                         <span className="text-lg text-main-600">
                                             <i className="ph ph-calendar-dots" />
                                         </span>
                                         <span className="text-sm text-gray-500">
-                                            <a
-                                                href="blog-details.html"
+                                            <Link
+                                                to="/blog-details"
                                                 className="text-gray-500 hover-text-main-600"
                                             >
                                                 July 12, 2025
-                                            </a>
+                                            </Link>
                                         </span>
                                     </div>
                                 </div>
                             </div>
                             <div className="d-flex align-items-center flex-sm-nowrap flex-wrap gap-24 mb-16">
-                                <a
-                                    href="blog-details.html"
+                                <Link
+                                    to="/blog-details"
                                     className="w-100 h-100 rounded-4 overflow-hidden w-120 h-120 flex-shrink-0"
                                 >
                                     <img
@@ -323,31 +324,31 @@ const Blog = () => {
                                         alt=""
                                         className="cover-img"
                                     />
-                                </a>
+                                </Link>
                                 <div className="flex-grow-1">
                                     <h6 className="text-lg">
-                                        <a href="blog-details.html" className="text-line-3">
+                                        <Link to="/blog-details" className="text-line-3">
                                             Once determined you need to come up with a name
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align flex-wrap gap-8">
                                         <span className="text-lg text-main-600">
                                             <i className="ph ph-calendar-dots" />
                                         </span>
                                         <span className="text-sm text-gray-500">
-                                            <a
-                                                href="blog-details.html"
+                                            <Link
+                                                to="/blog-details"
                                                 className="text-gray-500 hover-text-main-600"
                                             >
                                                 July 12, 2025
-                                            </a>
+                                            </Link>
                                         </span>
                                     </div>
                                 </div>
                             </div>
                             <div className="d-flex align-items-center flex-sm-nowrap flex-wrap gap-24 mb-16">
-                                <a
-                                    href="blog-details.html"
+                                <Link
+                                    to="/blog-details"
                                     className="w-100 h-100 rounded-4 overflow-hidden w-120 h-120 flex-shrink-0"
                                 >
                                     <img
@@ -355,31 +356,31 @@ const Blog = () => {
                                         alt=""
                                         className="cover-img"
                                     />
-                                </a>
+                                </Link>
                                 <div className="flex-grow-1">
                                     <h6 className="text-lg">
-                                        <a href="blog-details.html" className="text-line-3">
+                                        <Link to="/blog-details" className="text-line-3">
                                             Once determined you need to come up with a name
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align flex-wrap gap-8">
                                         <span className="text-lg text-main-600">
                                             <i className="ph ph-calendar-dots" />
                                         </span>
                                         <span className="text-sm text-gray-500">
-                                            <a
-                                                href="blog-details.html"
+                                            <Link
+                                                to="/blog-details"
                                                 className="text-gray-500 hover-text-main-600"
                                             >
                                                 July 12, 2025
-                                            </a>
+                                            </Link>
                                         </span>
                                     </div>
                                 </div>
                             </div>
                             <div className="d-flex align-items-center flex-sm-nowrap flex-wrap gap-24 mb-0">
-                                <a
-                                    href="blog-details.html"
+                                <Link
+                                    to="/blog-details"
                                     className="w-100 h-100 rounded-4 overflow-hidden w-120 h-120 flex-shrink-0"
                                 >
                                     <img
@@ -387,24 +388,24 @@ const Blog = () => {
                                         alt=""
                                         className="cover-img"
                                     />
-                                </a>
+                                </Link>
                                 <div className="flex-grow-1">
                                     <h6 className="text-lg">
-                                        <a href="blog-details.html" className="text-line-3">
+                                        <Link to="/blog-details" className="text-line-3">
                                             Once determined you need to come up with a name
-                                        </a>
+                                        </Link>
                                     </h6>
                                     <div className="flex-align flex-wrap gap-8">
                                         <span className="text-lg text-main-600">
                                             <i className="ph ph-calendar-dots" />
                                         </span>
                                         <span className="text-sm text-gray-500">
-                                            <a
-                                                href="blog-details.html"
+                                            <Link
+                                                to="/blog-details"
                                                 className="text-gray-500 hover-text-main-600"
                                             >
                                                 July 12, 2025
-                                            </a>
+                                            </Link>
                                         </span>
                                     </div>
                                 </div>
@@ -418,81 +419,81 @@ const Blog = () => {
                             </h6>
                             <ul>
                                 <li className="mb-16">
-                                    <a
-                                        href="blog-details.html"
+                                    <Link
+                                        to="/blog-details"
                                         className="flex-between gap-8 text-gray-700 border border-gray-100 rounded-4 p-4 ps-16 hover-border-main-600 hover-text-main-600"
                                     >
                                         <span>Gaming (12)</span>
                                         <span className="w-40 h-40 flex-center rounded-4 bg-main-50 text-main-600">
                                             <i className="ph ph-arrow-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="mb-16">
-                                    <a
-                                        href="blog-details.html"
+                                    <Link
+                                        to="/blog-details"
                                         className="flex-between gap-8 text-gray-700 border border-gray-100 rounded-4 p-4 ps-16 hover-border-main-600 hover-text-main-600"
                                     >
                                         <span>Smart Gadget (05)</span>
                                         <span className="w-40 h-40 flex-center rounded-4 bg-main-50 text-main-600">
                                             <i className="ph ph-arrow-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="mb-16">
-                                    <a
-                                        href="blog-details.html"
+                                    <Link
+                                        to="/blog-details"
                                         className="flex-between gap-8 text-gray-700 border border-gray-100 rounded-4 p-4 ps-16 hover-border-main-600 hover-text-main-600"
                                     >
                                         <span>Software (29)</span>
                                         <span className="w-40 h-40 flex-center rounded-4 bg-main-50 text-main-600">
                                             <i className="ph ph-arrow-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="mb-16">
-                                    <a
-                                        href="blog-details.html"
+                                    <Link
+                                        to="/blog-details"
                                         className="flex-between gap-8 text-gray-700 border border-gray-100 rounded-4 p-4 ps-16 hover-border-main-600 hover-text-main-600"
                                     >
                                         <span>Electronics (24)</span>
                                         <span className="w-40 h-40 flex-center rounded-4 bg-main-50 text-main-600">
                                             <i className="ph ph-arrow-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="mb-16">
-                                    <a
-                                        href="blog-details.html"
+                                    <Link
+                                        to="/blog-details"
                                         className="flex-between gap-8 text-gray-700 border border-gray-100 rounded-4 p-4 ps-16 hover-border-main-600 hover-text-main-600"
                                     >
                                         <span>Laptop (08)</span>
                                         <span className="w-40 h-40 flex-center rounded-4 bg-main-50 text-main-600">
                                             <i className="ph ph-arrow-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="mb-16">
-                                    <a
-                                        href="blog-details.html"
+                                    <Link
+                                        to="/blog-details"
                                         className="flex-between gap-8 text-gray-700 border border-gray-100 rounded-4 p-4 ps-16 hover-border-main-600 hover-text-main-600"
                                     >
                                         <span>Mobile &amp; Accessories (16)</span>
                                         <span className="w-40 h-40 flex-center rounded-4 bg-main-50 text-main-600">
                                             <i className="ph ph-arrow-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="mb-0">
-                                    <a
-                                        href="blog-details.html"
+                                    <Link
+                                        to="/blog-details"
                                         className="flex-between gap-8 text-gray-700 border border-gray-100 rounded-4 p-4 ps-16 hover-border-main-600 hover-text-main-600"
                                     >
                                         <span>Apliance (24)</span>
                                         <span className="w-40 h-40 flex-center rounded-4 bg-main-50 text-main-600">
                                             <i className="ph ph-arrow-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>

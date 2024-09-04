@@ -20,6 +20,8 @@ import ShippingOne from "../components/ShippingOne";
 import NewsletterOne from "../components/NewsletterOne";
 import FooterOne from "../components/FooterOne";
 import BottomFooter from "../components/BottomFooter";
+import ScrollToTop from "react-scroll-to-top";
+import ColorInit from "../layout/ColorInit";
 const HomePageOne = () => {
 
   return (
@@ -28,6 +30,12 @@ const HomePageOne = () => {
 
       {/* Preloader */}
       <Preloader />
+
+      {/* ScrollToTop */}
+      <ScrollToTop smooth color="#299E60" />
+
+      {/* ColorInit */}
+      <ColorInit color={false} />
 
       {/* HeaderOne */}
       <HeaderOne />

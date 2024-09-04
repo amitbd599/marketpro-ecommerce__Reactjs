@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 
 const FeaturedOne = () => {
@@ -81,12 +82,12 @@ const FeaturedOne = () => {
                                 <div className="flex-between flex-wrap gap-8">
                                     <h5 className="mb-0">Featured Products </h5>
                                     <div className="flex-align mr-point gap-16">
-                                        <a
-                                            href="shop.html"
+                                        <Link
+                                            to="/shop"
                                             className="text-sm fw-medium text-gray-700 hover-text-main-600 hover-text-decoration-underline"
                                         >
                                             View All Deals
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -96,8 +97,8 @@ const FeaturedOne = () => {
                                         <div className="featured-products__sliders">
                                             <div className="">
                                                 <div className="mt-24 product-card d-flex gap-16 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                                    <a
-                                                        href="product-details-two.html"
+                                                    <Link
+                                                        to="/product-details-two"
                                                         className="product-card__thumb flex-center h-unset rounded-8 bg-gray-50 position-relative w-unset flex-shrink-0 p-24"
                                                         tabIndex={0}
                                                     >
@@ -109,16 +110,16 @@ const FeaturedOne = () => {
                                                             alt=""
                                                             className="w-auto max-w-unset"
                                                         />
-                                                    </a>
+                                                    </Link>
                                                     <div className="product-card__content my-20 flex-grow-1">
                                                         <h6 className="title text-lg fw-semibold mb-12">
-                                                            <a
-                                                                href="product-details-two.html"
+                                                            <Link
+                                                                to="/product-details-two"
                                                                 className="link text-line-2"
                                                                 tabIndex={0}
                                                             >
                                                                 iPhone 15 Pro Warp Charge 30W Power Adapter
-                                                            </a>
+                                                            </Link>
                                                         </h6>
                                                         <div className="flex-align gap-6 mb-12">
                                                             <span className="text-xs fw-medium text-gray-500">
@@ -148,20 +149,20 @@ const FeaturedOne = () => {
                                                                 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                                             </span>
                                                         </div>
-                                                        <a
-                                                            href="cart.html"
+                                                        <Link
+                                                            to="/cart"
                                                             className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                                             tabIndex={0}
                                                         >
                                                             Add To Cart <i className="ph ph-shopping-cart" />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="">
                                                 <div className="mt-24 product-card d-flex gap-16 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                                    <a
-                                                        href="product-details-two.html"
+                                                    <Link
+                                                        to="/product-details-two"
                                                         className="product-card__thumb flex-center h-unset rounded-8 bg-gray-50 position-relative w-unset flex-shrink-0 p-24"
                                                         tabIndex={0}
                                                     >
@@ -173,16 +174,16 @@ const FeaturedOne = () => {
                                                             alt=""
                                                             className="w-auto max-w-unset"
                                                         />
-                                                    </a>
+                                                    </Link>
                                                     <div className="product-card__content my-20 flex-grow-1">
                                                         <h6 className="title text-lg fw-semibold mb-12">
-                                                            <a
-                                                                href="product-details-two.html"
+                                                            <Link
+                                                                to="/product-details-two"
                                                                 className="link text-line-2"
                                                                 tabIndex={0}
                                                             >
                                                                 iPhone 15 Pro Warp Charge 30W Power Adapter
-                                                            </a>
+                                                            </Link>
                                                         </h6>
                                                         <div className="flex-align gap-6 mb-12">
                                                             <span className="text-xs fw-medium text-gray-500">
@@ -212,13 +213,13 @@ const FeaturedOne = () => {
                                                                 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                                             </span>
                                                         </div>
-                                                        <a
-                                                            href="cart.html"
+                                                        <Link
+                                                            to="/cart"
                                                             className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                                             tabIndex={0}
                                                         >
                                                             Add To Cart <i className="ph ph-shopping-cart" />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -228,8 +229,8 @@ const FeaturedOne = () => {
                                         <div className="featured-products__sliders">
                                             <div className="">
                                                 <div className="mt-24 product-card d-flex gap-16 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                                    <a
-                                                        href="product-details-two.html"
+                                                    <Link
+                                                        to="/product-details-two"
                                                         className="product-card__thumb flex-center h-unset rounded-8 bg-gray-50 position-relative w-unset flex-shrink-0 p-24"
                                                         tabIndex={0}
                                                     >
@@ -241,16 +242,16 @@ const FeaturedOne = () => {
                                                             alt=""
                                                             className="w-auto max-w-unset"
                                                         />
-                                                    </a>
+                                                    </Link>
                                                     <div className="product-card__content my-20 flex-grow-1">
                                                         <h6 className="title text-lg fw-semibold mb-12">
-                                                            <a
-                                                                href="product-details-two.html"
+                                                            <Link
+                                                                to="/product-details-two"
                                                                 className="link text-line-2"
                                                                 tabIndex={0}
                                                             >
                                                                 iPhone 15 Pro Warp Charge 30W Power Adapter
-                                                            </a>
+                                                            </Link>
                                                         </h6>
                                                         <div className="flex-align gap-6 mb-12">
                                                             <span className="text-xs fw-medium text-gray-500">
@@ -280,20 +281,20 @@ const FeaturedOne = () => {
                                                                 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                                             </span>
                                                         </div>
-                                                        <a
-                                                            href="cart.html"
+                                                        <Link
+                                                            to="/cart"
                                                             className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                                             tabIndex={0}
                                                         >
                                                             Add To Cart <i className="ph ph-shopping-cart" />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="">
                                                 <div className="mt-24 product-card d-flex gap-16 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                                    <a
-                                                        href="product-details-two.html"
+                                                    <Link
+                                                        to="/product-details-two"
                                                         className="product-card__thumb flex-center h-unset rounded-8 bg-gray-50 position-relative w-unset flex-shrink-0 p-24"
                                                         tabIndex={0}
                                                     >
@@ -305,16 +306,16 @@ const FeaturedOne = () => {
                                                             alt=""
                                                             className="w-auto max-w-unset"
                                                         />
-                                                    </a>
+                                                    </Link>
                                                     <div className="product-card__content my-20 flex-grow-1">
                                                         <h6 className="title text-lg fw-semibold mb-12">
-                                                            <a
-                                                                href="product-details-two.html"
+                                                            <Link
+                                                                to="/product-details-two"
                                                                 className="link text-line-2"
                                                                 tabIndex={0}
                                                             >
                                                                 iPhone 15 Pro Warp Charge 30W Power Adapter
-                                                            </a>
+                                                            </Link>
                                                         </h6>
                                                         <div className="flex-align gap-6 mb-12">
                                                             <span className="text-xs fw-medium text-gray-500">
@@ -344,13 +345,13 @@ const FeaturedOne = () => {
                                                                 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                                             </span>
                                                         </div>
-                                                        <a
-                                                            href="cart.html"
+                                                        <Link
+                                                            to="/cart"
                                                             className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                                             tabIndex={0}
                                                         >
                                                             Add To Cart <i className="ph ph-shopping-cart" />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -360,8 +361,8 @@ const FeaturedOne = () => {
                                         <div className="featured-products__sliders">
                                             <div className="">
                                                 <div className="mt-24 product-card d-flex gap-16 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                                    <a
-                                                        href="product-details-two.html"
+                                                    <Link
+                                                        to="/product-details-two"
                                                         className="product-card__thumb flex-center h-unset rounded-8 bg-gray-50 position-relative w-unset flex-shrink-0 p-24"
                                                         tabIndex={0}
                                                     >
@@ -373,16 +374,16 @@ const FeaturedOne = () => {
                                                             alt=""
                                                             className="w-auto max-w-unset"
                                                         />
-                                                    </a>
+                                                    </Link>
                                                     <div className="product-card__content my-20 flex-grow-1">
                                                         <h6 className="title text-lg fw-semibold mb-12">
-                                                            <a
-                                                                href="product-details-two.html"
+                                                            <Link
+                                                                to="/product-details-two"
                                                                 className="link text-line-2"
                                                                 tabIndex={0}
                                                             >
                                                                 iPhone 15 Pro Warp Charge 30W Power Adapter
-                                                            </a>
+                                                            </Link>
                                                         </h6>
                                                         <div className="flex-align gap-6 mb-12">
                                                             <span className="text-xs fw-medium text-gray-500">
@@ -412,20 +413,20 @@ const FeaturedOne = () => {
                                                                 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                                             </span>
                                                         </div>
-                                                        <a
-                                                            href="cart.html"
+                                                        <Link
+                                                            to="/cart"
                                                             className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                                             tabIndex={0}
                                                         >
                                                             Add To Cart <i className="ph ph-shopping-cart" />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="">
                                                 <div className="mt-24 product-card d-flex gap-16 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-                                                    <a
-                                                        href="product-details-two.html"
+                                                    <Link
+                                                        to="/product-details-two"
                                                         className="product-card__thumb flex-center h-unset rounded-8 bg-gray-50 position-relative w-unset flex-shrink-0 p-24"
                                                         tabIndex={0}
                                                     >
@@ -437,16 +438,16 @@ const FeaturedOne = () => {
                                                             alt=""
                                                             className="w-auto max-w-unset"
                                                         />
-                                                    </a>
+                                                    </Link>
                                                     <div className="product-card__content my-20 flex-grow-1">
                                                         <h6 className="title text-lg fw-semibold mb-12">
-                                                            <a
-                                                                href="product-details-two.html"
+                                                            <Link
+                                                                to="/product-details-two"
                                                                 className="link text-line-2"
                                                                 tabIndex={0}
                                                             >
                                                                 iPhone 15 Pro Warp Charge 30W Power Adapter
-                                                            </a>
+                                                            </Link>
                                                         </h6>
                                                         <div className="flex-align gap-6 mb-12">
                                                             <span className="text-xs fw-medium text-gray-500">
@@ -476,13 +477,13 @@ const FeaturedOne = () => {
                                                                 <span className="text-gray-500 fw-normal">/Qty</span>{" "}
                                                             </span>
                                                         </div>
-                                                        <a
-                                                            href="cart.html"
+                                                        <Link
+                                                            to="/cart"
                                                             className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
                                                             tabIndex={0}
                                                         >
                                                             Add To Cart <i className="ph ph-shopping-cart" />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -510,8 +511,8 @@ const FeaturedOne = () => {
                                         20% off
                                     </span>
                                 </div>
-                                <a
-                                    href="shop.html"
+                                <Link
+                                    to="/shop"
                                     className="mt-16 mb-24 btn btn-main-two fw-medium d-inline-flex align-items-center rounded-pill gap-8"
                                     tabIndex={0}
                                 >
@@ -519,7 +520,7 @@ const FeaturedOne = () => {
                                     <span className="icon text-xl d-flex">
                                         <i className="ph ph-arrow-right" />
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                             <img
                                 src="assets/images/thumbs/featured-product-img.png"

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 
 const ShortProductOne = () => {
@@ -89,12 +90,12 @@ const ShortProductOne = () => {
 
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img1.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -105,9 +106,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -121,12 +122,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img2.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -137,9 +138,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -153,12 +154,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img3.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -169,9 +170,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -185,12 +186,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img4.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -201,9 +202,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -219,12 +220,12 @@ const ShortProductOne = () => {
                                     <div>
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img1.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -235,9 +236,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -251,12 +252,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img2.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -267,9 +268,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -283,12 +284,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img3.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -299,9 +300,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -315,12 +316,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img4.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -331,9 +332,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -362,12 +363,12 @@ const ShortProductOne = () => {
                                     <div>
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img5.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -378,9 +379,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -394,12 +395,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img6.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -410,9 +411,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -426,12 +427,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img7.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -442,9 +443,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -458,12 +459,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img8.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -474,9 +475,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -492,12 +493,12 @@ const ShortProductOne = () => {
                                     <div>
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img5.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -508,9 +509,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -524,12 +525,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img6.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -540,9 +541,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -556,12 +557,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img7.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -572,9 +573,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -588,12 +589,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img8.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -604,9 +605,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -635,12 +636,12 @@ const ShortProductOne = () => {
                                     <div>
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img9.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -651,9 +652,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -667,12 +668,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img4.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -683,9 +684,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -699,12 +700,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img7.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -715,9 +716,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -731,12 +732,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img4.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -747,9 +748,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -765,12 +766,12 @@ const ShortProductOne = () => {
                                     <div>
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img9.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -781,9 +782,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -797,12 +798,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img4.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -813,9 +814,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -829,12 +830,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img7.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -845,9 +846,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -861,12 +862,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img4.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -877,9 +878,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -908,12 +909,12 @@ const ShortProductOne = () => {
                                     <div>
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img3.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -924,9 +925,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -940,12 +941,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img7.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -956,9 +957,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -972,12 +973,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img1.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -988,9 +989,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -1004,12 +1005,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img8.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -1020,9 +1021,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -1038,12 +1039,12 @@ const ShortProductOne = () => {
                                     <div>
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img1.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -1054,9 +1055,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -1070,12 +1071,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img7.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -1086,9 +1087,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -1102,12 +1103,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16 mb-40">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img3.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -1118,9 +1119,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">
@@ -1134,12 +1135,12 @@ const ShortProductOne = () => {
                                         </div>
                                         <div className="flex-align gap-16">
                                             <div className="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
-                                                <a href="product-details.html" className="link">
+                                                <Link to="/product-details" className="link">
                                                     <img
                                                         src="assets/images/thumbs/short-product-img8.png"
                                                         alt=""
                                                     />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="product-card__content mt-12">
                                                 <div className="flex-align gap-6">
@@ -1150,9 +1151,9 @@ const ShortProductOne = () => {
                                                     <span className="text-xs fw-bold text-gray-500">(17k)</span>
                                                 </div>
                                                 <h6 className="title text-lg fw-semibold mt-8 mb-8">
-                                                    <a href="product-details.html" className="link text-line-1">
+                                                    <Link to="/product-details" className="link text-line-1">
                                                         Taylor Farms Broccoli Florets Vegetables
-                                                    </a>
+                                                    </Link>
                                                 </h6>
                                                 <div className="product-card__price flex-align gap-8">
                                                     <span className="text-heading text-md fw-semibold d-block">

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 
 const ProductDetailsOne = () => {
@@ -97,9 +98,9 @@ const ProductDetailsOne = () => {
                                             <h4 className="mb-0">$25.00</h4>
                                             <span className="text-md text-gray-500">$38.00</span>
                                         </div>
-                                        <a href="#" className="btn btn-main rounded-pill">
+                                        <Link to="#" className="btn btn-main rounded-pill">
                                             Order on What'sApp
-                                        </a>
+                                        </Link>
                                     </div>
                                     <span className="mt-32 pt-32 text-gray-700 border-top border-gray-100 d-block" />
                                     <div className="flex-align flex-wrap gap-16 bg-color-one rounded-8 py-16 px-24">
@@ -174,33 +175,33 @@ const ProductDetailsOne = () => {
                                                     <i className="ph ph-plus" />
                                                 </button>
                                             </div>
-                                            <a
-                                                href="#"
+                                            <Link
+                                                to="#"
                                                 className="btn btn-main rounded-pill flex-align d-inline-flex gap-8 px-48"
                                             >
                                                 {" "}
                                                 <i className="ph ph-shopping-cart" /> Add To Cart
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="flex-align gap-12">
-                                            <a
-                                                href="#"
+                                            <Link
+                                                to="#"
                                                 className="w-52 h-52 bg-main-50 text-main-600 text-xl hover-bg-main-600 hover-text-white flex-center rounded-circle"
                                             >
                                                 <i className="ph ph-heart" />
-                                            </a>
-                                            <a
-                                                href="#"
+                                            </Link>
+                                            <Link
+                                                to="#"
                                                 className="w-52 h-52 bg-main-50 text-main-600 text-xl hover-bg-main-600 hover-text-white flex-center rounded-circle"
                                             >
                                                 <i className="ph ph-shuffle" />
-                                            </a>
-                                            <a
-                                                href="#"
+                                            </Link>
+                                            <Link
+                                                to="#"
                                                 className="w-52 h-52 bg-main-50 text-main-600 text-xl hover-bg-main-600 hover-text-white flex-center rounded-circle"
                                             >
                                                 <i className="ph ph-share-network" />
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <span className="mt-32 pt-32 text-gray-700 border-top border-gray-100 d-block" />
@@ -216,12 +217,12 @@ const ProductDetailsOne = () => {
                                                 Mfr. coupon. $3.00 off 5
                                             </span>
                                         </div>
-                                        <a
-                                            href="cart.html"
+                                        <Link
+                                            to="/cart"
                                             className="text-xs fw-semibold text-main-two-600 text-decoration-underline hover-text-main-two-700"
                                         >
                                             View Details
-                                        </a>
+                                        </Link>
                                     </div>
                                     <ul className="list-inside ms-12">
                                         <li className="text-gray-900 text-sm mb-8">
@@ -245,12 +246,12 @@ const ProductDetailsOne = () => {
                                         </span>
                                         <span className="text-white">by Marketpro</span>
                                     </div>
-                                    <a
-                                        href="shop.html"
+                                    <Link
+                                        to="/shop"
                                         className="btn btn-white rounded-pill text-uppercase"
                                     >
                                         View Store
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="p-24 bg-color-one d-flex align-items-start gap-24 border-bottom border-gray-100">
@@ -360,13 +361,13 @@ const ProductDetailsOne = () => {
                                     </button>
                                 </li>
                             </ul>
-                            <a
-                                href="#"
+                            <Link
+                                to="#"
                                 className="btn bg-color-one rounded-16 flex-align gap-8 text-main-600 hover-bg-main-600 hover-text-white"
                             >
                                 <img src="assets/images/icon/satisfaction-icon.png" alt="" />
                                 100% Satisfaction Guaranteed
-                            </a>
+                            </Link>
                         </div>
                         <div className="product-dContent__box">
                             <div className="tab-content" id="pills-tabContent">
@@ -630,13 +631,13 @@ const ProductDetailsOne = () => {
                                                             <i className="ph-bold ph-thumbs-up" />
                                                             Like
                                                         </button>
-                                                        <a
-                                                            href="#comment-form"
+                                                        <Link
+                                                            to="#comment-form"
                                                             className="flex-align gap-12 text-gray-700 hover-text-main-600"
                                                         >
                                                             <i className="ph-bold ph-arrow-bend-up-left" />
                                                             Replay
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -683,13 +684,13 @@ const ProductDetailsOne = () => {
                                                             <i className="ph-bold ph-thumbs-up" />
                                                             Like
                                                         </button>
-                                                        <a
-                                                            href="#comment-form"
+                                                        <Link
+                                                            to="#comment-form"
                                                             className="flex-align gap-12 text-gray-700 hover-text-main-600"
                                                         >
                                                             <i className="ph-bold ph-arrow-bend-up-left" />
                                                             Replay
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>

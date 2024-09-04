@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 
 const TopVendorsTwo = () => {
@@ -79,12 +80,12 @@ const TopVendorsTwo = () => {
                         <div className="flex-between flex-wrap gap-8">
                             <h5 className="mb-0">Popular Products</h5>
                             <div className="flex-align gap-16">
-                                <a
-                                    href="shop.html"
+                                <Link
+                                    to="/shop"
                                     className="text-sm fw-medium text-gray-700 hover-text-main-600 hover-text-decoration-underline"
                                 >
                                     View All Products
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

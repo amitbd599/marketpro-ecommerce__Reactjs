@@ -8,6 +8,8 @@ import NewsletterOne from "../components/NewsletterOne";
 import FooterOne from "../components/FooterOne";
 import BottomFooter from "../components/BottomFooter";
 import BreadcrumbTwo from './../components/BreadcrumbTwo';
+import ScrollToTop from "react-scroll-to-top";
+import ColorInit from "../layout/ColorInit";
 
 const ProductDetailsPageOne = () => {
 
@@ -18,6 +20,12 @@ const ProductDetailsPageOne = () => {
 
       {/* Preloader */}
       <Preloader />
+
+      {/* ColorInit */}
+      <ColorInit color={false} />
+
+      {/* ScrollToTop */}
+      <ScrollToTop smooth color="#299E60" />
 
       {/* HeaderOne */}
       <HeaderOne />
