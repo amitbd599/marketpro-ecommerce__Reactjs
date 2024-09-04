@@ -10,6 +10,7 @@ import ProductDetailsPageTwo from "./pages/ProductDetailsPageTwo";
 import CartPage from "./pages/CartPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import AccountPage from "./pages/AccountPage";
+import BlogPage from "./pages/BlogPage";
 
 
 
@@ -28,6 +29,7 @@ function App() {
         <Route exact path="/cart" element={<CartPage />} />
         <Route exact path="/checkout" element={<CheckoutPage />} />
         <Route exact path="/account" element={<AccountPage />} />
+        <Route exact path="/blog" element={<BlogPage />} />
 
 
       </Routes>
