@@ -9,7 +9,7 @@ import FooterOne from "../components/FooterOne";
 import BottomFooter from "../components/BottomFooter";
 import BreadcrumbTwo from './../components/BreadcrumbTwo';
 import ScrollToTop from "react-scroll-to-top";
-import ColorInit from "../layout/ColorInit";
+import ColorInit from "../helper/ColorInit";
 
 const ProductDetailsPageOne = () => {
 

@@ -21,7 +21,7 @@ import NewsletterOne from "../components/NewsletterOne";
 import FooterOne from "../components/FooterOne";
 import BottomFooter from "../components/BottomFooter";
 import ScrollToTop from "react-scroll-to-top";
-import ColorInit from "../layout/ColorInit";
+import ColorInit from "../helper/ColorInit";
 const HomePageOne = () => {
 
   return (
