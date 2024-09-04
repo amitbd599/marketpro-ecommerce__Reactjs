@@ -25,7 +25,7 @@ const BlogPage = () => {
       <HeaderTwo />
 
       {/* Breadcrumb */}
-      <Breadcrumb />
+      <Breadcrumb title={"Blog"} />
 
       {/* Blog */}
       <Blog />

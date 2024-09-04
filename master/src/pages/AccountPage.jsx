@@ -25,7 +25,7 @@ const AccountPage = () => {
       <HeaderTwo />
 
       {/* Breadcrumb */}
-      <Breadcrumb />
+      <Breadcrumb title={"Account"} />
 
       {/* Account */}
       <Account />

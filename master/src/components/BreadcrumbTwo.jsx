@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BreadcrumbTwo = () => {
+const BreadcrumbTwo = ({ title }) => {
     return (
         <div className="breadcrumb py-26 bg-color-one">
             <div className="container container-lg">
@@ -18,7 +18,7 @@ const BreadcrumbTwo = () => {
                         </li>
                         <li className="text-sm">
                             <a href="shop.html" className="text-main-600 flex-align gap-8">
-                                Shop
+                                {title}
                             </a>
                         </li>
                         <li className="flex-align text-gray-500">

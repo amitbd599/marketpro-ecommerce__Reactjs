@@ -27,7 +27,7 @@ const ProductDetailsPageTwo = () => {
       <HeaderTwo />
 
       {/* Breadcrumb */}
-      <Breadcrumb />
+      <Breadcrumb title={"Product Details"} />
 
       {/* ProductDetailsTwo */}
       <ProductDetailsTwo />

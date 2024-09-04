@@ -6,13 +6,8 @@ import Breadcrumb from "../components/Breadcrumb";
 import FooterTwo from "../components/FooterTwo";
 import BottomFooter from "../components/BottomFooter";
 import ShippingOne from "../components/ShippingOne";
-import Checkout from "../components/Checkout";
-
-
-const CheckoutPage = () => {
-
-
-
+import Contact from "../components/Contact";
+const ContactPage = () => {
   return (
     <>
       {/* ColorInit */}
@@ -25,10 +20,10 @@ const CheckoutPage = () => {
       <HeaderTwo />
 
       {/* Breadcrumb */}
-      <Breadcrumb title={"Checkout"} />
+      <Breadcrumb title={"Contact"} />
 
-      {/* Checkout */}
-      <Checkout />
+      {/* Contact */}
+      <Contact />
 
       {/* ShippingOne */}
       <ShippingOne />
@@ -38,10 +33,8 @@ const CheckoutPage = () => {
 
       {/* BottomFooter */}
       <BottomFooter />
-
-
     </>
   );
 };
 
-export default CheckoutPage;
+export default ContactPage;

@@ -25,7 +25,7 @@ const CartPage = () => {
       <HeaderTwo />
 
       {/* Breadcrumb */}
-      <Breadcrumb />
+      <Breadcrumb title={"Cart"} />
 
       {/* CartSection */}
       <CartSection />

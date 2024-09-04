@@ -9,8 +9,6 @@ import ColorInit from "../layout/ColorInit";
 
 const ShopPage = () => {
 
-
-
   return (
     <>
       {/* ColorInit */}
@@ -23,7 +21,7 @@ const ShopPage = () => {
       <HeaderTwo />
 
       {/* Breadcrumb */}
-      <Breadcrumb />
+      <Breadcrumb title={"Shop"} />
 
       {/* ShopSection */}
       <ShopSection />
