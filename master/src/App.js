@@ -5,7 +5,8 @@ import HomePageOne from "./pages/HomePageOne";
 import PhosphorIconInit from "./helper/PhosphorIconInit";
 import HomePageTwo from "./pages/HomePageTwo";
 import ShopPage from "./pages/ShopPage";
-import ProductDetails from "./pages/ProductDetails";
+import ProductDetailsPageOne from "./pages/ProductDetailsPageOne";
+import ProductDetailsPageTwo from "./pages/ProductDetailsPageTwo";
 
 
 
@@ -19,7 +20,8 @@ function App() {
         <Route exact path="/" element={<HomePageOne />} />
         <Route exact path="/index-two" element={<HomePageTwo />} />
         <Route exact path="/shop" element={<ShopPage />} />
-        <Route exact path="/product-details" element={<ProductDetails />} />
+        <Route exact path="/product-details" element={<ProductDetailsPageOne />} />
+        <Route exact path="/product-details-two" element={<ProductDetailsPageTwo />} />
 
 
       </Routes>

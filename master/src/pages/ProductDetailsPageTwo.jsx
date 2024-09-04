@@ -1,33 +1,36 @@
 import React from "react";
 import Preloader from "../helper/Preloader";
-import FooterTwo from "../components/FooterTwo";
-import HeaderOne from "../components/HeaderOne";
-import BreadcrumbTwo from "../components/BreadcrumbTwo";
-import ProductDetailsOne from "../components/ProductDetailsOne";
+import ColorInit from "../layout/ColorInit";
+import HeaderTwo from "../components/HeaderTwo";
+import Breadcrumb from "../components/Breadcrumb";
+import ProductDetailsTwo from "../components/ProductDetailsTwo";
 import NewArrivalTwo from "../components/NewArrivalTwo";
 import ShippingOne from "../components/ShippingOne";
 import NewsletterOne from "../components/NewsletterOne";
-import FooterOne from "../components/FooterOne";
+import FooterTwo from "../components/FooterTwo";
 import BottomFooter from "../components/BottomFooter";
 
-const ProductDetails = () => {
+
+const ProductDetailsPageTwo = () => {
 
 
 
   return (
     <>
+      {/* ColorInit */}
+      <ColorInit />
 
       {/* Preloader */}
       <Preloader />
 
-      {/* HeaderOne */}
-      <HeaderOne />
+      {/* HeaderTwo */}
+      <HeaderTwo />
 
       {/* Breadcrumb */}
-      <BreadcrumbTwo />
+      <Breadcrumb />
 
-      {/* ProductDetailsOne */}
-      <ProductDetailsOne />
+      {/* ProductDetailsTwo */}
+      <ProductDetailsTwo />
 
       {/* NewArrivalTwo */}
       <NewArrivalTwo />
@@ -39,15 +42,14 @@ const ProductDetails = () => {
       <NewsletterOne />
 
       {/* FooterTwo */}
-      <FooterOne />
+      <FooterTwo />
 
       {/* BottomFooter */}
       <BottomFooter />
-
 
 
     </>
   );
 };
 
-export default ProductDetails;
+export default ProductDetailsPageTwo;
