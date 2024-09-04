@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import $ from 'jquery';
 import { Link } from 'react-router-dom';
 
@@ -13,19 +13,6 @@ const HeaderOne = () => {
             }
         };
     }, []);
-
-
-    // Mobile menu support
-    const [activeIndex, setActiveIndex] = useState(null);
-    const [menuActive, setMenuActive] = useState(false)
-    const handleMenuClick = (index) => {
-        setActiveIndex(activeIndex === index ? null : index);
-    };
-    const handleMenuToggle = () => {
-        setMenuActive(!menuActive);
-    };
-
-
 
     return (
         <>
@@ -55,9 +42,9 @@ const HeaderOne = () => {
             </form>
             {/* ==================== Search Box End Here ==================== */}
             {/* ==================== Mobile Menu Start Here ==================== */}
-            <div className={`mobile-menu scroll-sm d-lg-none d-block ${menuActive && "active"}`}>
-                <button onClick={handleMenuToggle} type="button" className="close-button">
-
+            <div className="mobile-menu scroll-sm d-lg-none d-block">
+                <button type="button" className="close-button">
+                    {" "}
                     <i className="ph ph-x" />{" "}
                 </button>
                 <div className="mobile-menu__inner">
@@ -67,27 +54,15 @@ const HeaderOne = () => {
                     <div className="mobile-menu__menu">
                         {/* Nav Menu Start */}
                         <ul className="nav-menu flex-align nav-menu--mobile">
-                            {/* Home Menu */}
-                            <li onClick={() => handleMenuClick(0)}
-                                className={`on-hover-item nav-menu__item has-submenu ${activeIndex === 0 ? "d-block" : ""
-                                    }`}
-                            >
-                                <Link
-                                    to="#"
-                                    className="nav-menu__link"
-
-                                >
+                            <li className="on-hover-item nav-menu__item has-submenu">
+                                <Link to="#" className="nav-menu__link">
                                     Home
                                 </Link>
-                                <ul
-                                    className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${activeIndex === 0 ? "open" : ""
-                                        }`}
-                                >
+                                <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
                                     <li className="common-dropdown__item nav-submenu__item">
                                         <Link
                                             to="/"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                            onClick={() => setActiveIndex(null)}
                                         >
                                             {" "}
                                             Home One
@@ -97,7 +72,6 @@ const HeaderOne = () => {
                                         <Link
                                             to="/index-two"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                            onClick={() => setActiveIndex(null)}
                                         >
                                             {" "}
                                             Home Two
@@ -105,28 +79,15 @@ const HeaderOne = () => {
                                     </li>
                                 </ul>
                             </li>
-
-                            {/* Shop Menu */}
-                            <li onClick={() => handleMenuClick(1)}
-                                className={`on-hover-item nav-menu__item has-submenu ${activeIndex === 1 ? "d-block" : ""
-                                    }`}
-                            >
-                                <Link
-                                    to="#"
-                                    className="nav-menu__link"
-
-                                >
+                            <li className="on-hover-item nav-menu__item has-submenu">
+                                <Link to="#" className="nav-menu__link">
                                     Shop
                                 </Link>
-                                <ul
-                                    className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${activeIndex === 1 ? "open" : ""
-                                        }`}
-                                >
+                                <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
                                     <li className="common-dropdown__item nav-submenu__item">
                                         <Link
                                             to="/shop"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                            onClick={() => setActiveIndex(null)}
                                         >
                                             {" "}
                                             Shop
@@ -136,7 +97,6 @@ const HeaderOne = () => {
                                         <Link
                                             to="/product-details"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                            onClick={() => setActiveIndex(null)}
                                         >
                                             {" "}
                                             Shop Details
@@ -146,7 +106,6 @@ const HeaderOne = () => {
                                         <Link
                                             to="/product-details-two"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                            onClick={() => setActiveIndex(null)}
                                         >
                                             {" "}
                                             Shop Details Two
@@ -154,31 +113,18 @@ const HeaderOne = () => {
                                     </li>
                                 </ul>
                             </li>
-
-                            {/* Pages Menu */}
-                            <li onClick={() => handleMenuClick(2)}
-                                className={`on-hover-item nav-menu__item has-submenu ${activeIndex === 2 ? "d-block" : ""
-                                    }`}
-                            >
+                            <li className="on-hover-item nav-menu__item has-submenu">
                                 <span className="badge-notification bg-warning-600 text-white text-sm py-2 px-8 rounded-4">
                                     New
                                 </span>
-                                <Link
-                                    to="#"
-                                    className="nav-menu__link"
-
-                                >
+                                <Link to="#" className="nav-menu__link">
                                     Pages
                                 </Link>
-                                <ul
-                                    className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${activeIndex === 2 ? "open" : ""
-                                        }`}
-                                >
+                                <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
                                     <li className="common-dropdown__item nav-submenu__item">
                                         <Link
                                             to="/cart"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                            onClick={() => setActiveIndex(null)}
                                         >
                                             {" "}
                                             Cart
@@ -188,7 +134,6 @@ const HeaderOne = () => {
                                         <Link
                                             to="/checkout"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                            onClick={() => setActiveIndex(null)}
                                         >
                                             {" "}
                                             Checkout{" "}
@@ -198,7 +143,6 @@ const HeaderOne = () => {
                                         <Link
                                             to="/account"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                            onClick={() => setActiveIndex(null)}
                                         >
                                             {" "}
                                             Account
@@ -206,28 +150,15 @@ const HeaderOne = () => {
                                     </li>
                                 </ul>
                             </li>
-
-                            {/* Blog Menu */}
-                            <li onClick={() => handleMenuClick(3)}
-                                className={`on-hover-item nav-menu__item has-submenu ${activeIndex === 3 ? "d-block" : ""
-                                    }`}
-                            >
-                                <Link
-                                    to="#"
-                                    className="nav-menu__link"
-
-                                >
+                            <li className="on-hover-item nav-menu__item has-submenu">
+                                <Link to="#" className="nav-menu__link">
                                     Blog
                                 </Link>
-                                <ul
-                                    className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${activeIndex === 3 ? "open" : ""
-                                        }`}
-                                >
+                                <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
                                     <li className="common-dropdown__item nav-submenu__item">
                                         <Link
                                             to="/blog"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                            onClick={() => setActiveIndex(null)}
                                         >
                                             {" "}
                                             Blog
@@ -237,7 +168,6 @@ const HeaderOne = () => {
                                         <Link
                                             to="/blog-details"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                            onClick={() => setActiveIndex(null)}
                                         >
                                             {" "}
                                             Blog Details
@@ -245,14 +175,8 @@ const HeaderOne = () => {
                                     </li>
                                 </ul>
                             </li>
-
-                            {/* Contact Us Menu */}
                             <li className="nav-menu__item">
-                                <Link
-                                    to="/contact"
-                                    className="nav-menu__link"
-                                    onClick={() => setActiveIndex(null)}
-                                >
+                                <Link to="/contact" className="nav-menu__link">
                                     Contact Us
                                 </Link>
                             </li>
@@ -1131,7 +1055,6 @@ const HeaderOne = () => {
                                 </div>
                             </div>
                             <button
-                                onClick={handleMenuToggle}
                                 type="button"
                                 className="toggle-mobileMenu d-lg-none ms-3n text-gray-800 text-4xl d-flex"
                             >
