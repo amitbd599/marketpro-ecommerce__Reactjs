@@ -351,7 +351,7 @@
 
 
 
-.nav-submenu {
+.mobile-menu .nav-submenu {
     display: block !important;
     max-height: 0;
     overflow: hidden;
@@ -359,9 +359,27 @@
     transition: all 0s linear !important;
 }
 
-.nav-submenu.open {
+.mobile-menu .nav-submenu.open {
     max-height: 500px;
     height: 100%;
     transition: all 2s linear !important;
     /* Adjust this value based on your content */
+}
+
+
+@media screen and (max-width: 991px) {
+    .responsive-dropdown.cat .submenus-submenu {
+        display: block !important;
+        max-height: 0;
+        overflow: hidden;
+        height: 0;
+        transition: all 0s linear !important;
+    }
+
+    .responsive-dropdown.cat .submenus-submenu.open {
+        max-height: 500px;
+        height: 100%;
+        transition: all .5s linear !important;
+        /* Adjust this value based on your content */
+    }
 }

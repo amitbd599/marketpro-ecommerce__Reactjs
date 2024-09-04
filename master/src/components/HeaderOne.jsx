@@ -16,8 +16,8 @@ const HeaderOne = () => {
 
 
     // Mobile menu support
-    const [activeIndex, setActiveIndex] = useState(null);
     const [menuActive, setMenuActive] = useState(false)
+    const [activeIndex, setActiveIndex] = useState(null);
     const handleMenuClick = (index) => {
         setActiveIndex(activeIndex === index ? null : index);
     };
@@ -26,12 +26,32 @@ const HeaderOne = () => {
     };
 
 
+    // Search control support
+    const [activeSearch, setActiveSearch] = useState(false)
+    const handleSearchToggle = () => {
+        setActiveSearch(!activeSearch);
+    };
+
+    // category control support
+    const [activeCategory, setActiveCategory] = useState(false)
+    const handleCategoryToggle = () => {
+        setActiveCategory(!activeCategory);
+    };
+    const [activeIndexCat, setActiveIndexCat] = useState(null);
+    const handleCatClick = (index) => {
+        setActiveIndexCat(activeIndexCat === index ? null : index);
+    };
+
+
+
 
     return (
         <>
+            <div className="overlay" />
+            <div className={`side-overlay ${(menuActive || activeCategory) && "show"}`} />
             {/* ==================== Search Box Start Here ==================== */}
-            <form action="#" className="search-box">
-                <button
+            <form action="#" className={`search-box ${activeSearch && "active"}`}>
+                <button onClick={handleSearchToggle}
                     type="button"
                     className="search-box__close position-absolute inset-block-start-0 inset-inline-end-0 m-16 w-48 h-48 border border-gray-100 rounded-circle flex-center text-white hover-text-gray-800 hover-bg-white text-2xl transition-1"
                 >
@@ -56,7 +76,7 @@ const HeaderOne = () => {
             {/* ==================== Search Box End Here ==================== */}
             {/* ==================== Mobile Menu Start Here ==================== */}
             <div className={`mobile-menu scroll-sm d-lg-none d-block ${menuActive && "active"}`}>
-                <button onClick={handleMenuToggle} type="button" className="close-button">
+                <button onClick={() => { handleMenuToggle(); setActiveIndex(null) }} type="button" className="close-button">
 
                     <i className="ph ph-x" />{" "}
                 </button>
@@ -649,6 +669,7 @@ const HeaderOne = () => {
                             {/* Category Dropdown Start */}
                             <div className="category on-hover-item">
                                 <button
+                                    onClick={handleCategoryToggle}
                                     type="button"
                                     className="category__button flex-align gap-8 fw-medium p-16 border-end border-start border-gray-100 text-heading"
                                 >
@@ -660,8 +681,9 @@ const HeaderOne = () => {
                                         <i className="ph ph-caret-down" />
                                     </span>
                                 </button>
-                                <div className="responsive-dropdown on-hover-dropdown common-dropdown nav-submenu p-0 submenus-submenu-wrapper">
+                                <div className={`responsive-dropdown cat on-hover-dropdown common-dropdown nav-submenu p-0 submenus-submenu-wrapper ${activeCategory && "active"}`}>
                                     <button
+                                        onClick={() => { handleCategoryToggle(); setActiveIndexCat(null) }}
                                         type="button"
                                         className="close-responsive-dropdown rounded-circle text-xl position-absolute inset-inline-end-0 inset-block-start-0 mt-4 me-8 d-lg-none d-flex"
                                     >
@@ -676,8 +698,8 @@ const HeaderOne = () => {
                                     </div>
                                     {/* Logo End */}
                                     <ul className="scroll-sm p-0 py-8 w-300 max-h-400 overflow-y-auto">
-                                        <li className="has-submenus-submenu">
-                                            <Link
+                                        <li onClick={() => handleCatClick(0)} className={`has-submenus-submenu ${activeIndexCat === 0 ? "active" : ""}`}>
+                                            <Link onClick={() => setActiveIndexCat(null)}
                                                 to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                             >
@@ -689,13 +711,13 @@ const HeaderOne = () => {
                                                     <i className="ph ph-caret-right" />
                                                 </span>
                                             </Link>
-                                            <div className="submenus-submenu py-16">
+                                            <div className={`submenus-submenu py-16 ${activeIndexCat === 0 ? "open" : ""}`}>
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Vegetables &amp; Fruit
                                                 </h6>
                                                 <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
                                                     <li>
-                                                        <Link to="/shop">Potato &amp; Tomato</Link>
+                                                        <Link to="/shop">Potato &amp; Tomato 000</Link>
                                                     </li>
                                                     <li>
                                                         <Link to="/shop">Cucumber &amp; Capsicum</Link>
@@ -721,7 +743,7 @@ const HeaderOne = () => {
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li className="has-submenus-submenu">
+                                        <li onClick={() => handleCatClick(1)} className={`has-submenus-submenu ${activeIndexCat === 1 ? "active" : ""}`}>
                                             <Link
                                                 to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
@@ -734,7 +756,7 @@ const HeaderOne = () => {
                                                     <i className="ph ph-caret-right" />
                                                 </span>
                                             </Link>
-                                            <div className="submenus-submenu py-16">
+                                            <div className={`submenus-submenu py-16 ${activeIndexCat === 1 ? "open" : ""}`}>
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Beverages
                                                 </h6>
@@ -760,7 +782,7 @@ const HeaderOne = () => {
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li className="has-submenus-submenu">
+                                        <li onClick={() => handleCatClick(2)} className={`has-submenus-submenu ${activeIndexCat === 2 ? "active" : ""}`}>
                                             <Link
                                                 to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
@@ -773,7 +795,7 @@ const HeaderOne = () => {
                                                     <i className="ph ph-caret-right" />
                                                 </span>
                                             </Link>
-                                            <div className="submenus-submenu py-16">
+                                            <div className={`submenus-submenu py-16 ${activeIndexCat === 2 ? "open" : ""}`}>
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Meats &amp; Seafood
                                                 </h6>
@@ -793,7 +815,7 @@ const HeaderOne = () => {
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li className="has-submenus-submenu">
+                                        <li onClick={() => handleCatClick(3)} className={`has-submenus-submenu ${activeIndexCat === 3 ? "active" : ""}`}>
                                             <Link
                                                 to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
@@ -806,7 +828,7 @@ const HeaderOne = () => {
                                                     <i className="ph ph-caret-right" />
                                                 </span>
                                             </Link>
-                                            <div className="submenus-submenu py-16">
+                                            <div className={`submenus-submenu py-16 ${activeIndexCat === 3 ? "open" : ""}`}>
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Breakfast &amp; Dairy
                                                 </h6>
@@ -832,7 +854,7 @@ const HeaderOne = () => {
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li className="has-submenus-submenu">
+                                        <li onClick={() => handleCatClick(4)} className={`has-submenus-submenu ${activeIndexCat === 4 ? "active" : ""}`}>
                                             <Link
                                                 to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
@@ -845,7 +867,7 @@ const HeaderOne = () => {
                                                     <i className="ph ph-caret-right" />
                                                 </span>
                                             </Link>
-                                            <div className="submenus-submenu py-16">
+                                            <div className={`submenus-submenu py-16 ${activeIndexCat === 4 ? "open" : ""}`}>
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Frozen Foods
                                                 </h6>
@@ -868,7 +890,7 @@ const HeaderOne = () => {
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li className="has-submenus-submenu">
+                                        <li onClick={() => handleCatClick(5)} className={`has-submenus-submenu ${activeIndexCat === 5 ? "active" : ""}`}>
                                             <Link
                                                 to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
@@ -881,7 +903,7 @@ const HeaderOne = () => {
                                                     <i className="ph ph-caret-right" />
                                                 </span>
                                             </Link>
-                                            <div className="submenus-submenu py-16">
+                                            <div className={`submenus-submenu py-16 ${activeIndexCat === 5 ? "open" : ""}`}>
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Biscuits &amp; Snacks
                                                 </h6>
@@ -904,7 +926,7 @@ const HeaderOne = () => {
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li className="has-submenus-submenu">
+                                        <li onClick={() => handleCatClick(6)} className={`has-submenus-submenu ${activeIndexCat === 6 ? "active" : ""}`}>
                                             <Link
                                                 to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
@@ -917,7 +939,7 @@ const HeaderOne = () => {
                                                     <i className="ph ph-caret-right" />
                                                 </span>
                                             </Link>
-                                            <div className="submenus-submenu py-16">
+                                            <div className={`submenus-submenu py-16 ${activeIndexCat === 6 ? "open" : ""}`}>
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Grocery &amp; Staples
                                                 </h6>
@@ -1098,7 +1120,7 @@ const HeaderOne = () => {
                             </Link>
                             <div className="me-16 d-lg-none d-block">
                                 <div className="flex-align flex-wrap gap-12">
-                                    <button
+                                    <button onClick={handleSearchToggle}
                                         type="button"
                                         className="search-icon flex-align d-lg-none d-flex gap-4 item-hover"
                                     >
