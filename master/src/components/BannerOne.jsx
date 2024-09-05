@@ -32,8 +32,7 @@ const BannerOne = () => {
         dots: false,
         arrows: true,
         infinite: true,
-
-        speed: 1000,
+        speed: 1500,
         slidesToShow: 1,
         slidesToScroll: 1,
         initialSlide: 0,
