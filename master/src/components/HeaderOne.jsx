@@ -3,7 +3,16 @@ import query from 'jquery';
 import { Link } from 'react-router-dom';
 
 const HeaderOne = () => {
+    const [scroll, setScroll] = useState(false)
     useEffect(() => {
+        window.onscroll = () => {
+            if (window.pageYOffset < 150) {
+                setScroll(false);
+            } else if (window.pageYOffset > 150) {
+                setScroll(true);
+            }
+            return () => (window.onscroll = null);
+        };
         const selectElement = query('.js-example-basic-single');
         selectElement.select2();
 
@@ -12,6 +21,7 @@ const HeaderOne = () => {
                 selectElement.select2('destroy');
             }
         };
+
     }, []);
 
 
@@ -662,7 +672,7 @@ const HeaderOne = () => {
             </header>
             {/* ======================= Middle Header End ========================= */}
             {/* ==================== Header Start Here ==================== */}
-            <header className="header bg-white border-bottom border-gray-100">
+            <header className={`header bg-white border-bottom border-gray-100 ${scroll && "fixed-header"}`}>
                 <div className="container container-lg">
                     <nav className="header-inner d-flex justify-content-between gap-8">
                         <div className="flex-align menu-category-wrapper">

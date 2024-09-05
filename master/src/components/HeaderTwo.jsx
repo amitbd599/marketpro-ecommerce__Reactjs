@@ -2,7 +2,16 @@ import React, { useEffect, useState } from 'react'
 import query from 'jquery';
 import { Link } from 'react-router-dom';
 const HeaderTwo = () => {
+    const [scroll, setScroll] = useState(false)
     useEffect(() => {
+        window.onscroll = () => {
+            if (window.pageYOffset < 150) {
+                setScroll(false);
+            } else if (window.pageYOffset > 150) {
+                setScroll(true);
+            }
+            return () => (window.onscroll = null);
+        };
         const selectElement = query('.js-example-basic-single');
         selectElement.select2();
 
@@ -545,7 +554,7 @@ const HeaderTwo = () => {
             </header>
             {/* ======================= Middle Header Two End ========================= */}
             {/* ==================== Header Two Start Here ==================== */}
-            <header className="header bg-white border-bottom border-gray-100">
+            <header className={`header bg-white border-bottom border-gray-100 ${scroll && "fixed-header"}`}>
                 <div className="container container-lg">
                     <nav className="header-inner d-flex justify-content-between gap-8">
                         <div className="flex-align menu-category-wrapper">
