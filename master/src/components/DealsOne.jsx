@@ -50,36 +50,34 @@ const DealsOne = () => {
         prevArrow: <SamplePrevArrow />,
         responsive: [
             {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 8,
-                    slidesToScroll: 8,
-                    infinite: true,
-                    dots: true,
-                },
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 6,
-                    slidesToScroll: 6,
-                    initialSlide: 2,
-                },
-            },
-            {
-                breakpoint: 768,
+                breakpoint: 1599,
                 settings: {
                     slidesToShow: 5,
-                    slidesToScroll: 5,
+                    arrows: false,
                 },
             },
             {
-                breakpoint: 576,
+                breakpoint: 1399,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
+                    arrows: false,
                 },
             },
+            {
+                breakpoint: 1199,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false,
+                },
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                },
+            },
+
         ],
     };
     return (
