@@ -40,36 +40,13 @@ const FeaturedOne = () => {
         prevArrow: <SamplePrevArrow />,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 991,
                 settings: {
-                    slidesToShow: 8,
-                    slidesToScroll: 8,
-                    infinite: true,
-                    dots: true,
+                    slidesToShow: 1,
+                    arrows: false,
                 },
             },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 6,
-                    slidesToScroll: 6,
-                    initialSlide: 2,
-                },
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 5,
-                    slidesToScroll: 5,
-                },
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                },
-            },
+
         ],
     };
     return (
