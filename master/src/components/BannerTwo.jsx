@@ -32,7 +32,7 @@ const BannerTwo = () => {
                                     <img src="assets/images/logo/logo.png" alt="Logo" />
                                 </Link>
                             </div>
-                            <ul className="responsive-dropdown__list scroll-sm p-0 py-8 overflow-y-auto">
+                            <ul className="responsive-dropdown__list scroll-sm p-0 py-8 ">
                                 <li className="has-submenus-submenu">
                                     <Link
                                         to="#"

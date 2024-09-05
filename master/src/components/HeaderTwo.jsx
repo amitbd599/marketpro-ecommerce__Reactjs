@@ -1,23 +1,53 @@
-import React, { useEffect } from 'react'
-import $ from 'jquery';
+import React, { useEffect, useState } from 'react'
+import query from 'jquery';
 import { Link } from 'react-router-dom';
 const HeaderTwo = () => {
     useEffect(() => {
-        const $selectElement = $('.js-example-basic-single');
-        $selectElement.select2();
+        const selectElement = query('.js-example-basic-single');
+        selectElement.select2();
 
         return () => {
-            if ($selectElement.data('select2')) {
-                $selectElement.select2('destroy');
+            if (selectElement.data('select2')) {
+                selectElement.select2('destroy');
             }
         };
     }, []);
 
+    // Mobile menu support
+    const [menuActive, setMenuActive] = useState(false)
+    const [activeIndex, setActiveIndex] = useState(null);
+    const handleMenuClick = (index) => {
+        setActiveIndex(activeIndex === index ? null : index);
+    };
+    const handleMenuToggle = () => {
+        setMenuActive(!menuActive);
+    };
+
+
+    // Search control support
+    const [activeSearch, setActiveSearch] = useState(false)
+    const handleSearchToggle = () => {
+        setActiveSearch(!activeSearch);
+    };
+
+    // category control support
+    const [activeCategory, setActiveCategory] = useState(false)
+    const handleCategoryToggle = () => {
+        setActiveCategory(!activeCategory);
+    };
+    const [activeIndexCat, setActiveIndexCat] = useState(null);
+    const handleCatClick = (index) => {
+        setActiveIndexCat(activeIndexCat === index ? null : index);
+    };
+
     return (
         <>
+            <div className="overlay" />
+            <div className={`side-overlay ${(menuActive || activeCategory) && "show"}`} />
             {/* ==================== Search Box Start Here ==================== */}
-            <form action="#" className="search-box">
-                <button
+
+            <form action="#" className={`search-box ${activeSearch && "active"}`}>
+                <button onClick={handleSearchToggle}
                     type="button"
                     className="search-box__close position-absolute inset-block-start-0 inset-inline-end-0 m-16 w-48 h-48 border border-gray-100 rounded-circle flex-center text-white hover-text-gray-800 hover-bg-white text-2xl transition-1"
                 >
@@ -41,9 +71,8 @@ const HeaderTwo = () => {
             </form>
             {/* ==================== Search Box End Here ==================== */}
             {/* ==================== Mobile Menu Start Here ==================== */}
-            <div className="mobile-menu scroll-sm d-lg-none d-block">
-                <button type="button" className="close-button">
-                    {" "}
+            <div className={`mobile-menu scroll-sm d-lg-none d-block ${menuActive && "active"}`}>
+                <button onClick={() => { handleMenuToggle(); setActiveIndex(null) }} type="button" className="close-button">
                     <i className="ph ph-x" />{" "}
                 </button>
                 <div className="mobile-menu__inner">
@@ -53,13 +82,19 @@ const HeaderTwo = () => {
                     <div className="mobile-menu__menu">
                         {/* Nav Menu Start */}
                         <ul className="nav-menu flex-align nav-menu--mobile">
-                            <li className="on-hover-item nav-menu__item has-submenu">
+                            <li onClick={() => handleMenuClick(0)}
+                                className={`on-hover-item nav-menu__item has-submenu ${activeIndex === 0 ? "d-block" : ""
+                                    }`}
+                            >
                                 <Link to="#" className="nav-menu__link">
                                     Home
                                 </Link>
-                                <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
+                                <ul
+                                    className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${activeIndex === 0 ? "open" : ""
+                                        }`}
+                                >
                                     <li className="common-dropdown__item nav-submenu__item">
-                                        <Link
+                                        <Link onClick={() => setActiveIndex(null)}
                                             to="/"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                         >
@@ -68,7 +103,7 @@ const HeaderTwo = () => {
                                         </Link>
                                     </li>
                                     <li className="common-dropdown__item nav-submenu__item">
-                                        <Link
+                                        <Link onClick={() => setActiveIndex(null)}
                                             to="/index-two"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                         >
@@ -78,13 +113,19 @@ const HeaderTwo = () => {
                                     </li>
                                 </ul>
                             </li>
-                            <li className="on-hover-item nav-menu__item has-submenu">
+                            <li onClick={() => handleMenuClick(1)}
+                                className={`on-hover-item nav-menu__item has-submenu ${activeIndex === 1 ? "d-block" : ""
+                                    }`}
+                            >
                                 <Link to="#" className="nav-menu__link">
                                     Shop
                                 </Link>
-                                <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
+                                <ul
+                                    className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${activeIndex === 1 ? "open" : ""
+                                        }`}
+                                >
                                     <li className="common-dropdown__item nav-submenu__item">
-                                        <Link
+                                        <Link onClick={() => setActiveIndex(null)}
                                             to="/shop"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                         >
@@ -93,7 +134,7 @@ const HeaderTwo = () => {
                                         </Link>
                                     </li>
                                     <li className="common-dropdown__item nav-submenu__item">
-                                        <Link
+                                        <Link onClick={() => setActiveIndex(null)}
                                             to="/product-details"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                         >
@@ -102,7 +143,7 @@ const HeaderTwo = () => {
                                         </Link>
                                     </li>
                                     <li className="common-dropdown__item nav-submenu__item">
-                                        <Link
+                                        <Link onClick={() => setActiveIndex(null)}
                                             to="/product-details-two"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                         >
@@ -112,16 +153,22 @@ const HeaderTwo = () => {
                                     </li>
                                 </ul>
                             </li>
-                            <li className="on-hover-item nav-menu__item has-submenu">
+                            <li onClick={() => handleMenuClick(2)}
+                                className={`on-hover-item nav-menu__item has-submenu ${activeIndex === 2 ? "d-block" : ""
+                                    }`}
+                            >
                                 <span className="badge-notification bg-warning-600 text-white text-sm py-2 px-8 rounded-4">
                                     New
                                 </span>
                                 <Link to="#" className="nav-menu__link">
                                     Pages
                                 </Link>
-                                <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
+                                <ul
+                                    className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${activeIndex === 2 ? "open" : ""
+                                        }`}
+                                >
                                     <li className="common-dropdown__item nav-submenu__item">
-                                        <Link
+                                        <Link onClick={() => setActiveIndex(null)}
                                             to="/cart"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                         >
@@ -130,7 +177,7 @@ const HeaderTwo = () => {
                                         </Link>
                                     </li>
                                     <li className="common-dropdown__item nav-submenu__item">
-                                        <Link
+                                        <Link onClick={() => setActiveIndex(null)}
                                             to="/checkout"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                         >
@@ -139,7 +186,7 @@ const HeaderTwo = () => {
                                         </Link>
                                     </li>
                                     <li className="common-dropdown__item nav-submenu__item">
-                                        <Link
+                                        <Link onClick={() => setActiveIndex(null)}
                                             to="/account"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                         >
@@ -149,13 +196,19 @@ const HeaderTwo = () => {
                                     </li>
                                 </ul>
                             </li>
-                            <li className="on-hover-item nav-menu__item has-submenu">
+                            <li onClick={() => handleMenuClick(3)}
+                                className={`on-hover-item nav-menu__item has-submenu ${activeIndex === 3 ? "d-block" : ""
+                                    }`}
+                            >
                                 <Link to="#" className="nav-menu__link">
                                     Blog
                                 </Link>
-                                <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
+                                <ul
+                                    className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${activeIndex === 3 ? "open" : ""
+                                        }`}
+                                >
                                     <li className="common-dropdown__item nav-submenu__item">
-                                        <Link
+                                        <Link onClick={() => setActiveIndex(null)}
                                             to="/blog"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                         >
@@ -164,7 +217,7 @@ const HeaderTwo = () => {
                                         </Link>
                                     </li>
                                     <li className="common-dropdown__item nav-submenu__item">
-                                        <Link
+                                        <Link onClick={() => setActiveIndex(null)}
                                             to="/blog-details"
                                             className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                                         >
@@ -498,7 +551,7 @@ const HeaderTwo = () => {
                         <div className="flex-align menu-category-wrapper">
                             {/* Category Dropdown Start */}
                             <div className="category-two d-block">
-                                <button
+                                <button onClick={handleCategoryToggle}
                                     type="button"
                                     className="category__button flex-align gap-8 fw-medium bg-main-two-600 p-16 text-white"
                                 >
@@ -510,8 +563,8 @@ const HeaderTwo = () => {
                                         <i className="ph ph-caret-down" />
                                     </span>
                                 </button>
-                                <div className="responsive-dropdown common-dropdown d-lg-none d-block nav-submenu p-0 submenus-submenu-wrapper shadow-none border border-gray-100">
-                                    <button
+                                <div className={`responsive-dropdown cat common-dropdown d-lg-none d-block nav-submenu p-0 submenus-submenu-wrapper shadow-none border border-gray-100 ${activeCategory && "active"}`}>
+                                    <button onClick={() => { handleCategoryToggle(); setActiveIndexCat(null) }}
                                         type="button"
                                         className="close-responsive-dropdown rounded-circle text-xl position-absolute inset-inline-end-0 inset-block-start-0 mt-4 me-8 d-lg-none d-flex"
                                     >
@@ -523,8 +576,8 @@ const HeaderTwo = () => {
                                         </Link>
                                     </div>
                                     <ul className="scroll-sm p-0 py-8 overflow-y-auto">
-                                        <li className="has-submenus-submenu">
-                                            <Link
+                                        <li onClick={() => handleCatClick(0)} className={`has-submenus-submenu ${activeIndexCat === 0 ? "active" : ""}`}>
+                                            <Link onClick={() => setActiveIndexCat(null)}
                                                 to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
                                             >
@@ -533,7 +586,7 @@ const HeaderTwo = () => {
                                                     <i className="ph ph-caret-right" />
                                                 </span>
                                             </Link>
-                                            <div className="submenus-submenu py-16">
+                                            <div className={`submenus-submenu py-16 ${activeIndexCat === 0 ? "open" : ""}`}>
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Cell Phone
                                                 </h6>
@@ -559,7 +612,7 @@ const HeaderTwo = () => {
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li className="has-submenus-submenu">
+                                        <li onClick={() => handleCatClick(1)} className={`has-submenus-submenu ${activeIndexCat === 1 ? "active" : ""}`}>
                                             <Link
                                                 to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
@@ -569,7 +622,7 @@ const HeaderTwo = () => {
                                                     <i className="ph ph-caret-right" />
                                                 </span>
                                             </Link>
-                                            <div className="submenus-submenu py-16">
+                                            <div className={`submenus-submenu py-16 ${activeIndexCat === 1 ? "open" : ""}`}>
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Wear
                                                 </h6>
@@ -595,7 +648,7 @@ const HeaderTwo = () => {
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li className="has-submenus-submenu">
+                                        <li onClick={() => handleCatClick(2)} className={`has-submenus-submenu ${activeIndexCat === 2 ? "active" : ""}`}>
                                             <Link
                                                 to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
@@ -605,7 +658,7 @@ const HeaderTwo = () => {
                                                     <i className="ph ph-caret-right" />
                                                 </span>
                                             </Link>
-                                            <div className="submenus-submenu py-16">
+                                            <div className={`submenus-submenu py-16 ${activeIndexCat === 2 ? "open" : ""}`}>
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Computer
                                                 </h6>
@@ -631,7 +684,7 @@ const HeaderTwo = () => {
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li className="has-submenus-submenu">
+                                        <li onClick={() => handleCatClick(3)} className={`has-submenus-submenu ${activeIndexCat === 3 ? "active" : ""}`}>
                                             <Link
                                                 to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
@@ -641,7 +694,7 @@ const HeaderTwo = () => {
                                                     <i className="ph ph-caret-right" />
                                                 </span>
                                             </Link>
-                                            <div className="submenus-submenu py-16">
+                                            <div className={`submenus-submenu py-16 ${activeIndexCat === 3 ? "open" : ""}`}>
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Headphone
                                                 </h6>
@@ -667,7 +720,7 @@ const HeaderTwo = () => {
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li className="has-submenus-submenu">
+                                        <li onClick={() => handleCatClick(4)} className={`has-submenus-submenu ${activeIndexCat === 4 ? "active" : ""}`}>
                                             <Link
                                                 to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
@@ -677,7 +730,7 @@ const HeaderTwo = () => {
                                                     <i className="ph ph-caret-right" />
                                                 </span>
                                             </Link>
-                                            <div className="submenus-submenu py-16">
+                                            <div className={`submenus-submenu py-16 ${activeIndexCat === 4 ? "open" : ""}`}>
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Smart Screen
                                                 </h6>
@@ -703,7 +756,7 @@ const HeaderTwo = () => {
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li className="has-submenus-submenu">
+                                        <li onClick={() => handleCatClick(5)} className={`has-submenus-submenu ${activeIndexCat === 5 ? "active" : ""}`}>
                                             <Link
                                                 to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
@@ -713,7 +766,7 @@ const HeaderTwo = () => {
                                                     <i className="ph ph-caret-right" />
                                                 </span>
                                             </Link>
-                                            <div className="submenus-submenu py-16">
+                                            <div className={`submenus-submenu py-16 ${activeIndexCat === 5 ? "open" : ""}`}>
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Smart Home
                                                 </h6>
@@ -739,7 +792,7 @@ const HeaderTwo = () => {
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li className="has-submenus-submenu">
+                                        <li onClick={() => handleCatClick(6)} className={`has-submenus-submenu ${activeIndexCat === 6 ? "active" : ""}`}>
                                             <Link
                                                 to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
@@ -749,7 +802,7 @@ const HeaderTwo = () => {
                                                     <i className="ph ph-caret-right" />
                                                 </span>
                                             </Link>
-                                            <div className="submenus-submenu py-16">
+                                            <div className={`submenus-submenu py-16 ${activeIndexCat === 6 ? "open" : ""}`}>
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Digital Accessories
                                                 </h6>
@@ -775,7 +828,7 @@ const HeaderTwo = () => {
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li className="has-submenus-submenu">
+                                        <li onClick={() => handleCatClick(7)} className={`has-submenus-submenu ${activeIndexCat === 7 ? "active" : ""}`}>
                                             <Link
                                                 to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
@@ -785,7 +838,7 @@ const HeaderTwo = () => {
                                                     <i className="ph ph-caret-right" />
                                                 </span>
                                             </Link>
-                                            <div className="submenus-submenu py-16">
+                                            <div className={`submenus-submenu py-16 ${activeIndexCat === 7 ? "open" : ""}`}>
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     {" "}
                                                     Value Added Services
@@ -812,7 +865,7 @@ const HeaderTwo = () => {
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li className="has-submenus-submenu">
+                                        <li onClick={() => handleCatClick(8)} className={`has-submenus-submenu ${activeIndexCat === 8 ? "active" : ""}`}>
                                             <Link
                                                 to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
@@ -822,7 +875,7 @@ const HeaderTwo = () => {
                                                     <i className="ph ph-caret-right" />
                                                 </span>
                                             </Link>
-                                            <div className="submenus-submenu py-16">
+                                            <div className={`submenus-submenu py-16 ${activeIndexCat === 8 ? "open" : ""}`}>
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Car Products
                                                 </h6>
@@ -848,7 +901,7 @@ const HeaderTwo = () => {
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li className="has-submenus-submenu">
+                                        <li onClick={() => handleCatClick(9)} className={`has-submenus-submenu ${activeIndexCat === 9 ? "active" : ""}`}>
                                             <Link
                                                 to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
@@ -858,7 +911,7 @@ const HeaderTwo = () => {
                                                     <i className="ph ph-caret-right" />
                                                 </span>
                                             </Link>
-                                            <div className="submenus-submenu py-16">
+                                            <div className={`submenus-submenu py-16 ${activeIndexCat === 9 ? "open" : ""}`}>
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Ecological Products
                                                 </h6>
@@ -884,7 +937,7 @@ const HeaderTwo = () => {
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li className="has-submenus-submenu">
+                                        <li onClick={() => handleCatClick(10)} className={`has-submenus-submenu ${activeIndexCat === 10 ? "active" : ""}`}>
                                             <Link
                                                 to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
@@ -894,7 +947,7 @@ const HeaderTwo = () => {
                                                     <i className="ph ph-caret-right" />
                                                 </span>
                                             </Link>
-                                            <div className="submenus-submenu py-16">
+                                            <div className={`submenus-submenu py-16 ${activeIndexCat === 10 ? "open" : ""}`}>
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Flat
                                                 </h6>
@@ -920,7 +973,7 @@ const HeaderTwo = () => {
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li className="has-submenus-submenu">
+                                        <li onClick={() => handleCatClick(11)} className={`has-submenus-submenu ${activeIndexCat === 11 ? "active" : ""}`}>
                                             <Link
                                                 to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
@@ -930,7 +983,7 @@ const HeaderTwo = () => {
                                                     <i className="ph ph-caret-right" />
                                                 </span>
                                             </Link>
-                                            <div className="submenus-submenu py-16">
+                                            <div className={`submenus-submenu py-16 ${activeIndexCat === 11 ? "open" : ""}`}>
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Commercial Terminal
                                                 </h6>
@@ -956,7 +1009,7 @@ const HeaderTwo = () => {
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li className="has-submenus-submenu">
+                                        <li onClick={() => handleCatClick(12)} className={`has-submenus-submenu ${activeIndexCat === 12 ? "active" : ""}`}>
                                             <Link
                                                 to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
@@ -966,7 +1019,7 @@ const HeaderTwo = () => {
                                                     <i className="ph ph-caret-right" />
                                                 </span>
                                             </Link>
-                                            <div className="submenus-submenu py-16">
+                                            <div className={`submenus-submenu py-16 ${activeIndexCat === 12 ? "open" : ""}`}>
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Headphone
                                                 </h6>
@@ -992,7 +1045,7 @@ const HeaderTwo = () => {
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li className="has-submenus-submenu">
+                                        <li onClick={() => handleCatClick(13)} className={`has-submenus-submenu ${activeIndexCat === 13 ? "active" : ""}`}>
                                             <Link
                                                 to="#"
                                                 className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
@@ -1002,7 +1055,7 @@ const HeaderTwo = () => {
                                                     <i className="ph ph-caret-right" />
                                                 </span>
                                             </Link>
-                                            <div className="submenus-submenu py-16">
+                                            <div className={`submenus-submenu py-16 ${activeIndexCat === 13 ? "open" : ""}`}>
                                                 <h6 className="text-lg px-16 submenus-submenu__title">
                                                     Smart Screen
                                                 </h6>
@@ -1647,7 +1700,7 @@ const HeaderTwo = () => {
                             </div>
                             <div className="me-8 d-lg-none d-block">
                                 <div className="header-two-activities flex-align flex-wrap gap-32">
-                                    <button
+                                    <button onClick={handleSearchToggle}
                                         type="button"
                                         className="flex-align search-icon d-lg-none d-flex gap-4 item-hover-two"
                                     >
@@ -1710,7 +1763,7 @@ const HeaderTwo = () => {
                                     </Link>
                                 </div>
                             </div>
-                            <button
+                            <button onClick={handleMenuToggle}
                                 type="button"
                                 className="toggle-mobileMenu d-lg-none ms-3n text-gray-800 text-4xl d-flex"
                             >

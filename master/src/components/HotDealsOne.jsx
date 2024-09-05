@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
+import { getCountdown } from '../helper/Countdown';
 
 const HotDealsOne = () => {
+    const [timeLeft, setTimeLeft] = useState(getCountdown());
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setTimeLeft(getCountdown());
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, []);
     function SampleNextArrow(props) {
         const { className, onClick } = props;
         return (
@@ -105,19 +115,19 @@ const HotDealsOne = () => {
                                     <ul className="countdown-list flex-center flex-wrap">
                                         <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium colon-white">
                                             <span className="days" />
-                                            Days
+                                            {timeLeft.days} Days
                                         </li>
                                         <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium colon-white">
                                             <span className="hours" />
-                                            Hours
+                                            {timeLeft.hours} Hours
                                         </li>
                                         <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium colon-white">
                                             <span className="minutes" />
-                                            Min
+                                            {timeLeft.minutes} Min
                                         </li>
                                         <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium colon-white">
                                             <span className="seconds" />
-                                            Sec
+                                            {timeLeft.seconds} Sec
                                         </li>
                                     </ul>
                                 </div>

@@ -1,7 +1,17 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { getCountdown } from '../helper/Countdown';
 
 const BestSellsOne = () => {
+    const [timeLeft, setTimeLeft] = useState(getCountdown());
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setTimeLeft(getCountdown());
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, []);
     return (
         <section className="best sells pb-80">
             <div className="container container-lg">
@@ -27,21 +37,18 @@ const BestSellsOne = () => {
                                         </Link>
                                         <div className="countdown" id="countdown6">
                                             <ul className="countdown-list style-three flex-align flex-wrap">
-                                                <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
-                                                    <span className="days" />
-                                                    Days
-                                                </li>
+
                                                 <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
                                                     <span className="hours" />
-                                                    Hours
+                                                    {timeLeft.hours} Hours
                                                 </li>
                                                 <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
                                                     <span className="minutes" />
-                                                    Min
+                                                    {timeLeft.minutes} Min
                                                 </li>
                                                 <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
                                                     <span className="seconds" />
-                                                    Sec
+                                                    {timeLeft.seconds} Sec
                                                 </li>
                                             </ul>
                                         </div>
@@ -116,21 +123,18 @@ const BestSellsOne = () => {
                                         </Link>
                                         <div className="countdown" id="countdown7">
                                             <ul className="countdown-list style-three flex-align flex-wrap">
-                                                <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
-                                                    <span className="days" />
-                                                    Days
-                                                </li>
+
                                                 <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
                                                     <span className="hours" />
-                                                    Hours
+                                                    {timeLeft.hours} Hours
                                                 </li>
                                                 <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
                                                     <span className="minutes" />
-                                                    Min
+                                                    {timeLeft.minutes} Min
                                                 </li>
                                                 <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
                                                     <span className="seconds" />
-                                                    Sec
+                                                    {timeLeft.seconds} Sec
                                                 </li>
                                             </ul>
                                         </div>
@@ -205,21 +209,18 @@ const BestSellsOne = () => {
                                         </Link>
                                         <div className="countdown" id="countdown8">
                                             <ul className="countdown-list style-three flex-align flex-wrap">
-                                                <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
-                                                    <span className="days" />
-                                                    Days
-                                                </li>
+
                                                 <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
                                                     <span className="hours" />
-                                                    Hours
+                                                    {timeLeft.hours} Hours
                                                 </li>
                                                 <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
                                                     <span className="minutes" />
-                                                    Min
+                                                    {timeLeft.minutes} Min
                                                 </li>
                                                 <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
                                                     <span className="seconds" />
-                                                    Sec
+                                                    {timeLeft.seconds} Sec
                                                 </li>
                                             </ul>
                                         </div>
@@ -294,21 +295,18 @@ const BestSellsOne = () => {
                                         </Link>
                                         <div className="countdown" id="countdown9">
                                             <ul className="countdown-list style-three flex-align flex-wrap">
-                                                <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
-                                                    <span className="days" />
-                                                    Days
-                                                </li>
+
                                                 <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
                                                     <span className="hours" />
-                                                    Hours
+                                                    {timeLeft.hours} Hours
                                                 </li>
                                                 <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
                                                     <span className="minutes" />
-                                                    Min
+                                                    {timeLeft.minutes} Min
                                                 </li>
                                                 <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
                                                     <span className="seconds" />
-                                                    Sec
+                                                    {timeLeft.seconds} Sec
                                                 </li>
                                             </ul>
                                         </div>
@@ -387,21 +385,18 @@ const BestSellsOne = () => {
                                 <h4 className="mb-8">Special Snacks</h4>
                                 <div className="countdown my-32" id="countdown5">
                                     <ul className="countdown-list style-two flex-center flex-wrap">
-                                        <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium colon-white">
-                                            <span className="days" />
-                                            Days
-                                        </li>
+
                                         <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium colon-white">
                                             <span className="hours" />
-                                            Hours
+                                            {timeLeft.hours} Hours
                                         </li>
                                         <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium colon-white">
                                             <span className="minutes" />
-                                            Min
+                                            {timeLeft.minutes} Min
                                         </li>
                                         <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium colon-white">
                                             <span className="seconds" />
-                                            Sec
+                                            {timeLeft.seconds} Sec
                                         </li>
                                     </ul>
                                 </div>

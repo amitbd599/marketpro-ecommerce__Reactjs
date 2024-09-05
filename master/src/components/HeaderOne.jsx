@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react'
-import $ from 'jquery';
+import query from 'jquery';
 import { Link } from 'react-router-dom';
 
 const HeaderOne = () => {
     useEffect(() => {
-        const $selectElement = $('.js-example-basic-single');
-        $selectElement.select2();
+        const selectElement = query('.js-example-basic-single');
+        selectElement.select2();
 
         return () => {
-            if ($selectElement.data('select2')) {
-                $selectElement.select2('destroy');
+            if (selectElement.data('select2')) {
+                selectElement.select2('destroy');
             }
         };
     }, []);
