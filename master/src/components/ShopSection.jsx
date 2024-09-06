@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import ReactSlider from 'react-slider'
 
 const ShopSection = () => {
+
+    let [grid, setGrid] = useState(false)
+
+    let gridControl = () => [
+        setGrid(!grid)
+    ]
 
 
     return (
@@ -605,15 +611,15 @@ const ShopSection = () => {
                             <span className="text-gray-900">Showing 1-20 of 85 result</span>
                             <div className="position-relative flex-align gap-16 flex-wrap">
                                 <div className="list-grid-btns flex-align gap-16">
-                                    <button
+                                    <button onClick={() => setGrid(true)}
                                         type="button"
-                                        className="w-44 h-44 flex-center border border-gray-100 rounded-6 text-2xl list-btn"
+                                        className={`w-44 h-44 flex-center border rounded-6 text-2xl list-btn border-gray-100 ${grid === true && "border-main-600 text-white bg-main-600"}`}
                                     >
                                         <i className="ph-bold ph-list-dashes" />
                                     </button>
-                                    <button
+                                    <button onClick={() => setGrid(false)}
                                         type="button"
-                                        className="w-44 h-44 flex-center border border-main-600 text-white bg-main-600 rounded-6 text-2xl grid-btn"
+                                        className={`w-44 h-44 flex-center border rounded-6 text-2xl grid-btn border-gray-100 ${grid === false && "border-main-600 text-white bg-main-600"}`}
                                     >
                                         <i className="ph ph-squares-four" />
                                     </button>
@@ -643,7 +649,7 @@ const ShopSection = () => {
                             </div>
                         </div>
                         {/* Top End */}
-                        <div className="list-grid-wrapper">
+                        <div className={`list-grid-wrapper ${grid && "list-view"}`}>
                             <div className="product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
                                 <Link
                                     to="/product-details"

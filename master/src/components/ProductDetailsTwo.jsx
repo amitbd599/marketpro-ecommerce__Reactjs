@@ -1,8 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
+import { getCountdown } from '../helper/Countdown';
 
 const ProductDetailsTwo = () => {
+    const [timeLeft, setTimeLeft] = useState(getCountdown());
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setTimeLeft(getCountdown());
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, []);
     const productImages = [
         "assets/images/thumbs/product-details-two-thumb1.png",
         "assets/images/thumbs/product-details-two-thumb2.png",
@@ -64,16 +74,16 @@ const ProductDetailsTwo = () => {
                                         <div className="countdown" id="countdown11">
                                             <ul className="countdown-list flex-align flex-wrap">
                                                 <li className="countdown-list__item text-heading flex-align gap-4 text-xs fw-medium w-28 h-28 rounded-4 border border-main-600 p-0 flex-center">
-                                                    <span className="days" />
+                                                    {timeLeft.days}<span className="days" />
                                                 </li>
                                                 <li className="countdown-list__item text-heading flex-align gap-4 text-xs fw-medium w-28 h-28 rounded-4 border border-main-600 p-0 flex-center">
-                                                    <span className="hours" />
+                                                    {timeLeft.hours}<span className="hours" />
                                                 </li>
                                                 <li className="countdown-list__item text-heading flex-align gap-4 text-xs fw-medium w-28 h-28 rounded-4 border border-main-600 p-0 flex-center">
-                                                    <span className="minutes" />
+                                                    {timeLeft.minutes}<span className="minutes" />
                                                 </li>
                                                 <li className="countdown-list__item text-heading flex-align gap-4 text-xs fw-medium w-28 h-28 rounded-4 border border-main-600 p-0 flex-center">
-                                                    <span className="seconds" />
+                                                    {timeLeft.seconds}<span className="seconds" />
                                                 </li>
                                             </ul>
                                         </div>
