@@ -7,13 +7,13 @@ import { getCountdown } from '../helper/Countdown';
 const FlashSalesOne = () => {
     const [timeLeft, setTimeLeft] = useState(getCountdown());
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setTimeLeft(getCountdown());
-        }, 1000);
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         setTimeLeft(getCountdown());
+    //     }, 1000);
 
-        return () => clearInterval(interval);
-    }, []);
+    //     return () => clearInterval(interval);
+    // }, []);
 
     function SampleNextArrow(props) {
         const { className, onClick } = props;
@@ -55,7 +55,7 @@ const FlashSalesOne = () => {
                 breakpoint: 991,
                 settings: {
                     slidesToShow: 1,
-                    arrows: false,
+
                 },
             },
 

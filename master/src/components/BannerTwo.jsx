@@ -5,7 +5,7 @@ import Slider from 'react-slick';
 const BannerTwo = () => {
     const settings = {
         dots: true,
-        arrows: false,
+
         infinite: true,
         speed: 1000,
         slidesToShow: 1,

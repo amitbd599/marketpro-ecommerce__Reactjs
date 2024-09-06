@@ -6,9 +6,7 @@ const ShopSection = () => {
 
     let [grid, setGrid] = useState(false)
 
-    let gridControl = () => [
-        setGrid(!grid)
-    ]
+
 
 
     return (
@@ -147,10 +145,14 @@ const ShopSection = () => {
                                         defaultValue={[0, 100]}
                                         ariaLabel={['Lower thumb', 'Upper thumb']}
                                         ariaValuetext={state => `Thumb value ${state.valueNow}`}
-                                        renderThumb={(props, state) => <div {...props}>{state.valueNow}</div>}
+                                        renderThumb={(props, state) => {
+                                            const { key, ...restProps } = props;
+                                            return <div {...restProps} key={state.index}>{state.valueNow}</div>;
+                                        }}
                                         pearling
                                         minDistance={10}
                                     />
+
                                     <br />
                                     <br />
                                     <div className="flex-between flex-wrap-reverse gap-8 mt-24 ">
@@ -628,11 +630,11 @@ const ShopSection = () => {
                                     <label htmlFor="sorting" className="text-inherit flex-shrink-0">
                                         Sort by:{" "}
                                     </label>
-                                    <select
+                                    <select defaultValue={1}
                                         className="form-control common-input px-14 py-14 text-inherit rounded-6 w-auto"
                                         id="sorting"
                                     >
-                                        <option value={1} selected="">
+                                        <option value={1} >
                                             Popular
                                         </option>
                                         <option value={1}>Latest</option>

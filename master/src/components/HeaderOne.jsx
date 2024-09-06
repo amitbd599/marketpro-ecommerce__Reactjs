@@ -569,11 +569,11 @@ const HeaderOne = () => {
                         {/* form location Start */}
                         <form action="#" className="flex-align flex-wrap form-location-wrapper">
                             <div className="search-category d-flex h-48 select-border-end-0 radius-end-0 search-form d-sm-flex d-none">
-                                <select
+                                <select defaultValue={1}
                                     className="js-example-basic-single border border-gray-200 border-end-0"
                                     name="state"
                                 >
-                                    <option value={1} selected="" disabled="">
+                                    <option value={1} >
                                         All Categories
                                     </option>
                                     <option value={1}>Grocery</option>
@@ -608,7 +608,7 @@ const HeaderOne = () => {
                                 <div className="line-height-1">
                                     <span className="text-gray-600 text-xs">Your Location</span>
                                     <div className="line-height-1">
-                                        <select
+                                        <select defaultValue={1}
                                             className="js-example-basic-single border border-gray-200 border-end-0"
                                             name="state"
                                         >

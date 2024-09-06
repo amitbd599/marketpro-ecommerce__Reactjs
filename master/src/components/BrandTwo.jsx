@@ -42,42 +42,42 @@ const BrandTwo = () => {
                 breakpoint: 1599,
                 settings: {
                     slidesToShow: 7,
-                    arrows: false,
+
                 },
             },
             {
                 breakpoint: 1399,
                 settings: {
                     slidesToShow: 6,
-                    arrows: false,
+
                 },
             },
             {
                 breakpoint: 992,
                 settings: {
                     slidesToShow: 5,
-                    arrows: false,
+
                 },
             },
             {
                 breakpoint: 575,
                 settings: {
                     slidesToShow: 4,
-                    arrows: false,
+
                 },
             },
             {
                 breakpoint: 424,
                 settings: {
                     slidesToShow: 3,
-                    arrows: false,
+
                 },
             },
             {
                 breakpoint: 359,
                 settings: {
                     slidesToShow: 2,
-                    arrows: false,
+
                 },
             },
 

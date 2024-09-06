@@ -42,37 +42,37 @@ const BrandOne = () => {
             {
                 breakpoint: 1599,
                 settings: {
-                    slidesToShow: 7, arrows: false,
+                    slidesToShow: 7, 
                 },
             },
             {
                 breakpoint: 1399,
                 settings: {
-                    slidesToShow: 6, arrows: false,
+                    slidesToShow: 6, 
                 },
             },
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 5, arrows: false,
+                    slidesToShow: 5, 
                 },
             },
             {
                 breakpoint: 575,
                 settings: {
-                    slidesToShow: 4, arrows: false,
+                    slidesToShow: 4, 
                 },
             },
             {
                 breakpoint: 424,
                 settings: {
-                    slidesToShow: 3, arrows: false,
+                    slidesToShow: 3, 
                 },
             },
             {
                 breakpoint: 359,
                 settings: {
-                    slidesToShow: 2, arrows: false,
+                    slidesToShow: 2, 
                 },
             },
         ],

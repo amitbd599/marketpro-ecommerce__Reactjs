@@ -52,19 +52,19 @@ const HotDealsOne = () => {
             {
                 breakpoint: 1399,
                 settings: {
-                    slidesToShow: 3, arrows: false,
+                    slidesToShow: 3,
                 },
             },
             {
                 breakpoint: 1199,
                 settings: {
-                    slidesToShow: 2, arrows: false,
+                    slidesToShow: 2,
                 },
             },
             {
                 breakpoint: 575,
                 settings: {
-                    slidesToShow: 1, arrows: false,
+                    slidesToShow: 1,
                 },
             },
 

@@ -267,7 +267,7 @@ const ProductDetailsTwo = () => {
                                     <span className="text-xl d-flex text-main-600">
                                         <i className="ph ph-map-pin" />
                                     </span>
-                                    <select
+                                    <select defaultValue={1}
                                         className="common-input border-0 px-8 rounded-4"
                                         id="delivery"
                                     >

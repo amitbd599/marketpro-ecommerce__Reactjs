@@ -43,7 +43,7 @@ const FeaturedOne = () => {
                 breakpoint: 991,
                 settings: {
                     slidesToShow: 1,
-                    arrows: false,
+
                 },
             },
 

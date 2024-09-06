@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
 const Checkout = () => {
-    const [selectedPayment, setSelectedPayment] = useState(null);
+    const [selectedPayment, setSelectedPayment] = useState("payment1");
 
     const handlePaymentChange = (event) => {
         setSelectedPayment(event.target.id);

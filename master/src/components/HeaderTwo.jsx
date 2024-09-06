@@ -447,11 +447,11 @@ const HeaderTwo = () => {
                                 className="flex-align flex-wrap form-location-wrapper"
                             >
                                 <div className="search-category style-two d-flex h-48 search-form d-sm-flex d-none">
-                                    <select
+                                    <select defaultValue={1}
                                         className="js-example-basic-single border border-gray-200 border-end-0 rounded-0 border-0"
                                         name="state"
                                     >
-                                        <option value={1} selected="" disabled="">
+                                        <option value={1} >
                                             All Categories
                                         </option>
                                         <option value={1}>Grocery</option>
