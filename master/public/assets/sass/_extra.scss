@@ -396,3 +396,11 @@
 .scroll-to-top {
     z-index: 9999;
 }
+
+.common-dropdown__item .common-dropdown__link.activePage {
+    color: hsl(var(--main)) !important;
+}
+
+.nav-menu__link.activePage {
+    color: hsl(var(--main));
+}
