@@ -376,6 +376,10 @@
 .top-selling-products {
     .mr-point {
         margin-right: 124px;
+
+        @include sm-screen {
+            margin-right: 5px;
+        }
     }
 
     .top-selling-product-slider {
@@ -384,6 +388,18 @@
             top: -45px;
             right: 60px;
             left: auto;
+
+            @include xl-screen {
+                top: -42px;
+            }
+
+            @include lg-screen {
+                top: -42px;
+            }
+
+            @include sm-screen {
+                top: -42px;
+            }
         }
 
         .slick-arrow.slick-next {
@@ -391,6 +407,22 @@
             top: -45px;
             right: 0px;
             left: auto;
+
+            @include xl-screen {
+                top: -42px;
+            }
+
+            @include lg-screen {
+                top: -42px;
+            }
+
+            @include md-screen {
+                right: 14px;
+            }
+
+            @include sm-screen {
+                top: -42px;
+            }
         }
     }
 }
@@ -398,6 +430,10 @@
 .featured-products {
     .mr-point {
         margin-right: 124px;
+
+        @include sm-screen {
+            margin-right: 108px;
+        }
     }
 
     .featured-product-slider {
@@ -406,6 +442,18 @@
             top: -45px;
             right: 60px;
             left: auto;
+
+            @include xl-screen {
+                top: -42px;
+            }
+
+            @include lg-screen {
+                top: -38px;
+            }
+
+            @include sm-screen {
+                top: -38px;
+            }
         }
 
         .slick-arrow.slick-next {
@@ -413,6 +461,22 @@
             top: -45px;
             right: 0px;
             left: auto;
+
+            @include xl-screen {
+                top: -42px;
+            }
+
+            @include lg-screen {
+                top: -38px;
+            }
+
+            @include md-screen {
+                right: 14px;
+            }
+
+            @include sm-screen {
+                top: -38px;
+            }
         }
     }
 }
@@ -426,6 +490,10 @@
 .recommended {
     .mr-point {
         margin-right: 124px;
+
+        @include sm-screen {
+            margin-right: 108px;
+        }
     }
 
     .recommended-slider {
@@ -434,6 +502,18 @@
             top: -45px;
             right: 60px;
             left: auto;
+
+            @include xl-screen {
+                top: -42px;
+            }
+
+            @include lg-screen {
+                top: -42px;
+            }
+
+            @include sm-screen {
+                top: -42px;
+            }
         }
 
         .slick-arrow.slick-next {
@@ -441,6 +521,22 @@
             top: -45px;
             right: 0px;
             left: auto;
+
+            @include xl-screen {
+                top: -42px;
+            }
+
+            @include lg-screen {
+                top: -42px;
+            }
+
+            @include md-screen {
+                right: 14px;
+            }
+
+            @include sm-screen {
+                top: -42px;
+            }
         }
     }
 
@@ -458,6 +554,10 @@
             top: -45px;
             right: 60px;
             left: auto;
+
+            @include sm-screen {
+                right: 46px;
+            }
         }
 
         .slick-arrow.slick-next {
