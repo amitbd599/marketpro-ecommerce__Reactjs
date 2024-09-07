@@ -6,17 +6,23 @@ const ShopSection = () => {
 
     let [grid, setGrid] = useState(false)
 
+    let [active, setActive] = useState(false)
+    let sidebarController = () => {
+        setActive(!active)
+    }
+
 
 
 
     return (
         <section className="shop py-80">
+            <div className={`side-overlay ${active && "show"}`}></div>
             <div className="container container-lg">
                 <div className="row">
                     {/* Sidebar Start */}
                     <div className="col-lg-3">
-                        <div className="shop-sidebar">
-                            <button
+                        <div className={`shop-sidebar ${active && "active"}`}>
+                            <button onClick={sidebarController}
                                 type="button"
                                 className="shop-sidebar__close d-lg-none d-flex w-32 h-32 flex-center border border-gray-100 rounded-circle hover-bg-main-600 position-absolute inset-inline-end-0 me-10 mt-8 hover-text-white hover-border-main-600"
                             >
@@ -642,7 +648,7 @@ const ShopSection = () => {
                                         <option value={1}>Matches</option>
                                     </select>
                                 </div>
-                                <button
+                                <button onClick={sidebarController}
                                     type="button"
                                     className="w-44 h-44 d-lg-none d-flex flex-center border border-gray-100 rounded-6 text-2xl sidebar-btn"
                                 >
