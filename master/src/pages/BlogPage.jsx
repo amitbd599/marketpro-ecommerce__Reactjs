@@ -26,7 +26,7 @@ const BlogPage = () => {
       <Preloader />
 
       {/* HeaderTwo */}
-      <HeaderTwo />
+      <HeaderTwo category={true} />
 
       {/* Breadcrumb */}
       <Breadcrumb title={"Blog"} />

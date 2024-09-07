@@ -701,3 +701,25 @@
 .nav-menu__link.activePage {
     color: hsl(var(--main));
 }
+
+.category-two {
+    @include xxl-screen {
+        display: block !important;
+    }
+}
+
+.category.main {
+    @include xxl-screen {
+        display: none !important;
+    }
+}
+
+.nav-menu--mobile .nav-submenu {
+
+    margin-inline-start: 10px;
+
+}
+
+.nav-menu--mobile .nav-submenu__link {
+    padding: 10px 8px;
+}

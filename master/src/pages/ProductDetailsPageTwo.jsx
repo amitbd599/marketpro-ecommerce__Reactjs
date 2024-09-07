@@ -28,7 +28,7 @@ const ProductDetailsPageTwo = () => {
       <Preloader />
 
       {/* HeaderTwo */}
-      <HeaderTwo />
+      <HeaderTwo category={true} />
 
       {/* Breadcrumb */}
       <Breadcrumb title={"Product Details"} />

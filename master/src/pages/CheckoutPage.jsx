@@ -26,7 +26,7 @@ const CheckoutPage = () => {
       <Preloader />
 
       {/* HeaderTwo */}
-      <HeaderTwo />
+      <HeaderTwo category={true} />
 
       {/* Breadcrumb */}
       <Breadcrumb title={"Checkout"} />
