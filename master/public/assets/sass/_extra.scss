@@ -677,13 +677,9 @@
         max-height: 500px;
         height: 100%;
         transition: all .5s linear !important;
-        /* Adjust this value based on your content */
     }
 }
 
-.banner-two .responsive-dropdown__list .has-submenus-submenu {
-    position: relative;
-}
 
 .promotional-banner {
     position: relative;
@@ -703,13 +699,13 @@
 }
 
 .category-two {
-    @include xxl-screen {
+    @include md-screen {
         display: block !important;
     }
 }
 
 .category.main {
-    @include xxl-screen {
+    @include md-screen {
         display: none !important;
     }
 }
@@ -722,4 +718,13 @@
 
 .nav-menu--mobile .nav-submenu__link {
     padding: 10px 8px;
+}
+
+
+
+
+
+.has-submenus-submenu:focus-within .submenus-submenu {
+    visibility: visible;
+    opacity: 1;
 }

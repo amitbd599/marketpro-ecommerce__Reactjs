@@ -37,6 +37,7 @@ const ShortProductOne = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         initialSlide: 0,
+        autoplay: true,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         responsive: [

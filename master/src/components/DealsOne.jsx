@@ -1,7 +1,33 @@
-import React, { useEffect, useState } from 'react'
+import React, { memo, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import { getCountdown } from '../helper/Countdown';
+
+
+const SampleNextArrow = memo(function SampleNextArrow(props) {
+    const { className, onClick } = props;
+    return (
+        <button
+            type="button" onClick={onClick}
+            className={` ${className} slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1`}
+        >
+            <i className="ph ph-caret-right" />
+        </button>
+    );
+});
+
+const SamplePrevArrow = memo(function SamplePrevArrow(props) {
+    const { className, onClick } = props;
+    return (
+        <button
+            type="button"
+            onClick={onClick}
+            className={`${className} slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1`}
+        >
+            <i className="ph ph-caret-left" />
+        </button>
+    );
+});
 
 const DealsOne = () => {
     const [timeLeft, setTimeLeft] = useState(getCountdown());
@@ -13,31 +39,7 @@ const DealsOne = () => {
 
         return () => clearInterval(interval);
     }, []);
-    function SampleNextArrow(props) {
-        const { className, onClick } = props;
-        return (
-            <button
-                type="button" onClick={onClick}
-                className={` ${className} slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1`}
-            >
-                <i className="ph ph-caret-right" />
-            </button>
-        );
-    }
-    function SamplePrevArrow(props) {
-        const { className, onClick } = props;
 
-        return (
-
-            <button
-                type="button"
-                onClick={onClick}
-                className={`${className} slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1`}
-            >
-                <i className="ph ph-caret-left" />
-            </button>
-        );
-    }
     const settings = {
         dots: false,
         arrows: true,
@@ -46,6 +48,7 @@ const DealsOne = () => {
         slidesToShow: 6,
         slidesToScroll: 1,
         initialSlide: 0,
+        autoplay: true,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         responsive: [
