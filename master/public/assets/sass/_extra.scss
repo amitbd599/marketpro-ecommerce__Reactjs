@@ -322,6 +322,10 @@
 .deals-weeek {
     .mr-point {
         margin-right: 124px;
+
+        @include sm-screen {
+            margin-right: 108px;
+        }
     }
 
     .deals-week-slider {
@@ -330,6 +334,18 @@
             top: -300px;
             right: 60px;
             left: auto;
+
+            @include xl-screen {
+                top: -290px;
+            }
+
+            @include lg-screen {
+                top: -218px;
+            }
+
+            @include sm-screen {
+                top: -218px;
+            }
         }
 
         .slick-arrow.slick-next {
@@ -337,6 +353,22 @@
             top: -300px;
             right: 0px;
             left: auto;
+
+            @include xl-screen {
+                top: -290px;
+            }
+
+            @include lg-screen {
+                top: -218px;
+            }
+
+            @include md-screen {
+                right: 14px;
+            }
+
+            @include sm-screen {
+                top: -218px;
+            }
         }
     }
 }
