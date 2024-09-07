@@ -39,6 +39,21 @@ const ShortProductOne = () => {
         initialSlide: 0,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                },
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    arrows: true,
+                },
+            },
+
+        ],
 
     };
     return (

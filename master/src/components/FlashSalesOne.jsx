@@ -5,15 +5,7 @@ import { getCountdown } from '../helper/Countdown';
 
 
 const FlashSalesOne = () => {
-    const [timeLeft, setTimeLeft] = useState(getCountdown());
 
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         setTimeLeft(getCountdown());
-    //     }, 1000);
-
-    //     return () => clearInterval(interval);
-    // }, []);
 
     function SampleNextArrow(props) {
         const { className, onClick } = props;
@@ -61,6 +53,16 @@ const FlashSalesOne = () => {
 
         ],
     };
+
+    const [timeLeft, setTimeLeft] = useState(getCountdown());
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setTimeLeft(getCountdown());
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, []);
     return (
         <section className="flash-sales pt-80">
             <div className="container container-lg">
