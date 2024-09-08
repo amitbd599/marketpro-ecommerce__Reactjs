@@ -24,6 +24,18 @@ const HeaderOne = () => {
 
     }, []);
 
+    // Set the default language
+    const [selectedLanguage, setSelectedLanguage] = useState("Eng");
+    const handleLanguageChange = (language) => {
+        setSelectedLanguage(language);
+    };
+
+    // Set the default currency
+    const [selectedCurrency, setSelectedCurrency] = useState("USD");
+    const handleCurrencyChange = (currency) => {
+        setSelectedCurrency(currency);
+    };
+
 
     // Mobile menu support
     const [menuActive, setMenuActive] = useState(false)
@@ -361,17 +373,16 @@ const HeaderOne = () => {
                                 </ul>
                             </li>
                             <li className="on-hover-item border-right-item border-right-item-sm-space has-submenu arrow-white">
-                                <Link
-                                    to="#"
-                                    className="selected-text text-white text-sm py-8"
-                                >
-                                    Eng
+                                {/* Display the selected language here */}
+                                <Link to="#" className="selected-text text-white text-sm py-8">
+                                    {selectedLanguage}
                                 </Link>
                                 <ul className="selectable-text-list on-hover-dropdown common-dropdown common-dropdown--sm max-h-200 scroll-sm px-0 py-8">
                                     <li>
                                         <Link
                                             to="#"
                                             className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
+                                            onClick={() => handleLanguageChange("English")}
                                         >
                                             <img
                                                 src="assets/images/thumbs/flag1.png"
@@ -385,6 +396,7 @@ const HeaderOne = () => {
                                         <Link
                                             to="#"
                                             className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
+                                            onClick={() => handleLanguageChange("Japan")}
                                         >
                                             <img
                                                 src="assets/images/thumbs/flag2.png"
@@ -398,6 +410,7 @@ const HeaderOne = () => {
                                         <Link
                                             to="#"
                                             className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
+                                            onClick={() => handleLanguageChange("French")}
                                         >
                                             <img
                                                 src="assets/images/thumbs/flag3.png"
@@ -411,6 +424,7 @@ const HeaderOne = () => {
                                         <Link
                                             to="#"
                                             className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
+                                            onClick={() => handleLanguageChange("Germany")}
                                         >
                                             <img
                                                 src="assets/images/thumbs/flag4.png"
@@ -424,6 +438,7 @@ const HeaderOne = () => {
                                         <Link
                                             to="#"
                                             className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
+                                            onClick={() => handleLanguageChange("Bangladesh")}
                                         >
                                             <img
                                                 src="assets/images/thumbs/flag6.png"
@@ -437,6 +452,7 @@ const HeaderOne = () => {
                                         <Link
                                             to="#"
                                             className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
+                                            onClick={() => handleLanguageChange("South Korea")}
                                         >
                                             <img
                                                 src="assets/images/thumbs/flag5.png"
@@ -449,17 +465,16 @@ const HeaderOne = () => {
                                 </ul>
                             </li>
                             <li className="on-hover-item border-right-item border-right-item-sm-space has-submenu arrow-white">
-                                <Link
-                                    to="#"
-                                    className="selected-text text-white text-sm py-8"
-                                >
-                                    USD
+                                {/* Display the selected currency */}
+                                <Link to="#" className="selected-text text-white text-sm py-8">
+                                    {selectedCurrency}
                                 </Link>
                                 <ul className="selectable-text-list on-hover-dropdown common-dropdown common-dropdown--sm max-h-200 scroll-sm px-0 py-8">
                                     <li>
                                         <Link
                                             to="#"
                                             className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
+                                            onClick={() => handleCurrencyChange("USD")}
                                         >
                                             <img
                                                 src="assets/images/thumbs/flag1.png"
@@ -473,6 +488,7 @@ const HeaderOne = () => {
                                         <Link
                                             to="#"
                                             className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
+                                            onClick={() => handleCurrencyChange("Yen")}
                                         >
                                             <img
                                                 src="assets/images/thumbs/flag2.png"
@@ -486,6 +502,7 @@ const HeaderOne = () => {
                                         <Link
                                             to="#"
                                             className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
+                                            onClick={() => handleCurrencyChange("Franc")}
                                         >
                                             <img
                                                 src="assets/images/thumbs/flag3.png"
@@ -499,6 +516,7 @@ const HeaderOne = () => {
                                         <Link
                                             to="#"
                                             className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
+                                            onClick={() => handleCurrencyChange("EURO")}
                                         >
                                             <img
                                                 src="assets/images/thumbs/flag4.png"
@@ -512,6 +530,7 @@ const HeaderOne = () => {
                                         <Link
                                             to="#"
                                             className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
+                                            onClick={() => handleCurrencyChange("BDT")}
                                         >
                                             <img
                                                 src="assets/images/thumbs/flag6.png"
@@ -525,6 +544,7 @@ const HeaderOne = () => {
                                         <Link
                                             to="#"
                                             className="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex-align gap-8 rounded-0"
+                                            onClick={() => handleCurrencyChange("WON")}
                                         >
                                             <img
                                                 src="assets/images/thumbs/flag5.png"
