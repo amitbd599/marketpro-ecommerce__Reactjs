@@ -36,8 +36,14 @@
   &-200 {
     max-height: 200px !important;
   }
+  &-260 {
+    max-height: 260px !important;
+  }
   &-300 {
     max-height: 300px !important;
+  }
+  &-326 {
+    max-height: 326px !important;
   }
   &-400 {
     max-height: 400px !important;
@@ -54,11 +60,38 @@
   &-120 {
     max-width: 120px;
   }
+  &-260 {
+    max-width: 260px !important;
+  }
+  &-375 {
+    max-width: 375px;
+  }
+  &-340 {
+    max-width: 340px;
+  }
+  &-392 {
+    max-width: 392px;
+  }
   &-275 {
     max-width: 275px;
   }
+  &-472 {
+    max-width: 472px;
+  }
+  &-418 {
+    max-width: 418px;
+  }
+  &-990 {
+    max-width: 990px;
+  }
 }
 
+
+.min-h {
+  &-485 {
+    min-height: 485px;
+  }
+}
 
 .top-n6 {
   inset-block-start: -6px;
