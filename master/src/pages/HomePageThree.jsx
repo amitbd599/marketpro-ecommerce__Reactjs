@@ -15,6 +15,7 @@ import PopularProductsThree from "../components/PopularProductsThree";
 import BrandThree from "../components/BrandThree";
 import ShippingThree from "../components/ShippingThree";
 import TestimonialOne from "../components/TestimonialOne";
+import InstagramSection from "../components/InstagramSection";
 
 const HomePageThree = () => {
   return (
@@ -66,6 +67,9 @@ const HomePageThree = () => {
 
       {/* TestimonialOne */}
       <TestimonialOne />
+
+      {/* InstagramSection */}
+      <InstagramSection />
     </>
   );
 };

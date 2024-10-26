@@ -776,3 +776,14 @@
     }
   }
 }
+
+.instagram {
+  .slick-arrow {
+    z-index: 9999;
+    transform: translateY(0);
+  }
+  .instagram-slider .slick-arrow {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
