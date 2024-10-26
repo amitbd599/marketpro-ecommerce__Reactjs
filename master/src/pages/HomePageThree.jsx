@@ -17,6 +17,7 @@ import ShippingThree from "../components/ShippingThree";
 import TestimonialOne from "../components/TestimonialOne";
 import InstagramSection from "../components/InstagramSection";
 import NewsletterThree from "../components/NewsletterThree";
+import FooterThree from "../components/FooterThree";
 
 const HomePageThree = () => {
   return (
@@ -74,6 +75,9 @@ const HomePageThree = () => {
 
       {/* NewsletterThree */}
       <NewsletterThree />
+
+      {/* FooterThree */}
+      <FooterThree />
     </>
   );
 };
