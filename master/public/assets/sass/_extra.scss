@@ -754,3 +754,25 @@
     top: -68px;
   }
 }
+
+.testimonials {
+  .slick-arrow.slick-prev {
+    position: absolute;
+    bottom: -100px;
+    top: auto;
+    transform: translateX(-50%);
+    left: 46%;
+  }
+  .slick-arrow.slick-next {
+    position: absolute;
+    bottom: -100px;
+    top: auto;
+    transform: translateX(-50%);
+    right: 46%;
+  }
+  .slick-arrow {
+    i {
+      color: #fff;
+    }
+  }
+}
