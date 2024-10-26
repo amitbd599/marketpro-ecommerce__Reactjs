@@ -13,6 +13,7 @@ import NewArrivalThree from "../components/NewArrivalThree";
 import DealsSection from "../components/DealsSection";
 import PopularProductsThree from "../components/PopularProductsThree";
 import BrandThree from "../components/BrandThree";
+import ShippingThree from "../components/ShippingThree";
 
 const HomePageThree = () => {
   return (
@@ -58,6 +59,9 @@ const HomePageThree = () => {
 
       {/* BrandThree */}
       <BrandThree />
+
+      {/* ShippingThree */}
+      <ShippingThree />
     </>
   );
 };
