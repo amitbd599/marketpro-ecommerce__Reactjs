@@ -18,6 +18,7 @@ import { useEffect } from "react";
 import VendorPage from "./pages/VendorPage";
 import VendorDetailsPage from "./pages/VendorDetailsPage";
 import VendorTwoPage from "./pages/VendorTwoPage";
+import VendorTwoDetailsPage from "./pages/VendorTwoDetailsPage";
 function App() {
   useEffect(() => {
     const wow = new WOW({ live: false });
@@ -52,6 +53,11 @@ function App() {
         <Route exact path='/vendor' element={<VendorPage />} />
         <Route exact path='/vendor-details' element={<VendorDetailsPage />} />
         <Route exact path='/vendor-two' element={<VendorTwoPage />} />
+        <Route
+          exact
+          path='/vendor-two-details'
+          element={<VendorTwoDetailsPage />}
+        />
       </Routes>
     </BrowserRouter>
   );
