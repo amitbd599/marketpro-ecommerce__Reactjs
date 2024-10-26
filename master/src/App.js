@@ -16,6 +16,7 @@ import PhosphorIconInit from "./helper/PhosphorIconInit";
 import { WOW } from "wowjs";
 import { useEffect } from "react";
 import VendorPage from "./pages/VendorPage";
+import VendorDetailsPage from "./pages/VendorDetailsPage";
 function App() {
   useEffect(() => {
     const wow = new WOW({ live: false });
@@ -48,6 +49,7 @@ function App() {
         <Route exact path='/blog-details' element={<BlogDetailsPage />} />
         <Route exact path='/contact' element={<ContactPage />} />
         <Route exact path='/vendor' element={<VendorPage />} />
+        <Route exact path='/vendor-details' element={<VendorDetailsPage />} />
       </Routes>
     </BrowserRouter>
   );
