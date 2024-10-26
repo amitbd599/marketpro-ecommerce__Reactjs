@@ -7,6 +7,7 @@ import BannerThree from "../components/BannerThree";
 import PromotionalThree from "../components/PromotionalThree";
 import FeatureThree from "../components/FeatureThree";
 import TextSlider from "../components/TextSlider";
+import TrendingThree from "../components/TrendingThree";
 
 const HomePageThree = () => {
   return (
@@ -34,6 +35,9 @@ const HomePageThree = () => {
 
       {/* TextSlider */}
       <TextSlider />
+
+      {/* TrendingThree */}
+      <TrendingThree />
     </>
   );
 };

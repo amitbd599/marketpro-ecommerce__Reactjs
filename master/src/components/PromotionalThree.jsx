@@ -2,7 +2,7 @@ import React from "react";
 
 const PromotionalThree = () => {
   return (
-    <section className='promo-three pt-120  wow bounce overflow-hidden'>
+    <section className='promo-three pt-120   overflow-hidden'>
       <div className='container container-lg'>
         <div className='row gy-4'>
           <div className='col-sm-6'>
@@ -18,11 +18,7 @@ const PromotionalThree = () => {
                 </span>
                 <h2 className='text-white fw-medium mb-0 max-w-375'>
                   Woman{" "}
-                  <span
-                    className='fw-normal text-white font-heading-four wow bounceInDown'
-                    data-wow-duration='1s'
-                    data-wow-delay='.5s'
-                  >
+                  <span className='fw-normal text-white font-heading-four '>
                     Spring
                   </span>{" "}
                   Collection
@@ -49,11 +45,7 @@ const PromotionalThree = () => {
                 <span className='text-white mb-24'>Men Fashion Discover</span>
                 <h2 className='text-white fw-medium mb-0 max-w-375'>
                   New{" "}
-                  <span
-                    className='fw-normal text-white font-heading-four wow bounceInDown'
-                    data-wow-duration='1s'
-                    data-wow-delay='.7s'
-                  >
+                  <span className='fw-normal text-white font-heading-four '>
                     Style
                   </span>{" "}
                   Sale 35% Off

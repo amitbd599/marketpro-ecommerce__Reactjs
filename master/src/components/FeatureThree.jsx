@@ -88,9 +88,7 @@ const FeatureThree = () => {
     >
       <div className='container container-lg'>
         <div className='section-heading text-center'>
-          <h5 className='mb-0 wow bounceIn text-uppercase'>
-            Popular Categories
-          </h5>
+          <h5 className='mb-0  text-uppercase'>Popular Categories</h5>
         </div>
         <div className='position-relative arrow-center'>
           <div className='feature-three-item-wrapper'>

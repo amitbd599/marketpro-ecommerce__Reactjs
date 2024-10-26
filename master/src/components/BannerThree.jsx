@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
 import Slider from "react-slick";
-import { WOW } from "wowjs"; // Ensure you're using the named import
+import { WOW } from "wowjs";
 import "animate.css";
 const BannerThree = () => {
   useEffect(() => {
-    const wow = new WOW(); // Instantiate WOW
-    wow.init(); // Initialize WOW.js on component mount
+    const wow = new WOW();
+    wow.init();
   }, []);
 
   let itItWow = () => {
-    const wow = new WOW(); // Instantiate WOW
+    const wow = new WOW();
     wow.init();
   };
   const NextArrow = ({ onClick }) => (

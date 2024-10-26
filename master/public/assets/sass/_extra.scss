@@ -726,3 +726,20 @@
     margin-right: 40px;
   }
 }
+
+.countdown-list__item::before {
+  content: "";
+}
+
+.trending-products-three {
+  .group:hover .expand-icons {
+    display: flex !important;
+  }
+  .group:hover .expand-btn {
+    background-color: var(--main-two-600) !important;
+    .ph {
+      transform: rotate(45deg);
+      color: #fff;
+    }
+  }
+}

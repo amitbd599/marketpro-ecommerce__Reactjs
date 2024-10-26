@@ -2,10 +2,7 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 const TextSlider = () => {
   return (
-    <div
-      className='text-slider-section overflow-hidden bg-neutral-600 py-28'
-      data-aos='fade-up'
-    >
+    <div className='text-slider-section overflow-hidden bg-neutral-600 py-28'>
       <div className='text-slider d-flex align-items-center gap-4'>
         <Marquee
           speed={150}
