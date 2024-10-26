@@ -8,6 +8,7 @@ import PromotionalThree from "../components/PromotionalThree";
 import FeatureThree from "../components/FeatureThree";
 import TextSlider from "../components/TextSlider";
 import TrendingThree from "../components/TrendingThree";
+import DiscountThree from "../components/DiscountThree";
 
 const HomePageThree = () => {
   return (
@@ -38,6 +39,9 @@ const HomePageThree = () => {
 
       {/* TrendingThree */}
       <TrendingThree />
+
+      {/* DiscountThree */}
+      <DiscountThree />
     </>
   );
 };
