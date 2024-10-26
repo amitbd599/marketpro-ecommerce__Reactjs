@@ -10,6 +10,7 @@ import TextSlider from "../components/TextSlider";
 import TrendingThree from "../components/TrendingThree";
 import DiscountThree from "../components/DiscountThree";
 import NewArrivalThree from "../components/NewArrivalThree";
+import DealsSection from "../components/DealsSection";
 
 const HomePageThree = () => {
   return (
@@ -46,6 +47,9 @@ const HomePageThree = () => {
 
       {/* NewArrivalThree */}
       <NewArrivalThree />
+
+      {/* DealsSection */}
+      <DealsSection />
     </>
   );
 };
