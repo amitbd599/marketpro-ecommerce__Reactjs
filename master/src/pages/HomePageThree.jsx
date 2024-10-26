@@ -16,6 +16,7 @@ import BrandThree from "../components/BrandThree";
 import ShippingThree from "../components/ShippingThree";
 import TestimonialOne from "../components/TestimonialOne";
 import InstagramSection from "../components/InstagramSection";
+import NewsletterThree from "../components/NewsletterThree";
 
 const HomePageThree = () => {
   return (
@@ -70,6 +71,9 @@ const HomePageThree = () => {
 
       {/* InstagramSection */}
       <InstagramSection />
+
+      {/* NewsletterThree */}
+      <NewsletterThree />
     </>
   );
 };
