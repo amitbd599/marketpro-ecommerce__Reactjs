@@ -745,3 +745,12 @@
     }
   }
 }
+
+.top-brand.three {
+  .slick-arrow {
+    transform: translateY(0);
+  }
+  .top-brand__slider .slick-arrow {
+    top: -68px;
+  }
+}

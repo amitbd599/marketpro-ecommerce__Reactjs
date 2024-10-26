@@ -12,6 +12,7 @@ import DiscountThree from "../components/DiscountThree";
 import NewArrivalThree from "../components/NewArrivalThree";
 import DealsSection from "../components/DealsSection";
 import PopularProductsThree from "../components/PopularProductsThree";
+import BrandThree from "../components/BrandThree";
 
 const HomePageThree = () => {
   return (
@@ -54,6 +55,9 @@ const HomePageThree = () => {
 
       {/* PopularProductsThree */}
       <PopularProductsThree />
+
+      {/* BrandThree */}
+      <BrandThree />
     </>
   );
 };

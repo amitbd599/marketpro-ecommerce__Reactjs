@@ -5,9 +5,7 @@ const PopularProductsThree = () => {
     <section className='popular-products-three pb-120 overflow-hidden'>
       <div className='container container-lg'>
         <div className='section-heading mb-24'>
-          <h5 className='mb-0 text-uppercase wow bounceInLeft'>
-            Popular Products
-          </h5>
+          <h5 className='mb-0 text-uppercase '>Popular Products</h5>
         </div>
         <div className='row gy-4'>
           <div className='col-xxl-3 col-xl-4 col-sm-6'>
