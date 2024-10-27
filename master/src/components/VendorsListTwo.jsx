@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactSlider from "react-slider";
 
 const VendorsListTwo = () => {
+  let [grid, setGrid] = useState(false);
+
+  let [active, setActive] = useState(false);
+  let sidebarController = () => {
+    setActive(!active);
+  };
   return (
     <section className='vendors-list py-80'>
+      <div className={`side-overlay ${active && "show"}`}></div>
       <div className='container container-lg'>
         <div className='row gy-4'>
           <div className='col-xxl-2 col-xl-3 col-lg-4'>
-            <div className='shop-sidebar'>
+            <div className={`shop-sidebar ${active && "active"}`}>
               <button
+                onClick={sidebarController}
                 type='button'
                 className='shop-sidebar__close d-lg-none d-flex w-32 h-32 flex-center border border-gray-100 rounded-circle hover-bg-main-600 position-absolute inset-inline-end-0 me-10 mt-8 hover-text-white hover-border-main-600'
               >
@@ -438,6 +446,7 @@ const VendorsListTwo = () => {
                   </select>
                 </div>
                 <button
+                  onClick={sidebarController}
                   type='button'
                   className='w-44 h-44 d-lg-none d-flex flex-center border border-gray-100 rounded-6 text-2xl sidebar-btn'
                 >

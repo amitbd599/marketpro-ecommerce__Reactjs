@@ -788,3 +788,11 @@
     transform: translateY(-50%);
   }
 }
+
+.vendor-two {
+  .list-grid-wrapper.list-view {
+    @include sm-screen {
+      display: grid;
+    }
+  }
+}

@@ -138,7 +138,7 @@ const HeaderOne = () => {
                       onClick={() => setActiveIndex(null)}
                     >
                       {" "}
-                      Home One
+                      Home Grocery
                     </Link>
                   </li>
                   <li className='common-dropdown__item nav-submenu__item'>
@@ -148,7 +148,16 @@ const HeaderOne = () => {
                       onClick={() => setActiveIndex(null)}
                     >
                       {" "}
-                      Home Two
+                      Home Electronics
+                    </Link>
+                  </li>
+                  <li className='common-dropdown__item nav-submenu__item'>
+                    <Link
+                      to='/index-three'
+                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                      onClick={() => setActiveIndex(null)}
+                    >
+                      Home Fashion
                     </Link>
                   </li>
                 </ul>
@@ -232,12 +241,30 @@ const HeaderOne = () => {
                   </li>
                   <li className='common-dropdown__item nav-submenu__item'>
                     <Link
+                      to='/wishlist'
+                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                      onClick={() => setActiveIndex(null)}
+                    >
+                      Wishlist
+                    </Link>
+                  </li>
+                  <li className='common-dropdown__item nav-submenu__item'>
+                    <Link
                       to='/checkout'
                       className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
                       onClick={() => setActiveIndex(null)}
                     >
                       {" "}
                       Checkout{" "}
+                    </Link>
+                  </li>
+                  <li className='common-dropdown__item nav-submenu__item'>
+                    <Link
+                      to='/become-seller'
+                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                      onClick={() => setActiveIndex(null)}
+                    >
+                      Become Seller
                     </Link>
                   </li>
                   <li className='common-dropdown__item nav-submenu__item'>
@@ -253,11 +280,68 @@ const HeaderOne = () => {
                 </ul>
               </li>
 
-              {/* Blog Menu */}
+              {/* Vendors Menu */}
               <li
                 onClick={() => handleMenuClick(3)}
                 className={`on-hover-item nav-menu__item has-submenu ${
                   activeIndex === 3 ? "d-block" : ""
+                }`}
+              >
+                <span className='badge-notification bg-tertiary-600 text-white text-sm py-2 px-8 rounded-4'>
+                  New
+                </span>
+                <Link to='#' className='nav-menu__link'>
+                  Vendors
+                </Link>
+                <ul
+                  className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${
+                    activeIndex === 3 ? "open" : ""
+                  }`}
+                >
+                  <li className='common-dropdown__item nav-submenu__item'>
+                    <Link
+                      to='/vendor'
+                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                      onClick={() => setActiveIndex(null)}
+                    >
+                      Vendors
+                    </Link>
+                  </li>
+                  <li className='common-dropdown__item nav-submenu__item'>
+                    <Link
+                      to='/vendor-details'
+                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                      onClick={() => setActiveIndex(null)}
+                    >
+                      Vendor Details
+                    </Link>
+                  </li>
+                  <li className='common-dropdown__item nav-submenu__item'>
+                    <Link
+                      to='/vendor-two'
+                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                      onClick={() => setActiveIndex(null)}
+                    >
+                      Vendors Two
+                    </Link>
+                  </li>
+                  <li className='common-dropdown__item nav-submenu__item'>
+                    <Link
+                      to='/vendor-two-details'
+                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                      onClick={() => setActiveIndex(null)}
+                    >
+                      Vendors Two Details
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+
+              {/* Blog Menu */}
+              <li
+                onClick={() => handleMenuClick(4)}
+                className={`on-hover-item nav-menu__item has-submenu ${
+                  activeIndex === 4 ? "d-block" : ""
                 }`}
               >
                 <Link to='#' className='nav-menu__link'>
@@ -265,7 +349,7 @@ const HeaderOne = () => {
                 </Link>
                 <ul
                   className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${
-                    activeIndex === 3 ? "open" : ""
+                    activeIndex === 4 ? "open" : ""
                   }`}
                 >
                   <li className='common-dropdown__item nav-submenu__item'>
@@ -1104,7 +1188,7 @@ const HeaderOne = () => {
                               : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
                           }
                         >
-                          Home One
+                          Home Grocery
                         </NavLink>
                       </li>
                       <li className='common-dropdown__item nav-submenu__item'>
@@ -1117,7 +1201,19 @@ const HeaderOne = () => {
                           }
                         >
                           {" "}
-                          Home Two
+                          Home Electronics
+                        </NavLink>
+                      </li>
+                      <li className='common-dropdown__item nav-submenu__item'>
+                        <NavLink
+                          to='/index-three'
+                          className={(navData) =>
+                            navData.isActive
+                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
+                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
+                          }
+                        >
+                          Home Fashion
                         </NavLink>
                       </li>
                     </ul>
@@ -1191,6 +1287,18 @@ const HeaderOne = () => {
                       </li>
                       <li className='common-dropdown__item nav-submenu__item'>
                         <NavLink
+                          to='/wishlist'
+                          className={(navData) =>
+                            navData.isActive
+                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
+                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
+                          }
+                        >
+                          Wishlist
+                        </NavLink>
+                      </li>
+                      <li className='common-dropdown__item nav-submenu__item'>
+                        <NavLink
                           to='/checkout'
                           className={(navData) =>
                             navData.isActive
@@ -1200,6 +1308,19 @@ const HeaderOne = () => {
                         >
                           {" "}
                           Checkout{" "}
+                        </NavLink>
+                      </li>
+
+                      <li className='common-dropdown__item nav-submenu__item'>
+                        <NavLink
+                          to='/become-seller'
+                          className={(navData) =>
+                            navData.isActive
+                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
+                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
+                          }
+                        >
+                          Become Seller
                         </NavLink>
                       </li>
                       <li className='common-dropdown__item nav-submenu__item'>
@@ -1213,6 +1334,65 @@ const HeaderOne = () => {
                         >
                           {" "}
                           Account
+                        </NavLink>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className='on-hover-item nav-menu__item has-submenu'>
+                    <span className='badge-notification bg-tertiary-600 text-white text-sm py-2 px-8 rounded-4'>
+                      New
+                    </span>
+                    <Link to='#' className='nav-menu__link'>
+                      Vendors
+                    </Link>
+                    <ul className='on-hover-dropdown common-dropdown nav-submenu scroll-sm'>
+                      <li className='common-dropdown__item nav-submenu__item'>
+                        <NavLink
+                          to='/vendor'
+                          className={(navData) =>
+                            navData.isActive
+                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
+                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
+                          }
+                        >
+                          Vendors
+                        </NavLink>
+                      </li>
+                      <li className='common-dropdown__item nav-submenu__item'>
+                        <NavLink
+                          to='/vendor-details'
+                          className={(navData) =>
+                            navData.isActive
+                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
+                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
+                          }
+                        >
+                          Vendor Details
+                        </NavLink>
+                      </li>
+                      <li className='common-dropdown__item nav-submenu__item'>
+                        <NavLink
+                          to='/vendor-two'
+                          className={(navData) =>
+                            navData.isActive
+                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
+                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
+                          }
+                        >
+                          Vendors Two
+                        </NavLink>
+                      </li>
+
+                      <li className='common-dropdown__item nav-submenu__item'>
+                        <NavLink
+                          to='/vendor-two-details'
+                          className={(navData) =>
+                            navData.isActive
+                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
+                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
+                          }
+                        >
+                          Vendors Two Details
                         </NavLink>
                       </li>
                     </ul>

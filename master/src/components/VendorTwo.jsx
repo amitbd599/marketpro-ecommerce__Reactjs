@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 const VendorTwo = () => {
+  let [grid, setGrid] = useState(false);
+
+  let [active, setActive] = useState(false);
+  let sidebarController = () => {
+    setActive(!active);
+  };
   return (
     <section className='vendor-two py-80'>
+      <div className={`side-overlay ${active && "show"}`}></div>
       <div className='container container-lg'>
         {/* Top Search */}
         <div className='d-flex align-items-center justify-content-between flex-wrap mb-48 gap-16'>
@@ -27,19 +34,26 @@ const VendorTwo = () => {
             </div>
             <div className='d-flex align-items-center gap-8 d-sm-flex d-none'>
               <button
+                onClick={() => setGrid(false)}
                 type='button'
-                className='grid-btn text-2xl d-flex w-48 h-48 border border-neutral-100 rounded-8 justify-content-center align-items-center border-main-600 text-white bg-main-600'
+                className={`w-44 h-44 flex-center border rounded-6 text-2xl grid-btn border-gray-100 ${
+                  grid === false && "border-main-600 text-white bg-main-600"
+                }`}
               >
                 <i className='ph ph-squares-four' />
               </button>
               <button
+                onClick={() => setGrid(true)}
                 type='button'
-                className='list-btn text-2xl d-flex w-48 h-48 border border-neutral-100 rounded-8 justify-content-center align-items-center'
+                className={`w-44 h-44 flex-center border rounded-6 text-2xl list-btn border-gray-100 ${
+                  grid === true && "border-main-600 text-white bg-main-600"
+                }`}
               >
-                <i className='ph ph-list-bullets' />
+                <i className='ph-bold ph-list-dashes' />
               </button>
             </div>
             <button
+              onClick={sidebarController}
               type='button'
               className='w-48 h-48 d-lg-none d-flex flex-center border border-gray-100 rounded-6 text-2xl sidebar-btn'
             >
@@ -50,8 +64,9 @@ const VendorTwo = () => {
         {/* Top Search End */}
         <div className='row'>
           <div className='col-xl-3 col-lg-4'>
-            <div className='shop-sidebar'>
+            <div className={`shop-sidebar ${active && "active"}`}>
               <button
+                onClick={sidebarController}
                 type='button'
                 className='shop-sidebar__close d-lg-none d-flex w-32 h-32 flex-center border border-gray-100 rounded-circle hover-bg-main-600 position-absolute inset-inline-end-0 me-10 mt-8 hover-text-white hover-border-main-600'
               >
@@ -453,7 +468,11 @@ const VendorTwo = () => {
           </div>
           <div className='col-xl-9 col-lg-8'>
             {/* Vendors Start */}
-            <div className='list-grid-wrapper vendors-two-item-wrapper grid-cols-3'>
+            <div
+              className={`list-grid-wrapper vendors-two-item-wrapper grid-cols-3 ${
+                grid && "list-view"
+              }`}
+            >
               <div className='vendors-two-item rounded-12 overflow-hidden bg-color-three border border-neutral-50 hover-border-main-two-600 transition-2'>
                 <div className='vendors-two-item__top bg-overlay style-two position-relative'>
                   <div className='vendors-two-item__thumbs h-210'>
