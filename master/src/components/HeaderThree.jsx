@@ -141,8 +141,7 @@ const HeaderThree = () => {
                       to='/'
                       className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
                     >
-                      {" "}
-                      Home One
+                      Home Grocery
                     </Link>
                   </li>
                   <li className='common-dropdown__item nav-submenu__item'>
@@ -152,7 +151,16 @@ const HeaderThree = () => {
                       className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
                     >
                       {" "}
-                      Home Two
+                      Home Electronics
+                    </Link>
+                  </li>
+                  <li className='common-dropdown__item nav-submenu__item'>
+                    <Link
+                      onClick={() => setActiveIndex(null)}
+                      to='/index-three'
+                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                    >
+                      Home Fashion
                     </Link>
                   </li>
                 </ul>
@@ -233,11 +241,28 @@ const HeaderThree = () => {
                   <li className='common-dropdown__item nav-submenu__item'>
                     <Link
                       onClick={() => setActiveIndex(null)}
+                      to='/wishlist'
+                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                    >
+                      Wishlist
+                    </Link>
+                  </li>
+                  <li className='common-dropdown__item nav-submenu__item'>
+                    <Link
+                      onClick={() => setActiveIndex(null)}
                       to='/checkout'
                       className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
                     >
-                      {" "}
-                      Checkout{" "}
+                      Checkout
+                    </Link>
+                  </li>
+                  <li className='common-dropdown__item nav-submenu__item'>
+                    <Link
+                      onClick={() => setActiveIndex(null)}
+                      to='/become-seller'
+                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                    >
+                      Become Seller
                     </Link>
                   </li>
                   <li className='common-dropdown__item nav-submenu__item'>
@@ -246,7 +271,6 @@ const HeaderThree = () => {
                       to='/account'
                       className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
                     >
-                      {" "}
                       Account
                     </Link>
                   </li>
@@ -258,12 +282,67 @@ const HeaderThree = () => {
                   activeIndex === 3 ? "d-block" : ""
                 }`}
               >
+                <span className='badge-notification bg-tertiary-600 text-white text-sm py-2 px-8 rounded-4'>
+                  New
+                </span>
+                <Link to='#' className='nav-menu__link'>
+                  Vendors
+                </Link>
+                <ul
+                  className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${
+                    activeIndex === 3 ? "open" : ""
+                  }`}
+                >
+                  <li className='common-dropdown__item nav-submenu__item'>
+                    <Link
+                      onClick={() => setActiveIndex(null)}
+                      to='/vendor'
+                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                    >
+                      Vendor
+                    </Link>
+                  </li>
+                  <li className='common-dropdown__item nav-submenu__item'>
+                    <Link
+                      onClick={() => setActiveIndex(null)}
+                      to='/vendor-details'
+                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                    >
+                      Vendor Details
+                    </Link>
+                  </li>
+                  <li className='common-dropdown__item nav-submenu__item'>
+                    <Link
+                      onClick={() => setActiveIndex(null)}
+                      to='/vendor-two'
+                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                    >
+                      Vendors Two
+                    </Link>
+                  </li>
+                  <li className='common-dropdown__item nav-submenu__item'>
+                    <Link
+                      onClick={() => setActiveIndex(null)}
+                      to='/vendor-two-details'
+                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
+                    >
+                      Vendors Two Details
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li
+                onClick={() => handleMenuClick(4)}
+                className={`on-hover-item nav-menu__item has-submenu ${
+                  activeIndex === 4 ? "d-block" : ""
+                }`}
+              >
                 <Link to='#' className='nav-menu__link'>
                   Blog
                 </Link>
                 <ul
                   className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${
-                    activeIndex === 3 ? "open" : ""
+                    activeIndex === 4 ? "open" : ""
                   }`}
                 >
                   <li className='common-dropdown__item nav-submenu__item'>
