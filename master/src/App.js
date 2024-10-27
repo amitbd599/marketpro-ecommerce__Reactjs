@@ -20,6 +20,7 @@ import VendorDetailsPage from "./pages/VendorDetailsPage";
 import VendorTwoPage from "./pages/VendorTwoPage";
 import VendorTwoDetailsPage from "./pages/VendorTwoDetailsPage";
 import BecomeSellerPage from "./pages/BecomeSellerPage";
+import WishlistPage from "./pages/WishlistPage";
 function App() {
   useEffect(() => {
     const wow = new WOW({ live: false });
@@ -48,6 +49,7 @@ function App() {
         <Route exact path='/cart' element={<CartPage />} />
         <Route exact path='/checkout' element={<CheckoutPage />} />
         <Route exact path='/become-seller' element={<BecomeSellerPage />} />
+        <Route exact path='/wishlist' element={<WishlistPage />} />
         <Route exact path='/account' element={<AccountPage />} />
         <Route exact path='/blog' element={<BlogPage />} />
         <Route exact path='/blog-details' element={<BlogDetailsPage />} />
