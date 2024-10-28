@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const WishListSection = () => {
   return (
@@ -39,24 +40,24 @@ const WishListSection = () => {
                       </td>
                       <td className='px-40 py-32 border-end border-neutral-100'>
                         <div className='table-product d-flex align-items-center gap-24'>
-                          <a
-                            href='product-details-two.html'
+                          <Link
+                            to='/product-details-two'
                             className='table-product__thumb border border-gray-100 rounded-8 flex-center '
                           >
                             <img
                               src='assets/images/thumbs/product-two-img1.png'
                               alt=''
                             />
-                          </a>
+                          </Link>
                           <div className='table-product__content text-start'>
                             <h6 className='title text-lg fw-semibold mb-8'>
-                              <a
-                                href='product-details.html'
+                              <Link
+                                to='/product-details'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
                                 Taylor Farms Broccoli Florets Vegetables
-                              </a>
+                              </Link>
                             </h6>
                             <div className='flex-align gap-16 mb-16'>
                               <div className='flex-align gap-6'>
@@ -75,18 +76,18 @@ const WishListSection = () => {
                               </span>
                             </div>
                             <div className='flex-align gap-16'>
-                              <a
-                                href='cart.html'
+                              <Link
+                                to='/cart'
                                 className='product-card__cart btn bg-gray-50 text-heading text-sm hover-bg-main-600 hover-text-white py-7 px-8 rounded-8 flex-center gap-8 fw-medium'
                               >
                                 Camera
-                              </a>
-                              <a
-                                href='cart.html'
+                              </Link>
+                              <Link
+                                to='/cart'
                                 className='product-card__cart btn bg-gray-50 text-heading text-sm hover-bg-main-600 hover-text-white py-7 px-8 rounded-8 flex-center gap-8 fw-medium'
                               >
                                 Videos
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -102,12 +103,12 @@ const WishListSection = () => {
                         </span>
                       </td>
                       <td className='px-40 py-32'>
-                        <a
-                          href='cart.html'
+                        <Link
+                          to='/cart'
                           className='btn btn-main-two rounded-8 px-64'
                         >
                           Add To Cart <i className='ph ph-shopping-cart' />
-                        </a>
+                        </Link>
                       </td>
                     </tr>
                     <tr className=''>
@@ -122,24 +123,24 @@ const WishListSection = () => {
                       </td>
                       <td className='px-40 py-32 border-end border-neutral-100'>
                         <div className='table-product d-flex align-items-center gap-24'>
-                          <a
-                            href='product-details-two.html'
+                          <Link
+                            to='/product-details-two'
                             className='table-product__thumb border border-gray-100 rounded-8 flex-center '
                           >
                             <img
                               src='assets/images/thumbs/product-two-img3.png'
                               alt=''
                             />
-                          </a>
+                          </Link>
                           <div className='table-product__content text-start'>
                             <h6 className='title text-lg fw-semibold mb-8'>
-                              <a
-                                href='product-details.html'
+                              <Link
+                                to='/product-details'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
                                 Smart Phone With Intel Celeron
-                              </a>
+                              </Link>
                             </h6>
                             <div className='flex-align gap-16 mb-16'>
                               <div className='flex-align gap-6'>
@@ -158,18 +159,18 @@ const WishListSection = () => {
                               </span>
                             </div>
                             <div className='flex-align gap-16'>
-                              <a
-                                href='cart.html'
+                              <Link
+                                to='/cart'
                                 className='product-card__cart btn bg-gray-50 text-heading text-sm hover-bg-main-600 hover-text-white py-7 px-8 rounded-8 flex-center gap-8 fw-medium'
                               >
                                 Camera
-                              </a>
-                              <a
-                                href='cart.html'
+                              </Link>
+                              <Link
+                                to='/cart'
                                 className='product-card__cart btn bg-gray-50 text-heading text-sm hover-bg-main-600 hover-text-white py-7 px-8 rounded-8 flex-center gap-8 fw-medium'
                               >
                                 Videos
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -185,12 +186,12 @@ const WishListSection = () => {
                         </span>
                       </td>
                       <td className='px-40 py-32'>
-                        <a
-                          href='cart.html'
+                        <Link
+                          to='/cart'
                           className='btn btn-main-two rounded-8 px-64'
                         >
                           Add To Cart <i className='ph ph-shopping-cart' />
-                        </a>
+                        </Link>
                       </td>
                     </tr>
                     <tr className=''>
@@ -205,24 +206,24 @@ const WishListSection = () => {
                       </td>
                       <td className='px-40 py-32 border-end border-neutral-100'>
                         <div className='table-product d-flex align-items-center gap-24'>
-                          <a
-                            href='product-details-two.html'
+                          <Link
+                            to='/product-details-two'
                             className='table-product__thumb border border-gray-100 rounded-8 flex-center '
                           >
                             <img
                               src='assets/images/thumbs/product-two-img14.png'
                               alt=''
                             />
-                          </a>
+                          </Link>
                           <div className='table-product__content text-start'>
                             <h6 className='title text-lg fw-semibold mb-8'>
-                              <a
-                                href='product-details.html'
+                              <Link
+                                to='/product-details'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
                                 HP Chromebook With Intel Celeron
-                              </a>
+                              </Link>
                             </h6>
                             <div className='flex-align gap-16 mb-16'>
                               <div className='flex-align gap-6'>
@@ -241,18 +242,18 @@ const WishListSection = () => {
                               </span>
                             </div>
                             <div className='flex-align gap-16'>
-                              <a
-                                href='cart.html'
+                              <Link
+                                to='/cart'
                                 className='product-card__cart btn bg-gray-50 text-heading text-sm hover-bg-main-600 hover-text-white py-7 px-8 rounded-8 flex-center gap-8 fw-medium'
                               >
                                 Camera
-                              </a>
-                              <a
-                                href='cart.html'
+                              </Link>
+                              <Link
+                                to='/cart'
                                 className='product-card__cart btn bg-gray-50 text-heading text-sm hover-bg-main-600 hover-text-white py-7 px-8 rounded-8 flex-center gap-8 fw-medium'
                               >
                                 Videos
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -268,12 +269,12 @@ const WishListSection = () => {
                         </span>
                       </td>
                       <td className='px-40 py-32'>
-                        <a
-                          href='cart.html'
+                        <Link
+                          to='/cart'
                           className='btn btn-main-two rounded-8 px-64'
                         >
                           Add To Cart <i className='ph ph-shopping-cart' />
-                        </a>
+                        </Link>
                       </td>
                     </tr>
                     <tr className=''>
@@ -288,24 +289,24 @@ const WishListSection = () => {
                       </td>
                       <td className='px-40 py-32 border-end border-neutral-100'>
                         <div className='table-product d-flex align-items-center gap-24'>
-                          <a
-                            href='product-details-two.html'
+                          <Link
+                            to='/product-details-two'
                             className='table-product__thumb border border-gray-100 rounded-8 flex-center '
                           >
                             <img
                               src='assets/images/thumbs/product-two-img2.png'
                               alt=''
                             />
-                          </a>
+                          </Link>
                           <div className='table-product__content text-start'>
                             <h6 className='title text-lg fw-semibold mb-8'>
-                              <a
-                                href='product-details.html'
+                              <Link
+                                to='/product-details'
                                 className='link text-line-2'
                                 tabIndex={0}
                               >
                                 Smart watch With Intel Celeron
-                              </a>
+                              </Link>
                             </h6>
                             <div className='flex-align gap-16 mb-16'>
                               <div className='flex-align gap-6'>
@@ -324,18 +325,18 @@ const WishListSection = () => {
                               </span>
                             </div>
                             <div className='flex-align gap-16'>
-                              <a
-                                href='cart.html'
+                              <Link
+                                to='/cart'
                                 className='product-card__cart btn bg-gray-50 text-heading text-sm hover-bg-main-600 hover-text-white py-7 px-8 rounded-8 flex-center gap-8 fw-medium'
                               >
                                 Camera
-                              </a>
-                              <a
-                                href='cart.html'
+                              </Link>
+                              <Link
+                                to='/cart'
                                 className='product-card__cart btn bg-gray-50 text-heading text-sm hover-bg-main-600 hover-text-white py-7 px-8 rounded-8 flex-center gap-8 fw-medium'
                               >
                                 Videos
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -351,12 +352,12 @@ const WishListSection = () => {
                         </span>
                       </td>
                       <td className='px-40 py-32'>
-                        <a
-                          href='cart.html'
+                        <Link
+                          to='/cart'
                           className='btn btn-main-two rounded-8 px-64'
                         >
                           Add To Cart <i className='ph ph-shopping-cart' />
-                        </a>
+                        </Link>
                       </td>
                     </tr>
                   </tbody>

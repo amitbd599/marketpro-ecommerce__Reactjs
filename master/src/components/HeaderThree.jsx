@@ -384,9 +384,9 @@ const HeaderThree = () => {
           <nav className='header-inner flex-between'>
             {/* Logo Start */}
             <div className='logo'>
-              <a href='index.html' className='link'>
+              <Link to='/' className='link'>
                 <img src='assets/images/logo/logo-two.png' alt='Logo' />
-              </a>
+              </Link>
             </div>
             {/* Logo End  */}
             {/* form Category Start */}
@@ -594,7 +594,7 @@ const HeaderThree = () => {
                     className='js-example-basic-single border border-gray-200 border-end-0 rounded-0 border-0'
                     name='state'
                   >
-                    <option value={1} selected='' disabled=''>
+                    <option defaultValue={1}>
                       All Categories
                     </option>
                     <option value={1}>Grocery</option>
@@ -636,8 +636,8 @@ const HeaderThree = () => {
                     <i className='ph ph-magnifying-glass' />
                   </span>
                 </button>
-                <a
-                  href='account.html'
+                <Link
+                  to='/account'
                   className='flex-align flex-column gap-8 item-hover-two'
                 >
                   <span className='text-2xl text-white d-flex position-relative item-hover__text'>
@@ -646,9 +646,9 @@ const HeaderThree = () => {
                   <span className='text-md text-white item-hover__text d-none d-lg-flex'>
                     Profile
                   </span>
-                </a>
-                <a
-                  href='wishlist.html'
+                </Link>
+                <Link
+                  to='/wishlist'
                   className='flex-align flex-column gap-8 item-hover-two'
                 >
                   <span className='text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text'>
@@ -660,9 +660,9 @@ const HeaderThree = () => {
                   <span className='text-md text-white item-hover__text d-none d-lg-flex'>
                     Wishlist
                   </span>
-                </a>
-                <a
-                  href='cart.html'
+                </Link>
+                <Link
+                  to='/cart'
                   className='flex-align flex-column gap-8 item-hover-two'
                 >
                   <span className='text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text'>
@@ -674,9 +674,9 @@ const HeaderThree = () => {
                   <span className='text-md text-white item-hover__text d-none d-lg-flex'>
                     Compare
                   </span>
-                </a>
-                <a
-                  href='cart.html'
+                </Link>
+                <Link
+                  to='/cart'
                   className='flex-align flex-column gap-8 item-hover-two'
                 >
                   <span className='text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text'>
@@ -688,7 +688,7 @@ const HeaderThree = () => {
                   <span className='text-md text-white item-hover__text d-none d-lg-flex'>
                     Cart
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
             {/* Header Middle Right End  */}
@@ -736,9 +736,9 @@ const HeaderThree = () => {
                     <i className='ph ph-x' />{" "}
                   </button>
                   <div className='logo px-16 d-lg-none d-block'>
-                    <a href='index.html' className='link'>
+                    <Link to='/' className='link'>
                       <img src='assets/images/logo/logo.png' alt='Logo' />
-                    </a>
+                    </Link>
                   </div>
                   <ul className='scroll-sm p-0 py-8 w-300 max-h-400 overflow-y-auto'>
                     <li
@@ -767,22 +767,22 @@ const HeaderThree = () => {
                         </h6>
                         <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
                           <li>
-                            <a href='shop.html'>Samsung</a>
+                            <Link to='/shop'>Samsung</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Iphone</a>
+                            <Link to='/shop'>Iphone</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Vivo</a>
+                            <Link to='/shop'>Vivo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Oppo</a>
+                            <Link to='/shop'>Oppo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Itel</a>
+                            <Link to='/shop'>Itel</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Realme</a>
+                            <Link to='/shop'>Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -812,22 +812,22 @@ const HeaderThree = () => {
                         </h6>
                         <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
                           <li>
-                            <a href='shop.html'>Samsung</a>
+                            <Link to='/shop'>Samsung</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Iphone</a>
+                            <Link to='/shop'>Iphone</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Vivo</a>
+                            <Link to='/shop'>Vivo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Oppo</a>
+                            <Link to='/shop'>Oppo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Itel</a>
+                            <Link to='/shop'>Itel</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Realme</a>
+                            <Link to='/shop'>Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -857,22 +857,22 @@ const HeaderThree = () => {
                         </h6>
                         <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
                           <li>
-                            <a href='shop.html'>Samsung</a>
+                            <Link to='/shop'>Samsung</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Iphone</a>
+                            <Link to='/shop'>Iphone</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Vivo</a>
+                            <Link to='/shop'>Vivo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Oppo</a>
+                            <Link to='/shop'>Oppo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Itel</a>
+                            <Link to='/shop'>Itel</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Realme</a>
+                            <Link to='/shop'>Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -902,22 +902,22 @@ const HeaderThree = () => {
                         </h6>
                         <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
                           <li>
-                            <a href='shop.html'>Samsung</a>
+                            <Link to='/shop'>Samsung</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Iphone</a>
+                            <Link to='/shop'>Iphone</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Vivo</a>
+                            <Link to='/shop'>Vivo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Oppo</a>
+                            <Link to='/shop'>Oppo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Itel</a>
+                            <Link to='/shop'>Itel</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Realme</a>
+                            <Link to='/shop'>Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -947,22 +947,22 @@ const HeaderThree = () => {
                         </h6>
                         <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
                           <li>
-                            <a href='shop.html'>Samsung</a>
+                            <Link to='/shop'>Samsung</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Iphone</a>
+                            <Link to='/shop'>Iphone</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Vivo</a>
+                            <Link to='/shop'>Vivo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Oppo</a>
+                            <Link to='/shop'>Oppo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Itel</a>
+                            <Link to='/shop'>Itel</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Realme</a>
+                            <Link to='/shop'>Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -992,22 +992,22 @@ const HeaderThree = () => {
                         </h6>
                         <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
                           <li>
-                            <a href='shop.html'>Samsung</a>
+                            <Link to='/shop'>Samsung</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Iphone</a>
+                            <Link to='/shop'>Iphone</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Vivo</a>
+                            <Link to='/shop'>Vivo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Oppo</a>
+                            <Link to='/shop'>Oppo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Itel</a>
+                            <Link to='/shop'>Itel</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Realme</a>
+                            <Link to='/shop'>Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -1037,22 +1037,22 @@ const HeaderThree = () => {
                         </h6>
                         <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
                           <li>
-                            <a href='shop.html'>Samsung</a>
+                            <Link to='/shop'>Samsung</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Iphone</a>
+                            <Link to='/shop'>Iphone</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Vivo</a>
+                            <Link to='/shop'>Vivo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Oppo</a>
+                            <Link to='/shop'>Oppo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Itel</a>
+                            <Link to='/shop'>Itel</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Realme</a>
+                            <Link to='/shop'>Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -1083,22 +1083,22 @@ const HeaderThree = () => {
                         </h6>
                         <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
                           <li>
-                            <a href='shop.html'>Samsung</a>
+                            <Link to='/shop'>Samsung</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Iphone</a>
+                            <Link to='/shop'>Iphone</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Vivo</a>
+                            <Link to='/shop'>Vivo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Oppo</a>
+                            <Link to='/shop'>Oppo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Itel</a>
+                            <Link to='/shop'>Itel</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Realme</a>
+                            <Link to='/shop'>Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -1128,22 +1128,22 @@ const HeaderThree = () => {
                         </h6>
                         <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
                           <li>
-                            <a href='shop.html'>Samsung</a>
+                            <Link to='/shop'>Samsung</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Iphone</a>
+                            <Link to='/shop'>Iphone</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Vivo</a>
+                            <Link to='/shop'>Vivo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Oppo</a>
+                            <Link to='/shop'>Oppo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Itel</a>
+                            <Link to='/shop'>Itel</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Realme</a>
+                            <Link to='/shop'>Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -1173,22 +1173,22 @@ const HeaderThree = () => {
                         </h6>
                         <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
                           <li>
-                            <a href='shop.html'>Samsung</a>
+                            <Link to='/shop'>Samsung</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Iphone</a>
+                            <Link to='/shop'>Iphone</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Vivo</a>
+                            <Link to='/shop'>Vivo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Oppo</a>
+                            <Link to='/shop'>Oppo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Itel</a>
+                            <Link to='/shop'>Itel</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Realme</a>
+                            <Link to='/shop'>Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -1218,22 +1218,22 @@ const HeaderThree = () => {
                         </h6>
                         <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
                           <li>
-                            <a href='shop.html'>Samsung</a>
+                            <Link to='/shop'>Samsung</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Iphone</a>
+                            <Link to='/shop'>Iphone</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Vivo</a>
+                            <Link to='/shop'>Vivo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Oppo</a>
+                            <Link to='/shop'>Oppo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Itel</a>
+                            <Link to='/shop'>Itel</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Realme</a>
+                            <Link to='/shop'>Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -1263,22 +1263,22 @@ const HeaderThree = () => {
                         </h6>
                         <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
                           <li>
-                            <a href='shop.html'>Samsung</a>
+                            <Link to='/shop'>Samsung</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Iphone</a>
+                            <Link to='/shop'>Iphone</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Vivo</a>
+                            <Link to='/shop'>Vivo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Oppo</a>
+                            <Link to='/shop'>Oppo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Itel</a>
+                            <Link to='/shop'>Itel</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Realme</a>
+                            <Link to='/shop'>Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -1308,22 +1308,22 @@ const HeaderThree = () => {
                         </h6>
                         <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
                           <li>
-                            <a href='shop.html'>Samsung</a>
+                            <Link to='/shop'>Samsung</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Iphone</a>
+                            <Link to='/shop'>Iphone</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Vivo</a>
+                            <Link to='/shop'>Vivo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Oppo</a>
+                            <Link to='/shop'>Oppo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Itel</a>
+                            <Link to='/shop'>Itel</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Realme</a>
+                            <Link to='/shop'>Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -1353,22 +1353,22 @@ const HeaderThree = () => {
                         </h6>
                         <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
                           <li>
-                            <a href='shop.html'>Samsung</a>
+                            <Link to='/shop'>Samsung</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Iphone</a>
+                            <Link to='/shop'>Iphone</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Vivo</a>
+                            <Link to='/shop'>Vivo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Oppo</a>
+                            <Link to='/shop'>Oppo</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Itel</a>
+                            <Link to='/shop'>Itel</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Realme</a>
+                            <Link to='/shop'>Realme</Link>
                           </li>
                         </ul>
                       </div>
@@ -1397,9 +1397,9 @@ const HeaderThree = () => {
                     <i className='ph ph-x' />{" "}
                   </button>
                   <div className='logo px-16 d-lg-none d-block'>
-                    <a href='index.html' className='link'>
+                    <Link to='/' className='link'>
                       <img src='assets/images/logo/logo.png' alt='Logo' />
-                    </a>
+                    </Link>
                   </div>
                   <ul className='scroll-sm p-0 py-8 w-300 max-h-400 overflow-y-auto'>
                     <li className='has-submenus-submenu'>
@@ -1421,28 +1421,28 @@ const HeaderThree = () => {
                         </h6>
                         <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
                           <li>
-                            <a href='shop.html'>Potato &amp; Tomato</a>
+                            <Link to='/shop'>Potato &amp; Tomato</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Cucumber &amp; Capsicum</a>
+                            <Link to='/shop'>Cucumber &amp; Capsicum</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Leafy Vegetables</a>
+                            <Link to='/shop'>Leafy Vegetables</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Root Vegetables</a>
+                            <Link to='/shop'>Root Vegetables</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Beans &amp; Okra</a>
+                            <Link to='/shop'>Beans &amp; Okra</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Cabbage &amp; Cauliflower</a>
+                            <Link to='/shop'>Cabbage &amp; Cauliflower</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Gourd &amp; Drumstick</a>
+                            <Link to='/shop'>Gourd &amp; Drumstick</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Specialty</a>
+                            <Link to='/shop'>Specialty</Link>
                           </li>
                         </ul>
                       </div>
@@ -1466,22 +1466,22 @@ const HeaderThree = () => {
                         </h6>
                         <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
                           <li>
-                            <a href='shop.html'>Soda &amp; Cocktail Mix </a>
+                            <Link to='/shop'>Soda &amp; Cocktail Mix </Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Sports &amp; Energy Drinks</a>
+                            <Link to='/shop'> Sports &amp; Energy Drinks</Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Non Alcoholic Drinks</a>
+                            <Link to='/shop'> Non Alcoholic Drinks</Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Packaged Water </a>
+                            <Link to='/shop'> Packaged Water </Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Spring Water</a>
+                            <Link to='/shop'> Spring Water</Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Flavoured Water </a>
+                            <Link to='/shop'> Flavoured Water </Link>
                           </li>
                         </ul>
                       </div>
@@ -1505,16 +1505,16 @@ const HeaderThree = () => {
                         </h6>
                         <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
                           <li>
-                            <a href='shop.html'> Fresh Meat </a>
+                            <Link to='/shop'> Fresh Meat </Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Frozen Meat</a>
+                            <Link to='/shop'> Frozen Meat</Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Marinated Meat</a>
+                            <Link to='/shop'> Marinated Meat</Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Fresh &amp; Frozen Meat</a>
+                            <Link to='/shop'> Fresh &amp; Frozen Meat</Link>
                           </li>
                         </ul>
                       </div>
@@ -1538,22 +1538,22 @@ const HeaderThree = () => {
                         </h6>
                         <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
                           <li>
-                            <a href='shop.html'> Oats &amp; Porridge</a>
+                            <Link to='/shop'> Oats &amp; Porridge</Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Kids Cereal</a>
+                            <Link to='/shop'> Kids Cereal</Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Muesli</a>
+                            <Link to='/shop'> Muesli</Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Flakes</a>
+                            <Link to='/shop'> Flakes</Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Granola &amp; Cereal Bars</a>
+                            <Link to='/shop'> Granola &amp; Cereal Bars</Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Instant Noodles</a>
+                            <Link to='/shop'> Instant Noodles</Link>
                           </li>
                         </ul>
                       </div>
@@ -1577,19 +1577,19 @@ const HeaderThree = () => {
                         </h6>
                         <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
                           <li>
-                            <a href='shop.html'> Instant Noodles </a>
+                            <Link to='/shop'> Instant Noodles </Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Hakka Noodles</a>
+                            <Link to='/shop'> Hakka Noodles</Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Cup Noodles</a>
+                            <Link to='/shop'> Cup Noodles</Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Vermicelli</a>
+                            <Link to='/shop'> Vermicelli</Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Instant Pasta</a>
+                            <Link to='/shop'> Instant Pasta</Link>
                           </li>
                         </ul>
                       </div>
@@ -1613,22 +1613,22 @@ const HeaderThree = () => {
                         </h6>
                         <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
                           <li>
-                            <a href='shop.html'> Salted Biscuits </a>
+                            <Link to='/shop'> Salted Biscuits </Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Marie, Health, Digestive</a>
+                            <Link to='/shop'> Marie, Health, Digestive</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>
+                            <Link to='/shop'>
                               {" "}
                               Cream Biscuits &amp; Wafers{" "}
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Glucose &amp; Milk biscuits</a>
+                            <Link to='/shop'> Glucose &amp; Milk biscuits</Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Cookies</a>
+                            <Link to='/shop'> Cookies</Link>
                           </li>
                         </ul>
                       </div>
@@ -1652,25 +1652,25 @@ const HeaderThree = () => {
                         </h6>
                         <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
                           <li>
-                            <a href='shop.html'> Lemon, Ginger &amp; Garlic </a>
+                            <Link to='/shop'> Lemon, Ginger &amp; Garlic </Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Indian &amp; Exotic Herbs</a>
+                            <Link to='/shop'> Indian &amp; Exotic Herbs</Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Orangic Vegetables</a>
+                            <Link to='/shop'> Orangic Vegetables</Link>
                           </li>
                           <li>
-                            <a href='shop.html'>Orangic Fruits </a>
+                            <Link to='/shop'>Orangic Fruits </Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Orangic Dry Fruits</a>
+                            <Link to='/shop'> Orangic Dry Fruits</Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Orangic Dals &amp; pulses</a>
+                            <Link to='/shop'> Orangic Dals &amp; pulses</Link>
                           </li>
                           <li>
-                            <a href='shop.html'> Orangic Millet &amp; Flours</a>
+                            <Link to='/shop'> Orangic Millet &amp; Flours</Link>
                           </li>
                         </ul>
                       </div>
@@ -2154,8 +2154,8 @@ const HeaderThree = () => {
                       <i className='ph ph-magnifying-glass' />
                     </span>
                   </button>
-                  <a
-                    href='account.html'
+                  <Link
+                    to='/account'
                     className='flex-align flex-column gap-8 item-hover-two'
                   >
                     <span className='text-2xl text-white d-flex position-relative item-hover__text'>
@@ -2164,9 +2164,9 @@ const HeaderThree = () => {
                     <span className='text-md text-white item-hover__text d-none d-lg-flex'>
                       Profile
                     </span>
-                  </a>
-                  <a
-                    href='wishlist.html'
+                  </Link>
+                  <Link
+                    to='/wishlist'
                     className='flex-align flex-column gap-8 item-hover-two'
                   >
                     <span className='text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text'>
@@ -2178,9 +2178,9 @@ const HeaderThree = () => {
                     <span className='text-md text-white item-hover__text d-none d-lg-flex'>
                       Wishlist
                     </span>
-                  </a>
-                  <a
-                    href='cart.html'
+                  </Link>
+                  <Link
+                    to='/cart'
                     className='flex-align flex-column gap-8 item-hover-two'
                   >
                     <span className='text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text'>
@@ -2192,9 +2192,9 @@ const HeaderThree = () => {
                     <span className='text-md text-white item-hover__text d-none d-lg-flex'>
                       Compare
                     </span>
-                  </a>
-                  <a
-                    href='cart.html'
+                  </Link>
+                  <Link
+                    to='/cart'
                     className='flex-align flex-column gap-8 item-hover-two'
                   >
                     <span className='text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text'>
@@ -2206,7 +2206,7 @@ const HeaderThree = () => {
                     <span className='text-md text-white item-hover__text d-none d-lg-flex'>
                       Cart
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <button

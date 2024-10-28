@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const VendorTwo = () => {
   let [grid, setGrid] = useState(false);
@@ -79,108 +80,108 @@ const VendorTwo = () => {
                   </h6>
                   <ul className='max-h-540 overflow-y-auto scroll-sm'>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Mobile &amp; Accessories (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Laptop (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Electronics (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Smart Watch (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Storage (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Portable Devices (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Action Camera (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Smart Gadget (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Monitor (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Smart TV (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Camera (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Monitor Stand (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-0'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Headphone (12)
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -429,32 +430,37 @@ const VendorTwo = () => {
                     Filter by Location
                   </h6>
                   <div className='d-flex flex-column gap-8'>
-                    <select className='common-input form-select'>
-                      <option value='' selected='' disabled=''>
-                        Country
-                      </option>
-                      <option value=''>Bangladesh</option>
-                      <option value=''>Pakistan</option>
-                      <option value=''>Vutan</option>
-                      <option value=''>Nepal</option>
+                    <select
+                      className='common-input form-select'
+                      defaultValue={1}
+                    >
+                      <option value={1}>Country</option>
+                      <option value={2}>Bangladesh</option>
+                      <option value={3}>Pakistan</option>
+                      <option value={3}>Vutan</option>
+                      <option value={4}>Nepal</option>
                     </select>
-                    <select className='common-input form-select'>
-                      <option value='' selected='' disabled=''>
+                    <select
+                      className='common-input form-select'
+                      defaultValue={1}
+                    >
+                      <option value={1} disabled>
                         State
                       </option>
-                      <option value=''>California</option>
-                      <option value=''>Washington</option>
-                      <option value=''>Florida</option>
-                      <option value=''>Texas</option>
+                      <option value={2}>California</option>
+                      <option value={3}>Washington</option>
+                      <option value={4}>Florida</option>
+                      <option value={5}>Texas</option>
                     </select>
-                    <select className='common-input form-select'>
-                      <option value='' selected='' disabled=''>
-                        City
-                      </option>
-                      <option value=''>New York</option>
-                      <option value=''>San Francisco</option>
-                      <option value=''> Oklahoma City</option>
-                      <option value=''>Chicago</option>
+                    <select
+                      className='common-input form-select'
+                      defaultValue={1}
+                    >
+                      <option value={1}>City</option>
+                      <option value={2}>New York</option>
+                      <option value={3}>San Francisco</option>
+                      <option value={4}> Oklahoma City</option>
+                      <option value={5}>Chicago</option>
                     </select>
                     <input
                       type='text'
@@ -499,9 +505,9 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <a href='vendor-two-details.html' className=''>
+                        <Link to='/vendor-two-details' className=''>
                           e-Mart Shop
-                        </a>
+                        </Link>
                       </h6>
                       <div className='flex-align gap-6'>
                         <div className='flex-align gap-8'>
@@ -564,8 +570,8 @@ const VendorTwo = () => {
                       </a>
                     </div>
                   </div>
-                  <a
-                    href='vendor-two-details.html'
+                  <Link
+                    to='/vendor-two-details'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
                     Visit Store
@@ -573,7 +579,7 @@ const VendorTwo = () => {
                       {" "}
                       <i className='ph ph-storefront' />
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='vendors-two-item rounded-12 overflow-hidden bg-color-three border border-neutral-50 hover-border-main-two-600 transition-2'>
@@ -602,9 +608,9 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <a href='vendor-two-details.html' className=''>
+                        <Link to='/vendor-two-details' className=''>
                           Baishakhi
-                        </a>
+                        </Link>
                       </h6>
                       <div className='flex-align gap-6'>
                         <div className='flex-align gap-8'>
@@ -667,8 +673,8 @@ const VendorTwo = () => {
                       </a>
                     </div>
                   </div>
-                  <a
-                    href='vendor-two-details.html'
+                  <Link
+                    to='/vendor-two-details'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
                     Visit Store
@@ -676,7 +682,7 @@ const VendorTwo = () => {
                       {" "}
                       <i className='ph ph-storefront' />
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='vendors-two-item rounded-12 overflow-hidden bg-color-three border border-neutral-50 hover-border-main-two-600 transition-2'>
@@ -705,9 +711,9 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <a href='vendor-two-details.html' className=''>
+                        <Link to='/vendor-two-details' className=''>
                           e-zone Shop
-                        </a>
+                        </Link>
                       </h6>
                       <div className='flex-align gap-6'>
                         <div className='flex-align gap-8'>
@@ -770,8 +776,8 @@ const VendorTwo = () => {
                       </a>
                     </div>
                   </div>
-                  <a
-                    href='vendor-two-details.html'
+                  <Link
+                    to='/vendor-two-details'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
                     Visit Store
@@ -779,7 +785,7 @@ const VendorTwo = () => {
                       {" "}
                       <i className='ph ph-storefront' />
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='vendors-two-item rounded-12 overflow-hidden bg-color-three border border-neutral-50 hover-border-main-two-600 transition-2'>
@@ -808,9 +814,9 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <a href='vendor-two-details.html' className=''>
+                        <Link to='/vendor-two-details' className=''>
                           Cloth &amp; Fashion Shop
-                        </a>
+                        </Link>
                       </h6>
                       <div className='flex-align gap-6'>
                         <div className='flex-align gap-8'>
@@ -873,8 +879,8 @@ const VendorTwo = () => {
                       </a>
                     </div>
                   </div>
-                  <a
-                    href='vendor-two-details.html'
+                  <Link
+                    to='/vendor-two-details'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
                     Visit Store
@@ -882,7 +888,7 @@ const VendorTwo = () => {
                       {" "}
                       <i className='ph ph-storefront' />
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='vendors-two-item rounded-12 overflow-hidden bg-color-three border border-neutral-50 hover-border-main-two-600 transition-2'>
@@ -911,9 +917,9 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <a href='vendor-two-details.html' className=''>
+                        <Link to='/vendor-two-details' className=''>
                           New Market Shop
-                        </a>
+                        </Link>
                       </h6>
                       <div className='flex-align gap-6'>
                         <div className='flex-align gap-8'>
@@ -976,8 +982,8 @@ const VendorTwo = () => {
                       </a>
                     </div>
                   </div>
-                  <a
-                    href='vendor-two-details.html'
+                  <Link
+                    to='/vendor-two-details'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
                     Visit Store
@@ -985,7 +991,7 @@ const VendorTwo = () => {
                       {" "}
                       <i className='ph ph-storefront' />
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='vendors-two-item rounded-12 overflow-hidden bg-color-three border border-neutral-50 hover-border-main-two-600 transition-2'>
@@ -1014,9 +1020,9 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <a href='vendor-two-details.html' className=''>
+                        <Link to='/vendor-two-details' className=''>
                           Zeilla Shop
-                        </a>
+                        </Link>
                       </h6>
                       <div className='flex-align gap-6'>
                         <div className='flex-align gap-8'>
@@ -1079,8 +1085,8 @@ const VendorTwo = () => {
                       </a>
                     </div>
                   </div>
-                  <a
-                    href='vendor-two-details.html'
+                  <Link
+                    to='/vendor-two-details'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
                     Visit Store
@@ -1088,7 +1094,7 @@ const VendorTwo = () => {
                       {" "}
                       <i className='ph ph-storefront' />
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='vendors-two-item rounded-12 overflow-hidden bg-color-three border border-neutral-50 hover-border-main-two-600 transition-2'>
@@ -1117,9 +1123,9 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <a href='vendor-two-details.html' className=''>
+                        <Link to='/vendor-two-details' className=''>
                           Ever Green Shop
-                        </a>
+                        </Link>
                       </h6>
                       <div className='flex-align gap-6'>
                         <div className='flex-align gap-8'>
@@ -1182,8 +1188,8 @@ const VendorTwo = () => {
                       </a>
                     </div>
                   </div>
-                  <a
-                    href='vendor-two-details.html'
+                  <Link
+                    to='/vendor-two-details'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
                     Visit Store
@@ -1191,7 +1197,7 @@ const VendorTwo = () => {
                       {" "}
                       <i className='ph ph-storefront' />
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='vendors-two-item rounded-12 overflow-hidden bg-color-three border border-neutral-50 hover-border-main-two-600 transition-2'>
@@ -1220,9 +1226,9 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <a href='vendor-two-details.html' className=''>
+                        <Link to='/vendor-two-details' className=''>
                           Maple Shop
-                        </a>
+                        </Link>
                       </h6>
                       <div className='flex-align gap-6'>
                         <div className='flex-align gap-8'>
@@ -1285,8 +1291,8 @@ const VendorTwo = () => {
                       </a>
                     </div>
                   </div>
-                  <a
-                    href='vendor-two-details.html'
+                  <Link
+                    to='/vendor-two-details'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
                     Visit Store
@@ -1294,7 +1300,7 @@ const VendorTwo = () => {
                       {" "}
                       <i className='ph ph-storefront' />
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='vendors-two-item rounded-12 overflow-hidden bg-color-three border border-neutral-50 hover-border-main-two-600 transition-2'>
@@ -1323,9 +1329,9 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <a href='vendor-two-details.html' className=''>
+                        <Link to='/vendor-two-details' className=''>
                           New Mart
-                        </a>
+                        </Link>
                       </h6>
                       <div className='flex-align gap-6'>
                         <div className='flex-align gap-8'>
@@ -1388,8 +1394,8 @@ const VendorTwo = () => {
                       </a>
                     </div>
                   </div>
-                  <a
-                    href='vendor-two-details.html'
+                  <Link
+                    to='/vendor-two-details'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
                     Visit Store
@@ -1397,7 +1403,7 @@ const VendorTwo = () => {
                       {" "}
                       <i className='ph ph-storefront' />
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -1405,76 +1411,76 @@ const VendorTwo = () => {
             {/* Pagination Start */}
             <ul className='pagination flex-center flex-wrap gap-16'>
               <li className='page-item'>
-                <a
+                <Link
                   className='page-link h-64 w-64 flex-center text-xxl rounded-8 fw-medium text-neutral-600 border border-gray-100'
-                  href='#'
+                  to='#'
                 >
                   <i className='ph-bold ph-arrow-left' />
-                </a>
+                </Link>
               </li>
               <li className='page-item active'>
-                <a
+                <Link
                   className='page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100'
-                  href='#'
+                  to='#'
                 >
                   01
-                </a>
+                </Link>
               </li>
               <li className='page-item'>
-                <a
+                <Link
                   className='page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100'
-                  href='#'
+                  to='#'
                 >
                   02
-                </a>
+                </Link>
               </li>
               <li className='page-item'>
-                <a
+                <Link
                   className='page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100'
-                  href='#'
+                  to='#'
                 >
                   03
-                </a>
+                </Link>
               </li>
               <li className='page-item'>
-                <a
+                <Link
                   className='page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100'
-                  href='#'
+                  to='#'
                 >
                   04
-                </a>
+                </Link>
               </li>
               <li className='page-item'>
-                <a
+                <Link
                   className='page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100'
-                  href='#'
+                  to='#'
                 >
                   05
-                </a>
+                </Link>
               </li>
               <li className='page-item'>
-                <a
+                <Link
                   className='page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100'
-                  href='#'
+                  to='#'
                 >
                   06
-                </a>
+                </Link>
               </li>
               <li className='page-item'>
-                <a
+                <Link
                   className='page-link h-64 w-64 flex-center text-md rounded-8 fw-medium text-neutral-600 border border-gray-100'
-                  href='#'
+                  to='#'
                 >
                   07
-                </a>
+                </Link>
               </li>
               <li className='page-item'>
-                <a
+                <Link
                   className='page-link h-64 w-64 flex-center text-xxl rounded-8 fw-medium text-neutral-600 border border-gray-100'
-                  href='#'
+                  to='#'
                 >
                   <i className='ph-bold ph-arrow-right' />
-                </a>
+                </Link>
               </li>
             </ul>
             {/* Pagination End */}

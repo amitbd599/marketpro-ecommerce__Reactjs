@@ -2,14 +2,19 @@ import React, { useEffect } from "react";
 import Slider from "react-slick";
 import { WOW } from "wowjs";
 import "animate.css";
+import { Link } from "react-router-dom";
 const BannerThree = () => {
   useEffect(() => {
-    const wow = new WOW();
+    const wow = new WOW({
+      live: false,
+    });
     wow.init();
   }, []);
 
   let itItWow = () => {
-    const wow = new WOW();
+    const wow = new WOW({
+      live: false,
+    });
     wow.init();
   };
   const NextArrow = ({ onClick }) => (
@@ -113,8 +118,8 @@ const BannerThree = () => {
                       You appear ordinary if you dress simply. We are able to
                       help you.
                     </p>
-                    <a
-                      href='shop.html'
+                    <Link
+                      to='/shop'
                       className='btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-lg-4 mt-sm-1 wow bounceIn'
                       tabIndex={0}
                     >
@@ -122,7 +127,7 @@ const BannerThree = () => {
                       <span className='icon text-xl d-flex'>
                         <i className='ph ph-shopping-cart-simple' />
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className='col-lg-6'>
@@ -166,8 +171,8 @@ const BannerThree = () => {
                       You appear ordinary if you dress simply. We are able to
                       help you.
                     </p>
-                    <a
-                      href='shop.html'
+                    <Link
+                      to='/shop'
                       className='btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-48 wow bounceIn'
                       tabIndex={0}
                     >
@@ -175,7 +180,7 @@ const BannerThree = () => {
                       <span className='icon text-xl d-flex'>
                         <i className='ph ph-shopping-cart-simple' />
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className='col-lg-6'>
@@ -220,8 +225,8 @@ const BannerThree = () => {
                       You appear ordinary if you dress simply. We are able to
                       help you.
                     </p>
-                    <a
-                      href='shop.html'
+                    <Link
+                      to='/shop'
                       className='btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-48 wow bounceIn'
                       tabIndex={0}
                     >
@@ -229,7 +234,7 @@ const BannerThree = () => {
                       <span className='icon text-xl d-flex'>
                         <i className='ph ph-shopping-cart-simple' />
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className='col-lg-6'>

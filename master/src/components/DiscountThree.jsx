@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const DiscountThree = () => {
   return (
@@ -20,8 +21,8 @@ const DiscountThree = () => {
                 <h6 className='fw-semibold mb-0 max-w-375'>
                   Spring Collection
                 </h6>
-                <a
-                  href='shop.html'
+                <Link
+                  to='/shop'
                   className='btn btn-black rounded-pill gap-8 mt-32 flex-align d-inline-flex'
                   tabIndex={0}
                 >
@@ -29,7 +30,7 @@ const DiscountThree = () => {
                   <span className='text-xl d-flex'>
                     <i className='ph ph-shopping-cart-simple' />
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -48,8 +49,8 @@ const DiscountThree = () => {
                 <h6 className='fw-semibold mb-0 max-w-375'>
                   Spring Collection
                 </h6>
-                <a
-                  href='shop.html'
+                <Link
+                  to='/shop'
                   className='btn btn-black rounded-pill gap-8 mt-32 flex-align d-inline-flex'
                   tabIndex={0}
                 >
@@ -57,7 +58,7 @@ const DiscountThree = () => {
                   <span className='text-xl d-flex'>
                     <i className='ph ph-shopping-cart-simple' />
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -74,8 +75,8 @@ const DiscountThree = () => {
                   Get 25% off the all order
                 </span>
                 <h6 className='fw-semibold mb-0 max-w-375'>Black Friday</h6>
-                <a
-                  href='shop.html'
+                <Link
+                  to='/shop'
                   className='btn btn-black rounded-pill gap-8 mt-32 flex-align d-inline-flex'
                   tabIndex={0}
                 >
@@ -83,7 +84,7 @@ const DiscountThree = () => {
                   <span className='text-xl d-flex'>
                     <i className='ph ph-shopping-cart-simple' />
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

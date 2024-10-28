@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const VendorsList = () => {
   return (
@@ -27,7 +28,7 @@ const VendorsList = () => {
             </form>
             <div className='flex-align gap-8'>
               <span className='text-gray-900 flex-shrink-0'>Sort by:</span>
-              <select className='common-input form-select rounded-pill border border-gray-100 d-inline-block ps-20 pe-36 h-48 py-0 fw-medium'>
+              <select className='common-input form-select rounded-pill border border-gray-100 d-inline-block ps-20 pe-36 h-48 py-0 fw-medium' defaultValue={1}>
                 <option value={1}>Latest</option>
                 <option value={1}>Old</option>
               </select>
@@ -35,11 +36,7 @@ const VendorsList = () => {
           </div>
         </div>
         <div className='row gy-4 vendor-card-wrapper'>
-          <div
-            className='col-xxl-3 col-lg-4 col-sm-6'
-            data-aos='zoom-in'
-            data-aos-duration={200}
-          >
+          <div className='col-xxl-3 col-lg-4 col-sm-6'>
             <div className='vendor-card text-center px-16 pb-24'>
               <div className=''>
                 <img
@@ -48,19 +45,19 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <a href='vendor-details.html' className=''>
+                  <Link to='/vendor-details' className=''>
                     Organic Market
-                  </a>
+                  </Link>
                 </h6>
                 <span className='text-heading text-sm d-block'>
                   Delivery by 6:15am
                 </span>
-                <a
-                  href='shop.html'
+                <Link
+                  to='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
-                </a>
+                </Link>
               </div>
               <div className='vendor-card__list mt-22 flex-center flex-wrap gap-8'>
                 <div className='vendor-card__item bg-white rounded-circle flex-center'>
@@ -81,11 +78,7 @@ const VendorsList = () => {
               </div>
             </div>
           </div>
-          <div
-            className='col-xxl-3 col-lg-4 col-sm-6'
-            data-aos='zoom-in'
-            data-aos-duration={400}
-          >
+          <div className='col-xxl-3 col-lg-4 col-sm-6' >
             <div className='vendor-card text-center px-16 pb-24'>
               <div className=''>
                 <img
@@ -94,19 +87,19 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <a href='vendor-details.html' className=''>
+                  <Link to='/vendor-details' className=''>
                     Safeway
-                  </a>
+                  </Link>
                 </h6>
                 <span className='text-heading text-sm d-block'>
                   Delivery by 6:15am
                 </span>
-                <a
-                  href='shop.html'
+                <Link
+                  to='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
-                </a>
+                </Link>
               </div>
               <div className='vendor-card__list mt-22 flex-center flex-wrap gap-8'>
                 <div className='vendor-card__item bg-white rounded-circle flex-center'>
@@ -127,11 +120,7 @@ const VendorsList = () => {
               </div>
             </div>
           </div>
-          <div
-            className='col-xxl-3 col-lg-4 col-sm-6'
-            data-aos='zoom-in'
-            data-aos-duration={600}
-          >
+          <div className='col-xxl-3 col-lg-4 col-sm-6' >
             <div className='vendor-card text-center px-16 pb-24'>
               <div className=''>
                 <img
@@ -140,19 +129,19 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <a href='vendor-details.html' className=''>
+                  <Link to='/vendor-details' className=''>
                     Food Max
-                  </a>
+                  </Link>
                 </h6>
                 <span className='text-heading text-sm d-block'>
                   Delivery by 6:15am
                 </span>
-                <a
-                  href='shop.html'
+                <Link
+                  to='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
-                </a>
+                </Link>
               </div>
               <div className='vendor-card__list mt-22 flex-center flex-wrap gap-8'>
                 <div className='vendor-card__item bg-white rounded-circle flex-center'>
@@ -173,11 +162,7 @@ const VendorsList = () => {
               </div>
             </div>
           </div>
-          <div
-            className='col-xxl-3 col-lg-4 col-sm-6'
-            data-aos='zoom-in'
-            data-aos-duration={800}
-          >
+          <div className='col-xxl-3 col-lg-4 col-sm-6' >
             <div className='vendor-card text-center px-16 pb-24'>
               <div className=''>
                 <img
@@ -186,19 +171,19 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <a href='vendor-details.html' className=''>
+                  <Link to='/vendor-details' className=''>
                     HRmart
-                  </a>
+                  </Link>
                 </h6>
                 <span className='text-heading text-sm d-block'>
                   Delivery by 6:15am
                 </span>
-                <a
-                  href='shop.html'
+                <Link
+                  to='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
-                </a>
+                </Link>
               </div>
               <div className='vendor-card__list mt-22 flex-center flex-wrap gap-8'>
                 <div className='vendor-card__item bg-white rounded-circle flex-center'>
@@ -219,11 +204,7 @@ const VendorsList = () => {
               </div>
             </div>
           </div>
-          <div
-            className='col-xxl-3 col-lg-4 col-sm-6'
-            data-aos='zoom-in'
-            data-aos-duration={200}
-          >
+          <div className='col-xxl-3 col-lg-4 col-sm-6'>
             <div className='vendor-card text-center px-16 pb-24'>
               <div className=''>
                 <img
@@ -232,19 +213,19 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <a href='vendor-details.html' className=''>
+                  <Link to='/vendor-details' className=''>
                     Lucky Supermarket
-                  </a>
+                  </Link>
                 </h6>
                 <span className='text-heading text-sm d-block'>
                   Delivery by 6:15am
                 </span>
-                <a
-                  href='shop.html'
+                <Link
+                  to='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
-                </a>
+                </Link>
               </div>
               <div className='vendor-card__list mt-22 flex-center flex-wrap gap-8'>
                 <div className='vendor-card__item bg-white rounded-circle flex-center'>
@@ -265,11 +246,7 @@ const VendorsList = () => {
               </div>
             </div>
           </div>
-          <div
-            className='col-xxl-3 col-lg-4 col-sm-6'
-            data-aos='zoom-in'
-            data-aos-duration={400}
-          >
+          <div className='col-xxl-3 col-lg-4 col-sm-6' >
             <div className='vendor-card text-center px-16 pb-24'>
               <div className=''>
                 <img
@@ -278,19 +255,19 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <a href='vendor-details.html' className=''>
+                  <Link to='/vendor-details' className=''>
                     Arico Farmer
-                  </a>
+                  </Link>
                 </h6>
                 <span className='text-heading text-sm d-block'>
                   Delivery by 6:15am
                 </span>
-                <a
-                  href='shop.html'
+                <Link
+                  to='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
-                </a>
+                </Link>
               </div>
               <div className='vendor-card__list mt-22 flex-center flex-wrap gap-8'>
                 <div className='vendor-card__item bg-white rounded-circle flex-center'>
@@ -311,11 +288,7 @@ const VendorsList = () => {
               </div>
             </div>
           </div>
-          <div
-            className='col-xxl-3 col-lg-4 col-sm-6'
-            data-aos='zoom-in'
-            data-aos-duration={600}
-          >
+          <div className='col-xxl-3 col-lg-4 col-sm-6' >
             <div className='vendor-card text-center px-16 pb-24'>
               <div className=''>
                 <img
@@ -324,19 +297,19 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <a href='vendor-details.html' className=''>
+                  <Link to='/vendor-details' className=''>
                     Farmer Market
-                  </a>
+                  </Link>
                 </h6>
                 <span className='text-heading text-sm d-block'>
                   Delivery by 6:15am
                 </span>
-                <a
-                  href='shop.html'
+                <Link
+                  to='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
-                </a>
+                </Link>
               </div>
               <div className='vendor-card__list mt-22 flex-center flex-wrap gap-8'>
                 <div className='vendor-card__item bg-white rounded-circle flex-center'>
@@ -357,11 +330,7 @@ const VendorsList = () => {
               </div>
             </div>
           </div>
-          <div
-            className='col-xxl-3 col-lg-4 col-sm-6'
-            data-aos='zoom-in'
-            data-aos-duration={800}
-          >
+          <div className='col-xxl-3 col-lg-4 col-sm-6' >
             <div className='vendor-card text-center px-16 pb-24'>
               <div className=''>
                 <img
@@ -370,19 +339,19 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <a href='vendor-details.html' className=''>
+                  <Link to='/vendor-details' className=''>
                     Foodsco
-                  </a>
+                  </Link>
                 </h6>
                 <span className='text-heading text-sm d-block'>
                   Delivery by 6:15am
                 </span>
-                <a
-                  href='shop.html'
+                <Link
+                  to='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
-                </a>
+                </Link>
               </div>
               <div className='vendor-card__list mt-22 flex-center flex-wrap gap-8'>
                 <div className='vendor-card__item bg-white rounded-circle flex-center'>
@@ -403,11 +372,7 @@ const VendorsList = () => {
               </div>
             </div>
           </div>
-          <div
-            className='col-xxl-3 col-lg-4 col-sm-6'
-            data-aos='zoom-in'
-            data-aos-duration={200}
-          >
+          <div className='col-xxl-3 col-lg-4 col-sm-6'>
             <div className='vendor-card text-center px-16 pb-24'>
               <div className=''>
                 <img
@@ -416,19 +381,19 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <a href='vendor-details.html' className=''>
+                  <Link to='/vendor-details' className=''>
                     Organic Market
-                  </a>
+                  </Link>
                 </h6>
                 <span className='text-heading text-sm d-block'>
                   Delivery by 6:15am
                 </span>
-                <a
-                  href='shop.html'
+                <Link
+                  to='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
-                </a>
+                </Link>
               </div>
               <div className='vendor-card__list mt-22 flex-center flex-wrap gap-8'>
                 <div className='vendor-card__item bg-white rounded-circle flex-center'>
@@ -449,11 +414,7 @@ const VendorsList = () => {
               </div>
             </div>
           </div>
-          <div
-            className='col-xxl-3 col-lg-4 col-sm-6'
-            data-aos='zoom-in'
-            data-aos-duration={400}
-          >
+          <div className='col-xxl-3 col-lg-4 col-sm-6' >
             <div className='vendor-card text-center px-16 pb-24'>
               <div className=''>
                 <img
@@ -462,19 +423,19 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <a href='vendor-details.html' className=''>
+                  <Link to='/vendor-details' className=''>
                     Safeway
-                  </a>
+                  </Link>
                 </h6>
                 <span className='text-heading text-sm d-block'>
                   Delivery by 6:15am
                 </span>
-                <a
-                  href='shop.html'
+                <Link
+                  to='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
-                </a>
+                </Link>
               </div>
               <div className='vendor-card__list mt-22 flex-center flex-wrap gap-8'>
                 <div className='vendor-card__item bg-white rounded-circle flex-center'>
@@ -495,11 +456,7 @@ const VendorsList = () => {
               </div>
             </div>
           </div>
-          <div
-            className='col-xxl-3 col-lg-4 col-sm-6'
-            data-aos='zoom-in'
-            data-aos-duration={600}
-          >
+          <div className='col-xxl-3 col-lg-4 col-sm-6' >
             <div className='vendor-card text-center px-16 pb-24'>
               <div className=''>
                 <img
@@ -508,19 +465,19 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <a href='vendor-details.html' className=''>
+                  <Link to='/vendor-details' className=''>
                     Food Max
-                  </a>
+                  </Link>
                 </h6>
                 <span className='text-heading text-sm d-block'>
                   Delivery by 6:15am
                 </span>
-                <a
-                  href='shop.html'
+                <Link
+                  to='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
-                </a>
+                </Link>
               </div>
               <div className='vendor-card__list mt-22 flex-center flex-wrap gap-8'>
                 <div className='vendor-card__item bg-white rounded-circle flex-center'>
@@ -541,11 +498,7 @@ const VendorsList = () => {
               </div>
             </div>
           </div>
-          <div
-            className='col-xxl-3 col-lg-4 col-sm-6'
-            data-aos='zoom-in'
-            data-aos-duration={800}
-          >
+          <div className='col-xxl-3 col-lg-4 col-sm-6' >
             <div className='vendor-card text-center px-16 pb-24'>
               <div className=''>
                 <img
@@ -554,19 +507,19 @@ const VendorsList = () => {
                   className='vendor-card__logo m-12'
                 />
                 <h6 className='title mt-32'>
-                  <a href='vendor-details.html' className=''>
+                  <Link to='/vendor-details' className=''>
                     HRmart
-                  </a>
+                  </Link>
                 </h6>
                 <span className='text-heading text-sm d-block'>
                   Delivery by 6:15am
                 </span>
-                <a
-                  href='shop.html'
+                <Link
+                  to='/shop'
                   className='bg-white text-neutral-600 hover-bg-main-600 hover-text-white rounded-pill py-6 px-16 text-12 mt-8'
                 >
                   $5 off Snack &amp; Candy
-                </a>
+                </Link>
               </div>
               <div className='vendor-card__list mt-22 flex-center flex-wrap gap-8'>
                 <div className='vendor-card__item bg-white rounded-circle flex-center'>
@@ -590,76 +543,76 @@ const VendorsList = () => {
         </div>
         <ul className='pagination flex-center flex-wrap gap-16'>
           <li className='page-item'>
-            <a
+            <Link
               className='page-link h-64 w-64 flex-center text-xxl rounded-circle fw-medium text-neutral-600 border border-gray-100'
-              href='#'
+              to='#'
             >
               <i className='ph-bold ph-arrow-left' />
-            </a>
+            </Link>
           </li>
           <li className='page-item active'>
-            <a
+            <Link
               className='page-link h-64 w-64 flex-center text-md rounded-circle fw-medium text-neutral-600 border border-gray-100'
-              href='#'
+              to='#'
             >
               01
-            </a>
+            </Link>
           </li>
           <li className='page-item'>
-            <a
+            <Link
               className='page-link h-64 w-64 flex-center text-md rounded-circle fw-medium text-neutral-600 border border-gray-100'
-              href='#'
+              to='#'
             >
               02
-            </a>
+            </Link>
           </li>
           <li className='page-item'>
-            <a
+            <Link
               className='page-link h-64 w-64 flex-center text-md rounded-circle fw-medium text-neutral-600 border border-gray-100'
-              href='#'
+              to='#'
             >
               03
-            </a>
+            </Link>
           </li>
           <li className='page-item'>
-            <a
+            <Link
               className='page-link h-64 w-64 flex-center text-md rounded-circle fw-medium text-neutral-600 border border-gray-100'
-              href='#'
+              to='#'
             >
               04
-            </a>
+            </Link>
           </li>
           <li className='page-item'>
-            <a
+            <Link
               className='page-link h-64 w-64 flex-center text-md rounded-circle fw-medium text-neutral-600 border border-gray-100'
-              href='#'
+              to='#'
             >
               05
-            </a>
+            </Link>
           </li>
           <li className='page-item'>
-            <a
+            <Link
               className='page-link h-64 w-64 flex-center text-md rounded-circle fw-medium text-neutral-600 border border-gray-100'
-              href='#'
+              to='#'
             >
               06
-            </a>
+            </Link>
           </li>
           <li className='page-item'>
-            <a
+            <Link
               className='page-link h-64 w-64 flex-center text-md rounded-circle fw-medium text-neutral-600 border border-gray-100'
-              href='#'
+              to='#'
             >
               07
-            </a>
+            </Link>
           </li>
           <li className='page-item'>
-            <a
+            <Link
               className='page-link h-64 w-64 flex-center text-xxl rounded-circle fw-medium text-neutral-600 border border-gray-100'
-              href='#'
+              to='#'
             >
               <i className='ph-bold ph-arrow-right' />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

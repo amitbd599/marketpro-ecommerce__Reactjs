@@ -13,8 +13,6 @@ import BlogPage from "./pages/BlogPage";
 import BlogDetailsPage from "./pages/BlogDetailsPage";
 import ContactPage from "./pages/ContactPage";
 import PhosphorIconInit from "./helper/PhosphorIconInit";
-import { WOW } from "wowjs";
-import { useEffect } from "react";
 import VendorPage from "./pages/VendorPage";
 import VendorDetailsPage from "./pages/VendorDetailsPage";
 import VendorTwoPage from "./pages/VendorTwoPage";
@@ -22,10 +20,6 @@ import VendorTwoDetailsPage from "./pages/VendorTwoDetailsPage";
 import BecomeSellerPage from "./pages/BecomeSellerPage";
 import WishlistPage from "./pages/WishlistPage";
 function App() {
-  useEffect(() => {
-    const wow = new WOW({ live: false });
-    wow.init();
-  }, []);
   return (
     <BrowserRouter>
       <RouteScrollToTop />

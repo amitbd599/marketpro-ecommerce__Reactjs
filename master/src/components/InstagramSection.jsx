@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 const InstagramSection = () => {
@@ -79,12 +80,12 @@ const InstagramSection = () => {
               </p>
             </div>
             <div className='flex-align gap-16'>
-              <a
-                href='shop.html'
+              <Link
+                to='/shop'
                 className='text-sm fw-semibold text-gray-700 hover-text-main-600 hover-text-decoration-underline'
               >
                 View All
-              </a>
+              </Link>
               <div className='flex-align gap-8'></div>
             </div>
           </div>
@@ -94,56 +95,56 @@ const InstagramSection = () => {
             <div>
               <div className='instagram-item rounded-24 overflow-hidden position-relative'>
                 <img src='assets/images/thumbs/instagram-img1.png' alt='' />
-                <a
-                  href='https://www.instagram.com'
+                <Link
+                  to='https://www.instagram.com'
                   className='w-72 h-72 bg-black bg-opacity-50 text-white text-32 position-absolute top-50 start-50 translate-middle flex-center rounded-circle hover-bg-main-two-600 hover-text-white'
                 >
                   <i className='ph ph-instagram-logo' />
-                </a>
+                </Link>
               </div>
             </div>
             <div>
               <div className='instagram-item rounded-24 overflow-hidden position-relative'>
                 <img src='assets/images/thumbs/instagram-img2.png' alt='' />
-                <a
-                  href='https://www.instagram.com'
+                <Link
+                  to='https://www.instagram.com'
                   className='w-72 h-72 bg-black bg-opacity-50 text-white text-32 position-absolute top-50 start-50 translate-middle flex-center rounded-circle hover-bg-main-two-600 hover-text-white'
                 >
                   <i className='ph ph-instagram-logo' />
-                </a>
+                </Link>
               </div>
             </div>
             <div>
               <div className='instagram-item rounded-24 overflow-hidden position-relative'>
                 <img src='assets/images/thumbs/instagram-img3.png' alt='' />
-                <a
-                  href='https://www.instagram.com'
+                <Link
+                  to='https://www.instagram.com'
                   className='w-72 h-72 bg-black bg-opacity-50 text-white text-32 position-absolute top-50 start-50 translate-middle flex-center rounded-circle hover-bg-main-two-600 hover-text-white'
                 >
                   <i className='ph ph-instagram-logo' />
-                </a>
+                </Link>
               </div>
             </div>
             <div>
               <div className='instagram-item rounded-24 overflow-hidden position-relative'>
                 <img src='assets/images/thumbs/instagram-img4.png' alt='' />
-                <a
-                  href='https://www.instagram.com'
+                <Link
+                  to='https://www.instagram.com'
                   className='w-72 h-72 bg-black bg-opacity-50 text-white text-32 position-absolute top-50 start-50 translate-middle flex-center rounded-circle hover-bg-main-two-600 hover-text-white'
                 >
                   <i className='ph ph-instagram-logo' />
-                </a>
+                </Link>
               </div>
             </div>
             <div>
               <div className='instagram-item rounded-24 overflow-hidden position-relative'>
                 <img src='assets/images/thumbs/instagram-img2.png' alt='' />
-                <a
-                  href='https://www.instagram.com'
+                <Link
+                  to='https://www.instagram.com'
                   className='w-72 h-72 bg-black bg-opacity-50 text-white text-32 position-absolute top-50 start-50 translate-middle flex-center rounded-circle hover-bg-main-two-600 hover-text-white'
                 >
                   <i className='ph ph-instagram-logo' />
-                </a>
+                </Link>
               </div>
             </div>
           </Slider>

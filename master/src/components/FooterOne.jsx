@@ -163,7 +163,7 @@ const FooterOne = () => {
                                 </Link>
                             </li>
                             <li className="">
-                                <Link to="/shop" className="text-gray-600 hover-text-main-600">
+                                <Link to="/wishlist" className="text-gray-600 hover-text-main-600">
                                     Wishlist
                                 </Link>
                             </li>

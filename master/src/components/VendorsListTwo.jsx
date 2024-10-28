@@ -1,9 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import ReactSlider from "react-slider";
 
 const VendorsListTwo = () => {
-  let [grid, setGrid] = useState(false);
-
   let [active, setActive] = useState(false);
   let sidebarController = () => {
     setActive(!active);
@@ -42,44 +41,44 @@ const VendorsListTwo = () => {
                   </p>
                   <ul className='flex-center gap-8 flex-wrap'>
                     <li>
-                      <a
-                        href='https://www.facebook.com'
+                      <Link
+                        to='https://www.facebook.com'
                         className='w-36 h-36 flex-center bg-white text-main-600 text-lg rounded-circle hover-bg-main-600 hover-text-white'
                       >
                         <i className='ph-fill ph-facebook-logo' />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href='https://www.twitter.com'
+                      <Link
+                        to='https://www.twitter.com'
                         className='w-36 h-36 flex-center bg-white text-main-600 text-lg rounded-circle hover-bg-main-600 hover-text-white'
                       >
                         <i className='ph-fill ph-twitter-logo' />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href='https://www.linkedin.com'
+                      <Link
+                        to='https://www.linkedin.com'
                         className='w-36 h-36 flex-center bg-white text-main-600 text-lg rounded-circle hover-bg-main-600 hover-text-white'
                       >
                         <i className='ph-fill ph-instagram-logo' />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href='https://www.pinterest.com'
+                      <Link
+                        to='https://www.pinterest.com'
                         className='w-36 h-36 flex-center bg-white text-main-600 text-lg rounded-circle hover-bg-main-600 hover-text-white'
                       >
                         <i className='ph-fill ph-linkedin-logo' />
-                      </a>
+                      </Link>
                     </li>
                   </ul>
-                  <a
-                    href='contact.html'
+                  <Link
+                    to='/contact'
                     className='btn btn-main rounded-pill py-16 px-32 mt-28 w-100'
                   >
                     Contact Seller
-                  </a>
+                  </Link>
                 </div>
                 <div className='border border-gray-50 rounded-8 p-24'>
                   <h6 className='text-xl border-bottom border-gray-100 pb-24 mb-24'>
@@ -87,108 +86,108 @@ const VendorsListTwo = () => {
                   </h6>
                   <ul className='max-h-326 overflow-y-auto scroll-sm'>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Mobile &amp; Accessories (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Laptop (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Electronics (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Smart Watch (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Storage (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Portable Devices (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Action Camera (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Smart Gadget (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Monitor (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Smart TV (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Camera (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-24'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Monitor Stand (12)
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-0'>
-                      <a
-                        href='product-details-two.html'
+                      <Link
+                        to='/product-details-two'
                         className='text-gray-900 hover-text-main-600'
                       >
                         Headphone (12)
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -440,7 +439,7 @@ const VendorsListTwo = () => {
                 </span>
                 <div className='flex-align gap-8'>
                   <span className='text-gray-900 flex-shrink-0'>Sort by:</span>
-                  <select className='common-input form-select rounded-pill border border-gray-100 d-inline-block ps-20 pe-36 h-48 py-0 fw-medium'>
+                  <select className='common-input form-select rounded-pill border border-gray-100 d-inline-block ps-20 pe-36 h-48 py-0 fw-medium' defaultValue={1}>
                     <option value={1}>Latest</option>
                     <option value={1}>Old</option>
                   </select>
@@ -457,22 +456,19 @@ const VendorsListTwo = () => {
             {/* Top Search End */}
             {/* Products Start */}
             <div className='row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-12'>
-              <div className='col' data-aos='fade-up' data-aos-duration={200}>
+              <div className='col'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
-                  <a
-                    href='product-details.html'
+                  <Link
+                    to='/product-details'
                     className='product-card__thumb flex-center'
                   >
                     <img src='assets/images/thumbs/product-img7.png' alt='' />
-                  </a>
+                  </Link>
                   <div className='product-card__content p-sm-2 w-100'>
                     <h6 className='title text-lg fw-semibold mt-12 mb-8'>
-                      <a
-                        href='product-details.html'
-                        className='link text-line-2'
-                      >
+                      <Link to='/product-details' className='link text-line-2'>
                         C-500 Antioxidant Protect Dietary Supplement
-                      </a>
+                      </Link>
                     </h6>
                     <div className='flex-align gap-4'>
                       <span className='text-main-600 text-md d-flex'>
@@ -503,35 +499,32 @@ const VendorsListTwo = () => {
                           (17k)
                         </span>
                       </div>
-                      <a
-                        href='cart.html'
+                      <Link
+                        to='/cart'
                         className='product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center'
                       >
                         Add To Cart <i className='ph ph-shopping-cart' />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='col' data-aos='fade-up' data-aos-duration={400}>
+              <div className='col'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <span className='product-card__badge bg-danger-600 px-8 py-4 text-sm text-white'>
                     Sale 50%
                   </span>
-                  <a
-                    href='product-details.html'
+                  <Link
+                    to='/product-details'
                     className='product-card__thumb flex-center'
                   >
                     <img src='assets/images/thumbs/product-img8.png' alt='' />
-                  </a>
+                  </Link>
                   <div className='product-card__content p-sm-2 w-100'>
                     <h6 className='title text-lg fw-semibold mt-12 mb-8'>
-                      <a
-                        href='product-details.html'
-                        className='link text-line-2'
-                      >
+                      <Link to='/product-details' className='link text-line-2'>
                         Marcel's Modern Pantry Almond Unsweetened
-                      </a>
+                      </Link>
                     </h6>
                     <div className='flex-align gap-4'>
                       <span className='text-main-600 text-md d-flex'>
@@ -562,35 +555,32 @@ const VendorsListTwo = () => {
                           (17k)
                         </span>
                       </div>
-                      <a
-                        href='cart.html'
+                      <Link
+                        to='/cart'
                         className='product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center'
                       >
                         Add To Cart <i className='ph ph-shopping-cart' />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='col' data-aos='fade-up' data-aos-duration={600}>
+              <div className='col'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <span className='product-card__badge bg-danger-600 px-8 py-4 text-sm text-white'>
                     Sale 50%
                   </span>
-                  <a
-                    href='product-details.html'
+                  <Link
+                    to='/product-details'
                     className='product-card__thumb flex-center'
                   >
                     <img src='assets/images/thumbs/product-img9.png' alt='' />
-                  </a>
+                  </Link>
                   <div className='product-card__content p-sm-2 w-100'>
                     <h6 className='title text-lg fw-semibold mt-12 mb-8'>
-                      <a
-                        href='product-details.html'
-                        className='link text-line-2'
-                      >
+                      <Link to='/product-details' className='link text-line-2'>
                         O Organics Milk, Whole, Vitamin D
-                      </a>
+                      </Link>
                     </h6>
                     <div className='flex-align gap-4'>
                       <span className='text-main-600 text-md d-flex'>
@@ -621,35 +611,32 @@ const VendorsListTwo = () => {
                           (17k)
                         </span>
                       </div>
-                      <a
-                        href='cart.html'
+                      <Link
+                        to='/cart'
                         className='product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center'
                       >
                         Add To Cart <i className='ph ph-shopping-cart' />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='col' data-aos='fade-up' data-aos-duration={800}>
+              <div className='col'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <span className='product-card__badge bg-info-600 px-8 py-4 text-sm text-white'>
                     Best Sale
                   </span>
-                  <a
-                    href='product-details.html'
+                  <Link
+                    to='/product-details'
                     className='product-card__thumb flex-center'
                   >
                     <img src='assets/images/thumbs/product-img10.png' alt='' />
-                  </a>
+                  </Link>
                   <div className='product-card__content p-sm-2 w-100'>
                     <h6 className='title text-lg fw-semibold mt-12 mb-8'>
-                      <a
-                        href='product-details.html'
-                        className='link text-line-2'
-                      >
+                      <Link to='/product-details' className='link text-line-2'>
                         Whole Grains and Seeds Organic Bread
-                      </a>
+                      </Link>
                     </h6>
                     <div className='flex-align gap-4'>
                       <span className='text-main-600 text-md d-flex'>
@@ -680,32 +667,29 @@ const VendorsListTwo = () => {
                           (17k)
                         </span>
                       </div>
-                      <a
-                        href='cart.html'
+                      <Link
+                        to='/cart'
                         className='product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center'
                       >
                         Add To Cart <i className='ph ph-shopping-cart' />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='col' data-aos='fade-up' data-aos-duration={1000}>
+              <div className='col'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
-                  <a
-                    href='product-details.html'
+                  <Link
+                    to='/product-details'
                     className='product-card__thumb flex-center'
                   >
                     <img src='assets/images/thumbs/product-img11.png' alt='' />
-                  </a>
+                  </Link>
                   <div className='product-card__content p-sm-2 w-100'>
                     <h6 className='title text-lg fw-semibold mt-12 mb-8'>
-                      <a
-                        href='product-details.html'
-                        className='link text-line-2'
-                      >
+                      <Link to='/product-details' className='link text-line-2'>
                         Lucerne Yogurt, Lowfat, Strawberry
-                      </a>
+                      </Link>
                     </h6>
                     <div className='flex-align gap-4'>
                       <span className='text-main-600 text-md d-flex'>
@@ -736,32 +720,29 @@ const VendorsListTwo = () => {
                           (17k)
                         </span>
                       </div>
-                      <a
-                        href='cart.html'
+                      <Link
+                        to='/cart'
                         className='product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center'
                       >
                         Add To Cart <i className='ph ph-shopping-cart' />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='col' data-aos='fade-up' data-aos-duration={200}>
+              <div className='col'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
-                  <a
-                    href='product-details.html'
+                  <Link
+                    to='/product-details'
                     className='product-card__thumb flex-center'
                   >
                     <img src='assets/images/thumbs/product-img13.png' alt='' />
-                  </a>
+                  </Link>
                   <div className='product-card__content p-sm-2 w-100'>
                     <h6 className='title text-lg fw-semibold mt-12 mb-8'>
-                      <a
-                        href='product-details.html'
-                        className='link text-line-2'
-                      >
+                      <Link to='/product-details' className='link text-line-2'>
                         C-500 Antioxidant Protect Dietary Supplement
-                      </a>
+                      </Link>
                     </h6>
                     <div className='flex-align gap-4'>
                       <span className='text-main-600 text-md d-flex'>
@@ -792,35 +773,32 @@ const VendorsListTwo = () => {
                           (17k)
                         </span>
                       </div>
-                      <a
-                        href='cart.html'
+                      <Link
+                        to='/cart'
                         className='product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center'
                       >
                         Add To Cart <i className='ph ph-shopping-cart' />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='col' data-aos='fade-up' data-aos-duration={400}>
+              <div className='col'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <span className='product-card__badge bg-danger-600 px-8 py-4 text-sm text-white'>
                     Sale 50%
                   </span>
-                  <a
-                    href='product-details.html'
+                  <Link
+                    to='/product-details'
                     className='product-card__thumb flex-center'
                   >
                     <img src='assets/images/thumbs/product-img14.png' alt='' />
-                  </a>
+                  </Link>
                   <div className='product-card__content p-sm-2 w-100'>
                     <h6 className='title text-lg fw-semibold mt-12 mb-8'>
-                      <a
-                        href='product-details.html'
-                        className='link text-line-2'
-                      >
+                      <Link to='/product-details' className='link text-line-2'>
                         C-500 Antioxidant Protect Dietary Supplement
-                      </a>
+                      </Link>
                     </h6>
                     <div className='flex-align gap-4'>
                       <span className='text-main-600 text-md d-flex'>
@@ -851,35 +829,32 @@ const VendorsListTwo = () => {
                           (17k)
                         </span>
                       </div>
-                      <a
-                        href='cart.html'
+                      <Link
+                        to='/cart'
                         className='product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center'
                       >
                         Add To Cart <i className='ph ph-shopping-cart' />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='col' data-aos='fade-up' data-aos-duration={600}>
+              <div className='col'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <span className='product-card__badge bg-warning-600 px-8 py-4 text-sm text-white'>
                     New
                   </span>
-                  <a
-                    href='product-details.html'
+                  <Link
+                    to='/product-details'
                     className='product-card__thumb flex-center'
                   >
                     <img src='assets/images/thumbs/product-img15.png' alt='' />
-                  </a>
+                  </Link>
                   <div className='product-card__content p-sm-2 w-100'>
                     <h6 className='title text-lg fw-semibold mt-12 mb-8'>
-                      <a
-                        href='product-details.html'
-                        className='link text-line-2'
-                      >
+                      <Link to='/product-details' className='link text-line-2'>
                         C-500 Antioxidant Protect Dietary Supplement
-                      </a>
+                      </Link>
                     </h6>
                     <div className='flex-align gap-4'>
                       <span className='text-main-600 text-md d-flex'>
@@ -910,35 +885,32 @@ const VendorsListTwo = () => {
                           (17k)
                         </span>
                       </div>
-                      <a
-                        href='cart.html'
+                      <Link
+                        to='/cart'
                         className='product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center'
                       >
                         Add To Cart <i className='ph ph-shopping-cart' />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='col' data-aos='fade-up' data-aos-duration={800}>
+              <div className='col'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <span className='product-card__badge bg-danger-600 px-8 py-4 text-sm text-white'>
                     Sale 50%
                   </span>
-                  <a
-                    href='product-details.html'
+                  <Link
+                    to='/product-details'
                     className='product-card__thumb flex-center'
                   >
                     <img src='assets/images/thumbs/product-img16.png' alt='' />
-                  </a>
+                  </Link>
                   <div className='product-card__content p-sm-2 w-100'>
                     <h6 className='title text-lg fw-semibold mt-12 mb-8'>
-                      <a
-                        href='product-details.html'
-                        className='link text-line-2'
-                      >
+                      <Link to='/product-details' className='link text-line-2'>
                         Good &amp; Gather Farmed Atlantic Salmon
-                      </a>
+                      </Link>
                     </h6>
                     <div className='flex-align gap-4'>
                       <span className='text-main-600 text-md d-flex'>
@@ -969,35 +941,32 @@ const VendorsListTwo = () => {
                           (17k)
                         </span>
                       </div>
-                      <a
-                        href='cart.html'
+                      <Link
+                        to='/cart'
                         className='product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center'
                       >
                         Add To Cart <i className='ph ph-shopping-cart' />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='col' data-aos='fade-up' data-aos-duration={1000}>
+              <div className='col'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <span className='product-card__badge bg-danger-600 px-8 py-4 text-sm text-white'>
                     Sale 50%
                   </span>
-                  <a
-                    href='product-details.html'
+                  <Link
+                    to='/product-details'
                     className='product-card__thumb flex-center'
                   >
                     <img src='assets/images/thumbs/product-img17.png' alt='' />
-                  </a>
+                  </Link>
                   <div className='product-card__content p-sm-2 w-100'>
                     <h6 className='title text-lg fw-semibold mt-12 mb-8'>
-                      <a
-                        href='product-details.html'
-                        className='link text-line-2'
-                      >
+                      <Link to='/product-details' className='link text-line-2'>
                         Market Pantry 41/50 Raw Tail-Off Large Raw Shrimp
-                      </a>
+                      </Link>
                     </h6>
                     <div className='flex-align gap-4'>
                       <span className='text-main-600 text-md d-flex'>
@@ -1028,32 +997,29 @@ const VendorsListTwo = () => {
                           (17k)
                         </span>
                       </div>
-                      <a
-                        href='cart.html'
+                      <Link
+                        to='/cart'
                         className='product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center'
                       >
                         Add To Cart <i className='ph ph-shopping-cart' />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='col' data-aos='fade-up' data-aos-duration={200}>
+              <div className='col'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
-                  <a
-                    href='product-details.html'
+                  <Link
+                    to='/product-details'
                     className='product-card__thumb flex-center'
                   >
                     <img src='assets/images/thumbs/product-img7.png' alt='' />
-                  </a>
+                  </Link>
                   <div className='product-card__content p-sm-2 w-100'>
                     <h6 className='title text-lg fw-semibold mt-12 mb-8'>
-                      <a
-                        href='product-details.html'
-                        className='link text-line-2'
-                      >
+                      <Link to='/product-details' className='link text-line-2'>
                         C-500 Antioxidant Protect Dietary Supplement
-                      </a>
+                      </Link>
                     </h6>
                     <div className='flex-align gap-4'>
                       <span className='text-main-600 text-md d-flex'>
@@ -1084,35 +1050,32 @@ const VendorsListTwo = () => {
                           (17k)
                         </span>
                       </div>
-                      <a
-                        href='cart.html'
+                      <Link
+                        to='/cart'
                         className='product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center'
                       >
                         Add To Cart <i className='ph ph-shopping-cart' />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='col' data-aos='fade-up' data-aos-duration={400}>
+              <div className='col'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <span className='product-card__badge bg-danger-600 px-8 py-4 text-sm text-white'>
                     Sale 50%
                   </span>
-                  <a
-                    href='product-details.html'
+                  <Link
+                    to='/product-details'
                     className='product-card__thumb flex-center'
                   >
                     <img src='assets/images/thumbs/product-img8.png' alt='' />
-                  </a>
+                  </Link>
                   <div className='product-card__content p-sm-2 w-100'>
                     <h6 className='title text-lg fw-semibold mt-12 mb-8'>
-                      <a
-                        href='product-details.html'
-                        className='link text-line-2'
-                      >
+                      <Link to='/product-details' className='link text-line-2'>
                         Marcel's Modern Pantry Almond Unsweetened
-                      </a>
+                      </Link>
                     </h6>
                     <div className='flex-align gap-4'>
                       <span className='text-main-600 text-md d-flex'>
@@ -1143,35 +1106,32 @@ const VendorsListTwo = () => {
                           (17k)
                         </span>
                       </div>
-                      <a
-                        href='cart.html'
+                      <Link
+                        to='/cart'
                         className='product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center'
                       >
                         Add To Cart <i className='ph ph-shopping-cart' />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='col' data-aos='fade-up' data-aos-duration={600}>
+              <div className='col'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <span className='product-card__badge bg-danger-600 px-8 py-4 text-sm text-white'>
                     Sale 50%
                   </span>
-                  <a
-                    href='product-details.html'
+                  <Link
+                    to='/product-details'
                     className='product-card__thumb flex-center'
                   >
                     <img src='assets/images/thumbs/product-img9.png' alt='' />
-                  </a>
+                  </Link>
                   <div className='product-card__content p-sm-2 w-100'>
                     <h6 className='title text-lg fw-semibold mt-12 mb-8'>
-                      <a
-                        href='product-details.html'
-                        className='link text-line-2'
-                      >
+                      <Link to='/product-details' className='link text-line-2'>
                         O Organics Milk, Whole, Vitamin D
-                      </a>
+                      </Link>
                     </h6>
                     <div className='flex-align gap-4'>
                       <span className='text-main-600 text-md d-flex'>
@@ -1202,35 +1162,32 @@ const VendorsListTwo = () => {
                           (17k)
                         </span>
                       </div>
-                      <a
-                        href='cart.html'
+                      <Link
+                        to='/cart'
                         className='product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center'
                       >
                         Add To Cart <i className='ph ph-shopping-cart' />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='col' data-aos='fade-up' data-aos-duration={800}>
+              <div className='col'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <span className='product-card__badge bg-info-600 px-8 py-4 text-sm text-white'>
                     Best Sale
                   </span>
-                  <a
-                    href='product-details.html'
+                  <Link
+                    to='/product-details'
                     className='product-card__thumb flex-center'
                   >
                     <img src='assets/images/thumbs/product-img10.png' alt='' />
-                  </a>
+                  </Link>
                   <div className='product-card__content p-sm-2 w-100'>
                     <h6 className='title text-lg fw-semibold mt-12 mb-8'>
-                      <a
-                        href='product-details.html'
-                        className='link text-line-2'
-                      >
+                      <Link to='/product-details' className='link text-line-2'>
                         Whole Grains and Seeds Organic Bread
-                      </a>
+                      </Link>
                     </h6>
                     <div className='flex-align gap-4'>
                       <span className='text-main-600 text-md d-flex'>
@@ -1261,32 +1218,29 @@ const VendorsListTwo = () => {
                           (17k)
                         </span>
                       </div>
-                      <a
-                        href='cart.html'
+                      <Link
+                        to='/cart'
                         className='product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center'
                       >
                         Add To Cart <i className='ph ph-shopping-cart' />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='col' data-aos='fade-up' data-aos-duration={1000}>
+              <div className='col'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
-                  <a
-                    href='product-details.html'
+                  <Link
+                    to='/product-details'
                     className='product-card__thumb flex-center'
                   >
                     <img src='assets/images/thumbs/product-img11.png' alt='' />
-                  </a>
+                  </Link>
                   <div className='product-card__content p-sm-2 w-100'>
                     <h6 className='title text-lg fw-semibold mt-12 mb-8'>
-                      <a
-                        href='product-details.html'
-                        className='link text-line-2'
-                      >
+                      <Link to='/product-details' className='link text-line-2'>
                         Lucerne Yogurt, Lowfat, Strawberry
-                      </a>
+                      </Link>
                     </h6>
                     <div className='flex-align gap-4'>
                       <span className='text-main-600 text-md d-flex'>
@@ -1317,32 +1271,29 @@ const VendorsListTwo = () => {
                           (17k)
                         </span>
                       </div>
-                      <a
-                        href='cart.html'
+                      <Link
+                        to='/cart'
                         className='product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center'
                       >
                         Add To Cart <i className='ph ph-shopping-cart' />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='col' data-aos='fade-up' data-aos-duration={200}>
+              <div className='col'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
-                  <a
-                    href='product-details.html'
+                  <Link
+                    to='/product-details'
                     className='product-card__thumb flex-center'
                   >
                     <img src='assets/images/thumbs/product-img13.png' alt='' />
-                  </a>
+                  </Link>
                   <div className='product-card__content p-sm-2 w-100'>
                     <h6 className='title text-lg fw-semibold mt-12 mb-8'>
-                      <a
-                        href='product-details.html'
-                        className='link text-line-2'
-                      >
+                      <Link to='/product-details' className='link text-line-2'>
                         C-500 Antioxidant Protect Dietary Supplement
-                      </a>
+                      </Link>
                     </h6>
                     <div className='flex-align gap-4'>
                       <span className='text-main-600 text-md d-flex'>
@@ -1373,35 +1324,32 @@ const VendorsListTwo = () => {
                           (17k)
                         </span>
                       </div>
-                      <a
-                        href='cart.html'
+                      <Link
+                        to='/cart'
                         className='product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center'
                       >
                         Add To Cart <i className='ph ph-shopping-cart' />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='col' data-aos='fade-up' data-aos-duration={400}>
+              <div className='col'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <span className='product-card__badge bg-danger-600 px-8 py-4 text-sm text-white'>
                     Sale 50%
                   </span>
-                  <a
-                    href='product-details.html'
+                  <Link
+                    to='/product-details'
                     className='product-card__thumb flex-center'
                   >
                     <img src='assets/images/thumbs/product-img14.png' alt='' />
-                  </a>
+                  </Link>
                   <div className='product-card__content p-sm-2 w-100'>
                     <h6 className='title text-lg fw-semibold mt-12 mb-8'>
-                      <a
-                        href='product-details.html'
-                        className='link text-line-2'
-                      >
+                      <Link to='/product-details' className='link text-line-2'>
                         C-500 Antioxidant Protect Dietary Supplement
-                      </a>
+                      </Link>
                     </h6>
                     <div className='flex-align gap-4'>
                       <span className='text-main-600 text-md d-flex'>
@@ -1432,35 +1380,32 @@ const VendorsListTwo = () => {
                           (17k)
                         </span>
                       </div>
-                      <a
-                        href='cart.html'
+                      <Link
+                        to='/cart'
                         className='product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center'
                       >
                         Add To Cart <i className='ph ph-shopping-cart' />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='col' data-aos='fade-up' data-aos-duration={600}>
+              <div className='col'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <span className='product-card__badge bg-warning-600 px-8 py-4 text-sm text-white'>
                     New
                   </span>
-                  <a
-                    href='product-details.html'
+                  <Link
+                    to='/product-details'
                     className='product-card__thumb flex-center'
                   >
                     <img src='assets/images/thumbs/product-img15.png' alt='' />
-                  </a>
+                  </Link>
                   <div className='product-card__content p-sm-2 w-100'>
                     <h6 className='title text-lg fw-semibold mt-12 mb-8'>
-                      <a
-                        href='product-details.html'
-                        className='link text-line-2'
-                      >
+                      <Link to='/product-details' className='link text-line-2'>
                         C-500 Antioxidant Protect Dietary Supplement
-                      </a>
+                      </Link>
                     </h6>
                     <div className='flex-align gap-4'>
                       <span className='text-main-600 text-md d-flex'>
@@ -1491,35 +1436,32 @@ const VendorsListTwo = () => {
                           (17k)
                         </span>
                       </div>
-                      <a
-                        href='cart.html'
+                      <Link
+                        to='/cart'
                         className='product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center'
                       >
                         Add To Cart <i className='ph ph-shopping-cart' />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='col' data-aos='fade-up' data-aos-duration={800}>
+              <div className='col'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <span className='product-card__badge bg-danger-600 px-8 py-4 text-sm text-white'>
                     Sale 50%
                   </span>
-                  <a
-                    href='product-details.html'
+                  <Link
+                    to='/product-details'
                     className='product-card__thumb flex-center'
                   >
                     <img src='assets/images/thumbs/product-img16.png' alt='' />
-                  </a>
+                  </Link>
                   <div className='product-card__content p-sm-2 w-100'>
                     <h6 className='title text-lg fw-semibold mt-12 mb-8'>
-                      <a
-                        href='product-details.html'
-                        className='link text-line-2'
-                      >
+                      <Link to='/product-details' className='link text-line-2'>
                         Good &amp; Gather Farmed Atlantic Salmon
-                      </a>
+                      </Link>
                     </h6>
                     <div className='flex-align gap-4'>
                       <span className='text-main-600 text-md d-flex'>
@@ -1550,35 +1492,32 @@ const VendorsListTwo = () => {
                           (17k)
                         </span>
                       </div>
-                      <a
-                        href='cart.html'
+                      <Link
+                        to='/cart'
                         className='product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center'
                       >
                         Add To Cart <i className='ph ph-shopping-cart' />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='col' data-aos='fade-up' data-aos-duration={1000}>
+              <div className='col'>
                 <div className='product-card h-100 p-8 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                   <span className='product-card__badge bg-danger-600 px-8 py-4 text-sm text-white'>
                     Sale 50%
                   </span>
-                  <a
-                    href='product-details.html'
+                  <Link
+                    to='/product-details'
                     className='product-card__thumb flex-center'
                   >
                     <img src='assets/images/thumbs/product-img17.png' alt='' />
-                  </a>
+                  </Link>
                   <div className='product-card__content p-sm-2 w-100'>
                     <h6 className='title text-lg fw-semibold mt-12 mb-8'>
-                      <a
-                        href='product-details.html'
-                        className='link text-line-2'
-                      >
+                      <Link to='/product-details' className='link text-line-2'>
                         Market Pantry 41/50 Raw Tail-Off Large Raw Shrimp
-                      </a>
+                      </Link>
                     </h6>
                     <div className='flex-align gap-4'>
                       <span className='text-main-600 text-md d-flex'>
@@ -1609,12 +1548,12 @@ const VendorsListTwo = () => {
                           (17k)
                         </span>
                       </div>
-                      <a
-                        href='cart.html'
+                      <Link
+                        to='/cart'
                         className='product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center'
                       >
                         Add To Cart <i className='ph ph-shopping-cart' />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -1624,76 +1563,76 @@ const VendorsListTwo = () => {
             {/* Pagination Start */}
             <ul className='pagination flex-center flex-wrap gap-16'>
               <li className='page-item'>
-                <a
+                <Link
                   className='page-link h-64 w-64 flex-center text-xxl rounded-circle fw-medium text-neutral-600 border border-gray-100'
-                  href='#'
+                  to='#'
                 >
                   <i className='ph-bold ph-arrow-left' />
-                </a>
+                </Link>
               </li>
               <li className='page-item active'>
-                <a
+                <Link
                   className='page-link h-64 w-64 flex-center text-md rounded-circle fw-medium text-neutral-600 border border-gray-100'
-                  href='#'
+                  to='#'
                 >
                   01
-                </a>
+                </Link>
               </li>
               <li className='page-item'>
-                <a
+                <Link
                   className='page-link h-64 w-64 flex-center text-md rounded-circle fw-medium text-neutral-600 border border-gray-100'
-                  href='#'
+                  to='#'
                 >
                   02
-                </a>
+                </Link>
               </li>
               <li className='page-item'>
-                <a
+                <Link
                   className='page-link h-64 w-64 flex-center text-md rounded-circle fw-medium text-neutral-600 border border-gray-100'
-                  href='#'
+                  to='#'
                 >
                   03
-                </a>
+                </Link>
               </li>
               <li className='page-item'>
-                <a
+                <Link
                   className='page-link h-64 w-64 flex-center text-md rounded-circle fw-medium text-neutral-600 border border-gray-100'
-                  href='#'
+                  to='#'
                 >
                   04
-                </a>
+                </Link>
               </li>
               <li className='page-item'>
-                <a
+                <Link
                   className='page-link h-64 w-64 flex-center text-md rounded-circle fw-medium text-neutral-600 border border-gray-100'
-                  href='#'
+                  to='#'
                 >
                   05
-                </a>
+                </Link>
               </li>
               <li className='page-item'>
-                <a
+                <Link
                   className='page-link h-64 w-64 flex-center text-md rounded-circle fw-medium text-neutral-600 border border-gray-100'
-                  href='#'
+                  to='#'
                 >
                   06
-                </a>
+                </Link>
               </li>
               <li className='page-item'>
-                <a
+                <Link
                   className='page-link h-64 w-64 flex-center text-md rounded-circle fw-medium text-neutral-600 border border-gray-100'
-                  href='#'
+                  to='#'
                 >
                   07
-                </a>
+                </Link>
               </li>
               <li className='page-item'>
-                <a
+                <Link
                   className='page-link h-64 w-64 flex-center text-xxl rounded-circle fw-medium text-neutral-600 border border-gray-100'
-                  href='#'
+                  to='#'
                 >
                   <i className='ph-bold ph-arrow-right' />
-                </a>
+                </Link>
               </li>
             </ul>
             {/* Pagination End */}

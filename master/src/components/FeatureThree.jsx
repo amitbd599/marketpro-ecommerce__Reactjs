@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 const FeatureThree = () => {
@@ -95,126 +96,126 @@ const FeatureThree = () => {
             <Slider {...settings}>
               <div className='feature-item text-center'>
                 <div className='feature-item__thumb bg-yellow-light max-w-260 max-h-260 rounded-circle w-100 h-100'>
-                  <a href='shop.html' className='w-100 h-100 flex-center'>
+                  <Link to='/shop' className='w-100 h-100 flex-center'>
                     <img
                       src='assets/images/thumbs/features-three-img1.png'
                       alt=''
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className='feature-item__content mt-20'>
                   <h6 className='text-lg mb-8'>
-                    <a href='shop.html' className='text-inherit'>
+                    <Link to='/shop' className='text-inherit'>
                       Men's Fashion
-                    </a>
+                    </Link>
                   </h6>
                   <span className='text-sm text-gray-900'>180 Items</span>
                 </div>
               </div>
               <div className='feature-item text-center'>
                 <div className='feature-item__thumb bg-danger-light max-w-260 max-h-260 rounded-circle w-100 h-100'>
-                  <a href='shop.html' className='w-100 h-100 flex-center'>
+                  <Link to='/shop' className='w-100 h-100 flex-center'>
                     <img
                       src='assets/images/thumbs/features-three-img2.png'
                       alt=''
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className='feature-item__content mt-20'>
                   <h6 className='text-lg mb-8'>
-                    <a href='shop.html' className='text-inherit'>
+                    <Link to='/shop' className='text-inherit'>
                       Women's Fashion
-                    </a>
+                    </Link>
                   </h6>
                   <span className='text-sm text-gray-900'>220 Items</span>
                 </div>
               </div>
               <div className='feature-item text-center'>
                 <div className='feature-item__thumb bg-purple-light max-w-260 max-h-260 rounded-circle w-100 h-100'>
-                  <a href='shop.html' className='w-100 h-100 flex-center'>
+                  <Link to='/shop' className='w-100 h-100 flex-center'>
                     <img
                       src='assets/images/thumbs/features-three-img3.png'
                       alt=''
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className='feature-item__content mt-20'>
                   <h6 className='text-lg mb-8'>
-                    <a href='shop.html' className='text-inherit'>
+                    <Link to='/shop' className='text-inherit'>
                       Kid’s Fashion
-                    </a>
+                    </Link>
                   </h6>
                   <span className='text-sm text-gray-900'>205 Items</span>
                 </div>
               </div>
               <div className='feature-item text-center'>
                 <div className='feature-item__thumb bg-danger-light max-w-260 max-h-260 rounded-circle w-100 h-100'>
-                  <a href='shop.html' className='w-100 h-100 flex-center'>
+                  <Link to='/shop' className='w-100 h-100 flex-center'>
                     <img
                       src='assets/images/thumbs/features-three-img4.png'
                       alt=''
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className='feature-item__content mt-20'>
                   <h6 className='text-lg mb-8'>
-                    <a href='shop.html' className='text-inherit'>
+                    <Link to='/shop' className='text-inherit'>
                       Fashion Glass
-                    </a>
+                    </Link>
                   </h6>
                   <span className='text-sm text-gray-900'>68 Items</span>
                 </div>
               </div>
               <div className='feature-item text-center'>
                 <div className='feature-item__thumb bg-warning-light max-w-260 max-h-260 rounded-circle w-100 h-100'>
-                  <a href='shop.html' className='w-100 h-100 flex-center'>
+                  <Link to='/shop' className='w-100 h-100 flex-center'>
                     <img
                       src='assets/images/thumbs/features-three-img5.png'
                       alt=''
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className='feature-item__content mt-20'>
                   <h6 className='text-lg mb-8'>
-                    <a href='shop.html' className='text-inherit'>
+                    <Link to='/shop' className='text-inherit'>
                       Shoes Collection
-                    </a>
+                    </Link>
                   </h6>
                   <span className='text-sm text-gray-900'>190 Items</span>
                 </div>
               </div>
               <div className='feature-item text-center'>
                 <div className='feature-item__thumb bg-success-light max-w-260 max-h-260 rounded-circle w-100 h-100'>
-                  <a href='shop.html' className='w-100 h-100 flex-center'>
+                  <Link to='/shop' className='w-100 h-100 flex-center'>
                     <img
                       src='assets/images/thumbs/features-three-img6.png'
                       alt=''
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className='feature-item__content mt-20'>
                   <h6 className='text-lg mb-8'>
-                    <a href='shop.html' className='text-inherit'>
+                    <Link to='/shop' className='text-inherit'>
                       Bag Collection
-                    </a>
+                    </Link>
                   </h6>
                   <span className='text-sm text-gray-900'>128 Items</span>
                 </div>
               </div>
               <div className='feature-item text-center'>
                 <div className='feature-item__thumb max-w-260 max-h-260 rounded-circle w-100 h-100'>
-                  <a href='shop.html' className='w-100 h-100 flex-center'>
+                  <Link to='/shop' className='w-100 h-100 flex-center'>
                     <img
                       src='assets/images/thumbs/features-three-img3.png'
                       alt=''
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className='feature-item__content mt-20'>
                   <h6 className='text-lg mb-8'>
-                    <a href='shop.html' className='text-inherit'>
+                    <Link to='/shop' className='text-inherit'>
                       Men's Fashion
-                    </a>
+                    </Link>
                   </h6>
                   <span className='text-sm text-gray-900'>180 Items</span>
                 </div>

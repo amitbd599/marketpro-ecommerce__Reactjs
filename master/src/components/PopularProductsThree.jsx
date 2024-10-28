@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PopularProductsThree = () => {
   return (
@@ -11,8 +12,8 @@ const PopularProductsThree = () => {
           <div className='col-xxl-3 col-xl-4 col-sm-6'>
             <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
               <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
-                <a
-                  href='product-details-two.html'
+                <Link
+                  to='/product-details-two'
                   className='w-100 h-100 flex-center'
                 >
                   <img
@@ -20,7 +21,7 @@ const PopularProductsThree = () => {
                     alt=''
                     className='w-auto max-w-unset'
                   />
-                </a>
+                </Link>
                 <div className='position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8'>
                   <span className='text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-xs fw-semibold'>
                     -29%
@@ -60,13 +61,13 @@ const PopularProductsThree = () => {
               </div>
               <div className='product-card__content mt-16 w-100'>
                 <h6 className='title text-lg fw-semibold my-16'>
-                  <a
-                    href='product-details-two.html'
+                  <Link
+                    to='/product-details-two'
                     className='link text-line-2'
                     tabIndex={0}
                   >
                     Instax Mini 12 Instant Film Camera - Green
-                  </a>
+                  </Link>
                 </h6>
                 <div className='flex-align gap-6'>
                   <div className='flex-align gap-8'>
@@ -100,21 +101,21 @@ const PopularProductsThree = () => {
                     $14.99 <span className='text-gray-500 fw-normal'>/Qty</span>{" "}
                   </span>
                 </div>
-                <a
-                  href='cart.html'
+                <Link
+                  to='/cart'
                   className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                   tabIndex={0}
                 >
                   Add To Cart <i className='ph ph-shopping-cart' />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
           <div className='col-xxl-3 col-xl-4 col-sm-6'>
             <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
               <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
-                <a
-                  href='product-details-two.html'
+                <Link
+                  to='/product-details-two'
                   className='w-100 h-100 flex-center'
                 >
                   <img
@@ -122,7 +123,7 @@ const PopularProductsThree = () => {
                     alt=''
                     className='w-auto max-w-unset'
                   />
-                </a>
+                </Link>
                 <div className='position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8'>
                   <span className='text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-xs fw-semibold'>
                     -29%
@@ -162,13 +163,13 @@ const PopularProductsThree = () => {
               </div>
               <div className='product-card__content mt-16 w-100'>
                 <h6 className='title text-lg fw-semibold my-16'>
-                  <a
-                    href='product-details-two.html'
+                  <Link
+                    to='/product-details-two'
                     className='link text-line-2'
                     tabIndex={0}
                   >
                     Instax Mini 12 Instant Film Camera - Green
-                  </a>
+                  </Link>
                 </h6>
                 <div className='flex-align gap-6'>
                   <div className='flex-align gap-8'>
@@ -202,21 +203,21 @@ const PopularProductsThree = () => {
                     $14.99 <span className='text-gray-500 fw-normal'>/Qty</span>{" "}
                   </span>
                 </div>
-                <a
-                  href='cart.html'
+                <Link
+                  to='/cart'
                   className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                   tabIndex={0}
                 >
                   Add To Cart <i className='ph ph-shopping-cart' />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
           <div className='col-xxl-3 col-xl-4 col-sm-6'>
             <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
               <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
-                <a
-                  href='product-details-two.html'
+                <Link
+                  to='/product-details-two'
                   className='w-100 h-100 flex-center'
                 >
                   <img
@@ -224,7 +225,7 @@ const PopularProductsThree = () => {
                     alt=''
                     className='w-auto max-w-unset'
                   />
-                </a>
+                </Link>
                 <div className='position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8'>
                   <span className='text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-xs fw-semibold'>
                     -29%
@@ -264,13 +265,13 @@ const PopularProductsThree = () => {
               </div>
               <div className='product-card__content mt-16 w-100'>
                 <h6 className='title text-lg fw-semibold my-16'>
-                  <a
-                    href='product-details-two.html'
+                  <Link
+                    to='/product-details-two'
                     className='link text-line-2'
                     tabIndex={0}
                   >
                     Instax Mini 12 Instant Film Camera - Green
-                  </a>
+                  </Link>
                 </h6>
                 <div className='flex-align gap-6'>
                   <div className='flex-align gap-8'>
@@ -304,21 +305,21 @@ const PopularProductsThree = () => {
                     $14.99 <span className='text-gray-500 fw-normal'>/Qty</span>{" "}
                   </span>
                 </div>
-                <a
-                  href='cart.html'
+                <Link
+                  to='/cart'
                   className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                   tabIndex={0}
                 >
                   Add To Cart <i className='ph ph-shopping-cart' />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
           <div className='col-xxl-3 col-xl-4 col-sm-6'>
             <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
               <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
-                <a
-                  href='product-details-two.html'
+                <Link
+                  to='/product-details-two'
                   className='w-100 h-100 flex-center'
                 >
                   <img
@@ -326,7 +327,7 @@ const PopularProductsThree = () => {
                     alt=''
                     className='w-auto max-w-unset'
                   />
-                </a>
+                </Link>
                 <div className='position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8'>
                   <span className='text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-xs fw-semibold'>
                     -29%
@@ -366,13 +367,13 @@ const PopularProductsThree = () => {
               </div>
               <div className='product-card__content mt-16 w-100'>
                 <h6 className='title text-lg fw-semibold my-16'>
-                  <a
-                    href='product-details-two.html'
+                  <Link
+                    to='/product-details-two'
                     className='link text-line-2'
                     tabIndex={0}
                   >
                     Instax Mini 12 Instant Film Camera - Green
-                  </a>
+                  </Link>
                 </h6>
                 <div className='flex-align gap-6'>
                   <div className='flex-align gap-8'>
@@ -406,21 +407,21 @@ const PopularProductsThree = () => {
                     $14.99 <span className='text-gray-500 fw-normal'>/Qty</span>{" "}
                   </span>
                 </div>
-                <a
-                  href='cart.html'
+                <Link
+                  to='/cart'
                   className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                   tabIndex={0}
                 >
                   Add To Cart <i className='ph ph-shopping-cart' />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
           <div className='col-xxl-3 col-xl-4 col-sm-6'>
             <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
               <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
-                <a
-                  href='product-details-two.html'
+                <Link
+                  to='/product-details-two'
                   className='w-100 h-100 flex-center'
                 >
                   <img
@@ -428,7 +429,7 @@ const PopularProductsThree = () => {
                     alt=''
                     className='w-auto max-w-unset'
                   />
-                </a>
+                </Link>
                 <div className='position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8'>
                   <span className='text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-xs fw-semibold'>
                     -29%
@@ -468,13 +469,13 @@ const PopularProductsThree = () => {
               </div>
               <div className='product-card__content mt-16 w-100'>
                 <h6 className='title text-lg fw-semibold my-16'>
-                  <a
-                    href='product-details-two.html'
+                  <Link
+                    to='/product-details-two'
                     className='link text-line-2'
                     tabIndex={0}
                   >
                     Instax Mini 12 Instant Film Camera - Green
-                  </a>
+                  </Link>
                 </h6>
                 <div className='flex-align gap-6'>
                   <div className='flex-align gap-8'>
@@ -508,21 +509,21 @@ const PopularProductsThree = () => {
                     $14.99 <span className='text-gray-500 fw-normal'>/Qty</span>{" "}
                   </span>
                 </div>
-                <a
-                  href='cart.html'
+                <Link
+                  to='/cart'
                   className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                   tabIndex={0}
                 >
                   Add To Cart <i className='ph ph-shopping-cart' />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
           <div className='col-xxl-3 col-xl-4 col-sm-6'>
             <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
               <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
-                <a
-                  href='product-details-two.html'
+                <Link
+                  to='/product-details-two'
                   className='w-100 h-100 flex-center'
                 >
                   <img
@@ -530,7 +531,7 @@ const PopularProductsThree = () => {
                     alt=''
                     className='w-auto max-w-unset'
                   />
-                </a>
+                </Link>
                 <div className='position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8'>
                   <span className='text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-xs fw-semibold'>
                     -29%
@@ -570,13 +571,13 @@ const PopularProductsThree = () => {
               </div>
               <div className='product-card__content mt-16 w-100'>
                 <h6 className='title text-lg fw-semibold my-16'>
-                  <a
-                    href='product-details-two.html'
+                  <Link
+                    to='/product-details-two'
                     className='link text-line-2'
                     tabIndex={0}
                   >
                     Instax Mini 12 Instant Film Camera - Green
-                  </a>
+                  </Link>
                 </h6>
                 <div className='flex-align gap-6'>
                   <div className='flex-align gap-8'>
@@ -610,21 +611,21 @@ const PopularProductsThree = () => {
                     $14.99 <span className='text-gray-500 fw-normal'>/Qty</span>{" "}
                   </span>
                 </div>
-                <a
-                  href='cart.html'
+                <Link
+                  to='/cart'
                   className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                   tabIndex={0}
                 >
                   Add To Cart <i className='ph ph-shopping-cart' />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
           <div className='col-xxl-3 col-xl-4 col-sm-6'>
             <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
               <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
-                <a
-                  href='product-details-two.html'
+                <Link
+                  to='/product-details-two'
                   className='w-100 h-100 flex-center'
                 >
                   <img
@@ -632,7 +633,7 @@ const PopularProductsThree = () => {
                     alt=''
                     className='w-auto max-w-unset'
                   />
-                </a>
+                </Link>
                 <div className='position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8'>
                   <span className='text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-xs fw-semibold'>
                     -29%
@@ -672,13 +673,13 @@ const PopularProductsThree = () => {
               </div>
               <div className='product-card__content mt-16 w-100'>
                 <h6 className='title text-lg fw-semibold my-16'>
-                  <a
-                    href='product-details-two.html'
+                  <Link
+                    to='/product-details-two'
                     className='link text-line-2'
                     tabIndex={0}
                   >
                     Instax Mini 12 Instant Film Camera - Green
-                  </a>
+                  </Link>
                 </h6>
                 <div className='flex-align gap-6'>
                   <div className='flex-align gap-8'>
@@ -712,21 +713,21 @@ const PopularProductsThree = () => {
                     $14.99 <span className='text-gray-500 fw-normal'>/Qty</span>{" "}
                   </span>
                 </div>
-                <a
-                  href='cart.html'
+                <Link
+                  to='/cart'
                   className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                   tabIndex={0}
                 >
                   Add To Cart <i className='ph ph-shopping-cart' />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
           <div className='col-xxl-3 col-xl-4 col-sm-6'>
             <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
               <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
-                <a
-                  href='product-details-two.html'
+                <Link
+                  to='/product-details-two'
                   className='w-100 h-100 flex-center'
                 >
                   <img
@@ -734,7 +735,7 @@ const PopularProductsThree = () => {
                     alt=''
                     className='w-auto max-w-unset'
                   />
-                </a>
+                </Link>
                 <div className='position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8'>
                   <span className='text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-xs fw-semibold'>
                     -29%
@@ -774,13 +775,13 @@ const PopularProductsThree = () => {
               </div>
               <div className='product-card__content mt-16 w-100'>
                 <h6 className='title text-lg fw-semibold my-16'>
-                  <a
-                    href='product-details-two.html'
+                  <Link
+                    to='/product-details-two'
                     className='link text-line-2'
                     tabIndex={0}
                   >
                     Instax Mini 12 Instant Film Camera - Green
-                  </a>
+                  </Link>
                 </h6>
                 <div className='flex-align gap-6'>
                   <div className='flex-align gap-8'>
@@ -814,13 +815,13 @@ const PopularProductsThree = () => {
                     $14.99 <span className='text-gray-500 fw-normal'>/Qty</span>{" "}
                   </span>
                 </div>
-                <a
-                  href='cart.html'
+                <Link
+                  to='/cart'
                   className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                   tabIndex={0}
                 >
                   Add To Cart <i className='ph ph-shopping-cart' />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

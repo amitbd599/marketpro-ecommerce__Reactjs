@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getCountdown } from "../helper/Countdown";
+import { Link } from "react-router-dom";
 
 const DealsSection = () => {
   const [timeLeft, setTimeLeft] = useState(getCountdown());
@@ -28,8 +29,8 @@ const DealsSection = () => {
                     </span>
                     <div className='products-group__card product-card w-100 p-16 border border-gray-100 hover-border-main-600 max-w-340 rounded-16 transition-2 bg-white position-absolute bottom-100 start-50 min-width-max-content rotate-10 transition-2'>
                       <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
-                        <a
-                          href='product-details-two.html'
+                        <Link
+                          to='/product-details-two'
                           className='w-100 h-100 flex-center'
                         >
                           <img
@@ -37,7 +38,7 @@ const DealsSection = () => {
                             alt=''
                             className='w-auto max-w-unset'
                           />
-                        </a>
+                        </Link>
                         <button
                           type='button'
                           className='z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16  text-neutral-600 text-xl flex-center hover-text-main-two-600 wishlist-btn'
@@ -47,13 +48,13 @@ const DealsSection = () => {
                       </div>
                       <div className='product-card__content mt-16 w-100'>
                         <h6 className='title text-2xl fw-semibold my-8'>
-                          <a
-                            href='product-details-two.html'
+                          <Link
+                            to='/product-details-two'
                             className='link text-line-2'
                             tabIndex={0}
                           >
                             Women's fashion Bag
-                          </a>
+                          </Link>
                         </h6>
                         <div className='product-card__price mt-8 mb-8'>
                           <span className='text-neutral-600 text-lg fw-semibold'>
@@ -83,8 +84,8 @@ const DealsSection = () => {
                     </span>
                     <div className='products-group__card product-card w-100 p-16 border border-gray-100 hover-border-main-600 max-w-340 rounded-16 transition-2 bg-white position-absolute bottom-100 start-50 min-width-max-content rotate-10 transition-2'>
                       <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
-                        <a
-                          href='product-details-two.html'
+                        <Link
+                          to='/product-details-two'
                           className='w-100 h-100 flex-center'
                         >
                           <img
@@ -92,7 +93,7 @@ const DealsSection = () => {
                             alt=''
                             className='w-auto max-w-unset'
                           />
-                        </a>
+                        </Link>
                         <button
                           type='button'
                           className='z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16  text-neutral-600 text-xl flex-center hover-text-main-two-600 wishlist-btn'
@@ -102,13 +103,13 @@ const DealsSection = () => {
                       </div>
                       <div className='product-card__content mt-16 w-100'>
                         <h6 className='title text-2xl fw-semibold my-8'>
-                          <a
-                            href='product-details-two.html'
+                          <Link
+                            to='/product-details-two'
                             className='link text-line-2'
                             tabIndex={0}
                           >
                             Echoes of Elegance Trench Coat
-                          </a>
+                          </Link>
                         </h6>
                         <div className='product-card__price mt-8 mb-8'>
                           <span className='text-neutral-600 text-lg fw-semibold'>
@@ -138,8 +139,8 @@ const DealsSection = () => {
                     </span>
                     <div className='products-group__card product-card w-100 p-16 border border-gray-100 hover-border-main-600 max-w-340 rounded-16 transition-2 bg-white position-absolute bottom-100 start-50 min-width-max-content rotate-10 transition-2'>
                       <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
-                        <a
-                          href='product-details-two.html'
+                        <Link
+                          to='/product-details-two'
                           className='w-100 h-100 flex-center'
                         >
                           <img
@@ -147,7 +148,7 @@ const DealsSection = () => {
                             alt=''
                             className='w-auto max-w-unset'
                           />
-                        </a>
+                        </Link>
                         <button
                           type='button'
                           className='z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16  text-neutral-600 text-xl flex-center hover-text-main-two-600 wishlist-btn'
@@ -157,13 +158,13 @@ const DealsSection = () => {
                       </div>
                       <div className='product-card__content mt-16 w-100'>
                         <h6 className='title text-2xl fw-semibold my-8'>
-                          <a
-                            href='product-details-two.html'
+                          <Link
+                            to='/product-details-two'
                             className='link text-line-2'
                             tabIndex={0}
                           >
                             Ivory Lace Peplum Top
-                          </a>
+                          </Link>
                         </h6>
                         <div className='product-card__price mt-8 mb-8'>
                           <span className='text-neutral-600 text-lg fw-semibold'>
@@ -197,7 +198,7 @@ const DealsSection = () => {
                 </div>
               </div>
             </div>
-            <div className='col-xl-6' data-aos='zoom-in'>
+            <div className='col-xl-6' >
               <div className='p-56-px'>
                 <div className='text-center border border-white rounded-80 rounded-top-right-0 p-56-px'>
                   <div className='p-56-px bg-white rounded-80 rounded-top-right-0'>

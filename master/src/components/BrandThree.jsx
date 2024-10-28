@@ -9,7 +9,7 @@ const BrandThree = () => {
       id='topBrand-next'
       className='slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-two-600 text-xl hover-bg-main-two-600 hover-text-white transition-1'
     >
-      <i class='ph ph-caret-right'></i>
+      <i className='ph ph-caret-right'></i>
     </button>
   );
 
@@ -20,7 +20,7 @@ const BrandThree = () => {
       id='topBrand-prev'
       className='slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-two-600 text-xl hover-bg-main-two-600 hover-text-white transition-1'
     >
-      <i class='ph ph-caret-left'></i>
+      <i className='ph ph-caret-left'></i>
     </button>
   );
   const settings = {

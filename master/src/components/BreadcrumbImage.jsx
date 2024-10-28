@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BreadcrumbImage = () => {
   return (
@@ -24,9 +25,9 @@ const BreadcrumbImage = () => {
             More than half the units sold in our stores from independent
             sellers.
           </p>
-          <a href='account.html' className='btn btn-main-two rounded-8'>
+          <Link to='/account' className='btn btn-main-two rounded-8'>
             Create An Account
-          </a>
+          </Link>
         </div>
       </div>
     </section>

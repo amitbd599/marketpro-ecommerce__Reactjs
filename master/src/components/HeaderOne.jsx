@@ -752,7 +752,7 @@ const HeaderOne = () => {
                     <i className='ph ph-magnifying-glass' />
                   </span>
                 </button>
-                <Link to='/cart' className='flex-align gap-4 item-hover'>
+                <Link to='/wishlist' className='flex-align gap-4 item-hover'>
                   <span className='text-2xl text-gray-700 d-flex position-relative me-6 mt-6 item-hover__text'>
                     <i className='ph ph-heart' />
                     <span className='w-16 h-16 flex-center rounded-circle bg-main-600 text-white text-xs position-absolute top-n6 end-n4'>
@@ -1469,7 +1469,7 @@ const HeaderOne = () => {
                       <i className='ph ph-magnifying-glass' />
                     </span>
                   </button>
-                  <Link to='/cart' className='flex-align gap-4 item-hover'>
+                  <Link to='/wishlist' className='flex-align gap-4 item-hover'>
                     <span className='text-2xl text-gray-700 d-flex position-relative me-6 mt-6 item-hover__text'>
                       <i className='ph ph-heart' />
                       <span className='w-16 h-16 flex-center rounded-circle bg-main-600 text-white text-xs position-absolute top-n6 end-n4'>

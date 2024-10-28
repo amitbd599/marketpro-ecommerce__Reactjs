@@ -646,7 +646,7 @@ const HeaderTwo = ({ category }) => {
                   </span>
                 </Link>
                 <Link
-                  to='/cart'
+                  to='/wishlist'
                   className='flex-align flex-column gap-8 item-hover-two'
                 >
                   <span className='text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text'>
@@ -2178,7 +2178,7 @@ const HeaderTwo = ({ category }) => {
                     </span>
                   </Link>
                   <Link
-                    to='/cart'
+                    to='/wishlist'
                     className='flex-align flex-column gap-8 item-hover-two'
                   >
                     <span className='text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text'>

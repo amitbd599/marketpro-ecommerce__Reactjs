@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PromotionalThree = () => {
   return (
@@ -23,13 +24,13 @@ const PromotionalThree = () => {
                   </span>{" "}
                   Collection
                 </h2>
-                <a
-                  href='shop.html'
+                <Link
+                  to='/shop'
                   className='btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-48'
                   tabIndex={0}
                 >
                   Explore Now
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -50,13 +51,13 @@ const PromotionalThree = () => {
                   </span>{" "}
                   Sale 35% Off
                 </h2>
-                <a
-                  href='shop.html'
+                <Link
+                  to='/shop'
                   className='btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-48'
                   tabIndex={0}
                 >
                   Explore Now
-                </a>
+                </Link>
               </div>
             </div>
           </div>

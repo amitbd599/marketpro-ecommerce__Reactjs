@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const VendorTwoDetails = () => {
   let [grid, setGrid] = useState(false);
@@ -56,9 +57,9 @@ const VendorTwoDetails = () => {
                 </div>
                 <div className='mt-32'>
                   <h6 className='text-white fw-semibold mb-12'>
-                    <a href='vendor-two-details.html' className=''>
+                    <Link to='/vendor-two-details' className=''>
                       Baishakhi Plus
-                    </a>
+                    </Link>
                   </h6>
                   <span className='text-xs text-white mb-12'>
                     480589 Followers
@@ -86,36 +87,36 @@ const VendorTwoDetails = () => {
                   </div>
                 </div>
                 <div className='mt-32 d-flex flex-column gap-8'>
-                  <a
-                    href='javascript:void(0)'
+                  <Link
+                    to='#'
                     className='px-16 py-12 border text-white border-neutral-500 w-100 rounded-4 hover-bg-main-600 hover-border-main-600'
                   >
                     About Store
-                  </a>
-                  <a
-                    href='javascript:void(0)'
+                  </Link>
+                  <Link
+                    to='#'
                     className='px-16 py-12 border text-white border-neutral-500 w-100 rounded-4 hover-bg-main-600 hover-border-main-600'
                   >
                     Products
-                  </a>
-                  <a
-                    href='javascript:void(0)'
+                  </Link>
+                  <Link
+                    to='#'
                     className='px-16 py-12 border text-white border-neutral-500 w-100 rounded-4 hover-bg-main-600 hover-border-main-600'
                   >
                     Return Policy
-                  </a>
-                  <a
-                    href='javascript:void(0)'
+                  </Link>
+                  <Link
+                    to='#'
                     className='px-16 py-12 border text-white border-neutral-500 w-100 rounded-4 hover-bg-main-600 hover-border-main-600'
                   >
                     Shipping Policy
-                  </a>
-                  <a
-                    href='javascript:void(0)'
+                  </Link>
+                  <Link
+                    to='#'
                     className='px-16 py-12 border text-white border-neutral-500 w-100 rounded-4 hover-bg-main-600 hover-border-main-600'
                   >
                     Contact Seller
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='border border-gray-50 rounded-8 p-24'>
@@ -124,108 +125,108 @@ const VendorTwoDetails = () => {
                 </h6>
                 <ul className='max-h-540 overflow-y-auto scroll-sm'>
                   <li className='mb-24'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Mobile &amp; Accessories (12)
-                    </a>
+                    </Link>
                   </li>
                   <li className='mb-24'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Laptop (12)
-                    </a>
+                    </Link>
                   </li>
                   <li className='mb-24'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Electronics (12)
-                    </a>
+                    </Link>
                   </li>
                   <li className='mb-24'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Smart Watch (12)
-                    </a>
+                    </Link>
                   </li>
                   <li className='mb-24'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Storage (12)
-                    </a>
+                    </Link>
                   </li>
                   <li className='mb-24'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Portable Devices (12)
-                    </a>
+                    </Link>
                   </li>
                   <li className='mb-24'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Action Camera (12)
-                    </a>
+                    </Link>
                   </li>
                   <li className='mb-24'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Smart Gadget (12)
-                    </a>
+                    </Link>
                   </li>
                   <li className='mb-24'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Monitor (12)
-                    </a>
+                    </Link>
                   </li>
                   <li className='mb-24'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Smart TV (12)
-                    </a>
+                    </Link>
                   </li>
                   <li className='mb-24'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Camera (12)
-                    </a>
+                    </Link>
                   </li>
                   <li className='mb-24'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Monitor Stand (12)
-                    </a>
+                    </Link>
                   </li>
                   <li className='mb-0'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='text-gray-900 hover-text-main-600'
                     >
                       Headphone (12)
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -235,8 +236,8 @@ const VendorTwoDetails = () => {
                 </h6>
                 <div className='d-flex flex-column gap-24'>
                   <div className='d-flex align-items-center flex-sm-nowrap flex-wrap gap-16'>
-                    <a
-                      href='blog-details.html'
+                    <Link
+                      to='/blog-details'
                       className='w-100 h-100 rounded-4 overflow-hidden w-76 h-76 flex-shrink-0 bg-color-three flex-center'
                     >
                       <img
@@ -244,15 +245,12 @@ const VendorTwoDetails = () => {
                         alt=''
                         className=''
                       />
-                    </a>
+                    </Link>
                     <div className='flex-grow-1'>
                       <h6 className='text-lg mb-8 fw-medium'>
-                        <a
-                          href='product-details-two.html'
-                          className='text-line-3'
-                        >
+                        <Link to='/product-details-two' className='text-line-3'>
                           Man Fashion Shoe
-                        </a>
+                        </Link>
                       </h6>
                       <div className='flex-align gap-6'>
                         <div className='flex-align gap-4'>
@@ -283,8 +281,8 @@ const VendorTwoDetails = () => {
                     </div>
                   </div>
                   <div className='d-flex align-items-center flex-sm-nowrap flex-wrap gap-16'>
-                    <a
-                      href='blog-details.html'
+                    <Link
+                      to='/blog-details'
                       className='w-100 h-100 rounded-4 overflow-hidden w-76 h-76 flex-shrink-0 bg-color-three flex-center'
                     >
                       <img
@@ -292,15 +290,12 @@ const VendorTwoDetails = () => {
                         alt=''
                         className=''
                       />
-                    </a>
+                    </Link>
                     <div className='flex-grow-1'>
                       <h6 className='text-lg mb-8 fw-medium'>
-                        <a
-                          href='product-details-two.html'
-                          className='text-line-3'
-                        >
+                        <Link to='/product-details-two' className='text-line-3'>
                           Woman Fashion Bag
-                        </a>
+                        </Link>
                       </h6>
                       <div className='flex-align gap-6'>
                         <div className='flex-align gap-4'>
@@ -331,8 +326,8 @@ const VendorTwoDetails = () => {
                     </div>
                   </div>
                   <div className='d-flex align-items-center flex-sm-nowrap flex-wrap gap-16'>
-                    <a
-                      href='blog-details.html'
+                    <Link
+                      to='/blog-details'
                       className='w-100 h-100 rounded-4 overflow-hidden w-76 h-76 flex-shrink-0 bg-color-three flex-center'
                     >
                       <img
@@ -340,15 +335,12 @@ const VendorTwoDetails = () => {
                         alt=''
                         className=''
                       />
-                    </a>
+                    </Link>
                     <div className='flex-grow-1'>
                       <h6 className='text-lg mb-8 fw-medium'>
-                        <a
-                          href='product-details-two.html'
-                          className='text-line-3'
-                        >
+                        <Link to='/product-details-two' className='text-line-3'>
                           Woman Fashion Tops
-                        </a>
+                        </Link>
                       </h6>
                       <div className='flex-align gap-6'>
                         <div className='flex-align gap-4'>
@@ -379,8 +371,8 @@ const VendorTwoDetails = () => {
                     </div>
                   </div>
                   <div className='d-flex align-items-center flex-sm-nowrap flex-wrap gap-16'>
-                    <a
-                      href='blog-details.html'
+                    <Link
+                      to='/blog-details'
                       className='w-100 h-100 rounded-4 overflow-hidden w-76 h-76 flex-shrink-0 bg-color-three flex-center'
                     >
                       <img
@@ -388,15 +380,12 @@ const VendorTwoDetails = () => {
                         alt=''
                         className=''
                       />
-                    </a>
+                    </Link>
                     <div className='flex-grow-1'>
                       <h6 className='text-lg mb-8 fw-medium'>
-                        <a
-                          href='product-details-two.html'
-                          className='text-line-3'
-                        >
+                        <Link to='/product-details-two' className='text-line-3'>
                           Woman Fashion Hat
-                        </a>
+                        </Link>
                       </h6>
                       <div className='flex-align gap-6'>
                         <div className='flex-align gap-4'>
@@ -427,8 +416,8 @@ const VendorTwoDetails = () => {
                     </div>
                   </div>
                   <div className='d-flex align-items-center flex-sm-nowrap flex-wrap gap-16'>
-                    <a
-                      href='blog-details.html'
+                    <Link
+                      to='/blog-details'
                       className='w-100 h-100 rounded-4 overflow-hidden w-76 h-76 flex-shrink-0 bg-color-three flex-center'
                     >
                       <img
@@ -436,15 +425,12 @@ const VendorTwoDetails = () => {
                         alt=''
                         className=''
                       />
-                    </a>
+                    </Link>
                     <div className='flex-grow-1'>
                       <h6 className='text-lg mb-8 fw-medium'>
-                        <a
-                          href='product-details-two.html'
-                          className='text-line-3'
-                        >
+                        <Link to='/product-details-two' className='text-line-3'>
                           Woman Fashion
-                        </a>
+                        </Link>
                       </h6>
                       <div className='flex-align gap-6'>
                         <div className='flex-align gap-4'>
@@ -475,8 +461,8 @@ const VendorTwoDetails = () => {
                     </div>
                   </div>
                   <div className='d-flex align-items-center flex-sm-nowrap flex-wrap gap-16'>
-                    <a
-                      href='blog-details.html'
+                    <Link
+                      to='/blog-details'
                       className='w-100 h-100 rounded-4 overflow-hidden w-76 h-76 flex-shrink-0 bg-color-three flex-center'
                     >
                       <img
@@ -484,15 +470,12 @@ const VendorTwoDetails = () => {
                         alt=''
                         className=''
                       />
-                    </a>
+                    </Link>
                     <div className='flex-grow-1'>
                       <h6 className='text-lg mb-8 fw-medium'>
-                        <a
-                          href='product-details-two.html'
-                          className='text-line-3'
-                        >
+                        <Link to='/product-details-two' className='text-line-3'>
                           Woman Fashion Bag
-                        </a>
+                        </Link>
                       </h6>
                       <div className='flex-align gap-6'>
                         <div className='flex-align gap-4'>
@@ -541,15 +524,15 @@ const VendorTwoDetails = () => {
                   <div className='text-center py-32'>
                     <h6 className='text-white'>Daily Offer</h6>
                     <h3 className='my-32 text-white'>SALE 48% OFF</h3>
-                    <a
-                      href='shop.html'
+                    <Link
+                      to='/shop'
                       className='btn btn-main d-inline-flex align-items-center rounded-8 gap-8'
                     >
                       Shop Now
                       <span className='icon text-xl d-flex'>
                         <i className='ph ph-shopping-cart' />
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -596,7 +579,10 @@ const VendorTwoDetails = () => {
                   <span className='text-gray-900 flex-shrink-0 d-sm-block d-none'>
                     Sort by:
                   </span>
-                  <select className='common-input form-select rounded-pill border border-gray-100 d-inline-block ps-20 pe-36 h-48 py-0 fw-medium'>
+                  <select
+                    className='common-input form-select rounded-pill border border-gray-100 d-inline-block ps-20 pe-36 h-48 py-0 fw-medium'
+                    defaultValue={1}
+                  >
                     <option value={1}>Latest</option>
                     <option value={1}>Old</option>
                   </select>
@@ -617,8 +603,8 @@ const VendorTwoDetails = () => {
             >
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
-                  <a
-                    href='product-details-two.html'
+                  <Link
+                    to='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -626,7 +612,7 @@ const VendorTwoDetails = () => {
                       alt=''
                       className='w-auto max-w-unset'
                     />
-                  </a>
+                  </Link>
                   <div className='position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8'>
                     <span className='text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-xs fw-semibold'>
                       -29%
@@ -666,13 +652,13 @@ const VendorTwoDetails = () => {
                 </div>
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
                       Instax Mini 12 Instant Film Camera - Green
-                    </a>
+                    </Link>
                   </h6>
                   <div className='flex-align gap-6'>
                     <div className='flex-align gap-8'>
@@ -709,19 +695,19 @@ const VendorTwoDetails = () => {
                       <span className='text-gray-500 fw-normal'>/Qty</span>{" "}
                     </span>
                   </div>
-                  <a
-                    href='cart.html'
+                  <Link
+                    to='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
                     Add To Cart <i className='ph ph-shopping-cart' />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
-                  <a
-                    href='product-details-two.html'
+                  <Link
+                    to='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -729,7 +715,7 @@ const VendorTwoDetails = () => {
                       alt=''
                       className='w-auto max-w-unset'
                     />
-                  </a>
+                  </Link>
                   <div className='position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8'>
                     <span className='text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-xs fw-semibold'>
                       -29%
@@ -769,13 +755,13 @@ const VendorTwoDetails = () => {
                 </div>
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
                       Midnight Noir Leather Jacket
-                    </a>
+                    </Link>
                   </h6>
                   <div className='flex-align gap-6'>
                     <div className='flex-align gap-8'>
@@ -812,19 +798,19 @@ const VendorTwoDetails = () => {
                       <span className='text-gray-500 fw-normal'>/Qty</span>{" "}
                     </span>
                   </div>
-                  <a
-                    href='cart.html'
+                  <Link
+                    to='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
                     Add To Cart <i className='ph ph-shopping-cart' />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
-                  <a
-                    href='product-details-two.html'
+                  <Link
+                    to='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -832,7 +818,7 @@ const VendorTwoDetails = () => {
                       alt=''
                       className='w-auto max-w-unset'
                     />
-                  </a>
+                  </Link>
                   <div className='position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8'>
                     <span className='text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-xs fw-semibold'>
                       -29%
@@ -872,13 +858,13 @@ const VendorTwoDetails = () => {
                 </div>
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
                       Urban Rebel Combat Boots
-                    </a>
+                    </Link>
                   </h6>
                   <div className='flex-align gap-6'>
                     <div className='flex-align gap-8'>
@@ -915,19 +901,19 @@ const VendorTwoDetails = () => {
                       <span className='text-gray-500 fw-normal'>/Qty</span>{" "}
                     </span>
                   </div>
-                  <a
-                    href='cart.html'
+                  <Link
+                    to='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
                     Add To Cart <i className='ph ph-shopping-cart' />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
-                  <a
-                    href='product-details-two.html'
+                  <Link
+                    to='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -935,7 +921,7 @@ const VendorTwoDetails = () => {
                       alt=''
                       className='w-auto max-w-unset'
                     />
-                  </a>
+                  </Link>
                   <div className='position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8'>
                     <span className='text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-xs fw-semibold'>
                       -29%
@@ -975,13 +961,13 @@ const VendorTwoDetails = () => {
                 </div>
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
                       Velvet Blossom Dress
-                    </a>
+                    </Link>
                   </h6>
                   <div className='flex-align gap-6'>
                     <div className='flex-align gap-8'>
@@ -1018,19 +1004,19 @@ const VendorTwoDetails = () => {
                       <span className='text-gray-500 fw-normal'>/Qty</span>{" "}
                     </span>
                   </div>
-                  <a
-                    href='cart.html'
+                  <Link
+                    to='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
                     Add To Cart <i className='ph ph-shopping-cart' />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
-                  <a
-                    href='product-details-two.html'
+                  <Link
+                    to='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -1038,7 +1024,7 @@ const VendorTwoDetails = () => {
                       alt=''
                       className='w-auto max-w-unset'
                     />
-                  </a>
+                  </Link>
                   <div className='position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8'>
                     <span className='text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-xs fw-semibold'>
                       -29%
@@ -1078,13 +1064,13 @@ const VendorTwoDetails = () => {
                 </div>
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
                       Instax Mini 12 Instant Film Camera - Green
-                    </a>
+                    </Link>
                   </h6>
                   <div className='flex-align gap-6'>
                     <div className='flex-align gap-8'>
@@ -1121,19 +1107,19 @@ const VendorTwoDetails = () => {
                       <span className='text-gray-500 fw-normal'>/Qty</span>{" "}
                     </span>
                   </div>
-                  <a
-                    href='cart.html'
+                  <Link
+                    to='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
                     Add To Cart <i className='ph ph-shopping-cart' />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
-                  <a
-                    href='product-details-two.html'
+                  <Link
+                    to='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -1141,7 +1127,7 @@ const VendorTwoDetails = () => {
                       alt=''
                       className='w-auto max-w-unset'
                     />
-                  </a>
+                  </Link>
                   <div className='position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8'>
                     <span className='text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-xs fw-semibold'>
                       -29%
@@ -1181,13 +1167,13 @@ const VendorTwoDetails = () => {
                 </div>
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
                       Midnight Noir Leather Jacket
-                    </a>
+                    </Link>
                   </h6>
                   <div className='flex-align gap-6'>
                     <div className='flex-align gap-8'>
@@ -1224,19 +1210,19 @@ const VendorTwoDetails = () => {
                       <span className='text-gray-500 fw-normal'>/Qty</span>{" "}
                     </span>
                   </div>
-                  <a
-                    href='cart.html'
+                  <Link
+                    to='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
                     Add To Cart <i className='ph ph-shopping-cart' />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
-                  <a
-                    href='product-details-two.html'
+                  <Link
+                    to='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -1244,7 +1230,7 @@ const VendorTwoDetails = () => {
                       alt=''
                       className='w-auto max-w-unset'
                     />
-                  </a>
+                  </Link>
                   <div className='position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8'>
                     <span className='text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-xs fw-semibold'>
                       -29%
@@ -1284,13 +1270,13 @@ const VendorTwoDetails = () => {
                 </div>
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
                       Urban Rebel Combat Boots
-                    </a>
+                    </Link>
                   </h6>
                   <div className='flex-align gap-6'>
                     <div className='flex-align gap-8'>
@@ -1327,19 +1313,19 @@ const VendorTwoDetails = () => {
                       <span className='text-gray-500 fw-normal'>/Qty</span>{" "}
                     </span>
                   </div>
-                  <a
-                    href='cart.html'
+                  <Link
+                    to='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
                     Add To Cart <i className='ph ph-shopping-cart' />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
-                  <a
-                    href='product-details-two.html'
+                  <Link
+                    to='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -1347,7 +1333,7 @@ const VendorTwoDetails = () => {
                       alt=''
                       className='w-auto max-w-unset'
                     />
-                  </a>
+                  </Link>
                   <div className='position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8'>
                     <span className='text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-xs fw-semibold'>
                       -29%
@@ -1387,13 +1373,13 @@ const VendorTwoDetails = () => {
                 </div>
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
                       Velvet Blossom Dress
-                    </a>
+                    </Link>
                   </h6>
                   <div className='flex-align gap-6'>
                     <div className='flex-align gap-8'>
@@ -1430,19 +1416,19 @@ const VendorTwoDetails = () => {
                       <span className='text-gray-500 fw-normal'>/Qty</span>{" "}
                     </span>
                   </div>
-                  <a
-                    href='cart.html'
+                  <Link
+                    to='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
                     Add To Cart <i className='ph ph-shopping-cart' />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
-                  <a
-                    href='product-details-two.html'
+                  <Link
+                    to='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -1450,7 +1436,7 @@ const VendorTwoDetails = () => {
                       alt=''
                       className='w-auto max-w-unset'
                     />
-                  </a>
+                  </Link>
                   <div className='position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8'>
                     <span className='text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-xs fw-semibold'>
                       -29%
@@ -1490,13 +1476,13 @@ const VendorTwoDetails = () => {
                 </div>
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
                       Instax Mini 12 Instant Film Camera - Green
-                    </a>
+                    </Link>
                   </h6>
                   <div className='flex-align gap-6'>
                     <div className='flex-align gap-8'>
@@ -1533,19 +1519,19 @@ const VendorTwoDetails = () => {
                       <span className='text-gray-500 fw-normal'>/Qty</span>{" "}
                     </span>
                   </div>
-                  <a
-                    href='cart.html'
+                  <Link
+                    to='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
                     Add To Cart <i className='ph ph-shopping-cart' />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
-                  <a
-                    href='product-details-two.html'
+                  <Link
+                    to='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -1553,7 +1539,7 @@ const VendorTwoDetails = () => {
                       alt=''
                       className='w-auto max-w-unset'
                     />
-                  </a>
+                  </Link>
                   <div className='position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8'>
                     <span className='text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-xs fw-semibold'>
                       -29%
@@ -1593,13 +1579,13 @@ const VendorTwoDetails = () => {
                 </div>
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
                       Midnight Noir Leather Jacket
-                    </a>
+                    </Link>
                   </h6>
                   <div className='flex-align gap-6'>
                     <div className='flex-align gap-8'>
@@ -1636,19 +1622,19 @@ const VendorTwoDetails = () => {
                       <span className='text-gray-500 fw-normal'>/Qty</span>{" "}
                     </span>
                   </div>
-                  <a
-                    href='cart.html'
+                  <Link
+                    to='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
                     Add To Cart <i className='ph ph-shopping-cart' />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
-                  <a
-                    href='product-details-two.html'
+                  <Link
+                    to='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -1656,7 +1642,7 @@ const VendorTwoDetails = () => {
                       alt=''
                       className='w-auto max-w-unset'
                     />
-                  </a>
+                  </Link>
                   <div className='position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8'>
                     <span className='text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-xs fw-semibold'>
                       -29%
@@ -1696,13 +1682,13 @@ const VendorTwoDetails = () => {
                 </div>
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
                       Urban Rebel Combat Boots
-                    </a>
+                    </Link>
                   </h6>
                   <div className='flex-align gap-6'>
                     <div className='flex-align gap-8'>
@@ -1739,19 +1725,19 @@ const VendorTwoDetails = () => {
                       <span className='text-gray-500 fw-normal'>/Qty</span>{" "}
                     </span>
                   </div>
-                  <a
-                    href='cart.html'
+                  <Link
+                    to='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
                     Add To Cart <i className='ph ph-shopping-cart' />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='product-card h-100 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2'>
                 <div className='product-card__thumb rounded-8 bg-gray-50 position-relative'>
-                  <a
-                    href='product-details-two.html'
+                  <Link
+                    to='/product-details-two'
                     className='w-100 h-100 flex-center'
                   >
                     <img
@@ -1759,7 +1745,7 @@ const VendorTwoDetails = () => {
                       alt=''
                       className='w-auto max-w-unset'
                     />
-                  </a>
+                  </Link>
                   <div className='position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8'>
                     <span className='text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-xs fw-semibold'>
                       -29%
@@ -1799,13 +1785,13 @@ const VendorTwoDetails = () => {
                 </div>
                 <div className='product-card__content mt-16 w-100'>
                   <h6 className='title text-lg fw-semibold my-16'>
-                    <a
-                      href='product-details-two.html'
+                    <Link
+                      to='/product-details-two'
                       className='link text-line-2'
                       tabIndex={0}
                     >
                       Velvet Blossom Dress
-                    </a>
+                    </Link>
                   </h6>
                   <div className='flex-align gap-6'>
                     <div className='flex-align gap-8'>
@@ -1842,13 +1828,13 @@ const VendorTwoDetails = () => {
                       <span className='text-gray-500 fw-normal'>/Qty</span>{" "}
                     </span>
                   </div>
-                  <a
-                    href='cart.html'
+                  <Link
+                    to='/cart'
                     className='product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium'
                     tabIndex={0}
                   >
                     Add To Cart <i className='ph ph-shopping-cart' />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
